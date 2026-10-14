@@ -1,0 +1,31 @@
+{
+  "roll_number": "s6",
+  "questions": [
+    {
+      "question_no": 1,
+      "answer_text": "Newton's second law states that force equals mass times acceleration, F = ma.",
+      "marks_awarded_ocr": 18
+    },
+    {
+      "question_no": 2,
+      "answer_text": "Supply increases as price increases, all else equal, tracing out the supply curve.",
+      "marks_awarded_ocr": 18
+    },
+    {
+      "question_no": 3,
+      "answer_text": "Newton's second law states that force equals mass times acceleration, F = ma.",
+      "marks_awarded_ocr": 9
+    },
+    {
+      "question_no": 4,
+      "answer_text": "Newton's second law states that force equals mass times acceleration, F = ma.",
+      "marks_awarded_ocr": 18
+    },
+    {
+      "question_no": 5,
+      "answer_text": "Supply increases as price increases, all else equal, tracing out the supply curve.",
+      "marks_awarded_ocr": 9
+    }
+  ],
+  "source_file": "ocr_page0_93y1io84.png"
+}

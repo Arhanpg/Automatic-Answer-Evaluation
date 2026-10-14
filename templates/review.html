@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Teacher Review — Automatic Answer Evaluation{% endblock %}
+{% block content %}
+
+<header class="page-header">
+  <h1>Teacher Review</h1>
+  <p class="subtitle">Confirm or correct the marks for each question on the selected sample papers. These become the verified training examples the rubric and fine-tuned model learn from.</p>
+</header>
+
+<div class="review-layout">
+  <aside class="review-list card">
+    <h2>Selected for review ({{ selected|length }})</h2>
+    <ul class="paper-list">
+      {% for s in selected %}
+      <li>
+        <a href="/review/{{ s.roll_number }}" class="{{ 'current' if roll_number == s.roll_number }}">
+          {{ s.roll_number }}
+        </a>
+      </li>
+      {% else %}
+      <li class="hint">No sample selected yet — go back to Upload &amp; OCR.</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Reviewed ({{ reviewed|length }})</h2>
+    <ul class="paper-list">
+      {% for s in reviewed %}
+      <li><a href="/review/{{ s.roll_number }}" class="done {{ 'current' if roll_number == s.roll_number }}">✓ {{ s.roll_number }}</a></li>
+      {% else %}
+      <li class="hint">None yet.</li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <section class="review-main card">
+    {% if single_record %}
+      <h2>{{ roll_number }}</h2>
+      <form id="review-form" data-roll="{{ roll_number }}">
+        {% for q in single_record.questions %}
+        <div class="question-block">
+          <div class="question-head">
+            <span class="q-label">Question {{ q.question_no }}</span>
+            {% if q.marks_awarded_ocr is not none %}
+              <span class="ocr-hint">OCR read: {{ q.marks_awarded_ocr }} marks</span>
+            {% else %}
+              <span class="ocr-hint muted">OCR could not read a mark here</span>
+            {% endif %}
+          </div>
+          <p class="answer-text">{{ q.answer_text or '(no answer text extracted)' }}</p>
+          <div class="form-row">
+            <label>Final marks</label>
+            <input type="number" step="0.5" min="0" max="{{ num_questions and 20 }}"
+                   name="marks_{{ q.question_no }}"
+                   value="{{ q.marks_awarded_ocr if q.marks_awarded_ocr is not none else '' }}">
+            <label>Notes (why this score — feeds the rubric)</label>
+            <input type="text" name="notes_{{ q.question_no }}" placeholder="e.g. missing derivation step, correct final answer">
+          </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn primary">Save review</button>
+        <p id="review-save-result" class="hint"></p>
+      </form>
+    {% else %}
+      <p class="hint">Select a paper from the list to review it.</p>
+    {% endif %}
+  </section>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+const form = document.getElementById('review-form');
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const roll = form.dataset.roll;
+    const marks = {};
+    const notes = {};
+    new FormData(form).forEach((value, key) => {
+      if (key.startsWith('marks_')) marks[key.replace('marks_', '')] = value;
+      if (key.startsWith('notes_')) notes[key.replace('notes_', '')] = value;
+    });
+    const res = await fetch(`/api/review/${roll}`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({marks, notes}),
+    });
+    const data = await res.json();
+    const out = document.getElementById('review-save-result');
+    out.textContent = res.ok ? 'Saved.' : ('Error: ' + data.error);
+    if (res.ok) setTimeout(() => window.location.reload(), 600);
+  });
+}
+</script>
+{% endblock %}

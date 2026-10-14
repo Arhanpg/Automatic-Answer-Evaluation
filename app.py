@@ -1,0 +1,292 @@
+"""
+app.py -- Automatic Answer Evaluation   (run:  python app.py   ->  http://localhost:5000)
+
+Pages:  /  overview      /setup  question paper + model answer     /sheets  answer-sheet OCR
+        /select  AI picks the training papers + verify labels      /verify/<id>
+        /training  rubric, fine-tune, evaluate                     /results
+"""
+import os
+
+from flask import Flask, abort, jsonify, redirect, render_template, request, send_from_directory
+
+import config
+from backend import database as db
+from backend import exam_schema as es
+from backend import grader, ollama_client, pipeline, rubric_builder, sheet_io
+
+app = Flask(__name__)
+app.config["SECRET_KEY"] = config.SECRET_KEY
+app.config["MAX_CONTENT_LENGTH"] = 200 * 1024 * 1024
+db.init_db()
+
+
+@app.context_processor
+def inject_globals():
+    return {"rt": pipeline.runtime_status(), "demo": config.DEMO_MODE,
+            "exam_ready": es.exam_exists(), "ollama_model": config.OLLAMA_MODEL}
+
+
+@app.errorhandler(pipeline.JobBusy)
+def _busy(e):
+    return jsonify({"error": str(e)}), 409
+
+
+def _json():
+    return request.get_json(silent=True) or {}
+
+
+def _need_exam():
+    if not es.exam_exists():
+        raise ValueError("Set up and approve the exam first (step 1).")
+    return es.load_exam()
+
+
+def api(fn):
+    """Turn exceptions into {"error": ...} JSON instead of an HTML error page."""
+    from functools import wraps
+
+    @wraps(fn)
+    def wrapper(*a, **kw):
+        try:
+            return fn(*a, **kw)
+        except pipeline.JobBusy:
+            raise
+        except (ValueError, FileNotFoundError, KeyError, RuntimeError) as e:   # all user-actionable
+            return jsonify({"error": str(e)}), 400
+        except Exception as e:
+            app.logger.exception("API error")
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 500
+    return wrapper
+
+
+# ------------------------------------------------------------------ pages
+@app.route("/")
+def index():
+    return render_template("index.html", ov=pipeline.overview(),
+                           answers_dir=config.STUDENT_ANSWERS_DIR, marks_dir=config.TEACHER_MARKS_DIR)
+
+
+@app.route("/setup")
+def setup_page():
+    return render_template("setup.html",
+                           paper=[os.path.basename(p) for p in pipeline.exam_source_files("question_paper")],
+                           key=[os.path.basename(p) for p in pipeline.exam_source_files("model_answer")])
+
+
+@app.route("/sheets")
+def sheets_page():
+    return render_template("sheets.html", students=db.list_students(), counts=db.counts(),
+                           answers_dir=config.STUDENT_ANSWERS_DIR, marks_dir=config.TEACHER_MARKS_DIR,
+                           ink=config.TEACHER_INK, split_ink=config.SEPARATE_TEACHER_INK)
+
+
+@app.route("/select")
+def select_page():
+    sel = pipeline.get_selection()
+    studs = db.list_students()
+    return render_template("select.html", sel=sel, students=studs, counts=db.counts(),
+                           default_k=config.DEFAULT_SAMPLE_SIZE)
+
+
+@app.route("/verify/<roll>")
+def verify_page(roll):
+    view = pipeline.student_view(roll)
+    if view is None:
+        abort(404)
+    exam = es.load_exam()
+    if exam is None:
+        abort(404)
+    train = [s["roll_number"] for s in db.list_students(split="train")]
+    nxt = prv = None
+    if roll in train:
+        i = train.index(roll)
+        prv = train[i - 1] if i > 0 else None
+        nxt = train[i + 1] if i + 1 < len(train) else None
+    return render_template("verify.html", roll=roll, view=view, exam=exam, prev=prv, next=nxt)
+
+
+@app.route("/review")
+def review_redirect():
+    return redirect("/select")
+
+
+@app.route("/review/<roll>")
+def review_roll_redirect(roll):
+    return redirect(f"/verify/{roll}")
+
+
+@app.route("/training")
+def training_page():
+    exam = es.load_exam()
+    return render_template("training.html", ov=pipeline.overview(), rubrics=rubric_builder.load_all(exam) if exam else {},
+                           ollama_models=ollama_client.list_models(), counts=db.counts())
+
+
+@app.route("/results")
+def results_page():
+    runs = pipeline.list_runs()
+    tag = request.args.get("run") or (runs[-1]["tag"] if runs else None)
+    exam = es.load_exam()
+    res, comparison = None, []
+    if tag and exam:
+        res = pipeline.compute_results(tag)
+        for r in runs:
+            m = pipeline.compute_results(r["tag"])["metrics"]
+            comparison.append({"tag": r["tag"], "engine": r["engine"], **m})
+    return render_template("results.html", runs=runs, tag=tag, res=res, comparison=comparison, exam=exam)
+
+
+@app.route("/pages/<roll>/<int:n>.jpg")
+def page_image(roll, n):
+    if db.get_student(roll) is None:
+        abort(404)
+    return send_from_directory(sheet_io.pages_dir(roll), f"p{n}.jpg")
+
+
+# ------------------------------------------------------------------ API
+@app.route("/api/status")
+def api_status():
+    return jsonify({"progress": pipeline.get_progress(), "runtime": pipeline.runtime_status(),
+                    "counts": db.counts()})
+
+
+@app.route("/api/exam/upload", methods=["POST"])
+@api
+def api_exam_upload():
+    kind = request.form.get("kind", "")
+    names = pipeline.save_exam_upload(kind, request.files.getlist("files"))
+    if not names:
+        raise ValueError("No file received.")
+    return jsonify({"files": names})
+
+
+@app.route("/api/exam/use_path", methods=["POST"])
+@api
+def api_exam_use_path():
+    d = _json()
+    paths = [p.strip().strip('"') for p in d.get("paths", []) if p.strip()]
+    if not paths:
+        raise ValueError("Enter a file path.")
+    return jsonify({"files": pipeline.use_exam_paths(d.get("kind", ""), paths)})
+
+
+@app.route("/api/exam/use_sample", methods=["POST"])
+@api
+def api_exam_use_sample():
+    pipeline.load_sample_exam()
+    return jsonify({"status": "ok"})
+
+
+@app.route("/api/exam/parse", methods=["POST"])
+@api
+def api_exam_parse():
+    pipeline.start_job("exam", pipeline.job_parse_exam, bool(_json().get("force_ocr")))
+    return jsonify({"status": "started"})
+
+
+@app.route("/api/exam/draft")
+@api
+def api_exam_draft():
+    return jsonify({"draft": pipeline.load_draft(), "approved": es.load_exam()})
+
+
+@app.route("/api/exam/approve", methods=["POST"])
+@api
+def api_exam_approve():
+    exam = _json().get("exam")
+    if not exam or not exam.get("questions"):
+        raise ValueError("The exam has no questions.")
+    saved = pipeline.approve_exam(exam)
+    return jsonify({"exam": saved})
+
+
+@app.route("/api/sheets/start", methods=["POST"])
+@api
+def api_sheets_start():
+    _need_exam()
+    d = _json()
+    folder = (d.get("folder_path") or "").strip().strip('"')
+    if not os.path.isdir(folder):
+        raise ValueError(f"'{folder}' is not a folder on this computer.")
+    if config.DEMO_MODE:
+        raise ValueError("Demo mode has no real OCR - use 'Create demo students' instead.")
+    from backend import ocr_engine
+    if not ocr_engine.paddleocr_available():
+        raise ValueError(ocr_engine.INSTALL_HELP)
+    pipeline.start_job("sheets", pipeline.job_process_sheets, folder,
+                       bool(d.get("split_ink", config.SEPARATE_TEACHER_INK)), d.get("ink") or config.TEACHER_INK)
+    return jsonify({"status": "started"})
+
+
+@app.route("/api/sheets/demo", methods=["POST"])
+@api
+def api_sheets_demo():
+    _need_exam()
+    if not config.DEMO_MODE:
+        raise ValueError("Start the app with AAE_MODE=demo to use synthetic students.")
+    pipeline.start_job("sheets", pipeline.job_demo_students, int(_json().get("n", 30)))
+    return jsonify({"status": "started"})
+
+
+@app.route("/api/sheets/marks_csv", methods=["POST"])
+@api
+def api_marks_csv():
+    _need_exam()
+    path = (_json().get("csv_path") or "").strip().strip('"')
+    if not os.path.isfile(path):
+        raise ValueError(f"'{path}' not found")
+    return jsonify({"cells_updated": pipeline.import_marks_csv(path)})
+
+
+@app.route("/api/select", methods=["POST"])
+@api
+def api_select():
+    _need_exam()
+    return jsonify(pipeline.select_training_set(int(_json().get("k", config.DEFAULT_SAMPLE_SIZE))))
+
+
+@app.route("/api/verify/<roll>", methods=["POST"])
+@api
+def api_verify(roll):
+    if db.get_student(roll) is None:
+        raise ValueError("Unknown student")
+    d = _json()
+    a, m = pipeline.save_verification(roll, d.get("answers", {}), d.get("marks", {}))
+    return jsonify({"answers": a, "marks": m})
+
+
+@app.route("/api/rubrics/build", methods=["POST"])
+@api
+def api_rubrics_build():
+    _need_exam()
+    pipeline.start_job("rubric", pipeline.job_build_rubrics)
+    return jsonify({"status": "started"})
+
+
+@app.route("/api/rubrics")
+@api
+def api_rubrics():
+    exam = es.load_exam()
+    return jsonify(rubric_builder.load_all(exam) if exam else {})
+
+
+@app.route("/api/finetune", methods=["POST"])
+@api
+def api_finetune():
+    _need_exam()
+    pipeline.start_job("finetune", pipeline.job_finetune)
+    return jsonify({"status": "started"})
+
+
+@app.route("/api/evaluate", methods=["POST"])
+@api
+def api_evaluate():
+    _need_exam()
+    spec = (_json().get("engine") or "").strip()
+    grader.make_engine(spec)          # fail fast on a bad spec / missing adapter
+    pipeline.start_job("evaluate", pipeline.job_evaluate, spec)
+    return jsonify({"status": "started"})
+
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5000, debug=False, threaded=True)

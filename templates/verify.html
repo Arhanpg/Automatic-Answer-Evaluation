@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% block title %}Verify {{ roll }} - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><div class="row"><h1 style="margin:0">{{ roll }}</h1>
+{% set s = view.student %}<span class="chip {{ 'good' if s.split=='train' else 'grey' }}">{{ s.split }}</span>{% if s.verified %}<span class="chip good">verified</span>{% endif %}<span class="grow"></span>
+{% if prev %}<a class="btn ghost" href="/verify/{{ prev }}">&larr; {{ prev }}</a>{% endif %}<a class="btn ghost" href="/select">All papers</a>{% if next %}<a class="btn ghost" href="/verify/{{ next }}">{{ next }} &rarr;</a>{% endif %}</div>
+<p class="subtitle">Compare the scan with what was read. Fix any answer text or mark that is wrong, then save. {% if s.split=='test' %}This is a <b>test</b> paper - correcting its marks only makes the final accuracy measurement more honest.{% endif %}</p></header>
+
+{% if s.flags %}<div class="banner demo" style="background:var(--warn-soft)"><b>Check these:</b> {% for f in s.flags %}<div>{{ f }}</div>{% endfor %}</div>{% endif %}
+
+<div class="verify">
+  <div class="scans" id="scans">{% if view.n_pages %}{% for n in range(1, view.n_pages + 1) %}<img src="/pages/{{ roll }}/{{ n }}.jpg" alt="page {{ n }}" onclick="this.classList.toggle('zoom')">{% endfor %}
+  {% else %}<p class="hint" style="padding:14px">No scan available for this student{% if demo %} (demo data){% endif %}.</p>{% endif %}</div>
+  <div>
+  {% for q in exam.questions %}
+  <div class="vq" data-qid="{{ q.id }}"><div class="qh"><b>Question {{ q.id }}</b><span class="chip">max {{ q.max_marks }}</span></div>
+    <details><summary>Question &amp; model answer</summary><div class="mm">{{ q.stem }}{% for p in q.parts %}
+({{ p.id }}) {{ p.text }}  [{{ p.marks }}]
+    model: {{ p.model_answer }}{% endfor %}{% if not q.parts %}
+model: {{ q.model_answer }}{% endif %}</div></details>
+    {% for p in (q.parts or [none]) %}{% set aid = (q.id ~ p.id) if p else q.id %}
+      <label class="small">{{ ('ANSWER (' ~ p.id ~ ')') if p else 'ANSWER' }}</label>
+      <textarea rows="3" data-aid="{{ aid }}">{{ view.answers.get(aid, '') }}</textarea>{% endfor %}
+    <div class="row" style="margin-top:8px"><label class="small" style="margin:0">TEACHER'S MARKS</label>
+      <input type="number" step="0.5" min="0" max="{{ q.max_marks }}" data-mq="{{ q.id }}" value="{{ '' if view.marks.get(q.id) is none else view.marks.get(q.id) }}"><span class="hint tight">out of {{ q.max_marks }}</span></div>
+  </div>{% endfor %}
+  <div class="sticky-save"><button class="btn primary" onclick="save(this)">Save &amp; mark verified</button>{% if next %}<button class="btn secondary" onclick="save(this, '/verify/{{ next }}')">Save &amp; next</button>{% endif %}<span class="ptext" id="msg"></span></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script>
+async function save(btn, goto){ await run(btn, async()=>{
+  const answers={}, marks={};
+  document.querySelectorAll('[data-aid]').forEach(t=>answers[t.dataset.aid]=t.value);
+  document.querySelectorAll('[data-mq]').forEach(i=>marks[i.dataset.mq]=i.value);
+  await api('/api/verify/{{ roll }}',{answers,marks});
+  const m=document.getElementById('msg'); m.textContent='Saved.'; m.className='ptext ok';
+  if(goto) location.href=goto; else setTimeout(()=>location.reload(),500);
+});}
+</script>{% endblock %}

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+data/exam/source/*/
+data/exam/*.json
+data/student_answers/*
+data/teacher_marks/*
+data/pages/*
+data/rubrics/*
+data/predictions/*
+data/models/*
+data/db/*
+!data/**/.gitkeep
+*.sqlite3

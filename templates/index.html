@@ -1,0 +1,44 @@
+{% extends "base.html" %}{% block title %}Overview - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>Automatic Answer Evaluation</h1>
+<p class="subtitle">Grade handwritten exam scripts in the teacher's own style - all on this computer. Follow the five steps below from left to right.</p></header>
+
+<div class="steps">
+  <div class="step"><span class="n">STEP 1</span><span class="t">Exam setup</span>
+    <span class="v">{% if ov.exam.ready %}<span class="chip good">approved</span> {{ ov.exam.questions }} questions, {{ ov.exam.total_marks|round(1) }} marks{% if ov.exam.warnings %}<br><span class="chip warn">{{ ov.exam.warnings }} warning(s)</span>{% endif %}{% else %}<span class="chip grey">not done</span> Upload the question paper and model answer.{% endif %}</span>
+    <a class="btn secondary" href="/setup">Open</a></div>
+  <div class="step"><span class="n">STEP 2</span><span class="t">Answer sheets (OCR)</span>
+    <span class="v">{% if ov.sheets.total %}<span class="chip good">{{ ov.sheets.total }} students</span>{% if ov.sheets.ocr_failed %} <span class="chip bad">{{ ov.sheets.ocr_failed }} failed</span>{% endif %}{% if ov.sheets.flagged %} <span class="chip warn">{{ ov.sheets.flagged }} flagged</span>{% endif %}{% else %}<span class="chip grey">not done</span> Point to the scans folder.{% endif %}</span>
+    <a class="btn secondary" href="/sheets">Open</a></div>
+  <div class="step"><span class="n">STEP 3</span><span class="t">AI selects &amp; you verify</span>
+    <span class="v">{% if ov.selection %}<span class="chip good">{{ ov.sheets.train }} train / {{ ov.sheets.test }} test</span><br>{{ ov.sheets.train_verified }} of {{ ov.sheets.train }} training papers verified{% else %}<span class="chip grey">not done</span>{% endif %}</span>
+    <a class="btn secondary" href="/select">Open</a></div>
+  <div class="step"><span class="n">STEP 4</span><span class="t">Rubric &amp; fine-tune</span>
+    <span class="v">Rubrics: {{ '<span class="chip good">built</span>'|safe if ov.rubrics else '<span class="chip grey">no</span>'|safe }}<br>Adapter: {{ '<span class="chip good">trained</span>'|safe if ov.adapter else '<span class="chip grey">no</span>'|safe }}</span>
+    <a class="btn secondary" href="/training">Open</a></div>
+  <div class="step"><span class="n">STEP 5</span><span class="t">Results</span>
+    <span class="v">{% if ov.runs %}{% for r in ov.runs %}<span class="chip">{{ r.tag }}</span> {% endfor %}{% else %}<span class="chip grey">no evaluation yet</span>{% endif %}</span>
+    <a class="btn secondary" href="/results">Open</a></div>
+</div>
+
+<section class="card" style="margin-top:22px"><h2>The two output folders</h2>
+<p class="hint">Step 2 writes exactly one small JSON file per student into each folder. Marks never appear in folder 1 and answers never appear in folder 2.</p>
+<div class="flow">
+ <div><b>Folder 1 - what the student wrote</b><br><code>{{ answers_dir }}</code>
+<pre class="json">{
+  "roll_number": "s1",
+  "answers": {
+    "1a": "The key limitation is ...",
+    "1b": "To provide word order ...",
+    "2a": "Q.K1 = 1, Q.K2 = 0 ...",
+    "4":  "P(I like ML) = 3/2420"
+  }
+}</pre></div>
+ <div><b>Folder 2 - what the teacher gave (labels)</b><br><code>{{ marks_dir }}</code>
+<pre class="json">{
+  "roll_number": "s1",
+  "marks": { "1": 7, "2": 5, "3": 2, "4": 3 }
+}</pre></div>
+</div>
+<p class="hint">The AI chooses the training papers from folder 1 only; the labels for those papers come from folder 2. All other papers are tested after fine-tuning and compared with their folder-2 marks.</p></section>
+{% endblock %}

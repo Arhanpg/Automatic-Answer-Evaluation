@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% block title %}Select & verify - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>3. AI selects the training papers</h1>
+<p class="subtitle">The AI reads only the students' answers (folder 1) and compares them with the model answer. It picks a spread of weak-to-strong papers as the labelled training set; their marks come from folder 2. Every other paper becomes a test paper.</p></header>
+
+<section class="card"><h2>Choose</h2>
+<div class="row"><label class="hint tight">Number of training papers</label><input type="number" id="k" value="{{ sel.k if sel else default_k }}" min="2" max="200">
+<button class="btn primary" onclick="doSelect(this)">Let the AI select</button>
+{% if sel %}<span class="chip">{{ counts.train }} train / {{ counts.test }} test</span><span class="chip {{ 'good' if counts.train_verified == counts.train else 'warn' }}">{{ counts.train_verified }}/{{ counts.train }} verified</span><span class="chip grey">similarity: {{ sel.similarity }}</span>{% endif %}</div>
+<p class="hint" style="margin-top:10px">Marks are never used for the selection itself. Changing the number re-draws the split and clears nothing else, but verified status is kept per paper.</p></section>
+
+{% if sel %}
+<section class="card"><h2>Where the selected papers sit</h2>
+<p class="hint">Every bar is one student, ranked by how close their answers are to the model answer (and how complete). Coloured bars = selected for training.</p>
+<canvas id="chart" height="70"></canvas></section>
+
+<section class="card"><h2>Training papers - verify the labels</h2>
+<p class="hint">OCR can misread a handwritten mark or answer. Open each training paper, compare with the scan, fix anything wrong and save. Verified papers are marked <span class="chip good">verified</span>. (You can also train on unverified papers, but wrong labels teach the model wrong marking.)</p>
+<div class="table-wrap"><table><thead><tr><th>Student</th><th>Why chosen</th><th>Similarity</th><th>Answered</th><th>Warnings</th><th>Status</th><th></th></tr></thead><tbody>
+{% for s in students if s.split == 'train' %}{% set d = sel.details.get(s.roll_number, {}) %}
+<tr><td class="mono">{{ s.roll_number }}</td><td>{{ d.role }} (band {{ d.band }}/{{ d.of }})</td><td>{{ d.mean_sim }}</td><td>{{ (d.completeness * 100)|round|int if d.completeness is defined }}%</td>
+<td>{% for f in s.flags %}<div style="font-size:12.5px">{{ f }}</div>{% endfor %}</td>
+<td>{% if s.verified %}<span class="chip good">verified</span>{% else %}<span class="chip warn">to verify</span>{% endif %}</td>
+<td><a class="btn {{ 'ghost' if s.verified else 'primary' }}" href="/verify/{{ s.roll_number }}">{{ 'Open' if s.verified else 'Verify' }}</a></td></tr>{% endfor %}
+</tbody></table></div></section>
+
+<section class="card"><h2>Test papers <span class="chip">{{ counts.test }}</span></h2>
+<p class="hint">These stay unseen during rubric building and fine-tuning. Their folder-2 marks are used only afterwards, to measure the model.</p>
+<div>{% for s in students if s.split == 'test' %}<a class="chip {{ 'warn' if s.flags else 'grey' }}" style="text-decoration:none;margin:2px" href="/verify/{{ s.roll_number }}">{{ s.roll_number }}</a>{% endfor %}</div>
+<p style="margin-top:14px"><a class="btn primary" href="/training">Next: rubric &amp; fine-tune</a></p></section>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+{% if sel %}<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+const chart = {{ sel.chart | tojson }};
+if (window.Chart) new Chart(document.getElementById('chart'), {type:'bar', data:{labels: chart.map(c=>c.roll),
+  datasets:[{label:'answer quality proxy', data: chart.map(c=>c.score), backgroundColor: chart.map(c=>c.selected ? '#6366f1' : '#d5d8e6')}]},
+  options:{plugins:{legend:{display:false}}, scales:{y:{title:{display:true,text:'similarity to model answer + completeness'}, min:0, max:1}, x:{ticks:{display:chart.length<=40}}}}});
+</script>{% endif %}
+<script>
+async function doSelect(b){ await run(b, async()=>{ await api('/api/select',{k:parseInt(document.getElementById('k').value,10)}); location.reload(); }); }
+</script>{% endblock %}

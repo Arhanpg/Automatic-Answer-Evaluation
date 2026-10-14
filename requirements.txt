@@ -1,0 +1,19 @@
+# ---- core app ----
+Flask>=3.0
+numpy>=2.0
+Pillow>=10.0
+pymupdf>=1.24     # PDF text + page rendering
+
+# ---- OCR (needed for real handwritten sheets) ----
+# 1) install PaddlePaddle for YOUR CUDA version first: https://www.paddlepaddle.org.cn/en/install/quick
+# 2) pip install paddleocr
+#    (PaddleOCR 3.x and 2.x are both supported)
+
+# ---- local LLM ----
+# Ollama is a separate program: https://ollama.com/download
+#   ollama pull llama3.1:8b          (rubric + zero-shot baseline)
+#   ollama pull nomic-embed-text     (optional: better paper selection)
+
+# ---- fine-tuning + evaluating the fine-tuned model ----
+# 1) install PyTorch (CUDA build) first: https://pytorch.org/get-started/locally/
+# 2) pip install transformers peft bitsandbytes datasets accelerate
