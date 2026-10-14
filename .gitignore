@@ -4,6 +4,8 @@ venv/
 .venv/
 data/exam/source/*/
 data/exam/*.json
+data/ocr_output/*
+data/manual_grades/*
 data/student_answers/*
 data/teacher_marks/*
 data/pages/*
