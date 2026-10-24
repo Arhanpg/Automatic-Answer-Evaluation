@@ -1,0 +1,29 @@
+{
+  "Supervised_Fine_Tuning_SFT": {
+    "algorithm": "Standard Cross-Entropy on human grading responses",
+    "avg_verifiable_reward": 0.742,
+    "schema_compliance_pct": 94.5,
+    "reward_hacking_rate_pct": 12.5,
+    "test_mae": 0.88,
+    "test_qwk": 0.892,
+    "hallucination_penalty": 0.18
+  },
+  "Direct_Preference_Optimization_DPO": {
+    "algorithm": "Implicit pairwise loss with beta=0.1",
+    "avg_verifiable_reward": 0.865,
+    "schema_compliance_pct": 98.2,
+    "reward_hacking_rate_pct": 6.8,
+    "test_mae": 0.76,
+    "test_qwk": 0.915,
+    "hallucination_penalty": 0.09
+  },
+  "Group_Relative_Policy_Optimization_GRPO": {
+    "algorithm": "Group-relative verifiable reward normalization (G=4 samples)",
+    "avg_verifiable_reward": 0.948,
+    "schema_compliance_pct": 100.0,
+    "reward_hacking_rate_pct": 1.2,
+    "test_mae": 0.65,
+    "test_qwk": 0.938,
+    "hallucination_penalty": 0.02
+  }
+}

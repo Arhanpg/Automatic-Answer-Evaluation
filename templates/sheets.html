@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% block title %}Answer sheets - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>2. Answer sheets</h1>
+<p class="subtitle">Give the folder with the corrected, scanned scripts. For every student the app writes <b>one JSON with the answers</b> (folder 1) and <b>one JSON with the teacher's marks</b> (folder 2).</p></header>
+
+{% if not exam_ready %}<div class="banner err">Finish <a href="/setup">Exam setup</a> first - the question paper decides how the answers are split.</div>{% endif %}
+
+<section class="card"><h2>Folder of scanned scripts</h2>
+<p class="hint">Works with one PDF per student (<code>s1.pdf</code>), a sub-folder of photos per student (<code>s1/</code>), pages named <code>21CS045_1.jpg</code>, or one image per student. The file / folder name becomes the student id.</p>
+<div class="row"><input type="text" id="folder" class="grow" placeholder="F:\Automatic answer evaluation dataset\All PDF's"><button class="btn primary" onclick="startOcr(this)">Run OCR</button>
+{% if demo %}<button class="btn secondary" onclick="startDemo(this)">Create 30 demo students</button>{% endif %}</div>
+<div class="row" style="margin-top:10px"><label class="hint tight"><input type="checkbox" id="split" {{ 'checked' if split_ink }}> teacher's marks are in coloured ink - read them separately from the student's writing</label>
+<select id="ink" style="width:auto"><option value="red" {{ 'selected' if ink=='red' }}>red ink</option><option value="green" {{ 'selected' if ink=='green' }}>green ink</option></select></div>
+<div class="progress" id="p-sheets"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div></section>
+
+<section class="card"><h2>Marks from a CSV (fallback)</h2>
+<p class="hint">If the handwritten marks cannot be read reliably, import them. Columns: <code>roll_number,question_no,marks</code> or <code>roll_number,1,2,3,4</code>. Only students already read in step 2 are updated.</p>
+<div class="row"><input type="text" id="csv" class="grow" placeholder="C:\path\to\marks.csv"><button class="btn secondary" onclick="importCsv(this)">Import marks</button></div><p class="hint" id="csv-res"></p></section>
+
+<section class="card"><h2>Students <span class="chip">{{ counts.total }}</span>{% if counts.ocr_failed %} <span class="chip bad">{{ counts.ocr_failed }} failed</span>{% endif %}</h2>
+<p class="hint">Folder 1: <code>{{ answers_dir }}</code><br>Folder 2: <code>{{ marks_dir }}</code></p>
+{% if students %}<div class="table-wrap"><table><thead><tr><th>Student</th><th>Pages</th><th>Status</th><th>Warnings</th><th></th></tr></thead><tbody>
+{% for s in students %}<tr class="{{ 'badrow' if s.ocr_status=='ocr_failed' else ('warnrow' if s.flags) }}"><td class="mono">{{ s.roll_number }}</td><td>{{ s.n_pages }}</td>
+<td>{% if s.ocr_status=='ocr_failed' %}<span class="chip bad">failed</span>{% else %}<span class="chip good">read</span>{% endif %}</td>
+<td>{% for f in s.flags %}<div style="font-size:12.5px">{{ f }}</div>{% endfor %}</td><td><a class="btn ghost" href="/verify/{{ s.roll_number }}">Open</a></td></tr>{% endfor %}
+</tbody></table></div>{% else %}<p class="hint">No students yet.</p>{% endif %}</section>
+{% endblock %}
+{% block scripts %}<script>
+const $ = id => document.getElementById(id);
+async function startOcr(b){ await run(b, async()=>{ await api('/api/sheets/start',{folder_path:$('folder').value, split_ink:$('split').checked, ink:$('ink').value}); showProgress('sheets',0,0,'Starting...'); watchJob('sheets', ()=>location.reload()); }); }
+async function startDemo(b){ await run(b, async()=>{ await api('/api/sheets/demo',{n:30}); watchJob('sheets', ()=>location.reload()); }); }
+async function importCsv(b){ await run(b, async()=>{ const r=await api('/api/sheets/marks_csv',{csv_path:$('csv').value}); $('csv-res').textContent='Updated '+r.cells_updated+' marks.'; }); }
+resumeJob(['sheets'], ()=>location.reload());
+</script>{% endblock %}

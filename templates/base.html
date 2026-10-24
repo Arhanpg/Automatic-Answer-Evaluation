@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Automatic Answer Evaluation{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head><body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">AE</span><span class="brand-text">Answer<br>Evaluation</span></div>
+  <nav class="nav">
+    <a href="/" class="{{ 'active' if request.path == '/' }}"><span class="nav-num">&#9776;</span> Overview</a>
+    <a href="/setup" class="{{ 'active' if request.path == '/setup' }}"><span class="nav-num {{ 'done' if exam_ready }}">{{ '&#10003;'|safe if exam_ready else '1' }}</span> Exam setup</a>
+    <a href="/sheets" class="{{ 'active' if request.path == '/sheets' }}"><span class="nav-num">2</span> Answer sheets</a>
+    <a href="/select" class="{{ 'active' if request.path.startswith('/select') or request.path.startswith('/verify') }}"><span class="nav-num">3</span> Select &amp; verify</a>
+    <a href="/training" class="{{ 'active' if request.path == '/training' }}"><span class="nav-num">4</span> Rubric &amp; fine-tune</a>
+    <a href="/results" class="{{ 'active' if request.path == '/results' }}"><span class="nav-num">5</span> Results</a>
+    <a href="/metrics-dashboard" class="{{ 'active' if request.path == '/metrics-dashboard' }}"><span class="nav-num">&#128202;</span> Metrics Dashboard</a>
+  </nav>
+  <div class="rt" id="rt">
+    <div><span class="dot {{ 'on' if rt.paddleocr else 'off' }}"></span> PaddleOCR {{ 'ready' if rt.paddleocr else 'NOT installed' }}</div>
+    <div><span class="dot {{ 'on' if rt.ollama else 'off' }}"></span> Ollama {{ 'running' if rt.ollama else 'not running' }}</div>
+    <div><span class="dot {{ 'on' if rt.ml_stack else 'na' }}"></span> Fine-tune stack {{ 'ready' if rt.ml_stack else 'not installed' }}</div>
+    <div><span class="dot {{ 'on' if rt.adapter else 'na' }}"></span> Fine-tuned adapter {{ 'ready' if rt.adapter else 'none yet' }}</div>
+  </div>
+</aside>
+<main class="content">
+  {% if demo %}<div class="banner demo"><b>DEMO MODE</b> - everything you see for answer sheets, marks and grading is synthetic. Real OCR / grading is switched off. Start without <code>AAE_MODE=demo</code> for real work.</div>
+  {% elif not rt.paddleocr %}<div class="banner err"><b>PaddleOCR is not installed.</b> The exam setup works for digital PDFs, but handwritten sheets cannot be read until PaddleOCR is installed (see README step 3). No fake data will be generated.</div>{% endif %}
+  {% block content %}{% endblock %}
+</main></div>
+<script src="/static/js/app.js"></script>
+{% block scripts %}{% endblock %}
+</body></html>

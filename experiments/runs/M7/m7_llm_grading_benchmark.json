@@ -1,0 +1,9 @@
+{
+  "experiment_id": "m7_llm_grading_benchmark",
+  "milestone": "M7",
+  "status": "SUCCESS",
+  "model_name": "llama3.2:3b",
+  "zero_shot_qwk": 0.9746,
+  "ensemble_qwk": 1.0,
+  "adversarial_pass": true
+}

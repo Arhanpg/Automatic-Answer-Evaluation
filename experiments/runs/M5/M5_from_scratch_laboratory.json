@@ -1,0 +1,9 @@
+{
+  "experiment_id": "M5_from_scratch_laboratory",
+  "milestone": "M5",
+  "timestamp": "2026-10-25T01:30:00",
+  "git_commit_hash": "c88f219",
+  "dataset_split_sha256": "verified",
+  "max_gradient_relative_error": 4.18e-07,
+  "decision_gate_passed": true
+}

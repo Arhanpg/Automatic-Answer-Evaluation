@@ -1,0 +1,13 @@
+student_id,question_id,experiment,max_marks,true_mark,predicted_mark,uncertainty_score,human_review_required
+s29,Q1,Exp_71_ZeroShot,8.0,8.0,7.0,0.05,False
+s29,Q2,Exp_71_ZeroShot,6.0,2.0,3.0,0.05,False
+s29,Q3,Exp_71_ZeroShot,3.0,2.0,2.0,0.45,True
+s29,Q4,Exp_71_ZeroShot,3.0,3.0,3.0,0.05,False
+s18,Q1,Exp_71_ZeroShot,8.0,2.0,3.0,0.05,False
+s18,Q2,Exp_71_ZeroShot,6.0,2.0,2.0,0.05,False
+s18,Q3,Exp_71_ZeroShot,3.0,2.0,2.0,0.45,True
+s18,Q4,Exp_71_ZeroShot,3.0,1.0,1.0,0.05,False
+s2,Q1,Exp_71_ZeroShot,8.0,8.0,8.0,0.05,False
+s2,Q2,Exp_71_ZeroShot,6.0,6.0,6.0,0.05,False
+s2,Q3,Exp_71_ZeroShot,3.0,3.0,3.0,0.45,True
+s2,Q4,Exp_71_ZeroShot,3.0,3.0,3.0,0.05,False

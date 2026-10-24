@@ -1,0 +1,479 @@
+"""
+backend/pipeline.py -- orchestrates every step; app.py only calls this module.
+
+Data written by this module
+  data/student_answers/<id>.json   FOLDER 1  {"roll_number", "answers": {"1a": "...", ... "4": "..."}}
+  data/teacher_marks/<id>.json     FOLDER 2  {"roll_number", "marks":   {"1": 7, "2": 5, "3": 2, "4": 3}}
+  data/predictions/<run>/<id>.json model predictions for TEST papers
+"""
+import csv
+import json
+import os
+import shutil
+import threading
+import time
+import traceback
+
+import config
+from backend import database as db
+from backend import demo_data, exam_parser
+from backend import exam_schema as es
+from backend import finetune, grader, hf_infer, ocr_engine, ollama_client, rubric_builder
+from backend import sampling, sheet_io, sheet_parser
+
+
+class JobBusy(RuntimeError):
+    pass
+
+
+# ---------------------------------------------------------------------------
+# background jobs
+# ---------------------------------------------------------------------------
+_guard = threading.Lock()
+_running = {"name": None}
+
+
+def _set_progress(job, state, done=0, total=0, message=""):
+    db.set_state("progress", json.dumps({"job": job, "state": state, "done": done, "total": total,
+                                         "message": message, "t": time.time()}))
+
+
+def get_progress():
+    raw = db.get_state("progress")
+    p = json.loads(raw) if raw else {"job": None, "state": "idle", "done": 0, "total": 0, "message": ""}
+    if p["state"] == "running" and _running["name"] is None:
+        p["state"] = "error"
+        p["message"] = "The app was restarted while this job was running."
+    return p
+
+
+def start_job(name, fn, *args):
+    with _guard:
+        if _running["name"]:
+            raise JobBusy(f"Another job is still running ({_running['name']}). Wait for it to finish.")
+        _running["name"] = name
+    _set_progress(name, "running", 0, 0, "Starting...")
+
+    def runner():
+        try:
+            fn(*args)
+        except Exception as e:  # shown in the UI, full trace in the console
+            traceback.print_exc()
+            _set_progress(name, "error", 0, 0, f"{type(e).__name__}: {e}")
+        finally:
+            _running["name"] = None
+
+    threading.Thread(target=runner, daemon=True).start()
+
+
+# ---------------------------------------------------------------------------
+# folder 1 / folder 2 helpers
+# ---------------------------------------------------------------------------
+def _write_json(path, obj):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
+
+
+def _read_json(path):
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_answers(roll, answers):
+    _write_json(os.path.join(config.STUDENT_ANSWERS_DIR, f"{roll}.json"),
+                {"roll_number": roll, "answers": answers})
+
+
+def write_marks(roll, marks):
+    _write_json(os.path.join(config.TEACHER_MARKS_DIR, f"{roll}.json"),
+                {"roll_number": roll, "marks": marks})
+
+
+def read_answers(roll):
+    d = _read_json(os.path.join(config.STUDENT_ANSWERS_DIR, f"{roll}.json"))
+    return d["answers"] if d else None
+
+
+def read_marks(roll):
+    d = _read_json(os.path.join(config.TEACHER_MARKS_DIR, f"{roll}.json"))
+    return d["marks"] if d else None
+
+
+# ---------------------------------------------------------------------------
+# step 1: exam setup (question paper + model answer key)
+# ---------------------------------------------------------------------------
+def exam_source_files(kind):
+    d = os.path.join(config.EXAM_SOURCE_DIR, kind)
+    if not os.path.isdir(d):
+        return []
+    return [os.path.join(d, f) for f in sorted(os.listdir(d), key=sheet_io.natural_key)]
+
+
+def save_exam_upload(kind, file_storages):
+    from werkzeug.utils import secure_filename
+    if kind not in ("question_paper", "model_answer"):
+        raise ValueError("kind must be question_paper or model_answer")
+    d = os.path.join(config.EXAM_SOURCE_DIR, kind)
+    shutil.rmtree(d, ignore_errors=True)
+    os.makedirs(d)
+    names = []
+    for fs in file_storages:
+        if not fs or not fs.filename:
+            continue
+        name = secure_filename(fs.filename) or f"file{len(names)}"
+        fs.save(os.path.join(d, name))
+        names.append(name)
+    return names
+
+
+def use_exam_paths(kind, paths):
+    """Register files that already exist on this machine (instead of uploading)."""
+    d = os.path.join(config.EXAM_SOURCE_DIR, kind)
+    shutil.rmtree(d, ignore_errors=True)
+    os.makedirs(d)
+    names = []
+    for p in paths:
+        if not os.path.isfile(p):
+            raise ValueError(f"File not found: {p}")
+        shutil.copy(p, os.path.join(d, os.path.basename(p)))
+        names.append(os.path.basename(p))
+    return names
+
+
+def job_parse_exam(force_ocr=False):
+    paper, key = exam_source_files("question_paper"), exam_source_files("model_answer")
+    if not paper:
+        raise ValueError("Upload the question paper first.")
+    _set_progress("exam", "running", 0, 2, "Reading question paper...")
+    draft = exam_parser.build_exam_draft(paper, key, force_ocr=force_ocr)
+    _write_json(config.EXAM_DRAFT_JSON, draft)
+    _set_progress("exam", "done", 2, 2,
+                  f"Parsed {len(draft['questions'])} questions "
+                  f"({draft['source']['question_paper']}). Review it below, then approve.")
+
+
+def load_draft():
+    return _read_json(config.EXAM_DRAFT_JSON)
+
+
+def approve_exam(exam):
+    exam = es.normalize_exam(exam)
+    problems = es.validate_exam(exam)
+    exam["warnings"] = problems
+    exam = es.save_exam(exam)
+    _write_json(config.EXAM_DRAFT_JSON, exam)      # the editor always reopens the latest version
+    return exam
+
+
+def load_sample_exam():
+    """One-click: use the sample LLM mid-sem paper + key that ships in examples/."""
+    base = os.path.join(config.BASE_DIR, "examples")
+    use_exam_paths("question_paper", [os.path.join(base, "question_paper.pdf")])
+    use_exam_paths("model_answer", [os.path.join(base, "model_answer.pdf")])
+
+
+# ---------------------------------------------------------------------------
+# step 2: answer sheets -> folder 1 + folder 2
+# ---------------------------------------------------------------------------
+def job_process_sheets(folder, split_ink, ink):
+    exam = es.load_exam()
+    units = sheet_io.collect_units(folder)
+    if not units:
+        raise ValueError(f"No PDFs, images or student sub-folders found in {folder}")
+    total = len(units)
+    ok = failed = 0
+    for i, unit in enumerate(units, start=1):
+        roll = unit["roll"]
+        _set_progress("sheets", "running", i - 1, total, f"OCR {roll} ({i}/{total})")
+        try:
+            pages = sheet_io.load_pages(unit)
+            sheet_io.save_page_images(roll, pages)
+            ocr = ocr_engine.ocr_pages(pages, split_ink=split_ink, ink=ink)
+            parsed = sheet_parser.parse_student(exam, ocr)
+            final = roll
+            if config.ROLL_SOURCE == "ocr" and parsed["roll_hint"]:
+                final = parsed["roll_hint"]
+            write_answers(final, parsed["answers"])
+            write_marks(final, parsed["marks"])
+            db.upsert_student(final, source_path=os.path.dirname(unit["files"][0]), n_pages=len(pages),
+                              ocr_status="ocr_done", split="unassigned", verified=0, flags=parsed["flags"])
+            ok += 1
+        except ocr_engine.OCRUnavailable:
+            raise
+        except Exception as e:
+            traceback.print_exc()
+            db.upsert_student(roll, ocr_status="ocr_failed", flags=[f"ocr_failed: {type(e).__name__}: {e}"])
+            failed += 1
+    _set_progress("sheets", "done", total, total, f"Done: {ok} students read, {failed} failed.")
+
+
+def job_demo_students(n):
+    exam = es.load_exam()
+    for rec in demo_data.make_students(exam, n):
+        write_answers(rec["roll"], rec["answers"])
+        write_marks(rec["roll"], rec["marks"])
+        db.upsert_student(rec["roll"], ocr_status="ocr_done", split="unassigned", verified=0,
+                          flags=rec["flags"], n_pages=0)
+    _set_progress("sheets", "done", n, n, f"[DEMO] created {n} synthetic students.")
+
+
+def import_marks_csv(path):
+    """CSV fallback for the teacher's marks.
+    Long format: roll_number,question_no,marks    Wide format: roll_number,1,2,3,4"""
+    exam = es.load_exam()
+    qids = es.question_ids(exam)
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    if not rows:
+        return 0
+    by_roll = {}
+    if "question_no" in rows[0]:
+        for r in rows:
+            by_roll.setdefault(r["roll_number"].strip(), {})[str(r["question_no"]).strip()] = r["marks"]
+    else:
+        for r in rows:
+            by_roll[r["roll_number"].strip()] = {q: r.get(q) for q in qids if r.get(q) not in (None, "")}
+    n = 0
+    for roll, vals in by_roll.items():
+        if db.get_student(roll) is None:
+            continue
+        marks = read_marks(roll) or {q: None for q in qids}
+        for q, v in vals.items():
+            if q in marks and str(v).strip() != "":
+                marks[q] = float(v)
+                n += 1
+        write_marks(roll, marks)
+    return n
+
+
+# ---------------------------------------------------------------------------
+# step 3: AI selection + verification
+# ---------------------------------------------------------------------------
+def select_training_set(k):
+    exam = es.load_exam()
+    studs = [s for s in db.list_students() if s["ocr_status"] == "ocr_done"]
+    answers = {s["roll_number"]: read_answers(s["roll_number"]) or {} for s in studs}
+    flags = {s["roll_number"]: s["flags"] for s in studs}
+    if len(studs) < 2:
+        raise ValueError("Need at least 2 students with OCR results.")
+    selected, details, chart, used = sampling.select_training_papers(exam, answers, flags, k)
+    for s in studs:
+        db.upsert_student(s["roll_number"], split="train" if s["roll_number"] in selected else "test")
+    state = {"selected": selected, "details": details, "chart": chart, "similarity": used,
+             "k": len(selected), "t": time.time()}
+    db.set_state("selection", json.dumps(state))
+    return state
+
+
+def get_selection():
+    raw = db.get_state("selection")
+    return json.loads(raw) if raw else None
+
+
+def student_view(roll):
+    s = db.get_student(roll)
+    if s is None:
+        return None
+    return {"student": s, "answers": read_answers(roll) or {}, "marks": read_marks(roll) or {},
+            "n_pages": sheet_io.count_saved_pages(roll)}
+
+
+def save_verification(roll, answers, marks):
+    exam = es.load_exam()
+    ids = set(es.answer_ids(exam))
+    clean_a = {aid: str(answers.get(aid, "") or "").strip() for aid in es.answer_ids(exam)}
+    for aid in answers:
+        if aid not in ids:
+            raise ValueError(f"Unknown answer id '{aid}'")
+    clean_m = {}
+    for q in exam["questions"]:
+        v = marks.get(q["id"])
+        if v in (None, ""):
+            clean_m[q["id"]] = None
+            continue
+        v = float(v)
+        if v < 0 or (q["max_marks"] is not None and v > q["max_marks"]):
+            raise ValueError(f"Marks for Q{q['id']} must be between 0 and {q['max_marks']}")
+        clean_m[q["id"]] = int(v) if v == int(v) else v
+    write_answers(roll, clean_a)
+    write_marks(roll, clean_m)
+    db.upsert_student(roll, verified=1)
+    return clean_a, clean_m
+
+
+def load_train_data():
+    out = []
+    for s in db.list_students(split="train"):
+        a, m = read_answers(s["roll_number"]), read_marks(s["roll_number"])
+        if a is None or m is None or all(v is None for v in m.values()):
+            continue
+        out.append({"roll": s["roll_number"], "answers": a, "marks": m, "verified": bool(s["verified"])})
+    return out
+
+
+# ---------------------------------------------------------------------------
+# step 4: rubric, fine-tune, evaluate
+# ---------------------------------------------------------------------------
+def job_build_rubrics():
+    exam = es.load_exam()
+    train = load_train_data()
+    if not train:
+        raise ValueError("No labelled training papers yet - run the AI selection and make sure the "
+                         "selected papers have marks (folder 2).")
+    rubric_builder.build_all(exam, train, progress=lambda d, t, m: _set_progress("rubric", "running", d, t, m))
+    _set_progress("rubric", "done", 1, 1, f"Rubrics built from {len(train)} training papers.")
+
+
+def job_finetune():
+    exam = es.load_exam()
+    train = load_train_data()
+    rubrics = rubric_builder.load_all(exam)
+    examples = finetune.build_training_examples(exam, train, rubrics)
+    finetune.save_training_set(examples)
+    _set_progress("finetune", "running", 0, 1, f"{len(examples)} training examples from {len(train)} papers")
+    finetune.run_finetune(examples, use_rubric=bool(rubrics),
+                          progress=lambda m, d, t: _set_progress("finetune", "running", d, t, m))
+    _set_progress("finetune", "done", 1, 1, "Fine-tuning finished. You can now evaluate with hf:finetuned.")
+
+
+def job_evaluate(spec):
+    exam = es.load_exam()
+    engine = grader.make_engine(spec)
+    rubrics = rubric_builder.load_all(exam)
+    tag = grader.run_tag(spec)
+    out_dir = os.path.join(config.PREDICTIONS_DIR, tag)
+    shutil.rmtree(out_dir, ignore_errors=True)
+    os.makedirs(out_dir)
+    tests = db.list_students(split="test")
+    if not tests:
+        raise ValueError("No test papers - run the AI selection first.")
+    total = len(tests)
+    for i, s in enumerate(tests, start=1):
+        roll = s["roll_number"]
+        answers = read_answers(roll)               # <- folder 1 ONLY: marks are never passed to the model
+        preds = grader.grade_paper(exam, answers, rubrics, engine)
+        _write_json(os.path.join(out_dir, f"{roll}.json"), {"roll_number": roll, "engine": spec,
+                                                            "predictions": preds})
+        _set_progress("evaluate", "running", i, total, f"Graded {roll} ({i}/{total})")
+    _write_json(os.path.join(out_dir, "_meta.json"), {"engine": spec, "tag": tag, "n_papers": total,
+                                                       "used_rubric": engine.use_rubric, "t": time.time()})
+    _set_progress("evaluate", "done", total, total, f"Evaluation '{tag}' complete.")
+
+
+# ---------------------------------------------------------------------------
+# results
+# ---------------------------------------------------------------------------
+def list_runs():
+    runs = []
+    if os.path.isdir(config.PREDICTIONS_DIR):
+        for tag in sorted(os.listdir(config.PREDICTIONS_DIR)):
+            meta = _read_json(os.path.join(config.PREDICTIONS_DIR, tag, "_meta.json"))
+            if meta:
+                runs.append(meta)
+    return runs
+
+
+def _pearson(xs, ys):
+    n = len(xs)
+    if n < 3:
+        return None
+    mx, my = sum(xs) / n, sum(ys) / n
+    sx = sum((x - mx) ** 2 for x in xs) ** 0.5
+    sy = sum((y - my) ** 2 for y in ys) ** 0.5
+    if sx == 0 or sy == 0:
+        return None
+    return sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / (sx * sy)
+
+
+def compute_results(tag):
+    exam = es.load_exam()
+    run_dir = os.path.join(config.PREDICTIONS_DIR, tag)
+    rows, totals, unparsed = [], [], 0
+    for s in db.list_students(split="test"):
+        roll = s["roll_number"]
+        pred = _read_json(os.path.join(run_dir, f"{roll}.json"))
+        actual = read_marks(roll)
+        if not pred or actual is None:
+            continue
+        p_tot, a_tot, complete = 0.0, 0.0, True
+        for q in exam["questions"]:
+            pm = pred["predictions"].get(q["id"], {}).get("marks")
+            am = actual.get(q["id"])
+            if pm is None:
+                unparsed += 1
+            if pm is None or am is None:
+                complete = False
+                continue
+            rows.append({"roll": roll, "qid": q["id"], "predicted": pm, "actual": am,
+                         "error": round(pm - am, 2), "abs_error": round(abs(pm - am), 2),
+                         "max": q["max_marks"],
+                         "rationale": pred["predictions"][q["id"]].get("rationale", "")})
+            p_tot += pm
+            a_tot += am
+        if complete:
+            totals.append({"roll": roll, "predicted": p_tot, "actual": a_tot, "error": round(p_tot - a_tot, 2)})
+    metrics = {"n": len(rows), "unparsed": unparsed}
+    if rows:
+        errs = [r["error"] for r in rows]
+        ab = [abs(e) for e in errs]
+        pct = [r["abs_error"] / r["max"] for r in rows if r["max"]]
+        metrics.update({
+            "mae": round(sum(ab) / len(ab), 3),
+            "mae_pct_of_max": round(100 * sum(pct) / len(pct), 1) if pct else None,
+            "rmse": round((sum(e * e for e in errs) / len(errs)) ** 0.5, 3),
+            "bias": round(sum(errs) / len(errs), 3),
+            "exact": round(100 * sum(1 for a in ab if a <= 0.25) / len(ab), 1),
+            "within_half": round(100 * sum(1 for a in ab if a <= 0.5) / len(ab), 1),
+            "within_one": round(100 * sum(1 for a in ab if a <= 1.0) / len(ab), 1),
+        })
+        per_q = {}
+        for q in exam["questions"]:
+            qr = [r for r in rows if r["qid"] == q["id"]]
+            if qr:
+                per_q[q["id"]] = {"n": len(qr), "max": q["max_marks"],
+                                  "mae": round(sum(r["abs_error"] for r in qr) / len(qr), 3),
+                                  "bias": round(sum(r["error"] for r in qr) / len(qr), 3)}
+        metrics["per_question"] = per_q
+    if totals:
+        metrics["total_mae"] = round(sum(abs(t["error"]) for t in totals) / len(totals), 2)
+        metrics["total_corr"] = _pearson([t["predicted"] for t in totals], [t["actual"] for t in totals])
+        metrics["total_max"] = es.total_marks(exam)
+        metrics["n_papers"] = len(totals)
+    return {"rows": rows, "totals": totals, "metrics": metrics}
+
+
+# ---------------------------------------------------------------------------
+# dashboard
+# ---------------------------------------------------------------------------
+def overview():
+    exam = es.load_exam()
+    c = db.counts()
+    sel = get_selection()
+    rub = rubric_builder.load_all(exam) if exam else {}
+    return {
+        "exam": {"ready": exam is not None,
+                 "questions": len(exam["questions"]) if exam else 0,
+                 "total_marks": es.total_marks(exam) if exam else 0,
+                 "warnings": (len(exam.get("warnings", [])) + len(exam.get("read_warnings", []))) if exam else 0},
+        "sheets": c,
+        "selection": bool(sel),
+        "rubrics": len(rub),
+        "adapter": hf_infer.adapter_ready(),
+        "runs": list_runs(),
+    }
+
+
+def runtime_status():
+    return {
+        "mode": config.RUNTIME_MODE,
+        "demo": config.DEMO_MODE,
+        "paddleocr": ocr_engine.paddleocr_available(),
+        "ocr_engine": ocr_engine.engine_description(),
+        "ollama": ollama_client.ollama_available(),
+        "ml_stack": hf_infer.stack_available(),
+        "adapter": hf_infer.adapter_ready(),
+    }

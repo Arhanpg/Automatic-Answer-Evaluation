@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+catboost_info/
+
+# Virtual environments
+venv/
+.venv/
+.venv*/
+env/
+ENV/
+
+# Sensitive raw student scans and private identifiers
+data/raw/
+*.pdf
+!examples/*.pdf
+!examples/question_paper.pdf
+!examples/model_answer.pdf
+s[0-9]*.pdf
+s[0-9]*[0-9].pdf
+IMG_*.jpg
+IMG_*.jpeg
+IMG_*.png
+
+# Dynamic data directory runs (keep directory structure with .gitkeep)
+data/exam/source/*/
+data/student_answers/*
+data/teacher_marks/*
+data/pages/*
+data/predictions/*
+data/models/*
+data/db/*
+!data/**/.gitkeep
+*.sqlite3
+
+# Explicitly ensure all evaluation reports, outputs, and schemas are tracked
+!outputs/
+!outputs/**
+!experiments/
+!experiments/**
+!schemas/
+!schemas/**
+!data/ground_truth/
+!data/ground_truth/**

@@ -1,0 +1,107 @@
+{
+  "institute": "Indian Institute of Information Technology Dharwad",
+  "questions": [
+    {
+      "id": "1",
+      "max_marks": 8,
+      "model_answer": "",
+      "parts": [
+        {
+          "id": "a",
+          "marks": 2,
+          "model_answer": "The key limitation is its fixed, limited context window, which prevents it from\ncapturing long-range dependencies in text.",
+          "text": "What is the key limitation of traditional n-gram language models?"
+        },
+        {
+          "id": "b",
+          "marks": 2,
+          "model_answer": "To provide word-order/positional information, since self-attention alone does not\ninherently encode the sequence order of tokens.",
+          "text": "Why is positional encoding required in transformers?"
+        },
+        {
+          "id": "c",
+          "marks": 2,
+          "model_answer": "Encoder-only models use bidirectional attention to understand input context,\nmainly for tasks like classification and representation learning; decoder-only models use\ncausal (left-to-right) attention to predict the next token, mainly for text generation.",
+          "text": "What is the difference between encoder-only and decoder-only architectures?"
+        },
+        {
+          "id": "d",
+          "marks": 2,
+          "model_answer": "Masked attention prevents a token from attending to future tokens, ensuring\ncausal, left-to-right prediction. It is used in GPT-like models to prevent information\nleakage during next-token prediction.",
+          "text": "What is masked attention and why is it used in GPT-like models?"
+        }
+      ],
+      "stem": "Answer the following questions in brief:"
+    },
+    {
+      "id": "2",
+      "max_marks": 6,
+      "model_answer": "",
+      "parts": [
+        {
+          "id": "a",
+          "marks": 2,
+          "model_answer": "Q · K1 = (1×1) + (0×1) = 1\nQ · K2 = (1×0) + (0×1) = 0\nAttention scores = [1, 0]",
+          "text": "Compute attention scores using dot product (Q·K)"
+        },
+        {
+          "id": "b",
+          "marks": 2,
+          "model_answer": "Softmax([1, 0]) = [0.731, 0.269]",
+          "text": "Apply softmax to obtain attention weights (approximate)"
+        },
+        {
+          "id": "c",
+          "marks": 2,
+          "model_answer": "Final output = (0.731 × [2, 0]) + (0.269 × [0, 3]) = [1.462, 0.807]",
+          "text": "Compute the final output vector."
+        }
+      ],
+      "stem": "Given the following:\nQuery (Q) = [1, 0]\nKey (K1) = [1, 1], Key (K2) = [0, 1]\nValue (V1) = [2, 0], Value (V2) = [0, 3]"
+    },
+    {
+      "id": "3",
+      "max_marks": 3,
+      "model_answer": "",
+      "parts": [
+        {
+          "id": "a",
+          "marks": 1,
+          "model_answer": "Word A, because it has the highest probability (0.4).",
+          "text": "What word is selected using greedy decoding?"
+        },
+        {
+          "id": "b",
+          "marks": 1,
+          "model_answer": "Word A (0.4) and Word B (0.3).",
+          "text": "If top-k (k=2) is used, which words are considered?"
+        },
+        {
+          "id": "c",
+          "marks": 1,
+          "model_answer": "Top-k selects a fixed number (k) of highest-probability tokens, whereas top-p\n(nucleus sampling) selects the smallest set of tokens whose cumulative probability\nreaches p.",
+          "text": "Why is layer normalization applied twice in each transformer block?"
+        }
+      ],
+      "stem": "Consider a language model predicting next-word probabilities:\nWord A: 0.4\nWord B: 0.3\nWord C: 0.2\nWord D: 0.1"
+    },
+    {
+      "id": "4",
+      "max_marks": 3,
+      "model_answer": "With <S> and </S>:\nTraining corpus:\n● <S> I like NLP </S>\n● <S> I like AI </S>\n● <S> I love NLP </S>\nVocabulary size\n: {<S>, </S>, I, like, love, NLP, AI, ML}\n𝑉= 8\nUsing Add-1 smoothing:\n𝑃(𝐼| < 𝑆>) =\n3+8 =\n4\n11\n𝑃(𝑙𝑖𝑘𝑒|𝐼) =\n3+8 =\n3\n11\n𝑃(𝑀𝐿|𝑙𝑖𝑘𝑒) =\n2+8 =\n1\n10\n𝑃(< /𝑆> |𝑀𝐿) =\n8\nTherefore,\n𝑃(𝐼𝑙𝑖𝑘𝑒𝑀𝐿) =\n4\n11 ×\n3\n11 ×\n1\n10 × 1\n8\nP(“I like ML”)=3/2420 = 0.00124",
+      "parts": [],
+      "stem": "For a training corpus: “I like NLP,” “I like AI,” “I love NLP,” use a bigram language\nmodel and Add-1 (Laplace) smoothing to:\nUsing Add-1 smoothing, compute probability for: “I like ML.”\nAdd <S> and </S> tokens."
+    }
+  ],
+  "read_warnings": [
+    "Q3(c): the key's question text (\"Briefly explain how top-p differs from top-k.\") does not match the question paper (\"Why is layer normalization applied twice in each transformer block?\"). The answer stored is the one written under the key's version - please check it answers the paper's question."
+  ],
+  "rules": "No marks will be awarded if all parts of a question are not answered together",
+  "source": {
+    "model_answer": "text_layer",
+    "question_paper": "text_layer"
+  },
+  "title": "Large Language Models — Mid Semester Examination, Date: September 19, 2026",
+  "total_marks": 20,
+  "warnings": []
+}

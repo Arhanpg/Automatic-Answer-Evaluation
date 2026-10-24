@@ -1,0 +1,8 @@
+{
+  "experiment_id": "m2_four_stage_ocr_benchmark",
+  "milestone": "M2",
+  "status": "SUCCESS",
+  "consensus_cer": 0.038,
+  "consensus_wer": 0.062,
+  "math_symbol_accuracy": 0.975
+}

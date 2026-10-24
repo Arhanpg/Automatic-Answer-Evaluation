@@ -1,0 +1,154 @@
+{
+  "total_responses_evaluated": 24,
+  "total_flagged_for_review": 5,
+  "automation_rate_pct": 79.17,
+  "routing_thresholds": {
+    "min_ocr_confidence": 0.85,
+    "max_levenshtein_distance": 0.25,
+    "max_conformal_width": 2.0,
+    "max_ensemble_variance": 1.0
+  },
+  "coverage_accuracy_tradeoff": [
+    {
+      "coverage_pct": 100,
+      "deferred_to_human_count": 0,
+      "automated_count": 24,
+      "mae": 0.1042,
+      "rmse": 0.1614,
+      "qwk": 0.9922,
+      "exact_match_acc": 0.75,
+      "within_1_mark_acc": 1.0
+    },
+    {
+      "coverage_pct": 90,
+      "deferred_to_human_count": 2,
+      "automated_count": 22,
+      "mae": 0.1023,
+      "rmse": 0.1599,
+      "qwk": 0.9938,
+      "exact_match_acc": 0.7727,
+      "within_1_mark_acc": 1.0
+    },
+    {
+      "coverage_pct": 80,
+      "deferred_to_human_count": 5,
+      "automated_count": 19,
+      "mae": 0.1053,
+      "rmse": 0.1622,
+      "qwk": 0.9951,
+      "exact_match_acc": 0.7895,
+      "within_1_mark_acc": 1.0
+    },
+    {
+      "coverage_pct": 70,
+      "deferred_to_human_count": 7,
+      "automated_count": 17,
+      "mae": 0.1029,
+      "rmse": 0.1604,
+      "qwk": 0.9943,
+      "exact_match_acc": 0.7647,
+      "within_1_mark_acc": 1.0
+    }
+  ],
+  "review_queue": [
+    {
+      "response_id": "s14_Q1",
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "predicted_mark": 6.0,
+      "conformal_interval": [
+        5.5,
+        6.5
+      ],
+      "interval_width": 1.0,
+      "ocr_confidence": 0.832,
+      "levenshtein_discrepancy": 0.343,
+      "ensemble_variance": 0.0,
+      "flagged_reasons": [
+        "Low OCR confidence (0.83 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.34 > 0.25)"
+      ],
+      "recommended_action": "Senior Examiner Verification"
+    },
+    {
+      "response_id": "s14_Q2",
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "predicted_mark": 4.75,
+      "conformal_interval": [
+        4.25,
+        5.25
+      ],
+      "interval_width": 1.0,
+      "ocr_confidence": 0.767,
+      "levenshtein_discrepancy": 0.316,
+      "ensemble_variance": 0.042,
+      "flagged_reasons": [
+        "Low OCR confidence (0.77 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
+      ],
+      "recommended_action": "Senior Examiner Verification"
+    },
+    {
+      "response_id": "s14_Q3",
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "predicted_mark": 2.0,
+      "conformal_interval": [
+        1.5,
+        2.5
+      ],
+      "interval_width": 1.0,
+      "ocr_confidence": 0.809,
+      "levenshtein_discrepancy": 0.349,
+      "ensemble_variance": 0.056,
+      "flagged_reasons": [
+        "Low OCR confidence (0.81 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.35 > 0.25)"
+      ],
+      "recommended_action": "Senior Examiner Verification"
+    },
+    {
+      "response_id": "s14_Q4",
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "predicted_mark": 2.5,
+      "conformal_interval": [
+        2.0,
+        3.0
+      ],
+      "interval_width": 1.0,
+      "ocr_confidence": 0.829,
+      "levenshtein_discrepancy": 0.35,
+      "ensemble_variance": 0.0,
+      "flagged_reasons": [
+        "Low OCR confidence (0.83 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.35 > 0.25)"
+      ],
+      "recommended_action": "Senior Examiner Verification"
+    },
+    {
+      "response_id": "s29_Q3",
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "predicted_mark": 2.0,
+      "conformal_interval": [
+        1.5,
+        2.5
+      ],
+      "interval_width": 1.0,
+      "ocr_confidence": 0.96,
+      "levenshtein_discrepancy": 0.069,
+      "ensemble_variance": 0.014,
+      "flagged_reasons": [
+        "Conceptual contradiction detected against rubric ground truth"
+      ],
+      "recommended_action": "Senior Examiner Verification"
+    }
+  ]
+}

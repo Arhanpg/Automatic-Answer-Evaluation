@@ -1,0 +1,247 @@
+{
+  "exam_id": "iiit_dharwad_llm_midsem_2026",
+  "title": "7th Semester B.Tech Mid-Semester Examination in Large Language Models",
+  "course_code": "DS317 / DS342",
+  "institution": "Indian Institute of Information Technology Dharwad (IIIT Dharwad)",
+  "date": "2026-09-19",
+  "total_marks": 20.0,
+  "rules": [
+    "No marks will be awarded if all parts of a question are not answered together.",
+    "Calculators and mathematical derivations must show intermediate steps.",
+    "Questions are evaluated according to the reconciled criterion rubric."
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question_id": "1",
+      "max_marks": 8.0,
+      "text": "Answer the following foundational LLM architectural and modeling questions (4 x 2 = 8 marks):",
+      "parts": [
+        {
+          "id": "a",
+          "part_id": "1a",
+          "max_marks": 2.0,
+          "question": "What is the key limitation of traditional n-gram language models?",
+          "model_answer": "Traditional n-gram language models suffer from a fixed, limited context window governed by the n-1 Markov assumption and severe data sparsity / parameter explosion on unseen word combinations.",
+          "criteria": [
+            {
+              "id": "Q1a_c1",
+              "description": "Identifies fixed/limited context window or n-1 Markov assumption limitation.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q1a_c2",
+              "description": "Identifies inability to capture long-range dependencies, data sparsity, or unseen n-gram explosion.",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "part_id": "1b",
+          "max_marks": 2.0,
+          "question": "Why is positional encoding required in transformers?",
+          "model_answer": "Because transformer self-attention processes all tokens in parallel without inherent sequential recurrence or convolutional inductive bias (it is permutation-invariant), positional encodings must be injected to preserve word order semantics.",
+          "criteria": [
+            {
+              "id": "Q1b_c1",
+              "description": "Explains that parallel processing / self-attention is permutation-invariant with no inherent word order.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q1b_c2",
+              "description": "Explains the injection of sequence order/position semantics (sinusoidal formulation or word-order examples).",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "part_id": "1c",
+          "max_marks": 2.0,
+          "question": "What is the difference between encoder-only and decoder-only architectures?",
+          "model_answer": "Encoder-only architectures (e.g., BERT) employ bidirectional self-attention to construct contextual representations for classification/tagging, whereas decoder-only architectures (e.g., GPT) employ causal (autoregressive, left-to-right) masked attention for next-token generation.",
+          "criteria": [
+            {
+              "id": "Q1c_c1",
+              "description": "Defines encoder-only architectures as bidirectional contextual representations (e.g. BERT).",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q1c_c2",
+              "description": "Defines decoder-only architectures as causal/autoregressive left-to-right generators (e.g. GPT).",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "part_id": "1d",
+          "max_marks": 2.0,
+          "question": "What is masked attention and why is it used in GPT-like models?",
+          "model_answer": "Masked attention applies an upper-triangular mask (setting subsequent positions to -infinity before softmax) to prevent each token from attending to future tokens, ensuring the causal autoregressive property during next-token prediction.",
+          "criteria": [
+            {
+              "id": "Q1d_c1",
+              "description": "Explains masking future tokens using an upper-triangular mask matrix M.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q1d_c2",
+              "description": "Explains preventing information leakage / maintaining causal autoregressive generation.",
+              "max_marks": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question_id": "2",
+      "max_marks": 6.0,
+      "text": "Given Query Q = [1, 0], Keys K1 = [1, 1], K2 = [0, 1], and Values V1 = [2, 0], V2 = [0, 3], compute scaled dot-product attention components:",
+      "parts": [
+        {
+          "id": "a",
+          "part_id": "2a",
+          "max_marks": 2.0,
+          "question": "Compute the dot-product attention scores for K1 and K2.",
+          "model_answer": "Attention scores: Q . K1 = [1, 0] . [1, 1] = 1*1 + 0*1 = 1; Q . K2 = [1, 0] . [0, 1] = 1*0 + 0*1 = 0. Scores = [1, 0].",
+          "criteria": [
+            {
+              "id": "Q2a_c1",
+              "description": "Correct computation of Q . K1 = 1.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q2a_c2",
+              "description": "Correct computation of Q . K2 = 0, yielding score vector [1, 0].",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "part_id": "2b",
+          "max_marks": 2.0,
+          "question": "Compute the softmax attention weights over the scores.",
+          "model_answer": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [e / (e + 1), 1 / (e + 1)] = [2.718 / 3.718, 1 / 3.718] ≈ [0.731, 0.269] (accept [0.73, 0.27]).",
+          "criteria": [
+            {
+              "id": "Q2b_c1",
+              "description": "Correct formulation of softmax exponentials exp(1)/(exp(1)+exp(0)).",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q2b_c2",
+              "description": "Correct numerical evaluation [0.731, 0.269] or rounded [0.73, 0.27].",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "part_id": "2c",
+          "max_marks": 2.0,
+          "question": "Compute the final context output vector.",
+          "model_answer": "Output = 0.731 * V1 + 0.269 * V2 = 0.731 * [2, 0] + 0.269 * [0, 3] = [1.462, 0] + [0, 0.807] = [1.462, 0.807] (accept [1.46, 0.81]).",
+          "criteria": [
+            {
+              "id": "Q2c_c1",
+              "description": "Correct weighted linear combination of value vectors V1 and V2.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q2c_c2",
+              "description": "Correct final vector [1.462, 0.807] or rounded [1.46, 0.81].",
+              "max_marks": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question_id": "3",
+      "max_marks": 3.0,
+      "text": "Given next-token probability distribution: Word A: 0.4, Word B: 0.3, Word C: 0.2, Word D: 0.1:",
+      "parts": [
+        {
+          "id": "a",
+          "part_id": "3a",
+          "max_marks": 1.0,
+          "question": "Which word is chosen under greedy decoding?",
+          "model_answer": "Greedy decoding selects the word with the highest probability, which is Word A with probability 0.4.",
+          "criteria": [
+            {
+              "id": "Q3a_c1",
+              "description": "Selects Word A due to highest probability 0.4.",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "part_id": "3b",
+          "max_marks": 1.0,
+          "question": "Which words are candidate selections under top-k decoding with k = 2?",
+          "model_answer": "Top-k decoding with k=2 filters to the top 2 words: Word A (0.4) and Word B (0.3). (Under temperature 0, Word A is chosen; candidates are Word A and Word B). Selecting Word C or D is an error.",
+          "criteria": [
+            {
+              "id": "Q3b_c1",
+              "description": "Correctly selects Word A and Word B. Contradiction penalty if Word C/D selected.",
+              "max_marks": 1.0
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "part_id": "3c",
+          "max_marks": 1.0,
+          "question": "Why is layer normalization applied twice in each transformer block? (Dual-Valid Override: or explain top-p vs top-k)",
+          "model_answer": "Layer normalization is applied twice in each transformer block: once after the multi-head self-attention layer to stabilize attention activations, and once after the feed-forward network to stabilize intermediate representations and ensure consistent gradient flow across deep layers. (Alternatively, explaining top-p nucleus sampling vs top-k is also awarded full 1.0 mark due to solution key reconciliation).",
+          "dual_valid_override": true,
+          "criteria": [
+            {
+              "id": "Q3c_c1",
+              "description": "Accurately explains dual LayerNorm (post-attention & post-FFN gradient stabilization) OR top-p vs top-k distinction.",
+              "max_marks": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "question_id": "4",
+      "max_marks": 3.0,
+      "text": "Compute the probability of sentence '<S> I like ML </S>' using a bigram language model with Add-1 (Laplace) smoothing given training corpus '<S> I like NLP </S>', '<S> I like AI </S>', and '<S> I love NLP </S>':",
+      "parts": [
+        {
+          "id": "4",
+          "part_id": "4",
+          "max_marks": 3.0,
+          "question": "Compute P(<S> I like ML </S>) with Add-1 smoothing.",
+          "model_answer": "P(I|<S>) * P(like|I) * P(ML|like) * P(</S>|ML). With V=8 {<S>,</S>,I,like,love,NLP,AI,ML}: P = (3+1)/(3+8) * (2+1)/(3+8) * (0+1)/(2+8) * (0+1)/(0+8) = 4/11 * 3/11 * 1/10 * 1/8 = 12/9680 = 3/2420 ≈ 0.00124. (Valid alternative |V|=7 yields 0.000408 or 2/1050; valid prior P(<S>)=1/5 yields 3/12100).",
+          "criteria": [
+            {
+              "id": "Q4_c1",
+              "description": "Corpus boundary token augmentation (<S>, </S>) and bigram/unigram count extraction.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q4_c2",
+              "description": "Application of Laplace Add-1 smoothing formula (C(w_{i-1}, w_i) + 1)/(C(w_{i-1}) + |V|) under valid |V| in {6, 7, 8}.",
+              "max_marks": 1.0
+            },
+            {
+              "id": "Q4_c3",
+              "description": "Chain rule product yielding valid fraction/decimal: 3/2420 (~0.00124), 0.000408 or 2/1050, or 3/12100. (Partial 1.0 mark if student only sets up isolated conditional probability).",
+              "max_marks": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

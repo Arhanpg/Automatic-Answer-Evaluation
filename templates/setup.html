@@ -1,0 +1,116 @@
+{% extends "base.html" %}{% block title %}Exam setup - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>1. Exam setup</h1>
+<p class="subtitle">Upload the question paper and the model answer key. They are read first (the exact text of a digital PDF, or OCR for scans); the questions, sub-questions, marks and model answers then guide how the students' sheets are read and graded.</p></header>
+
+<section class="card"><h2>Upload</h2>
+<div class="flow">
+ <div><label class="small">QUESTION PAPER (PDF or page images)</label>
+  <input type="file" id="f-paper" multiple accept=".pdf,image/*">
+  <p class="hint tight">Current: <span id="cur-paper">{{ paper|join(', ') or 'none' }}</span></p>
+  <div class="row" style="margin-top:6px"><input type="text" id="path-paper" class="grow" placeholder="...or a file path on this computer"><button class="btn secondary" onclick="usePath('question_paper','path-paper')">Use path</button></div></div>
+ <div><label class="small">MODEL ANSWER KEY (PDF or page images)</label>
+  <input type="file" id="f-key" multiple accept=".pdf,image/*">
+  <p class="hint tight">Current: <span id="cur-key">{{ key|join(', ') or 'none' }}</span></p>
+  <div class="row" style="margin-top:6px"><input type="text" id="path-key" class="grow" placeholder="...or a file path on this computer"><button class="btn secondary" onclick="usePath('model_answer','path-key')">Use path</button></div></div>
+</div>
+<div class="row" style="margin-top:16px">
+  <button class="btn secondary" id="btn-upload" onclick="uploadFiles(this)">Upload selected files</button>
+  <button class="btn ghost" onclick="useSample(this)">Use the sample LLM mid-sem paper + key</button>
+  <span class="grow"></span>
+  <label class="hint tight"><input type="checkbox" id="force-ocr"> force OCR (ignore the PDF's text layer)</label>
+  <button class="btn primary" onclick="parseExam(this)">Read the documents</button>
+</div>
+<div class="progress" id="p-exam"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div>
+</section>
+
+<section class="card" id="editor-card" style="display:none"><h2>Review &amp; correct</h2>
+<p class="hint">Check what was read. Anything wrong (OCR slips, a marks value, a model answer) can be edited here - this approved version is what every later step uses.</p>
+<div id="editor"></div></section>
+{% endblock %}
+{% block scripts %}
+<script>
+let EXAM = null;
+const $ = id => document.getElementById(id);
+
+async function uploadFiles(btn) { await run(btn, async () => {
+  for (const [kind, inp, cur] of [['question_paper','f-paper','cur-paper'], ['model_answer','f-key','cur-key']]) {
+    const files = $(inp).files; if (!files.length) continue;
+    const fd = new FormData(); fd.append('kind', kind); for (const f of files) fd.append('files', f);
+    const r = await api('/api/exam/upload', fd); $(cur).textContent = r.files.join(', ');
+  }
+  alert('Uploaded. Now click "Read the documents".');
+});}
+async function usePath(kind, inp) {
+  try { const r = await api('/api/exam/use_path', {kind, paths: [$(inp).value]}); $(kind === 'question_paper' ? 'cur-paper' : 'cur-key').textContent = r.files.join(', '); }
+  catch (e) { alert(e.message); }
+}
+async function useSample(btn) { await run(btn, async () => {
+  await api('/api/exam/use_sample', {}); $('cur-paper').textContent = 'question_paper.pdf'; $('cur-key').textContent = 'model_answer.pdf';
+  await parseNow();
+});}
+async function parseNow() { await api('/api/exam/parse', {force_ocr: $('force-ocr').checked}); watchJob('exam', loadEditor); }
+async function parseExam(btn) { await run(btn, parseNow); }
+
+async function loadEditor() {
+  const d = await api('/api/exam/draft');
+  EXAM = d.draft || d.approved;
+  if (!EXAM) return;
+  $('editor-card').style.display = 'block'; render();
+}
+function setPath(path, value) {
+  const keys = path.split('.'); let o = EXAM;
+  for (let i = 0; i < keys.length - 1; i++) o = o[keys[i]];
+  o[keys[keys.length - 1]] = value;
+  updateSum();
+}
+function num(v) { return v === '' ? null : Number(v); }
+function field(label, path, value, type) {
+  return `<div><label class="small">${label}</label><input type="${type||'text'}" value="${esc(value)}" oninput="setPath('${path}', ${type==='number' ? 'num(this.value)' : 'this.value'})"></div>`;
+}
+function area(label, path, value, rows) {
+  return `<div><label class="small">${label}</label><textarea rows="${rows||2}" oninput="setPath('${path}', this.value)">${esc(value)}</textarea></div>`;
+}
+function render() {
+  let h = '<div class="row top">' + field('TITLE','title',EXAM.title).replace('<div>','<div class="grow">') +
+          field('INSTITUTE','institute',EXAM.institute).replace('<div>','<div class="grow">') +
+          field('FULL MARKS','total_marks',EXAM.total_marks ?? '', 'number') + '</div>';
+  h += '<div style="margin-top:8px">' + area('EXAM RULES (given to the grader)', 'rules', EXAM.rules, 2) + '</div>';
+  if ((EXAM.read_warnings || []).length) h += '<ul class="warn-list"><b>Found while reading the two documents - please check:</b>' + EXAM.read_warnings.map(w => `<li>${esc(w)}</li>`).join('') + '</ul>';
+  if ((EXAM.warnings || []).length) h += '<ul class="warn-list"><b>Still incomplete:</b>' + EXAM.warnings.map(w => `<li>${esc(w)}</li>`).join('') + '</ul>';
+  h += '<h3>Questions <span class="chip" id="sum"></span></h3>';
+  EXAM.questions.forEach((q, qi) => {
+    h += `<div class="qcard"><div class="qhead"><b>Question ${esc(q.id)}</b><span class="grow"></span>
+      <label class="small" style="margin:0">MAX MARKS</label><input type="number" step="0.5" style="width:84px" value="${q.max_marks ?? ''}" oninput="setPath('questions.${qi}.max_marks', num(this.value))">
+      <button class="btn danger" onclick="delQ(${qi})">Remove</button></div>`;
+    h += area('QUESTION TEXT / DATA', `questions.${qi}.stem`, q.stem, 2);
+    q.parts.forEach((p, pi) => {
+      h += `<div class="part"><div class="pid">${esc(p.id)}</div>
+        ${area('SUB-QUESTION', `questions.${qi}.parts.${pi}.text`, p.text, 2)}
+        ${field('MARKS', `questions.${qi}.parts.${pi}.marks`, p.marks ?? '', 'number')}
+        <button class="btn ghost" title="remove" onclick="delPart(${qi},${pi})" style="margin-top:20px;padding:6px 8px">x</button>
+        <div class="ans">${area('MODEL ANSWER', `questions.${qi}.parts.${pi}.model_answer`, p.model_answer, 3)}</div></div>`;
+    });
+    if (!q.parts.length) h += '<div style="margin-top:8px">' + area('MODEL ANSWER', `questions.${qi}.model_answer`, q.model_answer, 4) + '</div>';
+    h += `<button class="btn secondary" style="margin-top:6px" onclick="addPart(${qi})">+ sub-question</button></div>`;
+  });
+  h += '<div class="row"><button class="btn secondary" onclick="addQ()">+ Add question</button><span class="grow"></span><span class="ptext" id="save-msg"></span><button class="btn primary" onclick="approve(this)">Approve &amp; save exam</button></div>';
+  $('editor').innerHTML = h; updateSum();
+}
+function updateSum() {
+  const s = EXAM.questions.reduce((a, q) => a + (Number(q.max_marks) || 0), 0), el = $('sum');
+  if (el) { el.textContent = 'questions add up to ' + s + (EXAM.total_marks ? ' / ' + EXAM.total_marks : ''); el.className = 'chip ' + (EXAM.total_marks && s !== Number(EXAM.total_marks) ? 'warn' : 'good'); }
+}
+function renumber() { EXAM.questions.forEach((q, i) => { q.id = String(i + 1); q.parts.forEach((p, j) => p.id = String.fromCharCode(97 + j)); }); }
+function delQ(i) { if (confirm('Remove this question?')) { EXAM.questions.splice(i, 1); renumber(); render(); } }
+function delPart(i, j) { EXAM.questions[i].parts.splice(j, 1); renumber(); render(); }
+function addPart(i) { EXAM.questions[i].parts.push({id: '', text: '', marks: null, model_answer: ''}); renumber(); render(); }
+function addQ() { EXAM.questions.push({id: '', stem: '', max_marks: null, parts: [], model_answer: ''}); renumber(); render(); }
+async function approve(btn) { await run(btn, async () => {
+  const r = await api('/api/exam/approve', {exam: EXAM}); EXAM = r.exam; render();
+  $('save-msg').textContent = 'Saved. ' + (EXAM.warnings.length ? EXAM.warnings.length + ' item(s) still incomplete - see above.' : 'Nothing incomplete.') + ' Next: Answer sheets.';
+  $('save-msg').className = 'ptext ok';
+});}
+loadEditor(); resumeJob(['exam'], loadEditor);
+</script>
+{% endblock %}

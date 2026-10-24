@@ -1,0 +1,12 @@
+{
+  "question_no": 1,
+  "key_points": [],
+  "marking_style_notes": "",
+  "worked_examples": [
+    {
+      "answer_excerpt": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded": 20.0,
+      "why": ""
+    }
+  ]
+}

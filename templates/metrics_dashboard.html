@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block title %}Milestone Metrics Dashboard - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<div class="header-row" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+  <div>
+    <h1 style="margin:0 0 8px 0; font-size:24px; font-weight:700;">Evaluation Metrics &amp; Telemetry Dashboard</h1>
+    <p style="margin:0; color:#6b7280; font-size:14px;">IIIT Dharwad Examination Corpus (DS317/DS342) - Milestones M0 through M11</p>
+  </div>
+  <div>
+    <a href="/download-outputs" class="btn" style="background:#2563eb; color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:8px;">
+      &#128190; Download All Outputs (.zip)
+    </a>
+  </div>
+</div>
+
+<!-- KPI Cards -->
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-bottom:28px;">
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+    <div style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px;">Consensus OCR CER</div>
+    <div style="font-size:28px; font-weight:700; color:#10b981; margin:8px 0 4px 0;">{{ data.ocr_summary.consensus_cer }}%</div>
+    <div style="font-size:12px; color:#6b7280;">Baseline PaddleOCR: <span style="color:#ef4444; font-weight:600;">{{ data.ocr_summary.paddle_cer }}%</span></div>
+  </div>
+
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+    <div style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px;">Top Model QWK</div>
+    <div style="font-size:28px; font-weight:700; color:#2563eb; margin:8px 0 4px 0;">{{ data.top_qwk }}</div>
+    <div style="font-size:12px; color:#6b7280;">High Quadratic Weighted Agreement</div>
+  </div>
+
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+    <div style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px;">Conformal Coverage</div>
+    <div style="font-size:28px; font-weight:700; color:#8b5cf6; margin:8px 0 4px 0;">{{ data.conformal.coverage }}%</div>
+    <div style="font-size:12px; color:#6b7280;">Nominal 90% | Avg width: {{ data.conformal.mean_width }}m</div>
+  </div>
+
+  <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+    <div style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px;">Human Review Queue</div>
+    <div style="font-size:28px; font-weight:700; color:#f59e0b; margin:8px 0 4px 0;">{{ data.queue_count }}</div>
+    <div style="font-size:12px; color:#6b7280;">Automation Rate: {{ data.automation_rate }}%</div>
+  </div>
+</div>
+
+<!-- Section 1: Multi-Engine OCR Benchmark -->
+<div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:24px; margin-bottom:28px;">
+  <h2 style="margin:0 0 16px 0; font-size:18px; font-weight:600;">1. Multi-Engine OCR Benchmark (Milestone M2)</h2>
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:14px; text-align:left;">
+      <thead>
+        <tr style="border-bottom:2px solid #e5e7eb; color:#4b5563;">
+          <th style="padding:10px 12px;">Engine</th>
+          <th style="padding:10px 12px;">CER</th>
+          <th style="padding:10px 12px;">WER</th>
+          <th style="padding:10px 12px;">Char Acc</th>
+          <th style="padding:10px 12px;">Math Symbol Acc</th>
+          <th style="padding:10px 12px;">Exact Exp Rate</th>
+          <th style="padding:10px 12px;">Latency/Page</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for eng, m in data.ocr_engines.items() %}
+        <tr style="border-bottom:1px solid #f3f4f6; {% if 'Consensus' in eng %}background:#f0fdf4; font-weight:600;{% endif %}">
+          <td style="padding:10px 12px;">{{ eng }}</td>
+          <td style="padding:10px 12px;">{{ (m.cer * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">{{ (m.wer * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">{{ (m.char_accuracy * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">{{ (m.math_symbol_accuracy * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">{{ (m.exact_expression_rate * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">{{ m.avg_latency_sec_per_page }}s</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Section 2: Model Leaderboard -->
+<div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:24px; margin-bottom:28px;">
+  <h2 style="margin:0 0 16px 0; font-size:18px; font-weight:600;">2. Master Grading Model Leaderboard (Milestones M3, M4, M7, M9)</h2>
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:14px; text-align:left;">
+      <thead>
+        <tr style="border-bottom:2px solid #e5e7eb; color:#4b5563;">
+          <th style="padding:10px 12px;">Model / Approach</th>
+          <th style="padding:10px 12px;">Split</th>
+          <th style="padding:10px 12px;">MAE (Marks)</th>
+          <th style="padding:10px 12px;">RMSE</th>
+          <th style="padding:10px 12px;">Within 1 Mark (%)</th>
+          <th style="padding:10px 12px;">QWK</th>
+          <th style="padding:10px 12px;">Spearman &#961;</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data.leaderboard %}
+        <tr style="border-bottom:1px solid #f3f4f6;">
+          <td style="padding:10px 12px; font-weight:500;">{{ row.model }}</td>
+          <td style="padding:10px 12px;"><span style="background:#e0e7ff; color:#3730a3; padding:2px 8px; border-radius:4px; font-size:12px;">{{ row.split }}</span></td>
+          <td style="padding:10px 12px; font-weight:600; color:#1f2937;">{{ row.mae }}</td>
+          <td style="padding:10px 12px;">{{ row.rmse }}</td>
+          <td style="padding:10px 12px;">{{ row.within_1_acc }}%</td>
+          <td style="padding:10px 12px; font-weight:600; color:#2563eb;">{{ row.qwk }}</td>
+          <td style="padding:10px 12px;">{{ row.spearman_rho }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Section 3: Human Review Queue -->
+<div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:24px; margin-bottom:28px;">
+  <h2 style="margin:0 0 16px 0; font-size:18px; font-weight:600;">3. Human Review &amp; Safety Queue (Milestone M10)</h2>
+  {% if data.review_queue %}
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:14px; text-align:left;">
+      <thead>
+        <tr style="border-bottom:2px solid #e5e7eb; color:#4b5563;">
+          <th style="padding:10px 12px;">Response ID</th>
+          <th style="padding:10px 12px;">Pred Mark</th>
+          <th style="padding:10px 12px;">Conformal Bounds</th>
+          <th style="padding:10px 12px;">OCR Conf</th>
+          <th style="padding:10px 12px;">Flagged Reasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data.review_queue %}
+        <tr style="border-bottom:1px solid #f3f4f6;">
+          <td style="padding:10px 12px; font-weight:600;">{{ item.response_id }}</td>
+          <td style="padding:10px 12px;">{{ item.predicted_mark }} / {{ item.max_marks }}</td>
+          <td style="padding:10px 12px;">[{{ item.conformal_interval[0] }}, {{ item.conformal_interval[1] }}] (w={{ item.interval_width }})</td>
+          <td style="padding:10px 12px;">{{ (item.ocr_confidence * 100)|round(1) }}%</td>
+          <td style="padding:10px 12px;">
+            {% for r in item.flagged_reasons %}
+            <span style="background:#fee2e2; color:#991b1b; padding:2px 8px; border-radius:4px; font-size:12px; margin-right:4px;">{{ r }}</span>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p style="color:#10b981; font-weight:500;">No items currently flagged for human review. All predictions satisfy safety thresholds.</p>
+  {% endif %}
+</div>
+{% endblock %}

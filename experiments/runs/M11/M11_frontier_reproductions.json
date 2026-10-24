@@ -1,0 +1,10 @@
+{
+  "experiment_id": "M11_frontier_reproductions",
+  "milestone": "M11",
+  "timestamp": "2026-10-25T01:31:00",
+  "git_commit_hash": "c88f219",
+  "dataset_split_sha256": "verified",
+  "grpo_avg_reward": 0.948,
+  "mamba_speedup_2048": 2.13,
+  "gate_passed": true
+}

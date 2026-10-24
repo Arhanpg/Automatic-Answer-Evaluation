@@ -1,0 +1,9 @@
+{
+  "experiment_id": "m4_classical_ml_benchmark",
+  "milestone": "M4",
+  "status": "SUCCESS",
+  "champion_model": "Ridge",
+  "champion_qwk": 0.9406,
+  "champion_mae": 0.2713,
+  "wall_time_sec": 90.63
+}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% block title %}Rubric & fine-tune - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>4. Rubric &amp; fine-tune</h1>
+<p class="subtitle">Learn the teacher's marking style from the {{ counts.train }} training papers, then grade the {{ counts.test }} test papers and compare with the real marks.</p></header>
+{% if not counts.train %}<div class="banner err">No training papers yet - run <a href="/select">step 3</a> first.</div>{% elif counts.train_verified < counts.train %}<div class="banner demo" style="background:var(--warn-soft)">Only {{ counts.train_verified }} of {{ counts.train }} training papers are verified. Wrong labels will teach the model wrong marking - <a href="/select">verify them</a> first if you can.</div>{% endif %}
+
+<section class="card"><h2>A. Build the rubric</h2>
+<p class="hint">For each question the local LLM ({{ ollama_model }}) reads the model answer and the training answers <i>with the teacher's marks</i> and writes down key points, marking style and the teacher's real mark range. {% if not rt.ollama and not demo %}<span class="chip bad">Ollama is not running</span>{% endif %}</p>
+<button class="btn primary" onclick="job(this,'/api/rubrics/build','rubric', ()=>location.reload())">Build rubric</button>
+<div class="progress" id="p-rubric"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div>
+{% for qid, r in rubrics.items() %}<div class="qcard" style="margin-top:12px"><b>Question {{ qid }}</b> <span class="chip">max {{ r.max_marks }}</span> <span class="chip grey">{{ r.examples_used }} examples</span>
+{% if r.marks_stats.n %}<span class="chip grey">teacher gave {{ r.marks_stats.min }}-{{ r.marks_stats.max }}, avg {{ '%.1f'|format(r.marks_stats.mean) }}</span>{% endif %}
+<ul>{% for p in r.key_points %}<li>{{ p }}</li>{% endfor %}</ul><div class="hint tight"><i>{{ r.marking_style_notes }}</i></div>
+{% for d in r.deduction_rules %}<div class="hint tight">&minus; {{ d }}</div>{% endfor %}</div>{% endfor %}</section>
+
+<section class="card"><h2>B. Fine-tune (QLoRA)</h2>
+<p class="hint">Trains small adapter weights on the {{ counts.train }} training papers only (about {{ counts.train * ov.exam.questions }} examples) so the model imitates this teacher's marks. Needs PyTorch (CUDA), transformers, peft, bitsandbytes. {% if not rt.ml_stack %}<span class="chip bad">not installed</span>{% else %}<span class="chip good">installed</span>{% endif %} {% if rt.adapter %}<span class="chip good">adapter already trained</span>{% endif %}</p>
+<button class="btn primary" onclick="job(this,'/api/finetune','finetune', ()=>location.reload())">Start fine-tuning</button>
+<div class="progress" id="p-finetune"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div></section>
+
+<section class="card"><h2>C. Grade the test papers</h2>
+<p class="hint">The grader only receives the students' <b>answers</b>. Their real marks are opened afterwards, only to measure accuracy. Run several engines to see what fine-tuning really adds.</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+{% if demo %}<label><input type="radio" name="eng" value="demo" checked> <b>demo</b> - similarity stand-in (demo mode)</label>{% endif %}
+<label><input type="radio" name="eng" value="hf:finetuned" {{ 'checked' if not demo }}> <b>Fine-tuned model</b> (base + your adapter) {% if not rt.adapter %}<span class="chip warn">train first</span>{% endif %}</label>
+<label><input type="radio" name="eng" value="hf:base"> <b>Same base model, no fine-tuning</b> (fair baseline) {% if not rt.adapter %}<span class="chip warn">needs the adapter files</span>{% endif %}</label>
+<label class="row"><input type="radio" name="eng" value="ollama"> <b>Ollama model</b> (zero-shot baseline) <input type="text" id="om" list="oms" value="{{ ollama_model }}" style="width:220px"><datalist id="oms">{% for m in ollama_models %}<option value="{{ m }}">{% endfor %}</datalist></label></div>
+<div class="row" style="margin-top:12px"><button class="btn primary" onclick="evaluate(this)">Grade test papers</button><a class="btn secondary" href="/results">Results &rarr;</a></div>
+<div class="progress" id="p-evaluate"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div></section>
+{% endblock %}
+{% block scripts %}<script>
+async function job(btn, url, name, done){ await run(btn, async()=>{ await api(url,{}); showProgress(name,0,0,'Starting...'); watchJob(name, done); }); }
+async function evaluate(btn){ await run(btn, async()=>{
+  let spec=document.querySelector('input[name=eng]:checked').value; if(spec==='ollama') spec='ollama:'+document.getElementById('om').value.trim();
+  await api('/api/evaluate',{engine:spec}); showProgress('evaluate',0,0,'Starting...'); watchJob('evaluate', ()=>location.href='/results');
+});}
+resumeJob(['rubric','finetune','evaluate'], ()=>location.reload());
+</script>{% endblock %}

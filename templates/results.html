@@ -1,0 +1,52 @@
+{% extends "base.html" %}{% block title %}Results - Automatic Answer Evaluation{% endblock %}
+{% block content %}
+<header class="page-header"><h1>5. Results</h1>
+<p class="subtitle">Model prediction vs. the teacher's actual marks (folder 2), on test papers the model never trained on.</p></header>
+{% if not res %}<section class="card"><p class="hint">No evaluation yet. Run one on the <a href="/training">Rubric &amp; fine-tune</a> page.</p></section>
+{% else %}
+{% set m = res.metrics %}
+<section class="card"><div class="row"><h2 style="margin:0">Run</h2>
+<select style="width:auto" onchange="location.href='/results?run='+this.value">{% for r in runs %}<option value="{{ r.tag }}" {{ 'selected' if r.tag==tag }}>{{ r.tag }}</option>{% endfor %}</select>
+{% if m.unparsed %}<span class="chip warn">{{ m.unparsed }} answers the model did not return a mark for</span>{% endif %}</div>
+{% if m.n %}<div class="metrics" style="margin-top:14px">
+<div class="metric"><span class="v">{{ m.mae }}</span><span class="l">avg error per question (marks)</span></div>
+<div class="metric"><span class="v">{{ m.mae_pct_of_max }}%</span><span class="l">avg error as % of the question's marks</span></div>
+<div class="metric"><span class="v">{{ m.within_half }}%</span><span class="l">within 0.5 mark of the teacher</span></div>
+<div class="metric"><span class="v">{{ m.within_one }}%</span><span class="l">within 1 mark</span></div>
+<div class="metric"><span class="v">{{ m.exact }}%</span><span class="l">exactly the teacher's mark</span></div>
+<div class="metric"><span class="v">{{ '%+.2f'|format(m.bias) }}</span><span class="l">bias (+ = too generous)</span></div>
+{% if m.total_mae is defined %}<div class="metric"><span class="v">{{ m.total_mae }} / {{ m.total_max|round(1) }}</span><span class="l">avg error on the paper total</span></div>
+<div class="metric"><span class="v">{{ '%.2f'|format(m.total_corr) if m.total_corr is not none else '-' }}</span><span class="l">correlation of totals</span></div>{% endif %}</div>
+{% else %}<p class="hint">This run has no comparable (prediction, actual) pairs - check that folder 2 has marks for the test papers.</p>{% endif %}</section>
+
+{% if comparison|length > 1 %}<section class="card"><h2>Did fine-tuning help? Compare runs</h2><table><thead><tr><th>Run</th><th>Avg error / question</th><th>Within 0.5</th><th>Within 1</th><th>Avg error on total</th><th>Total correlation</th></tr></thead><tbody>
+{% for c in comparison %}<tr class="{{ 'warnrow' if c.tag==tag }}"><td><b>{{ c.tag }}</b></td><td>{{ c.mae }}</td><td>{{ c.within_half }}%</td><td>{{ c.within_one }}%</td><td>{{ c.total_mae }}</td><td>{{ '%.2f'|format(c.total_corr) if c.total_corr is not none else '-' }}</td></tr>{% endfor %}</tbody></table></section>{% endif %}
+
+{% if m.n %}<div class="flow">
+<section class="card"><h2>Predicted vs actual</h2><p class="hint">Dots on the diagonal are perfect. Darker = several students.</p><canvas id="scatter" height="200"></canvas></section>
+<section class="card"><h2>Error per question</h2><table><thead><tr><th>Question</th><th>Max</th><th>Avg error</th><th>Bias</th><th>n</th></tr></thead><tbody>
+{% for qid, pq in m.per_question.items() %}<tr><td>Q{{ qid }}</td><td>{{ pq.max }}</td><td>{{ pq.mae }}</td><td>{{ '%+.2f'|format(pq.bias) }}</td><td>{{ pq.n }}</td></tr>{% endfor %}</tbody></table>
+<canvas id="perq" height="120" style="margin-top:12px"></canvas></section></div>
+
+<section class="card"><h2>Paper totals</h2><div class="table-wrap" style="max-height:300px"><table><thead><tr><th>Student</th><th>Predicted</th><th>Actual</th><th>Difference</th></tr></thead><tbody>
+{% for t in res.totals %}<tr class="{{ 'badrow' if t.error|abs >= 3 else ('warnrow' if t.error|abs >= 1.5) }}"><td class="mono">{{ t.roll }}</td><td>{{ t.predicted }}</td><td>{{ t.actual }}</td><td>{{ '%+.1f'|format(t.error) }}</td></tr>{% endfor %}</tbody></table></div></section>
+
+<section class="card"><h2>Every question, biggest differences first</h2><p class="hint">A big difference is either a model mistake or a wrong label (a misread handwritten mark). Use "check" to open the scan.</p>
+<div class="table-wrap"><table><thead><tr><th>Student</th><th>Q</th><th>Predicted</th><th>Actual</th><th>Diff</th><th>Note</th><th></th></tr></thead><tbody>
+{% for r in res.rows|sort(attribute='abs_error', reverse=True) %}<tr class="{{ 'badrow' if r.abs_error > 1 else ('warnrow' if r.abs_error > 0.5) }}"><td class="mono">{{ r.roll }}</td><td>{{ r.qid }}</td><td>{{ r.predicted }}</td><td>{{ r.actual }}</td><td>{{ '%+.1f'|format(r.error) }}</td><td style="font-size:12.5px">{{ r.rationale }}</td><td><a href="/verify/{{ r.roll }}" class="btn ghost" style="padding:3px 9px">check</a></td></tr>{% endfor %}</tbody></table></div></section>
+{% endif %}{% endif %}
+{% endblock %}
+{% block scripts %}{% if res and res.metrics.n %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+const rows = {{ res.rows | tojson }}, pq = {{ res.metrics.per_question | tojson }};
+if (window.Chart) {
+  const mx = Math.max(...rows.map(r => Math.max(r.max || 0, r.actual, r.predicted)));
+  new Chart(document.getElementById('scatter'), {type:'scatter', data:{datasets:[
+    {label:'question', data: rows.map(r=>({x:r.actual,y:r.predicted})), backgroundColor:'rgba(99,102,241,.35)', pointRadius:6},
+    {label:'perfect', type:'line', data:[{x:0,y:0},{x:mx,y:mx}], borderColor:'#9ca3af', borderDash:[5,5], pointRadius:0}]},
+    options:{plugins:{legend:{display:false}}, scales:{x:{title:{display:true,text:"teacher's marks"}}, y:{title:{display:true,text:'predicted marks'}}}}});
+  new Chart(document.getElementById('perq'), {type:'bar', data:{labels:Object.keys(pq).map(q=>'Q'+q),
+    datasets:[{label:'avg error (marks)', data:Object.values(pq).map(p=>p.mae), backgroundColor:'#6366f1'}]}, options:{plugins:{legend:{display:false}}}});
+}
+</script>{% endif %}{% endblock %}

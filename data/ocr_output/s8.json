@@ -1,0 +1,31 @@
+{
+  "roll_number": "s8",
+  "questions": [
+    {
+      "question_no": 1,
+      "answer_text": "Newton's second law states that force equals mass times acceleration, F = ma.",
+      "marks_awarded_ocr": 16
+    },
+    {
+      "question_no": 2,
+      "answer_text": "Mitosis produces two genetically identical daughter cells, while meiosis produces four genetically distinct gametes.",
+      "marks_awarded_ocr": 9
+    },
+    {
+      "question_no": 3,
+      "answer_text": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded_ocr": 5
+    },
+    {
+      "question_no": 4,
+      "answer_text": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded_ocr": 15
+    },
+    {
+      "question_no": 5,
+      "answer_text": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded_ocr": 1
+    }
+  ],
+  "source_file": "ocr_page0_6cz9dc8m.png"
+}

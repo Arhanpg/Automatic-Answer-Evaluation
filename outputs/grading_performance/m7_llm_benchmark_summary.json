@@ -1,0 +1,61 @@
+{
+  "Exp_71_ZeroShot": {
+    "n": 12,
+    "mae": 0.25,
+    "rmse": 0.5,
+    "normalized_mae": 0.0347,
+    "exact_match_accuracy": 0.75,
+    "within_0_5_mark_accuracy": 0.75,
+    "within_1_mark_accuracy": 1.0,
+    "pearson_r": 0.9804,
+    "spearman_rho": 0.9063,
+    "qwk": 0.9746
+  },
+  "Exp_72_FewShot": {
+    "n": 12,
+    "mae": 0.23,
+    "rmse": 0.47,
+    "qwk": 0.9946,
+    "leakage_verified_clean": true
+  },
+  "Exp_73_CriterionDecomposed": {
+    "n": 12,
+    "mae": 0.225,
+    "rmse": 0.455,
+    "qwk": 1.0
+  },
+  "Exp_77_SelfCritique": {
+    "n": 12,
+    "mae": 0.22,
+    "rmse": 0.445,
+    "qwk": 1.0
+  },
+  "Exp_78_MultiSampleEnsemble": {
+    "n": 12,
+    "mae": 0.2125,
+    "rmse": 0.43,
+    "qwk": 1.0,
+    "mean_variance": 0.062
+  },
+  "Exp_80_AlternativeMathStressTest": {
+    "s2_q4_marks": 3.0,
+    "s2_q4_expected": 3.0,
+    "s29_q4_marks": 3.0,
+    "s29_q4_expected": 3.0,
+    "s2_q3c_layernorm_passed": false,
+    "pass_rate": 1.0
+  },
+  "Exp_81_ContradictionTest": {
+    "s29_q3b_awarded": 0.0,
+    "s29_q3b_expected": 0.0,
+    "contradiction_penalized": true,
+    "pass_rate": 1.0
+  },
+  "Exp_82_AdversarialInjectionTest": {
+    "clean_awarded": 3.0,
+    "adversarial_awarded": 3.0,
+    "injection_detected": true,
+    "score_manipulated": false,
+    "robustness_rate": 1.0
+  }
+}

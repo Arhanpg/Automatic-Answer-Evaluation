@@ -1,0 +1,31 @@
+{
+  "roll_number": "s17",
+  "questions": [
+    {
+      "question_no": 1,
+      "answer_text": "The process converts light energy into chemical energy stored in glucose, using chlorophyll in the chloroplast.",
+      "marks_awarded_ocr": 4
+    },
+    {
+      "question_no": 2,
+      "answer_text": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded_ocr": 18
+    },
+    {
+      "question_no": 3,
+      "answer_text": "Mitosis produces two genetically identical daughter cells, while meiosis produces four genetically distinct gametes.",
+      "marks_awarded_ocr": 17
+    },
+    {
+      "question_no": 4,
+      "answer_text": "A binary search tree keeps left children smaller and right children larger than the parent, giving O(log n) lookup on average.",
+      "marks_awarded_ocr": 3
+    },
+    {
+      "question_no": 5,
+      "answer_text": "Mitosis produces two genetically identical daughter cells, while meiosis produces four genetically distinct gametes.",
+      "marks_awarded_ocr": 5
+    }
+  ],
+  "source_file": "ocr_page0_ej5_7nt3.png"
+}

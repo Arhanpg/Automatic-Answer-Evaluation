@@ -1,0 +1,44 @@
+{
+  "s1": {
+    "student_id": "s1",
+    "cover_page_idx": 0,
+    "student_name": "Student_s1",
+    "registration_no": "23BXX001",
+    "serial_no": "UNKNOWN",
+    "examiner_marks": {
+      "Q1": 0.0,
+      "Q2": 0.0,
+      "Q3": 0.0,
+      "Q4": 0.0,
+      "total": 0.0
+    }
+  },
+  "s10": {
+    "student_id": "s10",
+    "cover_page_idx": 0,
+    "student_name": "Student_s10",
+    "registration_no": "23BXX010",
+    "serial_no": "UNKNOWN",
+    "examiner_marks": {
+      "Q1": 0.0,
+      "Q2": 0.0,
+      "Q3": 0.0,
+      "Q4": 0.0,
+      "total": 0.0
+    }
+  },
+  "s11": {
+    "student_id": "s11",
+    "cover_page_idx": 0,
+    "student_name": "Student_s11",
+    "registration_no": "23BXX011",
+    "serial_no": "UNKNOWN",
+    "examiner_marks": {
+      "Q1": 0.0,
+      "Q2": 0.0,
+      "Q3": 0.0,
+      "Q4": 0.0,
+      "total": 0.0
+    }
+  }
+}

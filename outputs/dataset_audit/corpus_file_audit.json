@@ -1,0 +1,233 @@
+{
+  "dataset_path": "F:\\Automatic answer evaluation dataset",
+  "all_pdfs_dir_exists": true,
+  "question_paper": true,
+  "solution_key": true,
+  "scripts": {
+    "s1": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s1.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 14918023
+    },
+    "s2": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s2.pdf",
+      "pages": 8,
+      "exists": true,
+      "size_bytes": 23065130
+    },
+    "s3": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s3.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 14260185
+    },
+    "s4": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s4.pdf",
+      "pages": 9,
+      "exists": true,
+      "size_bytes": 26220029
+    },
+    "s5": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s5.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11544141
+    },
+    "s6": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s6.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 15120002
+    },
+    "s7": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s7.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 13982467
+    },
+    "s8": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s8.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11718515
+    },
+    "s9": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s9.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11690316
+    },
+    "s10": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s10.pdf",
+      "pages": 8,
+      "exists": true,
+      "size_bytes": 23908371
+    },
+    "s11": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s11.pdf",
+      "pages": 9,
+      "exists": true,
+      "size_bytes": 25520236
+    },
+    "s12": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s12.pdf",
+      "pages": 3,
+      "exists": true,
+      "size_bytes": 8438481
+    },
+    "s13": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s13.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 13499367
+    },
+    "s14": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s14.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 17037654
+    },
+    "s15": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s15.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 16409173
+    },
+    "s16": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s16.pdf",
+      "pages": 3,
+      "exists": true,
+      "size_bytes": 8524997
+    },
+    "s17": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s17.pdf",
+      "pages": 7,
+      "exists": true,
+      "size_bytes": 19632852
+    },
+    "s18": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s18.pdf",
+      "pages": 3,
+      "exists": true,
+      "size_bytes": 8278810
+    },
+    "s19": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s19.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 17456043
+    },
+    "s20": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s20.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 10581675
+    },
+    "s21": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s21.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 15522724
+    },
+    "s22": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s22.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 13852079
+    },
+    "s23": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s23.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 16501335
+    },
+    "s24": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s24.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11559406
+    },
+    "s25": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s25.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11304850
+    },
+    "s26": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s26.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11526875
+    },
+    "s27": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s27.pdf",
+      "pages": 6,
+      "exists": true,
+      "size_bytes": 15955132
+    },
+    "s28": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s28.pdf",
+      "pages": 2,
+      "exists": true,
+      "size_bytes": 5387952
+    },
+    "s29": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s29.pdf",
+      "pages": 7,
+      "exists": true,
+      "size_bytes": 18918572
+    },
+    "s30": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s30.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 14247071
+    },
+    "s31": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s31.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 10915777
+    },
+    "s32": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s32.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 13370721
+    },
+    "s33": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s33.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 11398218
+    },
+    "s34": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s34.pdf",
+      "pages": 7,
+      "exists": true,
+      "size_bytes": 18044684
+    },
+    "s35": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s35.pdf",
+      "pages": 5,
+      "exists": true,
+      "size_bytes": 13589298
+    },
+    "s36": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s36.pdf",
+      "pages": 4,
+      "exists": true,
+      "size_bytes": 10595226
+    },
+    "s37": {
+      "pdf_path": "F:\\Automatic answer evaluation dataset\\All PDF's\\s37.pdf",
+      "pages": 8,
+      "exists": true,
+      "size_bytes": 21096432
+    }
+  },
+  "missing_scripts": [],
+  "total_scripts_found": 37,
+  "total_pages_scanned": 195
+}

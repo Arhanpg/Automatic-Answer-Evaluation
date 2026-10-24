@@ -1,0 +1,5 @@
+quantization_format,bits_per_parameter,compression_ratio,cosine_similarity_distortion,memory_footprint_mb,downstream_grading_mae,downstream_grading_qwk,pareto_optimal
+FP32_Baseline,32,1.0,-0.0,0.293,0.44,0.941,True
+FP16_Half,16,2.0,-0.0,0.1465,0.445,0.939,True
+INT8_Affine,8,4.0,2.6e-05,0.0732,0.462,0.933,True
+TurboQuant_4bit,4,8.0,0.125685,0.0366,0.488,0.926,True
