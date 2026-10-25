@@ -77,11 +77,11 @@ class E2E(unittest.TestCase):
 
     def test_no_silent_fake_ocr(self):
         os.environ["AAE_MODE"] = "real"
-        import importlib, config; importlib.reload(config)
+        import importlib, config, unittest.mock; importlib.reload(config)
         from backend import ocr_engine
-        self.assertFalse(ocr_engine.paddleocr_available())
-        with self.assertRaises(ocr_engine.OCRUnavailable):
-            ocr_engine._build_engine()
+        with unittest.mock.patch.object(ocr_engine, "paddleocr_available", return_value=False):
+            with self.assertRaises(ocr_engine.OCRUnavailable):
+                ocr_engine._build_engine()
         os.environ["AAE_MODE"] = "demo"; importlib.reload(config)
 
 

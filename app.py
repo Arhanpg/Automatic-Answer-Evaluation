@@ -322,6 +322,14 @@ def api_marks_csv():
     return jsonify({"cells_updated": pipeline.import_marks_csv(path)})
 
 
+@app.route("/api/sheets/reset", methods=["POST"])
+@api
+def api_sheets_reset():
+    clear_files = bool(_json().get("clear_files", True))
+    db.reset_students(clear_files=clear_files)
+    return jsonify({"status": "ok", "message": "All students have been reset."})
+
+
 @app.route("/api/select", methods=["POST"])
 @api
 def api_select():

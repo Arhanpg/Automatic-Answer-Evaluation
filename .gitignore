@@ -28,6 +28,7 @@ data/exam/source/*/
 data/student_answers/*
 data/teacher_marks/*
 data/pages/*
+data/ocr_output/*
 data/predictions/*
 data/models/*
 data/db/*

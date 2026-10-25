@@ -129,6 +129,24 @@ def set_state(key, value):
                   "ON CONFLICT(key) DO UPDATE SET value=excluded.value", (key, value))
 
 
-def reset_students():
+def reset_students(clear_files=True):
+    import os, shutil
     with get_conn() as c:
         c.execute("DELETE FROM students")
+        c.execute("DELETE FROM pipeline_state WHERE key = 'selection'")
+    if clear_files:
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+        for sub in ["student_answers", "teacher_marks", "pages", "ocr_output"]:
+            folder = os.path.join(data_dir, sub)
+            if os.path.exists(folder):
+                for item in os.listdir(folder):
+                    if item == ".gitkeep":
+                        continue
+                    p = os.path.join(folder, item)
+                    try:
+                        if os.path.isdir(p):
+                            shutil.rmtree(p)
+                        else:
+                            os.remove(p)
+                    except Exception:
+                        pass

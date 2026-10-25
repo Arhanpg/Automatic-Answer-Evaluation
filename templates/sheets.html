@@ -17,7 +17,13 @@
 <p class="hint">If the handwritten marks cannot be read reliably, import them. Columns: <code>roll_number,question_no,marks</code> or <code>roll_number,1,2,3,4</code>. Only students already read in step 2 are updated.</p>
 <div class="row"><input type="text" id="csv" class="grow" placeholder="C:\path\to\marks.csv"><button class="btn secondary" onclick="importCsv(this)">Import marks</button></div><p class="hint" id="csv-res"></p></section>
 
-<section class="card"><h2>Students <span class="chip">{{ counts.total }}</span>{% if counts.ocr_failed %} <span class="chip bad">{{ counts.ocr_failed }} failed</span>{% endif %}</h2>
+<section class="card">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+  <h2 style="margin:0">Students <span class="chip">{{ counts.total }}</span>{% if counts.ocr_failed %} <span class="chip bad">{{ counts.ocr_failed }} failed</span>{% endif %}</h2>
+  {% if counts.total > 0 %}
+  <button class="btn secondary" style="color:#dc2626; border-color:#fca5a5;" onclick="resetStudents(this)">Reset / Clear Students</button>
+  {% endif %}
+</div>
 <p class="hint">Folder 1: <code>{{ answers_dir }}</code><br>Folder 2: <code>{{ marks_dir }}</code></p>
 {% if students %}<div class="table-wrap"><table><thead><tr><th>Student</th><th>Pages</th><th>Status</th><th>Warnings</th><th></th></tr></thead><tbody>
 {% for s in students %}<tr class="{{ 'badrow' if s.ocr_status=='ocr_failed' else ('warnrow' if s.flags) }}"><td class="mono">{{ s.roll_number }}</td><td>{{ s.n_pages }}</td>
@@ -30,5 +36,9 @@ const $ = id => document.getElementById(id);
 async function startOcr(b){ await run(b, async()=>{ await api('/api/sheets/start',{folder_path:$('folder').value, split_ink:$('split').checked, ink:$('ink').value}); showProgress('sheets',0,0,'Starting...'); watchJob('sheets', ()=>location.reload()); }); }
 async function startDemo(b){ await run(b, async()=>{ await api('/api/sheets/demo',{n:30}); watchJob('sheets', ()=>location.reload()); }); }
 async function importCsv(b){ await run(b, async()=>{ const r=await api('/api/sheets/marks_csv',{csv_path:$('csv').value}); $('csv-res').textContent='Updated '+r.cells_updated+' marks.'; }); }
+async function resetStudents(b){
+  if (!confirm("Are you sure you want to clear all students? This will remove all student answers and marks from the database so you can scan a fresh batch.")) return;
+  await run(b, async()=>{ await api('/api/sheets/reset', {clear_files: true}); location.reload(); });
+}
 resumeJob(['sheets'], ()=>location.reload());
 </script>{% endblock %}
