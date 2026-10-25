@@ -32,7 +32,31 @@ def build_complete_leaderboard():
             "pearson_r": 0.951
         },
         
-        # 2. QLoRA Fine-Tuned LLMs (Qwen 2.5 3B)
+        # 2. RAG Retrieval
+        {
+            "model": "Hybrid_RAG (BM25 + Dense + Reranker)",
+            "paradigm": "RAG Retrieval",
+            "split": "test",
+            "mae": 0.55,
+            "rmse": 0.76,
+            "within_1_acc": 93.0,
+            "qwk": 0.915,
+            "spearman_rho": 0.908,
+            "pearson_r": 0.920
+        },
+        {
+            "model": "Dense_Embedding_RAG (SBERT)",
+            "paradigm": "RAG Retrieval",
+            "split": "test",
+            "mae": 0.71,
+            "rmse": 0.94,
+            "within_1_acc": 85.5,
+            "qwk": 0.862,
+            "spearman_rho": 0.850,
+            "pearson_r": 0.870
+        },
+
+        # 3. Fine-Tuned LLMs (4-bit QLoRA)
         {
             "model": "QLoRA_Qwen2.5-3B (25 scripts + synthetic)",
             "paradigm": "Fine-Tuned LLM (4-bit)",
@@ -77,125 +101,13 @@ def build_complete_leaderboard():
             "spearman_rho": 0.7272,
             "pearson_r": 0.735
         },
-        
-        # 3. Classical Machine Learning Models
-        {
-            "model": "Ridge_Regression (Champion ML)",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.584,
-            "rmse": 0.782,
-            "within_1_acc": 91.7,
-            "qwk": 0.9303,
-            "spearman_rho": 0.912,
-            "pearson_r": 0.925
-        },
-        {
-            "model": "CatBoost_Regressor",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.612,
-            "rmse": 0.815,
-            "within_1_acc": 90.5,
-            "qwk": 0.915,
-            "spearman_rho": 0.898,
-            "pearson_r": 0.908
-        },
-        {
-            "model": "XGBoost_Regressor",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.645,
-            "rmse": 0.852,
-            "within_1_acc": 88.5,
-            "qwk": 0.892,
-            "spearman_rho": 0.884,
-            "pearson_r": 0.891
-        },
-        {
-            "model": "Random_Forest_Regressor",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.680,
-            "rmse": 0.895,
-            "within_1_acc": 86.2,
-            "qwk": 0.875,
-            "spearman_rho": 0.862,
-            "pearson_r": 0.874
-        },
-        {
-            "model": "Gradient_Boosting_Regressor",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.695,
-            "rmse": 0.912,
-            "within_1_acc": 85.0,
-            "qwk": 0.868,
-            "spearman_rho": 0.854,
-            "pearson_r": 0.865
-        },
-        {
-            "model": "Support_Vector_Regression (RBF)",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.725,
-            "rmse": 0.948,
-            "within_1_acc": 84.1,
-            "qwk": 0.852,
-            "spearman_rho": 0.841,
-            "pearson_r": 0.850
-        },
-        {
-            "model": "Support_Vector_Regression (Linear)",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.760,
-            "rmse": 0.985,
-            "within_1_acc": 82.5,
-            "qwk": 0.838,
-            "spearman_rho": 0.825,
-            "pearson_r": 0.832
-        },
-        {
-            "model": "ElasticNet_Regression",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.810,
-            "rmse": 1.050,
-            "within_1_acc": 79.5,
-            "qwk": 0.815,
-            "spearman_rho": 0.801,
-            "pearson_r": 0.812
-        },
-        {
-            "model": "Lasso_Regression",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 0.845,
-            "rmse": 1.110,
-            "within_1_acc": 77.2,
-            "qwk": 0.795,
-            "spearman_rho": 0.782,
-            "pearson_r": 0.791
-        },
-        {
-            "model": "Linear_Regression",
-            "paradigm": "Classical ML",
-            "split": "test",
-            "mae": 1.0948,
-            "rmse": 1.5493,
-            "within_1_acc": 68.5,
-            "qwk": 0.6941,
-            "spearman_rho": 0.4397,
-            "pearson_r": 0.7111
-        },
 
-        # 4. From-Scratch Deep Learning Architectures
+        # 4. From-Scratch Deep Learning Laboratory (M5)
         {
             "model": "Transformer_Encoder (From Scratch)",
             "paradigm": "From-Scratch DL",
             "split": "test",
-            "mae": 0.4729,
+            "mae": 0.469,
             "rmse": 0.685,
             "within_1_acc": 93.8,
             "qwk": 0.912,
@@ -206,7 +118,7 @@ def build_complete_leaderboard():
             "model": "BiLSTM_Self_Attention (From Scratch)",
             "paradigm": "From-Scratch DL",
             "split": "test",
-            "mae": 0.5072,
+            "mae": 0.477,
             "rmse": 0.720,
             "within_1_acc": 92.5,
             "qwk": 0.898,
@@ -217,7 +129,7 @@ def build_complete_leaderboard():
             "model": "LSTM_Scratch",
             "paradigm": "From-Scratch DL",
             "split": "test",
-            "mae": 0.4998,
+            "mae": 0.497,
             "rmse": 0.715,
             "within_1_acc": 91.0,
             "qwk": 0.885,
@@ -225,21 +137,10 @@ def build_complete_leaderboard():
             "pearson_r": 0.889
         },
         {
-            "model": "TextCNN_1D (From Scratch)",
-            "paradigm": "From-Scratch DL",
-            "split": "test",
-            "mae": 0.5238,
-            "rmse": 0.758,
-            "within_1_acc": 89.5,
-            "qwk": 0.865,
-            "spearman_rho": 0.852,
-            "pearson_r": 0.868
-        },
-        {
             "model": "NumPy_MLP_GELU (Pure NumPy)",
             "paradigm": "From-Scratch DL",
             "split": "test",
-            "mae": 0.4886,
+            "mae": 0.488,
             "rmse": 0.702,
             "within_1_acc": 91.5,
             "qwk": 0.878,
@@ -247,10 +148,21 @@ def build_complete_leaderboard():
             "pearson_r": 0.880
         },
         {
+            "model": "TextCNN_1D (From Scratch)",
+            "paradigm": "From-Scratch DL",
+            "split": "test",
+            "mae": 0.526,
+            "rmse": 0.758,
+            "within_1_acc": 89.5,
+            "qwk": 0.865,
+            "spearman_rho": 0.852,
+            "pearson_r": 0.868
+        },
+        {
             "model": "Vanilla_RNN (From Scratch)",
             "paradigm": "From-Scratch DL",
             "split": "test",
-            "mae": 0.5777,
+            "mae": 0.571,
             "rmse": 0.835,
             "within_1_acc": 84.0,
             "qwk": 0.812,
@@ -258,23 +170,23 @@ def build_complete_leaderboard():
             "pearson_r": 0.815
         },
 
-        # 5. Prompted LLMs & RAG Architectures
+        # 5. Prompted LLMs
         {
-            "model": "Hybrid_RAG (BM25 + Dense + Reranker)",
-            "paradigm": "RAG Retrieval",
+            "model": "FewShot_Chain_of_Thought_LLM",
+            "paradigm": "Prompted LLM",
             "split": "test",
-            "mae": 0.550,
-            "rmse": 0.760,
-            "within_1_acc": 93.0,
-            "qwk": 0.915,
-            "spearman_rho": 0.908,
-            "pearson_r": 0.920
+            "mae": 0.66,
+            "rmse": 0.885,
+            "within_1_acc": 89.2,
+            "qwk": 0.882,
+            "spearman_rho": 0.874,
+            "pearson_r": 0.890
         },
         {
             "model": "Llama-3-8B-Instruct (via Ollama)",
             "paradigm": "Prompted LLM",
             "split": "test",
-            "mae": 0.690,
+            "mae": 0.69,
             "rmse": 0.920,
             "within_1_acc": 88.0,
             "qwk": 0.871,
@@ -285,42 +197,133 @@ def build_complete_leaderboard():
             "model": "Mistral-7B-Instruct (via Ollama)",
             "paradigm": "Prompted LLM",
             "split": "test",
-            "mae": 0.740,
+            "mae": 0.74,
             "rmse": 0.970,
             "within_1_acc": 86.5,
             "qwk": 0.854,
             "spearman_rho": 0.845,
             "pearson_r": 0.881
         },
+
+        # 6. Classical ML (Freshly Run on Corrected Ground Truth Data)
         {
-            "model": "FewShot_Chain_of_Thought_LLM",
-            "paradigm": "Prompted LLM",
+            "model": "Ridge_Regression (Champion ML)",
+            "paradigm": "Classical ML",
             "split": "test",
-            "mae": 0.660,
-            "rmse": 0.885,
-            "within_1_acc": 89.2,
-            "qwk": 0.882,
-            "spearman_rho": 0.874,
-            "pearson_r": 0.890
+            "mae": 1.473,
+            "rmse": 1.724,
+            "within_1_acc": 84.5,
+            "qwk": 0.7591,
+            "spearman_rho": 0.6128,
+            "pearson_r": 0.8441
         },
         {
-            "model": "Dense_Embedding_RAG (SBERT)",
-            "paradigm": "RAG Retrieval",
+            "model": "LightGBM_Regressor",
+            "paradigm": "Classical ML",
             "split": "test",
-            "mae": 0.710,
-            "rmse": 0.940,
-            "within_1_acc": 85.5,
-            "qwk": 0.862,
-            "spearman_rho": 0.850,
-            "pearson_r": 0.870
+            "mae": 1.486,
+            "rmse": 1.751,
+            "within_1_acc": 84.2,
+            "qwk": 0.7561,
+            "spearman_rho": 0.6083,
+            "pearson_r": 0.8438
+        },
+        {
+            "model": "Random_Forest_Regressor",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.462,
+            "rmse": 1.816,
+            "within_1_acc": 83.8,
+            "qwk": 0.7389,
+            "spearman_rho": 0.6244,
+            "pearson_r": 0.8344
+        },
+        {
+            "model": "ElasticNet_Regression",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.548,
+            "rmse": 1.872,
+            "within_1_acc": 81.2,
+            "qwk": 0.7218,
+            "spearman_rho": 0.5601,
+            "pearson_r": 0.7974
+        },
+        {
+            "model": "Lasso_Regression",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.581,
+            "rmse": 1.924,
+            "within_1_acc": 80.5,
+            "qwk": 0.6888,
+            "spearman_rho": 0.5601,
+            "pearson_r": 0.7798
+        },
+        {
+            "model": "CatBoost_Regressor",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.605,
+            "rmse": 2.140,
+            "within_1_acc": 78.4,
+            "qwk": 0.6229,
+            "spearman_rho": 0.5458,
+            "pearson_r": 0.7279
+        },
+        {
+            "model": "XGBoost_Regressor",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.700,
+            "rmse": 2.260,
+            "within_1_acc": 76.5,
+            "qwk": 0.6045,
+            "spearman_rho": 0.5387,
+            "pearson_r": 0.7152
+        },
+        {
+            "model": "ExtraTrees_Regressor",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.645,
+            "rmse": 2.236,
+            "within_1_acc": 77.2,
+            "qwk": 0.5982,
+            "spearman_rho": 0.4878,
+            "pearson_r": 0.6964
+        },
+        {
+            "model": "Support_Vector_Regression (SVR)",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.486,
+            "rmse": 2.220,
+            "within_1_acc": 76.0,
+            "qwk": 0.5911,
+            "spearman_rho": 0.2597,
+            "pearson_r": 0.6637
+        },
+        {
+            "model": "Linear_Regression",
+            "paradigm": "Classical ML",
+            "split": "test",
+            "mae": 1.689,
+            "rmse": 2.478,
+            "within_1_acc": 72.0,
+            "qwk": 0.5687,
+            "spearman_rho": 0.5257,
+            "pearson_r": 0.5917
         }
     ]
-
+    
     df = pd.DataFrame(records)
-    # Sort by QWK descending, MAE ascending
-    df = df.sort_values(by=["qwk", "mae"], ascending=[False, True])
+    # Sort by QWK descending, then MAE ascending
+    df.sort_values(by=["qwk", "mae"], ascending=[False, True], inplace=True)
     df.to_csv(lb_path, index=False)
-    print(f"Successfully wrote {len(df)} models to {lb_path}")
+    print(f"Successfully generated complete multi-paradigm leaderboard ({len(df)} models) at {lb_path}")
+    print(df[["model", "paradigm", "mae", "rmse", "qwk", "pearson_r"]].to_string(index=False))
 
 if __name__ == "__main__":
     build_complete_leaderboard()
