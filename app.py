@@ -7,6 +7,12 @@ Pages:  /  overview      /setup  question paper + model answer     /sheets  answ
 """
 import os
 
+# Prevent PaddlePaddle 3.x / oneDNN PIR Attribute incompatibility crash on Windows CPU
+os.environ["FLAGS_use_mkldnn"] = "0"
+os.environ["FLAGS_use_onednn"] = "0"
+os.environ["PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT"] = "0"
+os.environ["PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK"] = "True"
+
 from flask import Flask, abort, jsonify, redirect, render_template, request, send_from_directory
 
 import config

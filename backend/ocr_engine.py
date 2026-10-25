@@ -10,6 +10,14 @@ get an OCRUnavailable error with install instructions (use AAE_MODE=demo if
 you only want to click around the UI).
 """
 import os
+
+# Prevent PaddlePaddle 3.x / oneDNN PIR Attribute incompatibility crash on Windows CPU
+# (ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>])
+os.environ["FLAGS_use_mkldnn"] = "0"
+os.environ["FLAGS_use_onednn"] = "0"
+os.environ["PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT"] = "0"
+os.environ["PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK"] = "True"
+
 import tempfile
 import threading
 from typing import Any, Dict, List, Optional, Tuple
@@ -97,7 +105,7 @@ def _build_engine():
             use_doc_unwarping=False, use_textline_orientation=False)))
     attempts.append(("PaddleOCR 3.x on CPU", dict(
         lang=lang, device="cpu", use_doc_orientation_classify=False,
-        use_doc_unwarping=False, use_textline_orientation=False)))
+        use_doc_unwarping=False, use_textline_orientation=False, enable_mkldnn=False)))
     attempts.append(("PaddleOCR 2.x", dict(
         lang=lang, use_angle_cls=True, use_gpu=want_gpu, show_log=False)))
     attempts.append(("PaddleOCR (defaults)", dict(lang=lang)))
