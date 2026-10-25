@@ -1,39 +1,39 @@
 {
   "Condition_A_No_Retrieval": {
     "n": 12,
-    "mae": 0.1667,
-    "rmse": 0.2887,
-    "normalized_mae": 0.033,
-    "exact_match_accuracy": 0.6667,
-    "within_0_5_mark_accuracy": 1.0,
-    "within_1_mark_accuracy": 1.0,
-    "pearson_r": 0.9923,
-    "spearman_rho": 0.9376,
-    "qwk": 0.9923
+    "mae": 0.25,
+    "rmse": 0.5401,
+    "normalized_mae": 0.0556,
+    "exact_match_accuracy": 0.75,
+    "within_0_5_mark_accuracy": 0.8333,
+    "within_1_mark_accuracy": 0.9167,
+    "pearson_r": 0.9738,
+    "spearman_rho": 0.8671,
+    "qwk": 0.9732
   },
   "Condition_B_Rubric_Plus_SymPy": {
     "n": 12,
-    "mae": 0.0833,
-    "rmse": 0.2041,
-    "normalized_mae": 0.0122,
-    "exact_match_accuracy": 0.8333,
+    "mae": 0.2083,
+    "rmse": 0.3227,
+    "normalized_mae": 0.0538,
+    "exact_match_accuracy": 0.5833,
     "within_0_5_mark_accuracy": 1.0,
     "within_1_mark_accuracy": 1.0,
-    "pearson_r": 0.9969,
-    "spearman_rho": 0.9796,
-    "qwk": 0.9961
+    "pearson_r": 0.9906,
+    "spearman_rho": 0.9409,
+    "qwk": 0.9901
   },
   "Condition_C_Hybrid_Train_Exemplars": {
     "n": 12,
-    "mae": 0.0,
-    "rmse": 0.0,
-    "normalized_mae": 0.0,
-    "exact_match_accuracy": 1.0,
+    "mae": 0.0417,
+    "rmse": 0.1443,
+    "normalized_mae": 0.0139,
+    "exact_match_accuracy": 0.9167,
     "within_0_5_mark_accuracy": 1.0,
     "within_1_mark_accuracy": 1.0,
-    "pearson_r": 1.0,
-    "spearman_rho": 1.0,
-    "qwk": 1.0
+    "pearson_r": 0.9983,
+    "spearman_rho": 0.9814,
+    "qwk": 0.9981
   },
   "Condition_D_Confidence_Based_Routing": {
     "n": 12,

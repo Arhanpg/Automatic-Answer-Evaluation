@@ -15,12 +15,17 @@ _lock = threading.Lock()
 _state = {"model": None, "tok": None}
 
 
+_STACK_AVAILABLE = None
+
 def stack_available():
-    try:
-        import torch, transformers, peft, bitsandbytes  # noqa: F401
-        return True
-    except Exception:
-        return False
+    global _STACK_AVAILABLE
+    if _STACK_AVAILABLE is None:
+        try:
+            import torch, transformers, peft, bitsandbytes  # noqa: F401
+            _STACK_AVAILABLE = True
+        except Exception:
+            _STACK_AVAILABLE = False
+    return _STACK_AVAILABLE
 
 
 def adapter_ready():

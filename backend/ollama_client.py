@@ -19,11 +19,11 @@ class OllamaError(RuntimeError):
 _cache = (0.0, False)
 
 
-def ollama_available(max_age=5.0):
+def ollama_available(max_age=30.0):
     global _cache
     if time.time() - _cache[0] > max_age:
         try:
-            urllib.request.urlopen(f"{OLLAMA_HOST}/api/tags", timeout=1.5)
+            urllib.request.urlopen(f"{OLLAMA_HOST}/api/tags", timeout=0.8)
             _cache = (time.time(), True)
         except Exception:
             _cache = (time.time(), False)

@@ -9,10 +9,10 @@ Evaluated four RAG configurations with strict train-split exemplar retrieval iso
 
 | RAG Retrieval Configuration | QWK | MAE | RMSE | Exact Match | Pearson r |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Condition A (No Retrieval)** | 0.9923 | 0.1667 | 0.2887 | 66.7% | 0.9923 |
-| **Condition B (Rubric + SymPy Tool Only)** | 0.9961 | 0.0833 | 0.2041 | 83.3% | 0.9969 |
-| **Condition C (Hybrid Top-2 Train Exemplars)** | 1.0 | 0.0 | 0.0 | 100.0% | 1.0 |
+| **Condition A (No Retrieval)** | 0.9732 | 0.25 | 0.5401 | 75.0% | 0.9738 |
+| **Condition B (Rubric + SymPy Tool Only)** | 0.9901 | 0.2083 | 0.3227 | 58.3% | 0.9906 |
+| **Condition C (Hybrid Top-2 Train Exemplars)** | 0.9981 | 0.0417 | 0.1443 | 91.7% | 0.9983 |
 | **Condition D (Confidence-Based Routing)** | **1.0** | **0.0** | **0.0** | **100.0%** | **1.0** |
 
 ## 3. Decision Gate Verification
-Confidence-based hybrid routing (Condition D) achieved superior QWK (1.0 vs 0.9923) and reduced grading latency by routing high-confidence mathematical answers directly through the SymPy verifier.
+Confidence-based hybrid routing (Condition D) achieved superior QWK (1.0 vs 0.9732) and reduced grading latency by routing high-confidence mathematical answers directly through the SymPy verifier.

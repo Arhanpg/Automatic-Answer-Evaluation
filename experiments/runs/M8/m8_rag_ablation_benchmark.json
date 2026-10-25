@@ -4,5 +4,5 @@
   "status": "SUCCESS",
   "condition_d_qwk": 1.0,
   "condition_d_mae": 0.0,
-  "wall_time_sec": 0.03
+  "wall_time_sec": 0.01
 }

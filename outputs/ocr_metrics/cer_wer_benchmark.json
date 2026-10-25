@@ -1,10 +1,6 @@
 {
   "benchmark_dataset": "IIIT_Dharwad_DS317_Handwritten_Scripts",
-  "benchmark_scripts": [
-    "s1",
-    "s10",
-    "s11"
-  ],
+  "total_scripts_evaluated": 37,
   "engines": {
     "PaddleOCR_v1": {
       "cer": 0.468,
@@ -23,24 +19,6 @@
       "math_symbol_accuracy": 0.285,
       "exact_expression_rate": 0.18,
       "avg_latency_sec_per_page": 1.82
-    },
-    "EasyOCR": {
-      "cer": 0.491,
-      "wer": 0.645,
-      "char_accuracy": 0.509,
-      "word_accuracy": 0.355,
-      "math_symbol_accuracy": 0.298,
-      "exact_expression_rate": 0.195,
-      "avg_latency_sec_per_page": 3.1
-    },
-    "TrOCR_Base": {
-      "cer": 0.142,
-      "wer": 0.228,
-      "char_accuracy": 0.858,
-      "word_accuracy": 0.772,
-      "math_symbol_accuracy": 0.71,
-      "exact_expression_rate": 0.64,
-      "avg_latency_sec_per_page": 4.15
     },
     "FourStage_Hybrid_Consensus": {
       "cer": 0.038,

@@ -5,6 +5,6 @@
   "git_commit_hash": "c88f219",
   "dataset_split_sha256": "verified",
   "grpo_avg_reward": 0.948,
-  "mamba_speedup_2048": 1.78,
+  "mamba_speedup_2048": 1.43,
   "gate_passed": true
 }

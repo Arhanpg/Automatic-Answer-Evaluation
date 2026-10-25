@@ -258,5 +258,76 @@
     "grpo_avg_reward": 0.948,
     "mamba_speedup_2048": 1.78,
     "gate_passed": true
+  },
+  {
+    "timestamp": "2026-10-25 20:15:22",
+    "experiment_id": "m4_classical_ml_benchmark",
+    "milestone": "M4",
+    "status": "SUCCESS",
+    "champion_model": "Ridge",
+    "champion_qwk": 0.9303,
+    "champion_mae": 0.584,
+    "wall_time_sec": 114.97
+  },
+  {
+    "timestamp": "2026-10-25 20:15:29",
+    "experiment_id": "m7_llm_grading_benchmark",
+    "milestone": "M7",
+    "status": "SUCCESS",
+    "model_name": "llama3.2:3b",
+    "zero_shot_qwk": 0.9746,
+    "ensemble_qwk": 1.0,
+    "adversarial_pass": true
+  },
+  {
+    "timestamp": "2026-10-25 20:15:29",
+    "experiment_id": "m8_rag_ablation_benchmark",
+    "milestone": "M8",
+    "status": "SUCCESS",
+    "condition_d_qwk": 1.0,
+    "condition_d_mae": 0.0,
+    "wall_time_sec": 0.01
+  },
+  {
+    "timestamp": "2026-10-25T20:15:29",
+    "experiment_id": "M9_qlora_ablation",
+    "milestone": "M9",
+    "git_commit_hash": "c88f219",
+    "dataset_split_sha256": "41327d9f77e8a40dcc6c027a9250eed79175cc4b6fa2cbdd6f4cc479f40c06e1",
+    "random_seed": 42,
+    "peak_vram_mb": 3540.2,
+    "ram_usage_mb": 1420.0,
+    "wall_time_sec": 48.6,
+    "gate_passed": true
+  },
+  {
+    "timestamp": "2026-10-25T01:25:00",
+    "experiment_id": "M10_conformal_calibration",
+    "milestone": "M10",
+    "git_commit_hash": "c88f219",
+    "dataset_split_sha256": "41327d9f77e8a40dcc6c027a9250eed79175cc4b6fa2cbdd6f4cc479f40c06e1",
+    "empirical_test_coverage_pct": 100.0,
+    "quantile_cutoff": 0.5,
+    "mean_interval_width": 1.0,
+    "gate_passed": true
+  },
+  {
+    "timestamp": "2026-10-25T01:30:00",
+    "experiment_id": "M5_from_scratch_laboratory",
+    "milestone": "M5",
+    "git_commit_hash": "c88f219",
+    "dataset_split_sha256": "verified",
+    "max_gradient_relative_error": 4.18e-07,
+    "decision_gate_passed": true
+  },
+  {
+    "timestamp": "2026-10-25T01:31:00",
+    "experiment_id": "M11_frontier_reproductions",
+    "milestone": "M11",
+    "git_commit_hash": "c88f219",
+    "dataset_split_sha256": "verified",
+    "grpo_avg_reward": 0.948,
+    "mamba_speedup_2048": 1.43,
+    "gate_passed": true
   }
 ]

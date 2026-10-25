@@ -5,7 +5,7 @@
 - **Empirical Coverage on Locked Test Partition**: **100.0%**
 - **Quantile Cutoff ($\hat{q}$)**: **0.500 marks** (with finite-sample correction)
 - **Average Prediction Interval Width**: **1.0 marks**
-- **Ensemble Variance ($s^2$)**: Mean = 0.028, Max = 0.167
+- **Ensemble Variance ($s^2$)**: Mean = 0.0274, Max = 0.097
 
 ## 2. OCR Corruption Stress Testing
 Simulated character corruption at 1%, 5%, and 10% Character Error Rate (CER):

@@ -13,19 +13,19 @@
       "coverage_pct": 100,
       "deferred_to_human_count": 0,
       "automated_count": 24,
-      "mae": 0.0833,
-      "rmse": 0.1443,
-      "qwk": 0.9907,
-      "exact_match_acc": 0.4583,
+      "mae": 0.0625,
+      "rmse": 0.125,
+      "qwk": 0.9982,
+      "exact_match_acc": 0.5,
       "within_1_mark_acc": 1.0
     },
     {
       "coverage_pct": 90,
       "deferred_to_human_count": 2,
       "automated_count": 22,
-      "mae": 0.0909,
-      "rmse": 0.1508,
-      "qwk": 0.9898,
+      "mae": 0.0568,
+      "rmse": 0.1192,
+      "qwk": 1.0,
       "exact_match_acc": 0.5,
       "within_1_mark_acc": 1.0
     },
@@ -33,20 +33,20 @@
       "coverage_pct": 80,
       "deferred_to_human_count": 5,
       "automated_count": 19,
-      "mae": 0.1053,
-      "rmse": 0.1622,
-      "qwk": 0.9881,
-      "exact_match_acc": 0.4737,
+      "mae": 0.0526,
+      "rmse": 0.1147,
+      "qwk": 1.0,
+      "exact_match_acc": 0.5263,
       "within_1_mark_acc": 1.0
     },
     {
       "coverage_pct": 70,
       "deferred_to_human_count": 7,
       "automated_count": 17,
-      "mae": 0.1029,
-      "rmse": 0.1604,
-      "qwk": 0.9892,
-      "exact_match_acc": 0.5294,
+      "mae": 0.0588,
+      "rmse": 0.1213,
+      "qwk": 1.0,
+      "exact_match_acc": 0.5882,
       "within_1_mark_acc": 1.0
     }
   ],
@@ -56,18 +56,18 @@
       "student_id": "s14",
       "question_id": "Q1",
       "max_marks": 8.0,
-      "predicted_mark": 6.0,
+      "predicted_mark": 6.25,
       "conformal_interval": [
-        5.5,
-        6.5
+        5.75,
+        6.75
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.817,
-      "levenshtein_discrepancy": 0.323,
-      "ensemble_variance": 0.0,
+      "ocr_confidence": 0.827,
+      "levenshtein_discrepancy": 0.336,
+      "ensemble_variance": 0.014,
       "flagged_reasons": [
-        "Low OCR confidence (0.82 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
+        "Low OCR confidence (0.83 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.34 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -82,12 +82,12 @@
         5.0
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.769,
-      "levenshtein_discrepancy": 0.282,
-      "ensemble_variance": 0.014,
+      "ocr_confidence": 0.776,
+      "levenshtein_discrepancy": 0.329,
+      "ensemble_variance": 0.056,
       "flagged_reasons": [
-        "Low OCR confidence (0.77 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.28 > 0.25)"
+        "Low OCR confidence (0.78 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.33 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -96,18 +96,18 @@
       "student_id": "s14",
       "question_id": "Q3",
       "max_marks": 3.0,
-      "predicted_mark": 2.25,
+      "predicted_mark": 2.5,
       "conformal_interval": [
-        1.75,
-        2.75
+        2.0,
+        3.0
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.809,
-      "levenshtein_discrepancy": 0.32,
-      "ensemble_variance": 0.014,
+      "ocr_confidence": 0.789,
+      "levenshtein_discrepancy": 0.293,
+      "ensemble_variance": 0.097,
       "flagged_reasons": [
-        "Low OCR confidence (0.81 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
+        "Low OCR confidence (0.79 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.29 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -122,11 +122,11 @@
         2.75
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.836,
-      "levenshtein_discrepancy": 0.29,
-      "ensemble_variance": 0.167,
+      "ocr_confidence": 0.833,
+      "levenshtein_discrepancy": 0.294,
+      "ensemble_variance": 0.014,
       "flagged_reasons": [
-        "Low OCR confidence (0.84 < 0.85)",
+        "Low OCR confidence (0.83 < 0.85)",
         "High Pass1/Pass2 OCR discrepancy (0.29 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
@@ -142,9 +142,9 @@
         2.75
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.96,
-      "levenshtein_discrepancy": 0.037,
-      "ensemble_variance": 0.014,
+      "ocr_confidence": 0.968,
+      "levenshtein_discrepancy": 0.076,
+      "ensemble_variance": 0.0,
       "flagged_reasons": [
         "Conceptual contradiction detected against rubric ground truth"
       ],
