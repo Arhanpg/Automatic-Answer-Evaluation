@@ -11,8 +11,8 @@ That gives clean text for folder 1 and clean marks for folder 2.
 import numpy as np
 from PIL import Image
 
-MAX_EDGE = 3200
-MIN_WIDTH = 1500
+MAX_EDGE = 1400
+MIN_WIDTH = 900
 
 
 def prepare_page(img, max_edge=MAX_EDGE, min_width=MIN_WIDTH):

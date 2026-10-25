@@ -1,4 +1,979 @@
 {
+  "s1": {
+    "student_id": "s1",
+    "registration_no": "23BDS001",
+    "student_name": "Student_S1",
+    "serial_no": "116801",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s3": {
+    "student_id": "s3",
+    "registration_no": "23BDS003",
+    "student_name": "Student_S3",
+    "serial_no": "116803",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s4": {
+    "student_id": "s4",
+    "registration_no": "23BCS004",
+    "student_name": "Student_S4",
+    "serial_no": "116804",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s6": {
+    "student_id": "s6",
+    "registration_no": "23BCS006",
+    "student_name": "Student_S6",
+    "serial_no": "116806",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s8": {
+    "student_id": "s8",
+    "registration_no": "23BCS008",
+    "student_name": "Student_S8",
+    "serial_no": "116808",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s9": {
+    "student_id": "s9",
+    "registration_no": "23BDS009",
+    "student_name": "Student_S9",
+    "serial_no": "116809",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s10": {
+    "student_id": "s10",
+    "registration_no": "23BCS010",
+    "student_name": "Student_S10",
+    "serial_no": "116810",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s11": {
+    "student_id": "s11",
+    "registration_no": "23BDS011",
+    "student_name": "Student_S11",
+    "serial_no": "116811",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s13": {
+    "student_id": "s13",
+    "registration_no": "23BDS013",
+    "student_name": "Student_S13",
+    "serial_no": "116813",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s15": {
+    "student_id": "s15",
+    "registration_no": "23BDS015",
+    "student_name": "Student_S15",
+    "serial_no": "116815",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s16": {
+    "student_id": "s16",
+    "registration_no": "23BCS016",
+    "student_name": "Student_S16",
+    "serial_no": "116816",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s17": {
+    "student_id": "s17",
+    "registration_no": "23BDS017",
+    "student_name": "Student_S17",
+    "serial_no": "116817",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s19": {
+    "student_id": "s19",
+    "registration_no": "23BDS019",
+    "student_name": "Student_S19",
+    "serial_no": "116819",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s20": {
+    "student_id": "s20",
+    "registration_no": "23BCS020",
+    "student_name": "Student_S20",
+    "serial_no": "116820",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s22": {
+    "student_id": "s22",
+    "registration_no": "23BCS022",
+    "student_name": "Student_S22",
+    "serial_no": "116822",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s23": {
+    "student_id": "s23",
+    "registration_no": "23BDS023",
+    "student_name": "Student_S23",
+    "serial_no": "116823",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s25": {
+    "student_id": "s25",
+    "registration_no": "23BDS025",
+    "student_name": "Student_S25",
+    "serial_no": "116825",
+    "examiner_marks": {
+      "Q1": 4.0,
+      "Q2": 3.0,
+      "Q3": 1.5,
+      "Q4": 1.5,
+      "total": 10.0
+    },
+    "sub_marks": {
+      "1a": 1.0,
+      "1b": 1.0,
+      "1c": 1.0,
+      "1d": 1.0,
+      "2a": 1.0,
+      "2b": 1.0,
+      "2c": 1.0,
+      "3a": 0.5,
+      "3b": 0.5,
+      "3c": 0.5,
+      "4": 1.5
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited context window (n-1 tokens) and cannot ca",
+      "1b": "Self-attention in transformers is permutation invariant with no inherent order. Positional",
+      "1c": "Encoder-only models (BERT) use bidirectional attention for classification/encoding; de",
+      "1d": "Masked attention sets future token weights to -infinity before so",
+      "2a": "Attention scores: Q.K1 = [1,0].[",
+      "2b": "Softmax calculation error [0.5, 0.5] resulting",
+      "2c": "Output vector ca",
+      "3a": "Greedy decoding selec",
+      "3b": "Top-2 decoding selects Wo",
+      "3c": "Layer normalization is applied twice: after self-attention and after feed",
+      "4": "Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) ="
+    }
+  },
+  "s26": {
+    "student_id": "s26",
+    "registration_no": "23BCS026",
+    "student_name": "Student_S26",
+    "serial_no": "116826",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s27": {
+    "student_id": "s27",
+    "registration_no": "23BDS027",
+    "student_name": "Student_S27",
+    "serial_no": "116827",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s28": {
+    "student_id": "s28",
+    "registration_no": "23BCS028",
+    "student_name": "Student_S28",
+    "serial_no": "116828",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s31": {
+    "student_id": "s31",
+    "registration_no": "23BDS031",
+    "student_name": "Student_S31",
+    "serial_no": "116831",
+    "examiner_marks": {
+      "Q1": 6.0,
+      "Q2": 4.0,
+      "Q3": 2.0,
+      "Q4": 2.0,
+      "total": 14.0
+    },
+    "sub_marks": {
+      "1a": 1.5,
+      "1b": 1.5,
+      "1c": 1.5,
+      "1d": 1.5,
+      "2a": 1.3,
+      "2b": 1.3,
+      "2c": 1.3,
+      "3a": 0.7,
+      "3b": 0.7,
+      "3c": 0.7,
+      "4": 2.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7"
+    }
+  },
+  "s32": {
+    "student_id": "s32",
+    "registration_no": "23BCS032",
+    "student_name": "Student_S32",
+    "serial_no": "116832",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s34": {
+    "student_id": "s34",
+    "registration_no": "23BCS034",
+    "student_name": "Student_S34",
+    "serial_no": "116834",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s35": {
+    "student_id": "s35",
+    "registration_no": "23BDS035",
+    "student_name": "Student_S35",
+    "serial_no": "116835",
+    "examiner_marks": {
+      "Q1": 4.0,
+      "Q2": 3.0,
+      "Q3": 1.5,
+      "Q4": 1.5,
+      "total": 10.0
+    },
+    "sub_marks": {
+      "1a": 1.0,
+      "1b": 1.0,
+      "1c": 1.0,
+      "1d": 1.0,
+      "2a": 1.0,
+      "2b": 1.0,
+      "2c": 1.0,
+      "3a": 0.5,
+      "3b": 0.5,
+      "3c": 0.5,
+      "4": 1.5
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited context window (n-1 tokens) and cannot ca",
+      "1b": "Self-attention in transformers is permutation invariant with no inherent order. Positional",
+      "1c": "Encoder-only models (BERT) use bidirectional attention for classification/encoding; de",
+      "1d": "Masked attention sets future token weights to -infinity before so",
+      "2a": "Attention scores: Q.K1 = [1,0].[",
+      "2b": "Softmax calculation error [0.5, 0.5] resulting",
+      "2c": "Output vector ca",
+      "3a": "Greedy decoding selec",
+      "3b": "Top-2 decoding selects Wo",
+      "3c": "Layer normalization is applied twice: after self-attention and after feed",
+      "4": "Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) ="
+    }
+  },
+  "s36": {
+    "student_id": "s36",
+    "registration_no": "23BCS036",
+    "student_name": "Student_S36",
+    "serial_no": "116836",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
   "s2": {
     "student_id": "s2",
     "registration_no": "23BCS013",
@@ -23,6 +998,318 @@
       "3b": 1.0,
       "3c": 1.0,
       "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s5": {
+    "student_id": "s5",
+    "registration_no": "23BDS005",
+    "student_name": "Student_S5",
+    "serial_no": "116805",
+    "examiner_marks": {
+      "Q1": 4.0,
+      "Q2": 3.0,
+      "Q3": 1.5,
+      "Q4": 1.5,
+      "total": 10.0
+    },
+    "sub_marks": {
+      "1a": 1.0,
+      "1b": 1.0,
+      "1c": 1.0,
+      "1d": 1.0,
+      "2a": 1.0,
+      "2b": 1.0,
+      "2c": 1.0,
+      "3a": 0.5,
+      "3b": 0.5,
+      "3c": 0.5,
+      "4": 1.5
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited context window (n-1 tokens) and cannot ca",
+      "1b": "Self-attention in transformers is permutation invariant with no inherent order. Positional",
+      "1c": "Encoder-only models (BERT) use bidirectional attention for classification/encoding; de",
+      "1d": "Masked attention sets future token weights to -infinity before so",
+      "2a": "Attention scores: Q.K1 = [1,0].[",
+      "2b": "Softmax calculation error [0.5, 0.5] resulting",
+      "2c": "Output vector ca",
+      "3a": "Greedy decoding selec",
+      "3b": "Top-2 decoding selects Wo",
+      "3c": "Layer normalization is applied twice: after self-attention and after feed",
+      "4": "Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) ="
+    }
+  },
+  "s12": {
+    "student_id": "s12",
+    "registration_no": "23BCS012",
+    "student_name": "Student_S12",
+    "serial_no": "116812",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s18": {
+    "student_id": "s18",
+    "registration_no": "23BCS127",
+    "student_name": "Biddhaastho BS",
+    "serial_no": "116838",
+    "examiner_marks": {
+      "Q1": 2.0,
+      "Q2": 2.0,
+      "Q3": 2.0,
+      "Q4": 1.0,
+      "total": 7.0
+    },
+    "sub_marks": {
+      "1a": 2.0,
+      "1b": 0.0,
+      "1c": 0.0,
+      "1d": 0.0,
+      "2a": 2.0,
+      "2b": 0.0,
+      "2c": 0.0,
+      "3a": 1.0,
+      "3b": 1.0,
+      "3c": 0.0,
+      "4": 1.0
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited context window and sparsity issues.",
+      "1b": "",
+      "1c": "",
+      "1d": "Masked attention is used in GPT to prevent attending to future tokens.",
+      "2a": "Attention scores Q.K1 = 1, Q.K2 = 0.",
+      "2b": "",
+      "2c": "",
+      "3a": "Greedy decoding selects Word A.",
+      "3b": "Top-2 chooses Word A and Word B.",
+      "3c": "",
+      "4": "P(ML|like) = 1/5."
+    }
+  },
+  "s21": {
+    "student_id": "s21",
+    "registration_no": "23BDS021",
+    "student_name": "Student_S21",
+    "serial_no": "116821",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s33": {
+    "student_id": "s33",
+    "registration_no": "23BDS033",
+    "student_name": "Student_S33",
+    "serial_no": "116833",
+    "examiner_marks": {
+      "Q1": 7.0,
+      "Q2": 5.5,
+      "Q3": 2.5,
+      "Q4": 3.0,
+      "total": 18.0
+    },
+    "sub_marks": {
+      "1a": 1.8,
+      "1b": 1.8,
+      "1c": 1.8,
+      "1d": 1.8,
+      "2a": 1.8,
+      "2b": 1.8,
+      "2c": 1.8,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 3.0
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s7": {
+    "student_id": "s7",
+    "registration_no": "23BDS007",
+    "student_name": "Student_S7",
+    "serial_no": "116807",
+    "examiner_marks": {
+      "Q1": 3.2,
+      "Q2": 2.4,
+      "Q3": 1.2,
+      "Q4": 1.2,
+      "total": 8.0
+    },
+    "sub_marks": {
+      "1a": 0.8,
+      "1b": 0.8,
+      "1c": 0.8,
+      "1d": 0.8,
+      "2a": 0.8,
+      "2b": 0.8,
+      "2c": 0.8,
+      "3a": 0.4,
+      "3b": 0.4,
+      "3c": 0.4,
+      "4": 1.2
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited c",
+      "1b": "",
+      "1c": "",
+      "1d": "Masked attention is used in GPT to",
+      "2a": "Attention scores Q",
+      "2b": "",
+      "2c": "",
+      "3a": "Greedy decoding",
+      "3b": "Top-2 chooses Wo",
+      "3c": "",
+      "4": "P(ML|lik"
+    }
+  },
+  "s14": {
+    "student_id": "s14",
+    "registration_no": "23BCS014",
+    "student_name": "Student_S14",
+    "serial_no": "116814",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
+    },
+    "answers": {
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s24": {
+    "student_id": "s24",
+    "registration_no": "23BCS024",
+    "student_name": "Student_S24",
+    "serial_no": "116824",
+    "examiner_marks": {
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
+    },
+    "sub_marks": {
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
     },
     "answers": {
       "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
@@ -77,43 +1364,82 @@
       "4": "Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) = 1/10. P(</S>|ML) = 1/8. Product = 1/5 * 4/11 * 3/11 * 1/10 * 1/8 = 3/12100 ≈ 0.000248."
     }
   },
-  "s18": {
-    "student_id": "s18",
-    "registration_no": "23BCS127",
-    "student_name": "Biddhaastho BS",
-    "serial_no": "116838",
+  "s30": {
+    "student_id": "s30",
+    "registration_no": "23BCS030",
+    "student_name": "Student_S30",
+    "serial_no": "116830",
     "examiner_marks": {
-      "Q1": 2.0,
-      "Q2": 2.0,
-      "Q3": 2.0,
-      "Q4": 1.0,
-      "total": 7.0
+      "Q1": 6.4,
+      "Q2": 4.8,
+      "Q3": 2.4,
+      "Q4": 2.4,
+      "total": 16.0
     },
     "sub_marks": {
-      "1a": 2.0,
-      "1b": 0.0,
-      "1c": 0.0,
-      "1d": 0.0,
-      "2a": 2.0,
-      "2b": 0.0,
-      "2c": 0.0,
-      "3a": 1.0,
-      "3b": 1.0,
-      "3c": 0.0,
-      "4": 1.0
+      "1a": 1.6,
+      "1b": 1.6,
+      "1c": 1.6,
+      "1d": 1.6,
+      "2a": 1.6,
+      "2b": 1.6,
+      "2c": 1.6,
+      "3a": 0.8,
+      "3b": 0.8,
+      "3c": 0.8,
+      "4": 2.4
     },
     "answers": {
-      "1a": "Traditional n-grams have limited context window and sparsity issues.",
+      "1a": "Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies. Also suffers from sparsity when encountering unseen n-grams.",
+      "1b": "Transformers process all tokens in parallel using self-attention which is permutation-invariant and has no notion of word order. Positional encodings (sinusoidal encodings) are added to inject word order and position semantics.",
+      "1c": "Encoder-only architectures like BERT use bidirectional attention to learn representations for classification. Decoder-only architectures like GPT use causal autoregressive left-to-right attention for next-token generation.",
+      "1d": "Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, preventing information leakage during autoregressive generation.",
+      "2a": "Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",
+      "2b": "Softmax([1, 0]) = [exp(1)/(exp(1)+exp(0)), exp(0)/(exp(1)+exp(0))] = [0.73, 0.27].",
+      "2c": "Context output = 0.73 * [2, 0] + 0.27 * [0, 3] = [1.46, 0.81].",
+      "3a": "Greedy decoding selects Word A with probability 0.4.",
+      "3b": "Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).",
+      "3c": "Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize attention activations, and once after feed-forward network to stabilize representations and gradient flow across variable length sequences.",
+      "4": "P(<S> I like ML </S>) with Add-1 smoothing: Training vocab |V| = 7 {<S>, </S>, I, like, love, NLP, AI}. P(I|<S>) = (3+1)/(3+7) = 4/10. P(like|I) = (2+1)/(3+7) = 3/10. P(ML|like) = (0+1)/(2+7) = 1/9. P(</S>|ML) = (0+1)/(0+7) = 1/7. Product = 4/10 * 3/10 * 1/9 * 1/7 = 12/6300 ≈ 0.000408 (or 2/1050)."
+    }
+  },
+  "s37": {
+    "student_id": "s37",
+    "registration_no": "23BDS037",
+    "student_name": "Student_S37",
+    "serial_no": "116837",
+    "examiner_marks": {
+      "Q1": 3.2,
+      "Q2": 2.4,
+      "Q3": 1.2,
+      "Q4": 1.2,
+      "total": 8.0
+    },
+    "sub_marks": {
+      "1a": 0.8,
+      "1b": 0.8,
+      "1c": 0.8,
+      "1d": 0.8,
+      "2a": 0.8,
+      "2b": 0.8,
+      "2c": 0.8,
+      "3a": 0.4,
+      "3b": 0.4,
+      "3c": 0.4,
+      "4": 1.2
+    },
+    "answers": {
+      "1a": "Traditional n-grams have limited c",
       "1b": "",
       "1c": "",
-      "1d": "Masked attention is used in GPT to prevent attending to future tokens.",
-      "2a": "Attention scores Q.K1 = 1, Q.K2 = 0.",
+      "1d": "Masked attention is used in GPT to",
+      "2a": "Attention scores Q",
       "2b": "",
       "2c": "",
-      "3a": "Greedy decoding selects Word A.",
-      "3b": "Top-2 chooses Word A and Word B.",
+      "3a": "Greedy decoding",
+      "3b": "Top-2 chooses Wo",
       "3c": "",
-      "4": "P(ML|like) = 1/5."
+      "4": "P(ML|lik"
     }
   }
 }

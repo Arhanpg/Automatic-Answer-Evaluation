@@ -47,8 +47,8 @@ ASSUMED_GPU_VRAM_GB = float(os.environ.get("AAE_GPU_VRAM_GB", "4"))   # set 8 if
 
 # ---- OCR -----------------------------------------------------------------
 PADDLEOCR_LANG = os.environ.get("AAE_OCR_LANG", "en")
-PADDLEOCR_DEVICE = os.environ.get("AAE_OCR_DEVICE", "gpu")   # "gpu" or "cpu"
-OCR_DPI = int(os.environ.get("AAE_OCR_DPI", "200"))
+PADDLEOCR_DEVICE = os.environ.get("AAE_OCR_DEVICE", "cpu")   # "gpu" or "cpu"
+OCR_DPI = int(os.environ.get("AAE_OCR_DPI", "130"))
 # Digital PDFs (like your question paper / key) already contain exact text.
 # Reading that is 100% accurate, so we use it and only OCR scanned pages.
 PREFER_PDF_TEXT_LAYER = True

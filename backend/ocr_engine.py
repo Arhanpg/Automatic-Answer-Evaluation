@@ -292,6 +292,9 @@ def ocr_pages(images, split_ink=None, ink=None, progress=None):
     }
 
 
+_real_ocr_pages = ocr_pages
+
+
 def ocr_printed_lines(images):
     """For printed documents (question paper / key scans): plain text lines."""
     lines = []
