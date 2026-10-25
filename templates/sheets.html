@@ -9,8 +9,12 @@
 <p class="hint">Works with one PDF per student (<code>s1.pdf</code>), a sub-folder of photos per student (<code>s1/</code>), pages named <code>21CS045_1.jpg</code>, or one image per student. The file / folder name becomes the student id.</p>
 <div class="row"><input type="text" id="folder" class="grow" placeholder="F:\Automatic answer evaluation dataset\All PDF's"><button class="btn primary" onclick="startOcr(this)">Run OCR</button>
 {% if demo %}<button class="btn secondary" onclick="startDemo(this)">Create 30 demo students</button>{% endif %}</div>
-<div class="row" style="margin-top:10px"><label class="hint tight"><input type="checkbox" id="split" {{ 'checked' if split_ink }}> teacher's marks are in coloured ink - read them separately from the student's writing</label>
+<div class="row" style="margin-top:8px"><label class="hint tight"><input type="checkbox" id="split" {{ 'checked' if split_ink }}> teacher's marks are in coloured ink - read them separately from the student's writing</label>
 <select id="ink" style="width:auto"><option value="red" {{ 'selected' if ink=='red' }}>red ink</option><option value="green" {{ 'selected' if ink=='green' }}>green ink</option></select></div>
+<div class="row" style="margin-top:8px; display:flex; align-items:center; gap:16px;">
+  <label class="hint tight" style="font-weight:600; color:#1e293b;"><input type="checkbox" id="force_live" checked> Force live OCR (re-run OCR models on pages, extract fresh text with errors, and update reports)</label>
+  <label class="hint tight" style="color:#64748b;">Max scripts to process: <input type="number" id="max_scripts" style="width:75px; display:inline-block; padding:3px 6px; border:1px solid #cbd5e1; border-radius:4px;" placeholder="All" min="1" max="100"></label>
+</div>
 <div class="progress" id="p-sheets"><div class="bar"><div class="fill"></div></div><div class="ptext"></div></div></section>
 
 <section class="card"><h2>Marks from a CSV (fallback)</h2>
@@ -29,11 +33,24 @@
 {% for s in students %}<tr class="{{ 'badrow' if s.ocr_status=='ocr_failed' else ('warnrow' if s.flags) }}"><td class="mono">{{ s.roll_number }}</td><td>{{ s.n_pages }}</td>
 <td>{% if s.ocr_status=='ocr_failed' %}<span class="chip bad">failed</span>{% else %}<span class="chip good">read</span>{% endif %}</td>
 <td>{% for f in s.flags %}<div style="font-size:12.5px">{{ f }}</div>{% endfor %}</td><td><a class="btn ghost" href="/verify/{{ s.roll_number }}">Open</a></td></tr>{% endfor %}
-</tbody></table></div>{% else %}<p class="hint">No students yet.</p>{% endif %}</section>
+</tbody></table></div>{% else %}<p class="hint">No students yet. Click 'Run OCR' above to scan scripts.</p>{% endif %}</section>
 {% endblock %}
 {% block scripts %}<script>
 const $ = id => document.getElementById(id);
-async function startOcr(b){ await run(b, async()=>{ await api('/api/sheets/start',{folder_path:$('folder').value, split_ink:$('split').checked, ink:$('ink').value}); showProgress('sheets',0,0,'Starting...'); watchJob('sheets', ()=>location.reload()); }); }
+async function startOcr(b){
+  await run(b, async()=>{
+    const maxVal = $('max_scripts').value.trim();
+    await api('/api/sheets/start',{
+      folder_path: $('folder').value,
+      split_ink: $('split').checked,
+      ink: $('ink').value,
+      force_live_ocr: $('force_live').checked,
+      max_scripts: maxVal ? parseInt(maxVal, 10) : null
+    });
+    showProgress('sheets',0,0,'Starting OCR...');
+    watchJob('sheets', ()=>location.reload());
+  });
+}
 async function startDemo(b){ await run(b, async()=>{ await api('/api/sheets/demo',{n:30}); watchJob('sheets', ()=>location.reload()); }); }
 async function importCsv(b){ await run(b, async()=>{ const r=await api('/api/sheets/marks_csv',{csv_path:$('csv').value}); $('csv-res').textContent='Updated '+r.cells_updated+' marks.'; }); }
 async function resetStudents(b){

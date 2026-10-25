@@ -10,9 +10,8 @@ get an OCRUnavailable error with install instructions (use AAE_MODE=demo if
 you only want to click around the UI).
 """
 import os
+import re
 
-# Prevent PaddlePaddle 3.x / oneDNN PIR Attribute incompatibility crash on Windows CPU
-# (ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>])
 os.environ["FLAGS_use_mkldnn"] = "0"
 os.environ["FLAGS_use_onednn"] = "0"
 os.environ["PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT"] = "0"
@@ -105,7 +104,9 @@ def _build_engine():
             use_doc_unwarping=False, use_textline_orientation=False)))
     attempts.append(("PaddleOCR 3.x on CPU", dict(
         lang=lang, device="cpu", use_doc_orientation_classify=False,
-        use_doc_unwarping=False, use_textline_orientation=False, enable_mkldnn=False)))
+        use_doc_unwarping=False, use_textline_orientation=False,
+        text_recognition_batch_size=16, text_det_limit_side_len=960,
+        enable_mkldnn=False)))
     attempts.append(("PaddleOCR 2.x", dict(
         lang=lang, use_angle_cls=True, use_gpu=want_gpu, show_log=False)))
     attempts.append(("PaddleOCR (defaults)", dict(lang=lang)))
@@ -128,6 +129,25 @@ def _poly_to_bbox(poly):
     pts = np.asarray(poly, dtype=float).reshape(-1, 2)
     return [float(pts[:, 0].min()), float(pts[:, 1].min()),
             float(pts[:, 0].max()), float(pts[:, 1].max())]
+
+
+def _clean_ocr_text(text: str) -> str:
+    if not text:
+        return ""
+    # Map common unicode arrows and symbols to safe ASCII equivalents
+    text = text.replace("\u2192", "->").replace("\u2190", "<-").replace("\u2194", "<->")
+    text = text.replace("\u2018", "'").replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("\u2013", "-").replace("\u2014", "-").replace("\u2022", "*")
+    # Strip non-printable / control characters (keep ASCII printables and basic whitespace)
+    cleaned = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    # Strip CJK Unified Ideographs, Hangul, Katakana, Hiragana that Paddle hallucinates on scribbles
+    cleaned = re.sub(r'[\u2E80-\u9FFF\uAC00-\uD7AF\uF900-\uFAFF]', '', cleaned)
+    # Safely convert any remaining non-encodable glyphs
+    try:
+        cleaned.encode("ascii")
+    except UnicodeEncodeError:
+        cleaned = cleaned.encode("ascii", errors="replace").decode("ascii")
+    return cleaned.strip()
 
 
 def lines_from_result(out):
@@ -154,13 +174,17 @@ def lines_from_result(out):
                 polys = data.get("rec_boxes")
             polys = list(polys) if polys is not None else []
             for t, s, p in zip(texts, scores, polys):
-                lines.append({"text": str(t), "bbox": _poly_to_bbox(p), "conf": float(s)})
+                ct = _clean_ocr_text(str(t))
+                if ct:
+                    lines.append({"text": ct, "bbox": _poly_to_bbox(p), "conf": float(s)})
             continue
         # ---- 2.x: [[poly, (text, conf)], ...] for one image
         for item in res:
             try:
                 poly, (text, conf) = item
-                lines.append({"text": str(text), "bbox": _poly_to_bbox(poly), "conf": float(conf)})
+                ct = _clean_ocr_text(str(text))
+                if ct:
+                    lines.append({"text": ct, "bbox": _poly_to_bbox(poly), "conf": float(conf)})
             except (TypeError, ValueError):
                 continue
     return lines

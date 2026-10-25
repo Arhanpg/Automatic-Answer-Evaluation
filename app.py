@@ -303,8 +303,12 @@ def api_sheets_start():
     from backend import ocr_engine
     if not ocr_engine.paddleocr_available():
         raise ValueError(ocr_engine.INSTALL_HELP)
+    force_live_ocr = bool(d.get("force_live_ocr", False))
+    max_scripts = int(d["max_scripts"]) if d.get("max_scripts") else None
     pipeline.start_job("sheets", pipeline.job_process_sheets, folder,
-                       bool(d.get("split_ink", config.SEPARATE_TEACHER_INK)), d.get("ink") or config.TEACHER_INK)
+                       bool(d.get("split_ink", config.SEPARATE_TEACHER_INK)),
+                       d.get("ink") or config.TEACHER_INK,
+                       force_live_ocr, max_scripts)
     return jsonify({"status": "started"})
 
 

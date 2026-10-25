@@ -67,23 +67,23 @@ class _Segmenter:
         self.cur_id = None
         self.buf, self.events = {}, []
 
-    def _flush_left(self, row):
+    def _flush_left(self, row, tolerance=0.55):
         left, width = self.page_stats.get(row["page"], (0, 1))
-        return row["x0"] <= left + 0.35 * width
+        return row["x0"] <= left + tolerance * width
 
     def _match(self, text, row):
         clean_text = re.sub(r"^[^\w\(\[]+\s*", "", text)
         if clean_text:
             text = clean_text
 
-        flush = self._flush_left(row)
+        flush = self._flush_left(row, tolerance=0.55)
         m = FULL_RE.match(text)
-        if m and flush:
+        if m and (flush or text.lower().startswith(("q", "ans", "question", "answer"))):
             q, sub = m.group(1), m.group(2).lower()
             if sub in self.q_parts.get(q, []) and (q + sub) not in self.seen_ids:
                 return q, sub, m.group(3)
         m = Q_RE.match(text) or QWORD_RE.match(text)
-        if m and flush:
+        if m and (flush or text.lower().startswith(("q", "ans", "question", "answer"))):
             q, rest = m.group(1), m.group(2)
             if q in self.q_parts and q not in self.seen_q:
                 ms = SUB_RE.match(rest)
@@ -91,7 +91,7 @@ class _Segmenter:
                     return q, ms.group(1).lower(), ms.group(2)
                 return q, None, rest
         m = SUB_RE.match(text)
-        if m:
+        if m and self._flush_left(row, tolerance=0.40):
             sub, rest = m.group(1).lower(), m.group(2)
             if not self.cur_q:
                 first_q = next((qid for qid, parts in self.q_parts.items() if sub in parts), None)

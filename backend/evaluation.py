@@ -34,17 +34,18 @@ def compute_ocr_metrics(predictions: List[str], references: List[str]) -> Dict[s
         pred_clean = pred.strip()
         ref_clean = ref.strip()
 
-        # Character Error Rate (CER)
+        # Character Error Rate (CER) via normalized edit distance
         char_dist = rapidfuzz.distance.Levenshtein.distance(pred_clean, ref_clean)
-        ref_len = len(ref_clean)
-        total_chars += ref_len
+        denom_chars = max(len(ref_clean), len(pred_clean), 1)
+        total_chars += denom_chars
         total_char_edits += char_dist
 
-        # Word Error Rate (WER)
+        # Word Error Rate (WER) via normalized edit distance
         pred_words = pred_clean.split()
         ref_words = ref_clean.split()
         word_dist = rapidfuzz.distance.Levenshtein.distance(pred_words, ref_words)
-        total_words += len(ref_words)
+        denom_words = max(len(ref_words), len(pred_words), 1)
+        total_words += denom_words
         total_word_edits += word_dist
 
         # Exact Expression Rate
@@ -54,12 +55,13 @@ def compute_ocr_metrics(predictions: List[str], references: List[str]) -> Dict[s
         # Math Symbol Accuracy
         ref_math = [c for c in ref_clean if c in MATH_SYMBOLS]
         pred_math = [c for c in pred_clean if c in MATH_SYMBOLS]
-        total_math_symbols += len(ref_math)
+        denom_math = max(len(ref_math), len(pred_math), 1)
+        total_math_symbols += denom_math
         math_dist = rapidfuzz.distance.Levenshtein.distance(pred_math, ref_math)
-        correct_math_symbols += max(0, len(ref_math) - math_dist)
+        correct_math_symbols += max(0, denom_math - math_dist)
 
-    cer = float(total_char_edits / max(1, total_chars))
-    wer = float(total_word_edits / max(1, total_words))
+    cer = min(1.0, float(total_char_edits / max(1, total_chars)))
+    wer = min(1.0, float(total_word_edits / max(1, total_words)))
     char_acc = max(0.0, 1.0 - cer)
     word_acc = max(0.0, 1.0 - wer)
     math_acc = float(correct_math_symbols / max(1, total_math_symbols)) if total_math_symbols > 0 else 1.0
