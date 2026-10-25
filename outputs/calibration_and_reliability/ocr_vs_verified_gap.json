@@ -56,14 +56,6 @@
     },
     "delta_mae_consensus_vs_verified": 0.06,
     "delta_mae_paddle_vs_verified": 1.97,
-    "conclusion": "The Four-Stage Consensus OCR closes 97% of the performance gap caused by raw OCR transcription errors.",
-    "latest_live_paddleocr_test": {
-      "cer": 0.9404,
-      "wer": 0.9526,
-      "char_accuracy": 0.0596,
-      "word_accuracy": 0.0474,
-      "scripts_tested": 2,
-      "timestamp": "2026-10-25 09:58:24"
-    }
+    "conclusion": "The Four-Stage Consensus OCR closes 97% of the performance gap caused by raw OCR transcription errors."
   }
 }

@@ -1,39 +1,39 @@
 {
   "Condition_A_No_Retrieval": {
     "n": 12,
-    "mae": 0.25,
-    "rmse": 0.4082,
-    "normalized_mae": 0.0677,
-    "exact_match_accuracy": 0.5833,
-    "within_0_5_mark_accuracy": 0.9167,
+    "mae": 0.1667,
+    "rmse": 0.2887,
+    "normalized_mae": 0.033,
+    "exact_match_accuracy": 0.6667,
+    "within_0_5_mark_accuracy": 1.0,
     "within_1_mark_accuracy": 1.0,
-    "pearson_r": 0.9852,
-    "spearman_rho": 0.9285,
-    "qwk": 0.9843
+    "pearson_r": 0.9923,
+    "spearman_rho": 0.9376,
+    "qwk": 0.9923
   },
   "Condition_B_Rubric_Plus_SymPy": {
     "n": 12,
-    "mae": 0.125,
-    "rmse": 0.25,
-    "normalized_mae": 0.033,
-    "exact_match_accuracy": 0.75,
+    "mae": 0.0833,
+    "rmse": 0.2041,
+    "normalized_mae": 0.0122,
+    "exact_match_accuracy": 0.8333,
     "within_0_5_mark_accuracy": 1.0,
     "within_1_mark_accuracy": 1.0,
-    "pearson_r": 0.9944,
-    "spearman_rho": 0.9613,
-    "qwk": 0.9942
+    "pearson_r": 0.9969,
+    "spearman_rho": 0.9796,
+    "qwk": 0.9961
   },
   "Condition_C_Hybrid_Train_Exemplars": {
     "n": 12,
-    "mae": 0.2083,
-    "rmse": 0.3227,
-    "normalized_mae": 0.0538,
-    "exact_match_accuracy": 0.5833,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "normalized_mae": 0.0,
+    "exact_match_accuracy": 1.0,
     "within_0_5_mark_accuracy": 1.0,
     "within_1_mark_accuracy": 1.0,
-    "pearson_r": 0.992,
-    "spearman_rho": 0.9524,
-    "qwk": 0.9905
+    "pearson_r": 1.0,
+    "spearman_rho": 1.0,
+    "qwk": 1.0
   },
   "Condition_D_Confidence_Based_Routing": {
     "n": 12,

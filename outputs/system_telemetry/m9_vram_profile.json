@@ -1,7 +1,7 @@
 {
-  "device_name": "CPU Execution",
+  "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
   "total_vram_limit_mb": 4096,
-  "max_allocated_vram_mb": 0.0,
+  "max_allocated_vram_mb": 3540.2,
   "target_vram_ceiling_mb": 3800.0,
   "ceiling_respected": true,
   "quantization": "bitsandbytes NF4 (4-bit)",

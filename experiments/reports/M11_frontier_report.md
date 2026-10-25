@@ -25,10 +25,10 @@ This track replicates three frontier deep learning directions on the 4GB RTX 305
 
 | Sequence Length ($L$) | Mamba Latency (ms) | Transformer Latency (ms) | Mamba Speedup | Mamba Memory (MB) | Transformer Memory (MB) | Memory Blowup |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **128 Tokens** | 5.83 ms | 49.79 ms | 8.54x | 0.0352 MB | 0.125 MB | 3.56x |
-| **512 Tokens** | 12.93 ms | 22.62 ms | 1.75x | 0.1289 MB | 1.25 MB | 9.7x |
-| **1024 Tokens** | 28.11 ms | 54.87 ms | 1.95x | 0.2539 MB | 4.5 MB | 17.72x |
-| **2048 Tokens** | 55.95 ms | 119.11 ms | 2.13x | 0.5039 MB | 17.0 MB | 33.74x |
+| **128 Tokens** | 6.05 ms | 1.02 ms | 0.17x | 0.0352 MB | 0.125 MB | 3.56x |
+| **512 Tokens** | 22.78 ms | 6.7 ms | 0.29x | 0.1289 MB | 1.25 MB | 9.7x |
+| **1024 Tokens** | 33.92 ms | 25.72 ms | 0.76x | 0.2539 MB | 4.5 MB | 17.72x |
+| **2048 Tokens** | 61.1 ms | 109.0 ms | 1.78x | 0.5039 MB | 17.0 MB | 33.74x |
 
 *Key Finding*: At 2048 tokens (approx. full 6-page student script), Transformer attention memory blows up quadratically, whereas Mamba maintains constant state size and linear memory scaling.
 

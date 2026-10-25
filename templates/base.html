@@ -18,6 +18,13 @@
     <a href="/results" class="{{ 'active' if request.path == '/results' }}"><span class="nav-num">5</span> Results</a>
     <a href="/metrics-dashboard" class="{{ 'active' if request.path == '/metrics-dashboard' }}"><span class="nav-num">&#128202;</span> Metrics Dashboard</a>
   </nav>
+  <div class="gpu-badge-box" id="gpu-badge-box">
+    <div class="gpu-header">
+      <span class="gpu-dot on" id="gpu-dot"></span>
+      <span id="gpu-title-text">NVIDIA RTX 3050</span>
+    </div>
+    <div class="gpu-sub" id="gpu-vram-sub">VRAM: 0 / 4096 MB</div>
+  </div>
   <div class="rt" id="rt">
     <div><span class="dot {{ 'on' if rt.paddleocr else 'off' }}"></span> PaddleOCR {{ 'ready' if rt.paddleocr else 'NOT installed' }}</div>
     <div><span class="dot {{ 'on' if rt.ollama else 'off' }}"></span> Ollama {{ 'running' if rt.ollama else 'not running' }}</div>
@@ -26,6 +33,23 @@
   </div>
 </aside>
 <main class="content">
+  <!-- Global Resumable Sticky Progress Bar Across All Tab Switches -->
+  <div id="global-job-banner" class="global-job-banner" style="display:none;">
+    <div class="job-bar-info">
+      <div>
+        <span class="job-pulse-dot"></span>
+        <span id="global-job-title"><b>Background Job Active:</b> Initializing...</span>
+      </div>
+      <div>
+        <span id="global-job-vram" class="job-vram-badge">VRAM: 0 MB</span>
+        <span id="global-job-eta" class="job-eta-badge">Step 0/0</span>
+      </div>
+    </div>
+    <div class="global-progress-track">
+      <div id="global-job-fill" class="global-progress-fill" style="width: 0%;"></div>
+    </div>
+  </div>
+
   {% if demo %}<div class="banner demo"><b>DEMO MODE</b> - everything you see for answer sheets, marks and grading is synthetic. Real OCR / grading is switched off. Start without <code>AAE_MODE=demo</code> for real work.</div>
   {% elif not rt.paddleocr %}<div class="banner err"><b>PaddleOCR is not installed.</b> The exam setup works for digital PDFs, but handwritten sheets cannot be read until PaddleOCR is installed (see README step 3). No fake data will be generated.</div>{% endif %}
   {% block content %}{% endblock %}

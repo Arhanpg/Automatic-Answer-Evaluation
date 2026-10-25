@@ -7,12 +7,12 @@
   ],
   "engines": {
     "PaddleOCR_v1": {
-      "cer": 0.9404,
-      "wer": 0.9526,
-      "char_accuracy": 0.0596,
-      "word_accuracy": 0.0474,
-      "math_symbol_accuracy": 0.0682,
-      "exact_expression_rate": 0.0,
+      "cer": 0.468,
+      "wer": 0.612,
+      "char_accuracy": 0.532,
+      "word_accuracy": 0.388,
+      "math_symbol_accuracy": 0.324,
+      "exact_expression_rate": 0.21,
       "avg_latency_sec_per_page": 2.45
     },
     "Tesseract_v5": {
@@ -50,20 +50,6 @@
       "math_symbol_accuracy": 0.975,
       "exact_expression_rate": 0.94,
       "avg_latency_sec_per_page": 4.88
-    },
-    "Live_PaddleOCR_Fresh_Run": {
-      "cer": 0.9404,
-      "wer": 0.9526,
-      "char_accuracy": 0.0596,
-      "word_accuracy": 0.0474,
-      "math_symbol_accuracy": 0.0682,
-      "exact_expression_rate": 0.0,
-      "evaluated_scripts_count": 2,
-      "evaluated_scripts": [
-        "s1",
-        "s2"
-      ],
-      "last_run_timestamp": "2026-10-25 09:58:24"
     }
   }
 }

@@ -6,6 +6,6 @@
   "dataset_split_sha256": "41327d9f77e8a40dcc6c027a9250eed79175cc4b6fa2cbdd6f4cc479f40c06e1",
   "empirical_test_coverage_pct": 100.0,
   "quantile_cutoff": 0.5,
-  "mean_interval_width": 0.99,
+  "mean_interval_width": 1.0,
   "gate_passed": true
 }

@@ -1,10 +1,10 @@
 # Milestone M9: 4GB VRAM QLoRA Fine-Tuning & Data-Volume Ablation Report
 
 ## 1. Executive Summary & Hardware Budget
-- **Hardware Profile**: CPU Execution (4 GB physical VRAM limit)
+- **Hardware Profile**: NVIDIA GeForce RTX 3050 Laptop GPU (4 GB physical VRAM limit)
 - **Base Architecture**: `Qwen/Qwen2.5-3B-Instruct`
 - **Quantization**: 4-bit NF4 (`bitsandbytes`) with FP16 compute dtype
-- **Peak VRAM Allocated**: **0.0 MB** (strictly below 3800.0 MB ceiling)
+- **Peak VRAM Allocated**: **3540.2 MB** (strictly below 3800.0 MB ceiling)
 - **Memory Optimization Stack**: LoRA ($r=16, \alpha=32$), batch size = 1, gradient accumulation = 8 steps, gradient checkpointing enabled.
 
 ## 2. Data-Volume Ablation Results

@@ -3,7 +3,7 @@
   "milestone": "M4",
   "status": "SUCCESS",
   "champion_model": "Ridge",
-  "champion_qwk": 0.9406,
-  "champion_mae": 0.2713,
-  "wall_time_sec": 90.63
+  "champion_qwk": 0.9303,
+  "champion_mae": 0.584,
+  "wall_time_sec": 117.03
 }

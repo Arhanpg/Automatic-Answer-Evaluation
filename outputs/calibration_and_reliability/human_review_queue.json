@@ -13,20 +13,20 @@
       "coverage_pct": 100,
       "deferred_to_human_count": 0,
       "automated_count": 24,
-      "mae": 0.1042,
-      "rmse": 0.1614,
-      "qwk": 0.9922,
-      "exact_match_acc": 0.75,
+      "mae": 0.0833,
+      "rmse": 0.1443,
+      "qwk": 0.9907,
+      "exact_match_acc": 0.4583,
       "within_1_mark_acc": 1.0
     },
     {
       "coverage_pct": 90,
       "deferred_to_human_count": 2,
       "automated_count": 22,
-      "mae": 0.1023,
-      "rmse": 0.1599,
-      "qwk": 0.9938,
-      "exact_match_acc": 0.7727,
+      "mae": 0.0909,
+      "rmse": 0.1508,
+      "qwk": 0.9898,
+      "exact_match_acc": 0.5,
       "within_1_mark_acc": 1.0
     },
     {
@@ -35,8 +35,8 @@
       "automated_count": 19,
       "mae": 0.1053,
       "rmse": 0.1622,
-      "qwk": 0.9951,
-      "exact_match_acc": 0.7895,
+      "qwk": 0.9881,
+      "exact_match_acc": 0.4737,
       "within_1_mark_acc": 1.0
     },
     {
@@ -45,8 +45,8 @@
       "automated_count": 17,
       "mae": 0.1029,
       "rmse": 0.1604,
-      "qwk": 0.9943,
-      "exact_match_acc": 0.7647,
+      "qwk": 0.9892,
+      "exact_match_acc": 0.5294,
       "within_1_mark_acc": 1.0
     }
   ],
@@ -62,12 +62,12 @@
         6.5
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.832,
-      "levenshtein_discrepancy": 0.343,
+      "ocr_confidence": 0.817,
+      "levenshtein_discrepancy": 0.323,
       "ensemble_variance": 0.0,
       "flagged_reasons": [
-        "Low OCR confidence (0.83 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.34 > 0.25)"
+        "Low OCR confidence (0.82 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -76,18 +76,18 @@
       "student_id": "s14",
       "question_id": "Q2",
       "max_marks": 6.0,
-      "predicted_mark": 4.75,
+      "predicted_mark": 4.5,
       "conformal_interval": [
-        4.25,
-        5.25
+        4.0,
+        5.0
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.767,
-      "levenshtein_discrepancy": 0.316,
-      "ensemble_variance": 0.042,
+      "ocr_confidence": 0.769,
+      "levenshtein_discrepancy": 0.282,
+      "ensemble_variance": 0.014,
       "flagged_reasons": [
         "Low OCR confidence (0.77 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
+        "High Pass1/Pass2 OCR discrepancy (0.28 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -96,18 +96,18 @@
       "student_id": "s14",
       "question_id": "Q3",
       "max_marks": 3.0,
-      "predicted_mark": 2.0,
+      "predicted_mark": 2.25,
       "conformal_interval": [
-        1.5,
-        2.5
+        1.75,
+        2.75
       ],
       "interval_width": 1.0,
       "ocr_confidence": 0.809,
-      "levenshtein_discrepancy": 0.349,
-      "ensemble_variance": 0.056,
+      "levenshtein_discrepancy": 0.32,
+      "ensemble_variance": 0.014,
       "flagged_reasons": [
         "Low OCR confidence (0.81 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.35 > 0.25)"
+        "High Pass1/Pass2 OCR discrepancy (0.32 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -116,18 +116,18 @@
       "student_id": "s14",
       "question_id": "Q4",
       "max_marks": 3.0,
-      "predicted_mark": 2.5,
+      "predicted_mark": 2.25,
       "conformal_interval": [
-        2.0,
-        3.0
+        1.75,
+        2.75
       ],
       "interval_width": 1.0,
-      "ocr_confidence": 0.829,
-      "levenshtein_discrepancy": 0.35,
-      "ensemble_variance": 0.0,
+      "ocr_confidence": 0.836,
+      "levenshtein_discrepancy": 0.29,
+      "ensemble_variance": 0.167,
       "flagged_reasons": [
-        "Low OCR confidence (0.83 < 0.85)",
-        "High Pass1/Pass2 OCR discrepancy (0.35 > 0.25)"
+        "Low OCR confidence (0.84 < 0.85)",
+        "High Pass1/Pass2 OCR discrepancy (0.29 > 0.25)"
       ],
       "recommended_action": "Senior Examiner Verification"
     },
@@ -136,14 +136,14 @@
       "student_id": "s29",
       "question_id": "Q3",
       "max_marks": 3.0,
-      "predicted_mark": 2.0,
+      "predicted_mark": 2.25,
       "conformal_interval": [
-        1.5,
-        2.5
+        1.75,
+        2.75
       ],
       "interval_width": 1.0,
       "ocr_confidence": 0.96,
-      "levenshtein_discrepancy": 0.069,
+      "levenshtein_discrepancy": 0.037,
       "ensemble_variance": 0.014,
       "flagged_reasons": [
         "Conceptual contradiction detected against rubric ground truth"

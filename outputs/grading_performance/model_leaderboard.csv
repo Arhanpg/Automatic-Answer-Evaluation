@@ -1,5 +1,5 @@
 model_name,paradigm,qwk,mae,rmse,normalized_mae,exact_match_accuracy,pearson_r,spearman_rho,n_samples,model,split,norm_mae,exact_acc,within_1_acc,icc,ece
-SVR,Classical_ML,0.7718,0.6335,1.1938,0.13,0.0417,0.7741,0.7808,24.0,,,,,,,
+LinearRegression,Classical_ML,0.6941,1.0948,1.5493,0.2362,0.0417,0.7111,0.4397,24.0,,,,,,,
 ,,0.742,1.62,2.14,,,0.7197,0.7272,,QLoRA_Qwen2.5-3B_5,test,0.081,28.12,62.5,0.7049,0.12
 ,,0.835,1.18,1.58,,,0.8099,0.8183,,QLoRA_Qwen2.5-3B_15,test,0.059,35.64,79.2,0.7932,0.12
 ,,0.884,0.94,1.27,,,0.8575,0.8663,,QLoRA_Qwen2.5-3B_25,test,0.047,39.38,87.5,0.8398,0.1

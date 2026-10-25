@@ -45,3 +45,101 @@ async function run(btn, fn) {           // disable a button while its action run
   const old = btn.textContent; btn.disabled = true;
   try { await fn(); } catch (e) { alert(e.message); } finally { btn.disabled = false; btn.textContent = old; }
 }
+
+// =========================================================================
+// Global SSE Streaming & Tab-Switch Auto-Resume Engine
+// =========================================================================
+let _activeSSE = null;
+
+function updateGlobalProgress(job) {
+  const banner = document.getElementById('global-job-banner');
+  if (!banner) return;
+  if (!job || job.status === 'completed' || job.status === 'failed') {
+    if (job && job.status === 'completed') {
+      const titleEl = document.getElementById('global-job-title');
+      const fillEl = document.getElementById('global-job-fill');
+      if (titleEl) titleEl.innerHTML = `<b>Completed:</b> ${esc(job.current_stage || 'Done')}`;
+      if (fillEl) fillEl.style.width = '100%';
+      setTimeout(() => { banner.style.display = 'none'; }, 4000);
+    } else {
+      banner.style.display = 'none';
+    }
+    return;
+  }
+
+  banner.style.display = 'block';
+  const titleEl = document.getElementById('global-job-title');
+  const vramEl = document.getElementById('global-job-vram');
+  const etaEl = document.getElementById('global-job-eta');
+  const fillEl = document.getElementById('global-job-fill');
+
+  const pct = Math.min(100, Math.max(0, job.progress_pct || 0));
+  if (fillEl) fillEl.style.width = pct + '%';
+  if (titleEl) titleEl.innerHTML = `<b>${esc(job.job_type ? job.job_type.toUpperCase() : 'JOB')} Active:</b> ${esc(job.current_stage || job.current_item || 'Running...')}`;
+
+  const vramMb = (job.vram_telemetry && job.vram_telemetry.allocated_mb) || job.vram_mb || 0;
+  if (vramEl) vramEl.textContent = `VRAM: ${vramMb} MB`;
+  if (etaEl) etaEl.textContent = `Step ${job.completed_steps || 0}/${job.total_steps || 0} (${pct}%)`;
+}
+
+function attachSSE(jobId) {
+  if (_activeSSE) {
+    try { _activeSSE.close(); } catch (e) {}
+  }
+  localStorage.setItem('active_job_id', jobId);
+  _activeSSE = new EventSource('/api/jobs/' + jobId + '/stream');
+  _activeSSE.onmessage = (e) => {
+    try {
+      const data = JSON.parse(e.data);
+      updateGlobalProgress(data);
+      if (data.status === 'completed' || data.status === 'failed') {
+        _activeSSE.close();
+        _activeSSE = null;
+        localStorage.removeItem('active_job_id');
+      }
+    } catch (err) {}
+  };
+  _activeSSE.onerror = () => {
+    setTimeout(checkActiveBackgroundJob, 2500);
+  };
+}
+
+async function checkActiveBackgroundJob() {
+  try {
+    const res = await api('/api/jobs/active');
+    if (res && res.active_job) {
+      updateGlobalProgress(res.active_job);
+      if (res.active_job.status === 'running') {
+        attachSSE(res.active_job.job_id);
+      }
+    }
+  } catch (e) {}
+}
+
+async function pollGPUStatus() {
+  try {
+    const data = await api('/api/system/gpu-status');
+    const dot = document.getElementById('gpu-dot');
+    const title = document.getElementById('gpu-title-text');
+    const sub = document.getElementById('gpu-vram-sub');
+    if (!dot || !title || !sub) return;
+
+    if (data.cuda_available) {
+      dot.className = 'gpu-dot on';
+      title.textContent = data.device || 'NVIDIA RTX 3050';
+      sub.textContent = `VRAM: ${data.allocated_mb || 0} / 4096 MB`;
+    } else {
+      dot.className = 'gpu-dot off';
+      title.textContent = 'CPU Mode';
+      sub.textContent = 'CUDA Inactive';
+    }
+  } catch (e) {}
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  checkActiveBackgroundJob();
+  pollGPUStatus();
+  setInterval(pollGPUStatus, 3000);
+  window.addEventListener('focus', checkActiveBackgroundJob);
+});
+
