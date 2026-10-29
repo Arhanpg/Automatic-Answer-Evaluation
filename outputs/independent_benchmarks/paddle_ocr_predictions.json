@@ -1,0 +1,5888 @@
+{
+  "Master_Hybrid_Ensemble (SymPy + GBDT)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 5.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    }
+  ],
+  "SymPy_Symbolic_Math_Verifier": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 5.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    }
+  ],
+  "Hybrid_RAG (BM25 + Dense + Reranker)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Transformer_Encoder (From Scratch)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "QLoRA_Qwen2.5-3B (25 scripts + synthetic)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 4.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "BiLSTM_Self_Attention (From Scratch)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "LSTM_Scratch": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "QLoRA_Qwen2.5-3B (25 scripts)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "FewShot_Chain_of_Thought_LLM": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "NumPy_MLP_GELU (Pure NumPy)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 4.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 8.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 8.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 8.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 8.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 4.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Llama-3-8B-Instruct (via Ollama)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 4.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "TextCNN_1D (From Scratch)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "Dense_Embedding_RAG (SBERT)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    }
+  ],
+  "Mistral-7B-Instruct (via Ollama)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "QLoRA_Qwen2.5-3B (15 scripts)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Vanilla_RNN (From Scratch)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Ridge_Regression (Champion ML)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    }
+  ],
+  "LightGBM_Regressor": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.5,
+      "absolute_error": 3.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "QLoRA_Qwen2.5-3B (5 scripts)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 5.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 5.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Random_Forest_Regressor": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "ElasticNet_Regression": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    }
+  ],
+  "Lasso_Regression": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 3.5,
+      "absolute_error": 4.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 2.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 4.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "CatBoost_Regressor": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 5.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "XGBoost_Regressor": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    }
+  ],
+  "ExtraTrees_Regressor": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    }
+  ],
+  "Support_Vector_Regression (SVR)": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 7.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 6.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    }
+  ],
+  "Linear_Regression": [
+    {
+      "student_id": "s7",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 6.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s7",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 6.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s14",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s24",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 8.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 6.0,
+      "absolute_error": 4.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 0.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s29",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 6.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 0.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 3.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 1.0,
+      "predicted_mark": 2.5,
+      "absolute_error": 1.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s30",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 0.0,
+      "predicted_mark": 1.0,
+      "absolute_error": 1.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q1",
+      "max_marks": 8.0,
+      "true_mark": 8.0,
+      "predicted_mark": 1.5,
+      "absolute_error": 6.5,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q2",
+      "max_marks": 6.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q3",
+      "max_marks": 3.0,
+      "true_mark": 3.0,
+      "predicted_mark": 3.0,
+      "absolute_error": 0.0,
+      "exact_match": true
+    },
+    {
+      "student_id": "s37",
+      "question_id": "Q4",
+      "max_marks": 3.0,
+      "true_mark": 2.0,
+      "predicted_mark": 0.0,
+      "absolute_error": 2.0,
+      "exact_match": false
+    }
+  ]
+}

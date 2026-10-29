@@ -1,0 +1,46 @@
+{
+  "engine_name": "Tesseract OCR v5.5 (Preprocessed Sauvola)",
+  "preprocessing_applied": "4-Stage (Red-Ink Separation + Deskew + NLM Denoising + Sauvola)",
+  "cer": 0.066,
+  "wer": 0.2214,
+  "character_accuracy_pct": 93.4,
+  "word_accuracy_pct": 77.86,
+  "per_script_evaluations": [
+    {
+      "student_id": "s1",
+      "cer": 0.063,
+      "wer": 0.22,
+      "char_acc": 0.937,
+      "word_acc": 0.78
+    },
+    {
+      "student_id": "s2",
+      "cer": 0.059,
+      "wer": 0.2143,
+      "char_acc": 0.941,
+      "word_acc": 0.7857
+    },
+    {
+      "student_id": "s6",
+      "cer": 0.059,
+      "wer": 0.2143,
+      "char_acc": 0.941,
+      "word_acc": 0.7857
+    },
+    {
+      "student_id": "s18",
+      "cer": 0.0871,
+      "wer": 0.2273,
+      "char_acc": 0.9129,
+      "word_acc": 0.7727
+    },
+    {
+      "student_id": "s29",
+      "cer": 0.062,
+      "wer": 0.2312,
+      "char_acc": 0.938,
+      "word_acc": 0.7688
+    }
+  ],
+  "latency_per_page_sec": 1.05
+}

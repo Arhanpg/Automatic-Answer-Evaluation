@@ -211,6 +211,38 @@ def metrics_dashboard_page():
     return render_template("metrics_dashboard.html", data=data)
 
 
+@app.route("/independent-benchmarks")
+def independent_benchmarks_page():
+    import json
+    from backend.output_manager import DedicatedOutputManager
+    base_dir = DedicatedOutputManager().base_dir
+    out_dir = os.path.join(base_dir, "outputs", "independent_benchmarks")
+
+    def load_json(name, default=None):
+        p = os.path.join(out_dir, name)
+        if os.path.exists(p):
+            with open(p, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return default
+
+    data = {
+        "preprocessing": load_json("preprocessing_metrics.json", {}),
+        "cross_comparison": load_json("cross_modality_comparison.json", {}),
+        "paddle_ocr": load_json("paddle_ocr_benchmark.json", {}),
+        "paddle_leaderboard": load_json("paddle_ocr_models_leaderboard.json", []),
+        "paddle_predictions": load_json("paddle_ocr_predictions.json", {}),
+        "tesseract_ocr": load_json("tesseract_ocr_benchmark.json", {}),
+        "tesseract_leaderboard": load_json("tesseract_ocr_models_leaderboard.json", []),
+        "tesseract_predictions": load_json("tesseract_ocr_predictions.json", {}),
+        "vlm": load_json("vlm_benchmark.json", {}),
+        "vlm_leaderboard": load_json("vlm_models_leaderboard.json", []),
+        "vlm_predictions": load_json("vlm_predictions.json", {}),
+    }
+    if request.args.get("format") == "json":
+        return jsonify(data)
+    return render_template("independent_benchmarks.html", data=data)
+
+
 @app.route("/download-outputs")
 def download_outputs():
     import zipfile

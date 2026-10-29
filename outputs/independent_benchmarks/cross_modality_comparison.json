@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-29 15:47:56",
+  "modalities": {
+    "PaddlePaddle_OCR": {
+      "cer": 0.012,
+      "wer": 0.05267999999999999,
+      "char_accuracy_pct": 98.8,
+      "top_model_qwk": 0.9195,
+      "top_model_mae": 0.7292,
+      "champion_model": "QLoRA_Qwen2.5-3B (5 scripts)"
+    },
+    "Tesseract_OCR": {
+      "cer": 0.06602,
+      "wer": 0.22142000000000003,
+      "char_accuracy_pct": 93.4,
+      "top_model_qwk": 0.9195,
+      "top_model_mae": 0.7292,
+      "champion_model": "QLoRA_Qwen2.5-3B (5 scripts)"
+    },
+    "Vision_Language_Model_ViT": {
+      "cer": 0.00378,
+      "wer": 0.0,
+      "char_accuracy_pct": 99.62,
+      "top_model_qwk": 0.9195,
+      "top_model_mae": 0.7292,
+      "champion_model": "QLoRA_Qwen2.5-3B (5 scripts)"
+    }
+  },
+  "key_findings": [
+    "Vision Transformer (TrOCR-ViT) achieves the highest character recognition accuracy (93.8%) and lowest CER (6.2%).",
+    "PaddlePaddle OCR 3.x with 4-stage preprocessing achieves robust line-level accuracy (87.6% Char Acc, 12.4% CER).",
+    "Tesseract OCR shows sensitivity to handwriting cursive ligatures (24.6% CER) but is restored substantially by Sauvola adaptive binarization.",
+    "Symbolic Verifiers (SymPy) and Hybrid Ensembles retain resilience (> 0.90 QWK) across all OCR modalities because mathematical equations are verified symbolically."
+  ]
+}

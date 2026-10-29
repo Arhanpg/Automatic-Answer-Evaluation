@@ -1,0 +1,28 @@
+model_name,paradigm,split,mae,rmse,within_1_acc,qwk,spearman_rho,pearson_r,exact_match_accuracy,n_samples
+QLoRA_Qwen2.5-3B (5 scripts),Fine-Tuned LLM (4-bit),test,0.7292,1.0358,87.5,0.9195,0.9312,0.9616,0.25,24
+Vanilla_RNN (From Scratch),From-Scratch DL,test,0.8542,1.1411,87.5,0.8977,0.9146,0.9562,0.1667,24
+QLoRA_Qwen2.5-3B (15 scripts),Fine-Tuned LLM (4-bit),test,1.0833,1.3385,79.17,0.8531,0.8559,0.9231,0.0,24
+TextCNN_1D (From Scratch),From-Scratch DL,test,1.0,1.4068,75.0,0.8414,0.8261,0.9115,0.25,24
+LSTM_Scratch,From-Scratch DL,test,1.1042,1.4755,70.83,0.8239,0.7964,0.8994,0.1667,24
+Mistral-7B-Instruct (via Ollama),Prompted LLM,test,1.1458,1.5377,70.83,0.8147,0.7703,0.8748,0.0833,24
+BiLSTM_Self_Attention (From Scratch),From-Scratch DL,test,1.125,1.5138,75.0,0.8103,0.8514,0.8999,0.125,24
+QLoRA_Qwen2.5-3B (25 scripts),Fine-Tuned LLM (4-bit),test,1.1458,1.5377,70.83,0.8045,0.7947,0.8902,0.1667,24
+FewShot_Chain_of_Thought_LLM,Prompted LLM,test,1.1458,1.5377,75.0,0.8023,0.7714,0.8845,0.1667,24
+Transformer_Encoder (From Scratch),From-Scratch DL,test,1.1458,1.5445,75.0,0.7982,0.8064,0.8974,0.125,24
+Llama-3-8B-Instruct (via Ollama),Prompted LLM,test,1.1667,1.6137,70.83,0.7871,0.7952,0.8673,0.1667,24
+QLoRA_Qwen2.5-3B (25 scripts + synthetic),Fine-Tuned LLM (4-bit),test,1.2708,1.6739,66.67,0.7672,0.7648,0.8629,0.0833,24
+LightGBM_Regressor,Classical ML,test,1.4167,1.7139,50.0,0.7632,0.6527,0.8503,0.0417,24
+Ridge_Regression (Champion ML),Classical ML,test,1.5208,1.7648,33.33,0.7505,0.5852,0.836,0.0833,24
+Random_Forest_Regressor,Classical ML,test,1.3958,1.7824,45.83,0.7389,0.6522,0.8373,0.125,24
+ElasticNet_Regression,Classical ML,test,1.5208,1.8625,41.67,0.7067,0.5686,0.7996,0.0833,24
+Lasso_Regression,Classical ML,test,1.5208,1.8792,50.0,0.7049,0.5559,0.7856,0.0,24
+CatBoost_Regressor,Classical ML,test,1.5625,2.1189,41.67,0.6229,0.5162,0.7316,0.125,24
+XGBoost_Regressor,Classical ML,test,1.6875,2.2799,45.83,0.5954,0.5092,0.7101,0.125,24
+Support_Vector_Regression (SVR),Classical ML,test,1.4375,2.1914,66.67,0.5911,0.5003,0.6776,0.2917,24
+ExtraTrees_Regressor,Classical ML,test,1.6458,2.2337,41.67,0.5897,0.4658,0.6943,0.0417,24
+NumPy_MLP_GELU (Pure NumPy),From-Scratch DL,test,1.5417,2.3761,54.17,0.581,0.5034,0.609,0.4167,24
+Master_Hybrid_Ensemble (SymPy + GBDT),Hybrid / Symbolic + ML,test,1.7292,2.2936,37.5,0.5715,0.4983,0.6231,0.0,24
+Linear_Regression,Classical ML,test,1.6458,2.4431,50.0,0.5687,0.5523,0.6073,0.25,24
+Hybrid_RAG (BM25 + Dense + Reranker),RAG Retrieval,test,1.7708,2.2569,41.67,0.5597,0.5709,0.7246,0.0417,24
+SymPy_Symbolic_Math_Verifier,Symbolic Verifier,test,1.8958,2.4346,41.67,0.4922,0.5037,0.5828,0.0417,24
+Dense_Embedding_RAG (SBERT),RAG Retrieval,test,2.0833,2.5413,29.17,0.4367,0.4955,0.6142,0.0833,24

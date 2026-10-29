@@ -1,0 +1,46 @@
+{
+  "engine_name": "PaddlePaddle OCR 3.x (Preprocessed)",
+  "preprocessing_applied": "4-Stage (Red-Ink Separation + Deskew + NLM Denoising + Sauvola)",
+  "cer": 0.012,
+  "wer": 0.0527,
+  "character_accuracy_pct": 98.8,
+  "word_accuracy_pct": 94.73,
+  "per_script_evaluations": [
+    {
+      "student_id": "s1",
+      "cer": 0.0,
+      "wer": 0.0,
+      "char_acc": 1.0,
+      "word_acc": 1.0
+    },
+    {
+      "student_id": "s2",
+      "cer": 0.0,
+      "wer": 0.0,
+      "char_acc": 1.0,
+      "word_acc": 1.0
+    },
+    {
+      "student_id": "s6",
+      "cer": 0.0183,
+      "wer": 0.127,
+      "char_acc": 0.9817,
+      "word_acc": 0.873
+    },
+    {
+      "student_id": "s18",
+      "cer": 0.0417,
+      "wer": 0.1364,
+      "char_acc": 0.9583,
+      "word_acc": 0.8636
+    },
+    {
+      "student_id": "s29",
+      "cer": 0.0,
+      "wer": 0.0,
+      "char_acc": 1.0,
+      "word_acc": 1.0
+    }
+  ],
+  "latency_per_page_sec": 1.45
+}

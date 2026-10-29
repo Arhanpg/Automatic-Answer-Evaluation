@@ -1,0 +1,16 @@
+{
+  "sample_student": "s1",
+  "page": "p1.jpg",
+  "stage1_red_ink_fraction": 0.007924,
+  "stage2_deskew_angle_deg": -88.501,
+  "stage3_denoising_algorithm": "Fast Non-Local Means (h=10, template=7, search=21)",
+  "stage4_binarization_algorithm": "Sauvola Local Adaptive Threshold (w=25, k=0.2)",
+  "output_preview_paths": [
+    "/static/images/preprocessing_samples/0_original.jpg",
+    "/static/images/preprocessing_samples/1_red_ink_removed.jpg",
+    "/static/images/preprocessing_samples/1_teacher_marks_only.jpg",
+    "/static/images/preprocessing_samples/2_grayscale_deskewed.jpg",
+    "/static/images/preprocessing_samples/3_denoised.jpg",
+    "/static/images/preprocessing_samples/4_sauvola_binarized.jpg"
+  ]
+}

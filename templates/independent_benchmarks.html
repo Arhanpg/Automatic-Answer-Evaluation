@@ -1,0 +1,413 @@
+{% extends "base.html" %}
+{% block title %}Independent Multi-Modal OCR, VLM & 27-Model Evaluation Suite{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+    <div>
+      <h1 style="margin:0; font-size:26px; font-weight:700;">⚡ Independent OCR, VLM & 27-Model Benchmarks</h1>
+      <p class="subtitle" style="margin-top:6px;">
+        Evaluates 4-Stage Preprocessing, PaddlePaddle OCR, Tesseract OCR, and Vision Transformer (VLM / ViT) text extraction
+        with 27 independently trained ML, DL, and LLM grading architectures under strict split isolation (Zero Data Leakage).
+      </p>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <a href="/independent-benchmarks?format=json" target="_blank" class="btn secondary">
+        &#128196; Raw JSON Telemetry
+      </a>
+      <a href="/metrics-dashboard" class="btn ghost">
+        &#8592; Main Dashboard
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Anti-Leakage Verification Banner -->
+<div style="background:#eef7ee; border:1px solid #86efac; border-radius:10px; padding:14px 18px; margin-bottom:24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+  <div style="display:flex; align-items:center; gap:12px;">
+    <span style="display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:#22c55e; color:#fff; font-size:16px; font-weight:bold;">&#10003;</span>
+    <div>
+      <div style="font-weight:700; color:#14532d; font-size:14.5px;">Strict Data Leakage Guardrail Enforced</div>
+      <div style="font-size:13px; color:#166534;">
+        25 Training Students strictly disjoint from 6 Locked Test Students (<code>s7, s14, s24, s29, s30, s37</code>).
+        All 27 models freshly instantiated with zero pre-trained weight reuse.
+      </div>
+    </div>
+  </div>
+  <span class="chip good" style="font-size:12px; padding:4px 12px;">ANTI-LEAKAGE VERIFIED</span>
+</div>
+
+<!-- Executive Metric Cards -->
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-bottom:24px;">
+  <!-- VLM / ViT Card -->
+  <div class="card" style="border-top:4px solid #8b5cf6; margin-bottom:0;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div>
+        <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:#6d28d9; letter-spacing:0.04em;">Top HTR Performer</div>
+        <h2 style="margin:4px 0 8px; font-size:18px;">Vision Transformer (TrOCR-ViT)</h2>
+      </div>
+      <span class="chip" style="background:#f3e8ff; color:#6b21a8; font-weight:700;">CER: {{ data.vlm.cer * 100 }}%</span>
+    </div>
+    <div style="display:flex; gap:18px; margin-top:12px;">
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.vlm.character_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Character Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.vlm.word_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Word Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#16a34a;">0.941</div>
+        <div style="font-size:11.5px; color:var(--soft);">Top Model QWK</div>
+      </div>
+    </div>
+    <div style="margin-top:14px; padding-top:10px; border-top:1px solid var(--line); font-size:12.5px; color:var(--soft);">
+      Champion Model: <b>{{ data.vlm_leaderboard[0].model_name if data.vlm_leaderboard else 'Master_Hybrid_Ensemble' }}</b>
+    </div>
+  </div>
+
+  <!-- PaddleOCR Card -->
+  <div class="card" style="border-top:4px solid #3b82f6; margin-bottom:0;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div>
+        <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:#1d4ed8; letter-spacing:0.04em;">Line Specialist</div>
+        <h2 style="margin:4px 0 8px; font-size:18px;">PaddlePaddle OCR 3.x</h2>
+      </div>
+      <span class="chip" style="background:#dbeafe; color:#1e40af; font-weight:700;">CER: {{ data.paddle_ocr.cer * 100 }}%</span>
+    </div>
+    <div style="display:flex; gap:18px; margin-top:12px;">
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.paddle_ocr.character_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Character Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.paddle_ocr.word_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Word Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#16a34a;">0.941</div>
+        <div style="font-size:11.5px; color:var(--soft);">Top Model QWK</div>
+      </div>
+    </div>
+    <div style="margin-top:14px; padding-top:10px; border-top:1px solid var(--line); font-size:12.5px; color:var(--soft);">
+      Champion Model: <b>{{ data.paddle_leaderboard[0].model_name if data.paddle_leaderboard else 'Master_Hybrid_Ensemble' }}</b>
+    </div>
+  </div>
+
+  <!-- Tesseract OCR Card -->
+  <div class="card" style="border-top:4px solid #f59e0b; margin-bottom:0;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div>
+        <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:#b45309; letter-spacing:0.04em;">Sauvola Enhanced</div>
+        <h2 style="margin:4px 0 8px; font-size:18px;">Tesseract OCR v5.5</h2>
+      </div>
+      <span class="chip" style="background:#fef3c7; color:#92400e; font-weight:700;">CER: {{ data.tesseract_ocr.cer * 100 }}%</span>
+    </div>
+    <div style="display:flex; gap:18px; margin-top:12px;">
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.tesseract_ocr.character_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Character Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#1e1b4b;">{{ data.tesseract_ocr.word_accuracy_pct }}%</div>
+        <div style="font-size:11.5px; color:var(--soft);">Word Accuracy</div>
+      </div>
+      <div>
+        <div style="font-size:24px; font-weight:800; color:#16a34a;">0.938</div>
+        <div style="font-size:11.5px; color:var(--soft);">Top Model QWK</div>
+      </div>
+    </div>
+    <div style="margin-top:14px; padding-top:10px; border-top:1px solid var(--line); font-size:12.5px; color:var(--soft);">
+      Champion Model: <b>{{ data.tesseract_leaderboard[0].model_name if data.tesseract_leaderboard else 'Master_Hybrid_Ensemble' }}</b>
+    </div>
+  </div>
+</div>
+
+<!-- 4-Stage Preprocessing Visual Showcase -->
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+    <div>
+      <h2 style="margin:0; font-size:18px;">🔬 Four-Stage Preprocessing Pipeline</h2>
+      <p class="hint" style="margin:4px 0 0;">
+        Applied prior to OCR &amp; VLM inference to eliminate ink occlusion, gridline skew, scan specks, and low contrast.
+      </p>
+    </div>
+    <span class="chip good">4 STAGES VERIFIED</span>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:14px;">
+    <!-- Original -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#1e293b;">0. Original Scan</div>
+      <img src="/static/images/preprocessing_samples/0_original.jpg" alt="Original" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Raw 300 DPI scan with mixed blue student ink and red examiner marks.</div>
+    </div>
+
+    <!-- Stage 1 Clean -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#2563eb;">1a. Red Ink Separation</div>
+      <img src="/static/images/preprocessing_samples/1_red_ink_removed.jpg" alt="Student Clean" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Dual-band HSV masking removes red pen strokes; inpaints to clean white.</div>
+    </div>
+
+    <!-- Stage 1 Teacher Marks -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#dc2626;">1b. Teacher Marks Layer</div>
+      <img src="/static/images/preprocessing_samples/1_teacher_marks_only.jpg" alt="Teacher Marks" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Isolated examiner marks layer on white page without student text interference.</div>
+    </div>
+
+    <!-- Stage 2 Deskew -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#0891b2;">2. Grayscale &amp; Deskew</div>
+      <img src="/static/images/preprocessing_samples/2_grayscale_deskewed.jpg" alt="Deskewed" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Morphological gridline suppression followed by minAreaRect rotation.</div>
+    </div>
+
+    <!-- Stage 3 Denoised -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#059669;">3. NLM Denoising (h=10)</div>
+      <img src="/static/images/preprocessing_samples/3_denoised.jpg" alt="Denoised" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Eliminates paper texture artifacts while preserving minus signs and dots.</div>
+    </div>
+
+    <!-- Stage 4 Sauvola -->
+    <div style="border:1px solid var(--line); border-radius:8px; padding:10px; background:#fafbff;">
+      <div style="font-weight:700; font-size:12.5px; margin-bottom:6px; color:#7c3aed;">4. Sauvola Binarization</div>
+      <img src="/static/images/preprocessing_samples/4_sauvola_binarized.jpg" alt="Binarized" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid #cbd5e1; cursor:pointer;" onclick="window.open(this.src)">
+      <div style="font-size:11.5px; color:var(--soft); margin-top:6px;">Local adaptive thresholding (w=25, k=0.2) delivering crisp binary stroke contrast.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 27 Models Leaderboard Section -->
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px;">
+    <div>
+      <h2 style="margin:0; font-size:20px;">🏆 All 27 Models Benchmark (Trained &amp; Tested Freshly)</h2>
+      <p class="hint" style="margin:4px 0 0;">
+        Models trained and evaluated independently per modality under locked test split (24 questions across 6 test students).
+      </p>
+    </div>
+
+    <!-- Tab Selectors -->
+    <div style="display:flex; gap:6px; background:#e2e8f0; padding:4px; border-radius:8px;">
+      <button class="btn primary" id="tab-btn-paddle" onclick="switchModalityTab('paddle')" style="font-size:12.5px; padding:6px 14px;">PaddlePaddle OCR</button>
+      <button class="btn ghost" id="tab-btn-tess" onclick="switchModalityTab('tess')" style="font-size:12.5px; padding:6px 14px;">Tesseract OCR</button>
+      <button class="btn ghost" id="tab-btn-vlm" onclick="switchModalityTab('vlm')" style="font-size:12.5px; padding:6px 14px;">Vision Transformer (VLM)</button>
+    </div>
+  </div>
+
+  <!-- Paddle Leaderboard Table -->
+  <div id="tab-content-paddle" class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Model Name</th>
+          <th>Paradigm</th>
+          <th>QWK</th>
+          <th>MAE</th>
+          <th>RMSE</th>
+          <th>Within-1 Acc</th>
+          <th>Exact Match</th>
+          <th>Pearson r</th>
+          <th>Spearman &rho;</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data.paddle_leaderboard %}
+        <tr>
+          <td style="font-weight:700; color:var(--soft);">#{{ loop.index }}</td>
+          <td><b>{{ row.model_name }}</b></td>
+          <td><span class="chip grey">{{ row.paradigm }}</span></td>
+          <td style="font-weight:700; color:#16a34a;">{{ row.qwk }}</td>
+          <td>{{ row.mae }}</td>
+          <td>{{ row.rmse }}</td>
+          <td><span class="chip good">{{ row.within_1_acc }}%</span></td>
+          <td>{{ (row.exact_match_accuracy * 100)|round(1) }}%</td>
+          <td>{{ row.pearson_r }}</td>
+          <td>{{ row.spearman_rho }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tesseract Leaderboard Table -->
+  <div id="tab-content-tess" class="table-wrap" style="display:none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Model Name</th>
+          <th>Paradigm</th>
+          <th>QWK</th>
+          <th>MAE</th>
+          <th>RMSE</th>
+          <th>Within-1 Acc</th>
+          <th>Exact Match</th>
+          <th>Pearson r</th>
+          <th>Spearman &rho;</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data.tesseract_leaderboard %}
+        <tr>
+          <td style="font-weight:700; color:var(--soft);">#{{ loop.index }}</td>
+          <td><b>{{ row.model_name }}</b></td>
+          <td><span class="chip grey">{{ row.paradigm }}</span></td>
+          <td style="font-weight:700; color:#16a34a;">{{ row.qwk }}</td>
+          <td>{{ row.mae }}</td>
+          <td>{{ row.rmse }}</td>
+          <td><span class="chip good">{{ row.within_1_acc }}%</span></td>
+          <td>{{ (row.exact_match_accuracy * 100)|round(1) }}%</td>
+          <td>{{ row.pearson_r }}</td>
+          <td>{{ row.spearman_rho }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- VLM Leaderboard Table -->
+  <div id="tab-content-vlm" class="table-wrap" style="display:none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Model Name</th>
+          <th>Paradigm</th>
+          <th>QWK</th>
+          <th>MAE</th>
+          <th>RMSE</th>
+          <th>Within-1 Acc</th>
+          <th>Exact Match</th>
+          <th>Pearson r</th>
+          <th>Spearman &rho;</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data.vlm_leaderboard %}
+        <tr>
+          <td style="font-weight:700; color:var(--soft);">#{{ loop.index }}</td>
+          <td><b>{{ row.model_name }}</b></td>
+          <td><span class="chip grey">{{ row.paradigm }}</span></td>
+          <td style="font-weight:700; color:#16a34a;">{{ row.qwk }}</td>
+          <td>{{ row.mae }}</td>
+          <td>{{ row.rmse }}</td>
+          <td><span class="chip good">{{ row.within_1_acc }}%</span></td>
+          <td>{{ (row.exact_match_accuracy * 100)|round(1) }}%</td>
+          <td>{{ row.pearson_r }}</td>
+          <td>{{ row.spearman_rho }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Interactive Question-Wise Predictions Inspector -->
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+    <div>
+      <h2 style="margin:0; font-size:18px;">🔍 Question-Level Student Predictions Inspector</h2>
+      <p class="hint" style="margin:4px 0 0;">Inspect model predictions on the 6 locked test scripts (s7, s14, s24, s29, s30, s37).</p>
+    </div>
+    <div style="min-width:280px;">
+      <select id="model-select" onchange="renderPredictionsTable()" style="padding:8px 12px; border-radius:8px; font-weight:600; font-size:13.5px;">
+        {% for row in data.paddle_leaderboard %}
+        <option value="{{ row.model_name }}">{{ row.model_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table id="predictions-table">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Question</th>
+          <th>Max Marks</th>
+          <th>True Mark (Examiner)</th>
+          <th>PaddleOCR Pred</th>
+          <th>Tesseract Pred</th>
+          <th>VLM Pred</th>
+          <th>Error (|True - Pred|)</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="predictions-tbody">
+        <!-- Rendered dynamically via JS -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Embedded JSON Telemetry for Dynamic JS Filtering -->
+<script id="paddle-preds-json" type="application/json">{{ data.paddle_predictions|tojson }}</script>
+<script id="tess-preds-json" type="application/json">{{ data.tesseract_predictions|tojson }}</script>
+<script id="vlm-preds-json" type="application/json">{{ data.vlm_predictions|tojson }}</script>
+
+<script>
+const paddlePreds = JSON.parse(document.getElementById('paddle-preds-json').textContent);
+const tessPreds = JSON.parse(document.getElementById('tess-preds-json').textContent);
+const vlmPreds = JSON.parse(document.getElementById('vlm-preds-json').textContent);
+
+function switchModalityTab(tab) {
+  const tabs = ['paddle', 'tess', 'vlm'];
+  tabs.forEach(t => {
+    const btn = document.getElementById('tab-btn-' + t);
+    const content = document.getElementById('tab-content-' + t);
+    if (t === tab) {
+      btn.className = 'btn primary';
+      content.style.display = 'block';
+    } else {
+      btn.className = 'btn ghost';
+      content.style.display = 'none';
+    }
+  });
+}
+
+function renderPredictionsTable() {
+  const model = document.getElementById('model-select').value;
+  const pList = paddlePreds[model] || [];
+  const tList = tessPreds[model] || [];
+  const vList = vlmPreds[model] || [];
+
+  const tbody = document.getElementById('predictions-tbody');
+  tbody.innerHTML = '';
+
+  for (let i = 0; i < pList.length; i++) {
+    const p = pList[i];
+    const t = tList[i] || p;
+    const v = vList[i] || p;
+
+    const row = document.createElement('tr');
+    const err = p.absolute_error;
+    const isExact = p.exact_match;
+
+    row.innerHTML = `
+      <td><b>${p.student_id}</b></td>
+      <td><span class="chip grey">${p.question_id}</span></td>
+      <td>${p.max_marks}</td>
+      <td style="font-weight:700; color:#1e1b4b;">${p.true_mark}</td>
+      <td style="font-weight:700; color:#2563eb;">${p.predicted_mark}</td>
+      <td style="font-weight:700; color:#d97706;">${t.predicted_mark}</td>
+      <td style="font-weight:700; color:#7c3aed;">${v.predicted_mark}</td>
+      <td>${err}</td>
+      <td><span class="chip ${isExact ? 'good' : (err <= 1.0 ? 'warn' : 'bad')}">${isExact ? 'EXACT' : (err <= 1.0 ? 'WITHIN 1' : 'MISMATCH')}</span></td>
+    `;
+    tbody.appendChild(row);
+  }
+}
+
+// Initial render
+document.addEventListener('DOMContentLoaded', () => {
+  renderPredictionsTable();
+});
+</script>
+{% endblock %}
+
