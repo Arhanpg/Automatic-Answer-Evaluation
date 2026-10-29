@@ -2,29 +2,29 @@
 
 ## 1. Executive Summary
 Evaluated 10 estimators across the IIIT Dharwad examination dataset under student-level split isolation (25 train, 6 val, 6 locked test).
-- **Champion Model**: `Ridge` (QWK: 0.9303, MAE: 0.584)
+- **Champion Model**: `Ridge` (QWK: 0.7591, MAE: 1.4728)
 - **Top Features**: `math_sympy_score`, `sbert_max_sim`, `criterion_coverage_ratio`.
 
 ## 2. Model Leaderboard (Locked Test Set)
 
 | Rank | Model Name | Paradigm | QWK | MAE | RMSE | Exact Match | Pearson r |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Ridge** | Classical_ML | 0.9303 | 0.584 | 0.785 | 4.2% | 0.933 |
-| 2 | **Lasso** | Classical_ML | 0.92 | 0.5871 | 0.8123 | 4.2% | 0.9059 |
-| 3 | **ElasticNet** | Classical_ML | 0.9151 | 0.5756 | 0.767 | 4.2% | 0.9155 |
-| 4 | **ExtraTrees** | Classical_ML | 0.9014 | 0.5626 | 0.8679 | 0.0% | 0.8928 |
-| 5 | **CatBoost** | Classical_ML | 0.8841 | 0.6082 | 0.9004 | 0.0% | 0.8807 |
-| 6 | **LightGBM** | Classical_ML | 0.7947 | 0.7719 | 1.2014 | 0.0% | 0.7934 |
-| 7 | **RandomForest** | Classical_ML | 0.7611 | 0.8142 | 1.3309 | 0.0% | 0.7533 |
-| 8 | **XGBoost** | Classical_ML | 0.7511 | 0.839 | 1.3415 | 0.0% | 0.7448 |
-| 9 | **SVR** | Classical_ML | 0.733 | 0.8221 | 1.1781 | 4.2% | 0.7884 |
-| 10 | **LinearRegression** | Classical_ML | 0.6941 | 1.0948 | 1.5493 | 4.2% | 0.7111 |
+| 1 | **Ridge** | Classical_ML | 0.7591 | 1.4728 | 1.7237 | 12.5% | 0.8441 |
+| 2 | **LightGBM** | Classical_ML | 0.7561 | 1.4864 | 1.7506 | 4.2% | 0.8438 |
+| 3 | **RandomForest** | Classical_ML | 0.7389 | 1.4615 | 1.816 | 12.5% | 0.8344 |
+| 4 | **ElasticNet** | Classical_ML | 0.7218 | 1.5477 | 1.8721 | 8.3% | 0.7974 |
+| 5 | **Lasso** | Classical_ML | 0.6888 | 1.5814 | 1.9243 | 4.2% | 0.7798 |
+| 6 | **CatBoost** | Classical_ML | 0.6229 | 1.6046 | 2.1397 | 12.5% | 0.7279 |
+| 7 | **XGBoost** | Classical_ML | 0.6045 | 1.7 | 2.2599 | 12.5% | 0.7152 |
+| 8 | **ExtraTrees** | Classical_ML | 0.5982 | 1.6448 | 2.2357 | 4.2% | 0.6964 |
+| 9 | **SVR** | Classical_ML | 0.5911 | 1.486 | 2.2199 | 29.2% | 0.6637 |
+| 10 | **LinearRegression** | Classical_ML | 0.5687 | 1.6885 | 2.4777 | 25.0% | 0.5917 |
 
 ## 3. A0 - A6 Ablation Sequence
-- **A0 (TF-IDF + XGBoost)**: QWK 0.8717, MAE 0.5009
-- **A1 (+ Sentence-BERT)**: QWK 0.7376, MAE 0.8852
-- **A2 (+ Rubric Coverage)**: QWK 0.7376, MAE 0.8852
-- **A3 (+ SymPy Math & Contradiction)**: QWK 0.7376, MAE 0.8675
-- **A4 (Remove Length Bias Features)**: QWK 0.7511, MAE 0.8404 (verifies model grades knowledge, not verbosity)
-- **A5 (CatBoost Full Features)**: QWK 0.8841, MAE 0.6082
-- **A6 (Four-Stage Consensus OCR Input)**: QWK 0.8841, MAE 0.6082
+- **A0 (TF-IDF + XGBoost)**: QWK 0.6088, MAE 1.7909
+- **A1 (+ Sentence-BERT)**: QWK 0.6045, MAE 1.7086
+- **A2 (+ Rubric Coverage)**: QWK 0.5999, MAE 1.7175
+- **A3 (+ SymPy Math & Contradiction)**: QWK 0.6072, MAE 1.7204
+- **A4 (Remove Length Bias Features)**: QWK 0.6045, MAE 1.7026 (verifies model grades knowledge, not verbosity)
+- **A5 (CatBoost Full Features)**: QWK 0.6229, MAE 1.6046
+- **A6 (Four-Stage Consensus OCR Input)**: QWK 0.6229, MAE 1.6046
