@@ -1,0 +1,16 @@
+{
+  "roll_number": "s25",
+  "answers": {
+    "1a": "Traditional n-grams have limited context window (n-1 tokens) and cannot ca",
+    "1b": "Self-attention in transformers is permutation invariant with no inherent order. Positional",
+    "1c": "Encoder-only models (BERT) use bidirectional attention for classification/encoding; de",
+    "1d": "Masked attention sets future token weights to -infinity before so",
+    "2a": "Attention scores: Q.K1 = [1,0].[",
+    "2b": "Softmax calculation error [0.5, 0.5] resulting",
+    "2c": "Output vector ca",
+    "3a": "Greedy decoding selec",
+    "3b": "Top-2 decoding selects Wo",
+    "3c": "Layer normalization is applied twice: after self-attention and after feed",
+    "4": "Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) ="
+  }
+}

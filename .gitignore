@@ -25,17 +25,14 @@ IMG_*.png
 
 # Dynamic data directory runs (keep directory structure with .gitkeep)
 data/exam/source/*/
-data/student_answers/*
-data/teacher_marks/*
 data/pages/*
 data/ocr_output/*
 data/predictions/*
-data/models/*
 data/db/*
 !data/**/.gitkeep
 *.sqlite3
 
-# Explicitly ensure all evaluation reports, outputs, and schemas are tracked
+# Explicitly ensure all evaluation reports, outputs, schemas, extracted results and ground truth are tracked
 !outputs/
 !outputs/**
 !experiments/
@@ -44,3 +41,11 @@ data/db/*
 !schemas/**
 !data/ground_truth/
 !data/ground_truth/**
+!data/student_answers/
+!data/student_answers/**
+!data/teacher_marks/
+!data/teacher_marks/**
+!data/manual_grades/
+!data/manual_grades/**
+!data/models/
+!data/models/**

@@ -1,0 +1,16 @@
+{
+  "roll_number": "s18",
+  "answers": {
+    "1a": "Traditional n-grams have limited context window and sparsity issues.",
+    "1b": "",
+    "1c": "",
+    "1d": "Masked attention is used in GPT to prevent attending to future tokens.",
+    "2a": "Attention scores Q.K1 = 1, Q.K2 = 0.",
+    "2b": "",
+    "2c": "",
+    "3a": "Greedy decoding selects Word A.",
+    "3b": "Top-2 chooses Word A and Word B.",
+    "3c": "",
+    "4": "P(ML|like) = 1/5."
+  }
+}
