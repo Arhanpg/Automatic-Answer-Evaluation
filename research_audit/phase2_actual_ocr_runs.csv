@@ -1,0 +1,9 @@
+student_id,page,track,engine,engine_executed,text_sha256,character_count,word_count,reference_alignment,cer,wer,math_symbol_accuracy,exact_expression_rate
+s1,1,raw_tesseract,Tesseract,True,2095e9f8006e6171cb6cbe450923d177813263340dcbecedf7e1e6c208a0a8ed,2620,428,not computed; repository has no page-to-question transcription mapping,,,,
+s1,1,processed_tesseract,Tesseract,True,a6c424bd7a31250b0d82417094ac84265b7fd5ef3478ea45d41dc261cc4b9613,2645,455,not computed; repository has no page-to-question transcription mapping,,,,
+s2,1,raw_tesseract,Tesseract,True,919f866af84af0e8c32f73969401e067e3a0aca47798257574486e1c8fd5d2af,505,136,not computed; repository has no page-to-question transcription mapping,,,,
+s2,1,processed_tesseract,Tesseract,True,762198bac814438a6ced4f2b75015f7686fe931dec93b3006931f29d7e30b20c,506,137,not computed; repository has no page-to-question transcription mapping,,,,
+s18,1,raw_tesseract,Tesseract,True,081ec709c712b9c8930b0eada738d3840e4a5d87925b1a49a2fdd8f0db3c9fa4,1357,241,not computed; repository has no page-to-question transcription mapping,,,,
+s18,1,processed_tesseract,Tesseract,True,1fbe2c843cb19f4268ef33c7e97da0c1f5ad38b8375ed395ab22bfd2955fc7d4,2903,527,not computed; repository has no page-to-question transcription mapping,,,,
+s29,1,raw_tesseract,Tesseract,True,112c5e1ba010097a2cc5fdc7f83b47389dcb45c0851a609ba95e67dc92913528,2613,450,not computed; repository has no page-to-question transcription mapping,,,,
+s29,1,processed_tesseract,Tesseract,True,9c9da4daeb86e0cca305cc1844ea10235eeb9e3475e70f448f29d004414aa044,2592,441,not computed; repository has no page-to-question transcription mapping,,,,

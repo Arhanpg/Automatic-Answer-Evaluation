@@ -1,0 +1,5 @@
+engine,installed,executed_in_phase2
+PaddleOCR,False,False
+Transformers,True,False
+pytesseract,True,True
+Tesseract executable,True,True
