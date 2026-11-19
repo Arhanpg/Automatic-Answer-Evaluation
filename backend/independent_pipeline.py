@@ -206,29 +206,14 @@ class FourStageImagePreprocessor:
 
 def compute_cer_wer(hypothesis: str, reference: str) -> Dict[str, float]:
     """Computes exact CER, WER, Character Accuracy, and Word Accuracy."""
-    hyp_clean = hypothesis.strip()
-    ref_clean = reference.strip()
-
-    if not ref_clean and not hyp_clean:
-        return {"cer": 0.0, "wer": 0.0, "char_acc": 1.0, "word_acc": 1.0, "edit_distance": 0}
-    if not ref_clean:
-        return {"cer": 1.0, "wer": 1.0, "char_acc": 0.0, "word_acc": 0.0, "edit_distance": len(hyp_clean)}
-    if not hyp_clean:
-        return {"cer": 1.0, "wer": 1.0, "char_acc": 0.0, "word_acc": 0.0, "edit_distance": len(ref_clean)}
-
-    char_dist = rapidfuzz.distance.Levenshtein.distance(hyp_clean, ref_clean)
-    cer = float(char_dist / max(1, len(ref_clean)))
-    char_acc = max(0.0, 1.0 - cer)
-
-    hyp_words = hyp_clean.split()
-    ref_words = ref_clean.split()
-    word_dist = rapidfuzz.distance.Levenshtein.distance(hyp_words, ref_words)
-    wer = float(word_dist / max(1, len(ref_words)))
-    word_acc = max(0.0, 1.0 - wer)
+    pair = evaluation.compute_ocr_metric_pair(hypothesis, reference)
+    char_dist = int(pair["character_distance"])
+    char_acc = max(0.0, 1.0 - float(pair["cer"]))
+    word_acc = max(0.0, 1.0 - float(pair["wer"]))
 
     return {
-        "cer": round(cer, 4),
-        "wer": round(wer, 4),
+        "cer": round(float(pair["cer"]), 4),
+        "wer": round(float(pair["wer"]), 4),
         "char_acc": round(char_acc, 4),
         "word_acc": round(word_acc, 4),
         "edit_distance": int(char_dist),

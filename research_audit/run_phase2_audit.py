@@ -103,9 +103,21 @@ def trocr_extract(image_bgr: np.ndarray) -> tuple[str, float, str]:
         pil_image = Image.fromarray(cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)).convert("RGB")
         pixel_values = processor(pil_image, return_tensors="pt").pixel_values
         with torch.no_grad():
-            ids = model.generate(pixel_values, max_length=128)
+            generation = model.generate(
+                pixel_values,
+                max_length=128,
+                return_dict_in_generate=True,
+                output_scores=True,
+            )
+            ids = generation.sequences
         text = processor.batch_decode(ids, skip_special_tokens=True)[0].strip()
-        return text, 0.94, "executed"
+        if getattr(generation, "scores", None):
+            log_probs = torch.stack(generation.scores, dim=1).log_softmax(dim=-1)
+            token_probabilities = torch.exp(log_probs.max(dim=-1).values)
+            confidence = float(token_probabilities.mean().item())
+        else:
+            confidence = 0.0
+        return text, confidence, "executed"
     except Exception as exc:
         return "", 0.0, f"{type(exc).__name__}: {exc}"
 

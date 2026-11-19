@@ -14,13 +14,49 @@ import rapidfuzz
 
 MATH_SYMBOLS = set("+=-\\/*^()[]{}|_0123456789<>.%eE")
 
+def normalize_ocr_text(text: str) -> str:
+    """Normalize only whitespace for consistent OCR metric comparison."""
+    if not isinstance(text, str):
+        raise TypeError("OCR text must be a string")
+    return " ".join(text.strip().split())
+
+def compute_ocr_metric_pair(prediction: str, reference: str) -> Dict[str, float]:
+    """Compute one-sample character/word metrics using reference denominators."""
+    pred_clean = normalize_ocr_text(prediction)
+    ref_clean = normalize_ocr_text(reference)
+
+    char_distance = rapidfuzz.distance.Levenshtein.distance(pred_clean, ref_clean)
+    pred_words = pred_clean.split()
+    ref_words = ref_clean.split()
+    word_distance = rapidfuzz.distance.Levenshtein.distance(pred_words, ref_words)
+
+    cer = 0.0 if not ref_clean and not pred_clean else (
+        1.0 if not ref_clean else float(char_distance / len(ref_clean))
+    )
+    wer = 0.0 if not ref_words and not pred_words else (
+        1.0 if not ref_words else float(word_distance / len(ref_words))
+    )
+    return {
+        "cer": cer,
+        "wer": wer,
+        "character_distance": char_distance,
+        "word_distance": word_distance,
+        "reference_characters": len(ref_clean),
+        "reference_words": len(ref_words),
+        "hypothesis_characters": len(pred_clean),
+        "hypothesis_words": len(pred_words),
+        "normalized_prediction": pred_clean,
+        "normalized_reference": ref_clean,
+    }
+
 def compute_ocr_metrics(predictions: List[str], references: List[str]) -> Dict[str, float]:
     """Computes CER, WER, Character Accuracy, Word Accuracy, Math Symbol Accuracy, and Exact Expression Rate."""
-    if not predictions or not references:
-        return {
-            "cer": 0.0, "wer": 0.0, "char_accuracy": 1.0, "word_accuracy": 1.0,
-            "math_symbol_accuracy": 1.0, "exact_expression_rate": 1.0
-        }
+    if not isinstance(predictions, list) or not isinstance(references, list):
+        raise TypeError("predictions and references must be lists")
+    if len(predictions) != len(references):
+        raise ValueError("predictions and references must contain the same number of samples")
+    if not predictions:
+        raise ValueError("OCR metric evaluation requires at least one prediction/reference pair")
 
     total_chars = 0
     total_char_edits = 0
@@ -31,21 +67,19 @@ def compute_ocr_metrics(predictions: List[str], references: List[str]) -> Dict[s
     exact_matches = 0
 
     for pred, ref in zip(predictions, references):
-        pred_clean = pred.strip()
-        ref_clean = ref.strip()
+        pred_clean = normalize_ocr_text(pred)
+        ref_clean = normalize_ocr_text(ref)
 
         # Character Error Rate (CER) via normalized edit distance
         char_dist = rapidfuzz.distance.Levenshtein.distance(pred_clean, ref_clean)
-        denom_chars = max(len(ref_clean), len(pred_clean), 1)
-        total_chars += denom_chars
+        total_chars += len(ref_clean)
         total_char_edits += char_dist
 
         # Word Error Rate (WER) via normalized edit distance
         pred_words = pred_clean.split()
         ref_words = ref_clean.split()
         word_dist = rapidfuzz.distance.Levenshtein.distance(pred_words, ref_words)
-        denom_words = max(len(ref_words), len(pred_words), 1)
-        total_words += denom_words
+        total_words += len(ref_words)
         total_word_edits += word_dist
 
         # Exact Expression Rate
@@ -60,8 +94,14 @@ def compute_ocr_metrics(predictions: List[str], references: List[str]) -> Dict[s
         math_dist = rapidfuzz.distance.Levenshtein.distance(pred_math, ref_math)
         correct_math_symbols += max(0, denom_math - math_dist)
 
-    cer = min(1.0, float(total_char_edits / max(1, total_chars)))
-    wer = min(1.0, float(total_word_edits / max(1, total_words)))
+    if total_chars > 0:
+        cer = float(total_char_edits / total_chars)
+    else:
+        cer = 0.0 if total_char_edits == 0 else 1.0
+    if total_words > 0:
+        wer = float(total_word_edits / total_words)
+    else:
+        wer = 0.0 if total_word_edits == 0 else 1.0
     char_acc = max(0.0, 1.0 - cer)
     word_acc = max(0.0, 1.0 - wer)
     math_acc = float(correct_math_symbols / max(1, total_math_symbols)) if total_math_symbols > 0 else 1.0

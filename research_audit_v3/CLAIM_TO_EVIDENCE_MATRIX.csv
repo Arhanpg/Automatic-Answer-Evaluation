@@ -1,0 +1,11 @@
+claim,evidence_status,artifact,blocking_condition
+"37 student PDFs and 195 pages exist","demonstrated","research_phase3/page_review_manifest.csv","none"
+"407 subquestion references are repository-labelled","demonstrated","research_phase3/answer_region_manifest.csv","independent human annotation"
+"OCR engines execute locally","demonstrated","research_audit/phase2_actual_ocr_runs.csv","answer-region references"
+"TrOCR confidence is generated token probability","demonstrated","research_audit/run_phase2_audit.py","calibration remains untested"
+"Preprocessing improves recognition","blocked","research_phase3/preprocessing_ablation.csv","aligned reference text"
+"Assessment-sensitive metric predicts grading impact","blocked","research_phase3/02_ASSESSMENT_SENSITIVE_OCR_METRICS.md","adjudicated symbol and mark data"
+"Adaptive preprocessing helps","blocked","research_phase3/03_ADAPTIVE_PREPROCESSING.md","development/validation reference data"
+"Frozen grader isolates OCR impact","blocked","research_phase3/04_RECOGNITION_TO_GRADING_PROPAGATION.md","real answer-crop modalities"
+"Selective grading reduces review workload","blocked","research_phase3/05_GRADING_SENSITIVE_UNCERTAINTY.md","calibration and review-time evidence"
+"Cross-examination generalization","blocked","research_phase3/07_GENERALIZATION_STUDY.md","compatible external dataset"

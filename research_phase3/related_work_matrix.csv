@@ -1,0 +1,7 @@
+topic,closest_work_status,repo_evidence,novelty_status,required_proof
+adaptive_preprocessing,"active literature; exact gap unverified","real ablation infrastructure; no aligned CER",not_established,"answer-region CER/WER and locked-test policy comparison"
+handwritten_math_recognition,"active literature; over-correction known","PaddleOCR/Tesseract/TrOCR execution; no valid accuracy",not_established,"human transcription and crop-aligned benchmark"
+transcription_faithfulness,"active literature; PINK/FERMAT-like issues cited","no human correctness labels",not_established,"faithfulness annotation and corrected/stored error classification"
+OCR evaluation_metrics,"standard CER/WER established","metric implementation corrected and tested",not_novel_as_standalone,"symbol-aware or grading-propagation predictive metric"
+symbolic_rubric_grading,"existing project implementation","historical generated/results only",not_established,"genuine frozen grader and locked-test mark propagation"
+selective_prediction,"standard selective-prediction literature","no calibrated uncertainty or human review data",not_established,"calibrated risk-coverage and actual or clearly labelled review workload"

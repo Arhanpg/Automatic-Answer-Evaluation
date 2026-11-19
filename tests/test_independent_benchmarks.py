@@ -24,6 +24,7 @@ from backend.independent_pipeline import (
     get_all_27_model_names
 )
 import app as flask_app_module
+from backend.evaluation import compute_ocr_metric_pair, compute_ocr_metrics
 
 
 class TestIndependentBenchmarks(unittest.TestCase):
@@ -49,6 +50,31 @@ class TestIndependentBenchmarks(unittest.TestCase):
         # Completely empty
         m3 = compute_cer_wer("", "")
         self.assertEqual(m3["char_acc"], 1.0)
+
+    def test_ocr_metrics_edge_cases_and_unicode(self):
+        substitution = compute_ocr_metric_pair("axc", "abc")
+        self.assertAlmostEqual(substitution["cer"], 1.0 / 3.0, places=4)
+        insertion = compute_ocr_metric_pair("abxc", "abc")
+        self.assertAlmostEqual(insertion["cer"], 1.0 / 3.0, places=4)
+        deletion = compute_ocr_metric_pair("ac", "abc")
+        self.assertAlmostEqual(deletion["cer"], 1.0 / 3.0, places=4)
+        unicode_result = compute_ocr_metric_pair("x = ± \u221a9", "x = + \u221a9")
+        self.assertGreater(unicode_result["cer"], 0.0)
+        whitespace = compute_ocr_metric_pair("  x   + y  ", "x + y")
+        self.assertEqual(whitespace["cer"], 0.0)
+        empty_prediction = compute_ocr_metric_pair("", "abc")
+        self.assertEqual(empty_prediction["cer"], 1.0)
+        empty_reference = compute_ocr_metric_pair("abc", "")
+        self.assertEqual(empty_reference["cer"], 1.0)
+        both_empty = compute_ocr_metric_pair("", "")
+        self.assertEqual(both_empty["cer"], 0.0)
+
+        aggregate = compute_ocr_metrics(["ab", ""], ["abc", "xy"])
+        self.assertAlmostEqual(aggregate["cer"], 3.0 / 5.0, places=4)
+        with self.assertRaises(ValueError):
+            compute_ocr_metrics([], [])
+        with self.assertRaises(ValueError):
+            compute_ocr_metrics(["abc"], [])
 
     def test_four_stage_preprocessing(self):
         """Verifies all 4 preprocessing stages produce valid arrays without crashing."""

@@ -49,3 +49,6 @@ data/db/*
 !data/manual_grades/**
 !data/models/
 !data/models/**
+
+# Phase 3 visual review crops and page renders may contain private handwritten scans
+research_phase3/answer_region_images/
