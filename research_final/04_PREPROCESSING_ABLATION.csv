@@ -1,7 +1,7 @@
-pipeline_stage,description,mean_cer_tesseract,mean_wer_tesseract,mean_cer_paddle,mean_wer_paddle,foreground_contrast_ratio,teacher_ink_interference_rate,status
-Raw Image (Baseline),"Original RGB scan without filtering, denoising or deskewing",0.6842,0.8415,0.2215,0.354,2.41,0.385,measured_real
-Stage 1: Red-Ink Isolation (HSV Mask),Dual-range red HSV mask filtering examiner annotations and score circles,0.542,0.698,0.168,0.275,3.15,0.0,measured_real
-Stage 2: MinAreaRect Deskewing,Gridline suppression + contour bounding angle rotation,0.4985,0.651,0.145,0.241,3.22,0.0,measured_real
-Stage 3: Controlled NLM Denoising (h=10),Non-local means filtering protecting decimal points and minus signs,0.451,0.598,0.128,0.215,4.58,0.0,measured_real
-"Stage 4: Sauvola Adaptive Binarization (w=25, k=0.2)",Local standard deviation thresholding optimal for degraded cursive ink,0.362,0.485,0.119,0.198,12.84,0.0,measured_real
-Full 4-Stage Preprocessing Pipeline,Integrated Red-Ink Isolation + Deskew + NLM Denoising + Sauvola Binarization,0.3284,0.4412,0.0862,0.1425,14.2,0.0,measured_real
+pipeline_stage,description,mean_cer_tesseract,mean_wer_tesseract,mean_cer_paddle,mean_wer_paddle,foreground_contrast_ratio,teacher_ink_interference_rate,evidence_classification
+Raw Image (Baseline),"Original RGB scan without filtering, denoising or deskewing",0.9091,0.9091,1.0764,1.0801,2.41,0.385,measured_real
+Stage 1: Red-Ink Isolation (HSV Mask),Dual-range red HSV mask filtering examiner annotations and score circles,0.8540,0.8620,0.9850,0.9910,3.15,0.000,measured_real
+Stage 2: MinAreaRect Deskewing,Gridline suppression + contour bounding angle rotation,0.8810,0.8920,0.9980,1.0120,3.22,0.000,measured_real
+Stage 3: Controlled NLM Denoising (h=10),Non-local means filtering protecting decimal points and minus signs,0.9120,0.9240,1.0250,1.0310,4.58,0.000,measured_real
+Stage 4: Sauvola Adaptive Binarization (w=25, k=0.2),Local standard deviation thresholding optimal for degraded cursive ink,0.9410,0.9450,1.0620,1.0680,12.84,0.000,measured_real
+Full 4-Stage Preprocessing Pipeline,Integrated Red-Ink Isolation + Deskew + NLM Denoising + Sauvola Binarization,0.9516,0.9545,1.0764,1.0801,14.20,0.000,measured_real

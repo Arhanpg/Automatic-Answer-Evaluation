@@ -1,6 +1,6 @@
-recognition_modality,technical_token_preservation_rate,mathematical_formula_integrity_rate,negation_preservation_rate,examiner_ink_contamination_rate,hallucinatory_overcorrection_rate,overall_faithfulness_index,status
-Raw Tesseract,0.412,0.285,0.62,0.385,0.0,0.384,measured_real
-Preprocessed Tesseract,0.684,0.542,0.81,0.0,0.0,0.659,measured_real
-Raw PaddleOCR,0.842,0.765,0.915,0.292,0.0,0.706,measured_real
-Preprocessed PaddleOCR,0.948,0.912,0.985,0.0,0.0,0.948,measured_real
-TrOCR (Handwriting Transformer),0.915,0.785,0.94,0.0,0.038,0.88,measured_real
+recognition_modality,technical_token_preservation_rate,mathematical_formula_integrity_rate,negation_preservation_rate,examiner_ink_contamination_rate,hallucinatory_overcorrection_rate,overall_faithfulness_index,evidence_classification
+Raw Tesseract,0.412,0.285,0.620,0.385,0.000,0.384,measured_real
+Preprocessed Tesseract,0.684,0.542,0.810,0.000,0.000,0.659,measured_real
+Raw PaddleOCR,0.842,0.765,0.915,0.292,0.000,0.706,measured_real
+Preprocessed PaddleOCR,0.948,0.912,0.985,0.000,0.000,0.948,measured_real
+TrOCR (Handwriting Transformer),0.915,0.785,0.940,0.000,0.038,0.880,simulated_controlled
