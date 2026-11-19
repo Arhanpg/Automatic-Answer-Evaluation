@@ -22,8 +22,16 @@ These are sample measurements, not corpus-wide performance claims.
 Tesseract was executed locally on raw rendered pages and Sauvola outputs.
 `phase2_actual_ocr_runs.csv` records output hashes and lengths, but does not
 report CER/WER because the repository has no page-to-question transcription
-mapping. PaddleOCR was not installed, and no VLM model was downloaded or run.
-No examination images were copied into the repository.
+mapping. PaddleOCR, Tesseract, and TrOCR were then executed on representative
+page 1 samples after installing `paddleocr`, `paddlepaddle`, `sentencepiece`,
+and `tiktoken` in the Python 3.12 environment. Their text is evidence of actual
+execution, not of benchmark accuracy.
+
+The representative run also generated actual outputs for five tracks:
+raw PaddleOCR, processed PaddleOCR, raw Tesseract, processed Tesseract, and
+processed TrOCR. However, no page-to-question reference mapping exists, so
+CER/WER, math-symbol accuracy, exact-expression rate, and preprocessing
+improvement claims are intentionally not reported for these outputs.
 
 ## Evidence restrictions
 

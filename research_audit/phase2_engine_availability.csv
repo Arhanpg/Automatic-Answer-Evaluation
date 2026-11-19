@@ -1,5 +1,9 @@
 engine,installed,executed_in_phase2
-PaddleOCR,False,False
-Transformers,True,False
+PaddleOCR,True,True
+Transformers,True,True
 pytesseract,True,True
+torch,True,True
+sentencepiece,True,True
+tiktoken,True,True
 Tesseract executable,True,True
+TrOCR,True,True

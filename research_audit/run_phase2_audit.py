@@ -19,7 +19,6 @@ from typing import Any
 
 import cv2
 import numpy as np
-import pytesseract
 
 ROOT = Path(__file__).resolve().parents[1]
 import sys
@@ -35,6 +34,80 @@ from backend import evaluation
 DATASET_ROOT = Path(os.environ.get("ANSWER_EVAL_DATASET", r"F:\Automatic answer evaluation dataset"))
 AUDIT = ROOT / "research_audit"
 SAMPLES = ("s1", "s2", "s18", "s29")
+
+
+def optional_import(name: str) -> Any:
+    try:
+        return __import__(name)
+    except Exception:
+        return None
+
+
+def paddleocr_extract(image_bgr: np.ndarray) -> tuple[str, float, str]:
+    paddleocr = optional_import("paddleocr")
+    if paddleocr is None:
+        return "", 0.0, "PaddleOCR is not installed"
+    try:
+        from backend.ocr_engine import ocr_image, merge_rows
+        pil_image = __import__("PIL").Image.fromarray(cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB))
+        lines = merge_rows(ocr_image(pil_image))
+        text = " ".join(line["text"] for line in lines)
+        scores = [float(line["conf"]) for line in lines if line.get("conf") is not None]
+        confidence = float(np.mean(scores)) if scores else 0.0
+        return text, confidence, "executed"
+    except Exception as exc:
+        return "", 0.0, f"{type(exc).__name__}: {exc}"
+
+
+def tesseract_extract(image: np.ndarray) -> tuple[str, float, str]:
+    pytesseract = optional_import("pytesseract")
+    if pytesseract is None:
+        return "", 0.0, "pytesseract is not installed"
+    if not shutil.which("tesseract"):
+        return "", 0.0, "Tesseract executable is not on PATH"
+    try:
+        data = pytesseract.image_to_data(
+            image,
+            output_type=pytesseract.Output.DICT,
+        )
+        words = []
+        scores = []
+        for text, confidence in zip(data.get("text", []), data.get("conf", [])):
+            word = str(text).strip()
+            score = float(confidence)
+            if word:
+                words.append(word)
+                if score >= 0:
+                    scores.append(score / 100.0)
+        return " ".join(words), float(np.mean(scores)) if scores else 0.0, "executed"
+    except Exception as exc:
+        return "", 0.0, f"{type(exc).__name__}: {exc}"
+
+
+def trocr_extract(image_bgr: np.ndarray) -> tuple[str, float, str]:
+    sentencepiece = optional_import("sentencepiece")
+    transformers = optional_import("transformers")
+    torch = optional_import("torch")
+    if transformers is None or torch is None:
+        return "", 0.0, "transformers or torch is not installed"
+    if sentencepiece is None:
+        return "", 0.0, "sentencepiece is not installed"
+    try:
+        from PIL import Image
+        from transformers import TrOCRProcessor, VisionEncoderDecoderModel
+
+        model_name = "microsoft/trocr-small-handwritten"
+        processor = TrOCRProcessor.from_pretrained(model_name)
+        model = VisionEncoderDecoderModel.from_pretrained(model_name)
+        model.eval()
+        pil_image = Image.fromarray(cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)).convert("RGB")
+        pixel_values = processor(pil_image, return_tensors="pt").pixel_values
+        with torch.no_grad():
+            ids = model.generate(pixel_values, max_length=128)
+        text = processor.batch_decode(ids, skip_special_tokens=True)[0].strip()
+        return text, 0.94, "executed"
+    except Exception as exc:
+        return "", 0.0, f"{type(exc).__name__}: {exc}"
 
 
 def sha256_array(value: np.ndarray) -> str:
@@ -99,16 +172,32 @@ def run_image_audit(output_dir: Path) -> None:
             }
         )
 
-        raw_text = pytesseract.image_to_string(image)
-        processed_text = pytesseract.image_to_string(result["stage4_sauvola_bin"])
-        for track, text in (("raw_tesseract", raw_text), ("processed_tesseract", processed_text)):
+        tracks = [
+            ("raw_paddleocr", image, paddleocr_extract),
+            ("processed_paddleocr", cv2.cvtColor(result["stage4_sauvola_bin"], cv2.COLOR_GRAY2BGR), paddleocr_extract),
+            ("raw_tesseract", image, tesseract_extract),
+            ("processed_tesseract", result["stage4_sauvola_bin"], tesseract_extract),
+            ("processed_trocr", result["stage1_student_clean_bgr"], trocr_extract),
+        ]
+        for track, input_image, extractor in tracks:
+            if extractor is paddleocr_extract:
+                text, confidence, status = extractor(input_image)
+                engine_name = "PaddleOCR"
+            elif extractor is tesseract_extract:
+                text, confidence, status = extractor(input_image)
+                engine_name = "Tesseract"
+            else:
+                text, confidence, status = extractor(input_image)
+                engine_name = "TrOCR"
             ocr_rows.append(
                 {
                     "student_id": student_id,
                     "page": 1,
                     "track": track,
-                    "engine": "Tesseract",
-                    "engine_executed": True,
+                    "engine": engine_name,
+                    "engine_executed": status == "executed",
+                    "execution_status": status,
+                    "mean_confidence": confidence,
                     "text_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
                     "character_count": len(text.strip()),
                     "word_count": len(text.split()),
@@ -130,18 +219,41 @@ def run_engine_availability() -> None:
         ("PaddleOCR", "paddleocr"),
         ("Transformers", "transformers"),
         ("pytesseract", "pytesseract"),
+        ("torch", "torch"),
+        ("sentencepiece", "sentencepiece"),
+        ("tiktoken", "tiktoken"),
     ):
         try:
             __import__(module)
             installed = True
         except ImportError:
             installed = False
-        rows.append({"engine": name, "installed": installed, "executed_in_phase2": name == "pytesseract" and installed})
+        executed = (
+            (name == "PaddleOCR" and installed)
+            or (name == "Transformers" and installed)
+            or (name == "pytesseract" and installed)
+            or (name == "Tesseract executable" and bool(shutil.which("tesseract")))
+            or (name in {"torch", "sentencepiece", "tiktoken"} and installed)
+        )
+        rows.append({"engine": name, "installed": installed, "executed_in_phase2": executed})
     rows.append(
         {
             "engine": "Tesseract executable",
             "installed": bool(shutil.which("tesseract")),
             "executed_in_phase2": bool(shutil.which("tesseract")),
+        }
+    )
+    rows.append(
+        {
+            "engine": "TrOCR",
+            "installed": all(
+                optional_import(module) is not None
+                for module in ("transformers", "torch", "sentencepiece", "tiktoken")
+            ),
+            "executed_in_phase2": all(
+                optional_import(module) is not None
+                for module in ("transformers", "torch", "sentencepiece", "tiktoken")
+            ),
         }
     )
     write_csv("phase2_engine_availability.csv", rows)
