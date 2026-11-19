@@ -1,0 +1,5 @@
+track,engine,result_path,status,metrics_comparable
+raw OCR,PaddleOCR,outputs/independent_benchmarks/paddle_ocr_benchmark.json,reported as scripted/calibrated in M2 report,no
+preprocessed OCR,Tesseract,outputs/independent_benchmarks/tesseract_ocr_benchmark.json,reported as scripted/calibrated in M2 report,no
+vision transcription,TrOCR/VLM label,outputs/independent_benchmarks/vlm_benchmark.json,reported as scripted/calibrated; actual model execution unverified,no
+verified transcription,human/reference label,data/ground_truth/verified_transcriptions.json,repository-labelled; annotation workflow unverified,reference only

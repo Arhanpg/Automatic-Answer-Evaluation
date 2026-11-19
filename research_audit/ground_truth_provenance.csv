@@ -1,0 +1,5 @@
+artifact,scope,path,provenance_found,evidence_status,safe_research_use
+verified_transcriptions.json,37 student records; answer text and examiner marks,data/ground_truth/verified_transcriptions.json,"File is labelled verified, but annotation workflow or independent grader record is not stored.",repository-labelled; independent human validation unverified,Reference input only after annotation provenance is documented.
+student_answers,37 student records,data/student_answers/*.json,Structured answer exports; source transformation and correction history not stored per record.,recorded/generated; provenance incomplete,Use only with explicit source-to-record mapping.
+teacher_marks,37 student records,data/teacher_marks/*.json,"Structured mark exports; grader identity, rubric adjudication, and inter-rater evidence absent.",recorded; independent grading validation unverified,Single-rater labels unless additional graders are collected.
+training_set.jsonl,training examples,data/models/training_set.jsonl,Tracked file contains zero lines at audit time.,empty,Cannot support a training-data claim.

@@ -1,0 +1,28 @@
+model,paradigm,implementation_location,weights_or_external_service_verified,training_execution_verified,locked_test_predictions_verified,synthetic_or_scripted_inputs_possible,reproducibility_status
+Master_Hybrid_Ensemble (SymPy + GBDT),Hybrid / Symbolic + ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+SymPy_Symbolic_Math_Verifier,Symbolic Verifier,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Hybrid_RAG (BM25 + Dense + Reranker),RAG Retrieval,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Transformer_Encoder (From Scratch),From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+QLoRA_Qwen2.5-3B (25 scripts + synthetic),Fine-Tuned LLM (4-bit),backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+BiLSTM_Self_Attention (From Scratch),From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+LSTM_Scratch,From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+QLoRA_Qwen2.5-3B (25 scripts),Fine-Tuned LLM (4-bit),backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+FewShot_Chain_of_Thought_LLM,Prompted LLM,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+NumPy_MLP_GELU (Pure NumPy),From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Llama-3-8B-Instruct (via Ollama),Prompted LLM,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+TextCNN_1D (From Scratch),From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Dense_Embedding_RAG (SBERT),RAG Retrieval,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Mistral-7B-Instruct (via Ollama),Prompted LLM,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+QLoRA_Qwen2.5-3B (15 scripts),Fine-Tuned LLM (4-bit),backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Vanilla_RNN (From Scratch),From-Scratch DL,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Ridge_Regression (Champion ML),Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+LightGBM_Regressor,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+QLoRA_Qwen2.5-3B (5 scripts),Fine-Tuned LLM (4-bit),backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Random_Forest_Regressor,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+ElasticNet_Regression,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Lasso_Regression,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+CatBoost_Regressor,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+XGBoost_Regressor,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+ExtraTrees_Regressor,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Support_Vector_Regression (SVR),Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
+Linear_Regression,Classical ML,backend/src implementation exists or model is named in generated output,no,no,no,yes,incomplete; preserve modality and execution log before publication claim
