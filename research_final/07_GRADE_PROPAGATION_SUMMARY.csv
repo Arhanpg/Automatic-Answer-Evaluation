@@ -1,0 +1,7 @@
+input_stream,sample_size,mean_grade_delta_vs_oracle,mae_vs_teacher_gold,rmse_vs_teacher_gold,qwk_vs_teacher_gold,mean_false_credit_marks,mean_missed_credit_marks,relative_score_distortion_pct
+Oracle,6,0.0,0.8333,1.354,0.9268,0.0,0.0,0.0
+Raw_Tesseract,6,-8.25,8.4167,8.9419,0.0679,0.17,8.25,58.78
+Preprocessed_Tesseract,6,-3.0,3.1667,3.7417,0.5183,0.0,3.0,21.48
+Raw_PaddleOCR,6,-0.17,0.6667,1.2583,0.9362,0.25,0.25,2.81
+Preprocessed_PaddleOCR,6,-0.5,0.6667,0.7638,0.9353,0.0,0.75,7.16
+TrOCR_Handwriting,6,-1.17,1.3333,1.6833,0.8511,0.08,1.17,9.05

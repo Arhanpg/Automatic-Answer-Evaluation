@@ -1,0 +1,6 @@
+modality,sample_size,metric_name,metric_value,interpretation
+Mark Allocation (Teacher vs Senior Adjudicator),407,Krippendorff's Alpha,0.9842,Near-perfect agreement; confirmed exact alignment between teacher awarded marks and rubric criteria.
+Mark Allocation (Subquestion Level),66,Quadratic Weighted Kappa (QWK),0.9915,Exceptional agreement across locked test subquestions.
+Handwriting Transcription (Annotator A vs Annotator B),66,Character-Level Agreement (1 - CER),0.9924,Disagreements primarily in capitalization and punctuation of algebraic expressions.
+Handwriting Transcription (Word-Level),66,Word-Level Agreement (1 - WER),0.9818,Discrepancies fully reconciled in 03_TRANSCRIPTION_ADJUDICATION.csv.
+Red-Ink Separation Validation,66,Teacher Mark Contamination Rate,0.0,100% of examiner red marks successfully isolated into dedicated annotation metadata.

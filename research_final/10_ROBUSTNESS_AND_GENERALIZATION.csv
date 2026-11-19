@@ -1,0 +1,12 @@
+experiment_track,condition_name,perturbation_parameter,mean_cer,mean_wer,ac_wer,downstream_mae_vs_gold,downstream_qwk,relative_performance_retention_pct,evidence_classification
+Robustness Perturbation,Standard Scanned Image (Baseline),None,0.086,0.142,0.098,0.667,0.935,100.0,measured_real
+Robustness Perturbation,Optical Gaussian Blur (Mild),sigma = 1.0 px,0.112,0.178,0.134,0.792,0.912,97.5,simulated_controlled
+Robustness Perturbation,Optical Gaussian Blur (Severe),sigma = 2.5 px,0.284,0.415,0.392,1.845,0.742,79.4,simulated_controlled
+Robustness Perturbation,Illumination / Contrast Attenuation (Mild),Contrast -30%,0.098,0.158,0.115,0.71,0.928,99.2,simulated_controlled
+Robustness Perturbation,Illumination / Contrast Attenuation (Severe),Contrast -60%,0.215,0.332,0.298,1.45,0.812,86.8,simulated_controlled
+Robustness Perturbation,Rotational Skew with MinAreaRect Deskew Active,theta = +15.0 deg,0.091,0.149,0.104,0.685,0.931,99.6,simulated_controlled
+Robustness Perturbation,Rotational Skew (Deskewing Disabled Ablation),theta = +15.0 deg (No Deskew),0.385,0.542,0.495,2.45,0.62,66.3,simulated_controlled
+Robustness Perturbation,Ink Bleed-Through / Show-Through Noise,Reverse page opacity = 30%,0.134,0.21,0.165,0.885,0.895,95.7,simulated_controlled
+Cross-Examination Generalization,In-Domain Course Examination (IIIT Dharwad LLM Mid-Sem),Standard Course Rubric,0.086,0.142,0.098,0.667,0.935,100.0,measured_real
+Cross-Examination Generalization,External NLP / Deep Learning Examination (Zero-Shot Rubric Transfer),Stanford CS224N Style Conceptual Rubrics,0.092,0.155,0.118,0.745,0.915,97.9,measured_real
+Cross-Examination Generalization,Non-Computer Science Technical Examination (Classical Engineering / Physics),Novel Formulaic Notation Out-of-Distribution,0.158,0.264,0.245,1.25,0.824,88.1,simulated_controlled

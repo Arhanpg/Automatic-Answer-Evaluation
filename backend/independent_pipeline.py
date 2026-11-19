@@ -133,10 +133,12 @@ class FourStageImagePreprocessor:
         if len(coords) >= 400:
             rect = cv2.minAreaRect(coords)
             raw_angle = rect[-1]
-            if raw_angle < -45.0:
-                skew_angle = -(90.0 + raw_angle)
+            w_box, h_box = rect[1]
+            # Robust OpenCV 4.5+ minAreaRect angle convention handling
+            if w_box < h_box:
+                skew_angle = float(raw_angle)
             else:
-                skew_angle = -raw_angle
+                skew_angle = -float(90.0 - raw_angle)
 
         deskewed = gray.copy()
         if 0.1 < abs(skew_angle) <= 30.0:

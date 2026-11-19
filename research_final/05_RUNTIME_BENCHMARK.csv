@@ -1,0 +1,6 @@
+engine_identity,compute_device,batch_size,avg_latency_per_page_sec,throughput_pages_per_min,peak_vram_mb,host_ram_mb,device_utilization_pct
+Raw Tesseract v5.5.3,CPU (8 Threads),1,1.25,48.0,0.0,142.5,28.4
+Preprocessed Tesseract v5.5.3,CPU (8 Threads),1,1.68,35.7,0.0,168.0,34.2
+Raw PaddleOCR v3.7 (PP-OCRv6),CPU (OpenMP / MKLDNN disabled),1,2.15,27.9,0.0,420.0,65.0
+Preprocessed PaddleOCR v3.7 (PP-OCRv6),CPU (OpenMP / MKLDNN disabled),1,2.58,23.2,0.0,445.0,72.5
+TrOCR (microsoft/trocr-small-handwritten),CUDA (NVIDIA RTX 3050 4GB),1,0.42,142.8,374.0,850.0,84.1

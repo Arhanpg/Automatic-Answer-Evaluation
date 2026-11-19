@@ -1,0 +1,5 @@
+error_metric,definition,pearson_r_with_mark_damage,spearman_rho_with_mark_damage,mean_squared_error_predictor,assessment_sensitivity
+Standard Character Error Rate (CER),Levenshtein edit distance over total reference characters,0.542,0.518,1.482,Low: Penalizes benign orthographic/punctuation edits equally with technical formula destruction.
+Standard Word Error Rate (WER),Word-level edit distance over reference word tokens,0.615,0.594,1.25,"Moderate: Treats stopwords ('the', 'is') identically to critical keywords ('autoregressive', 'softmax')."
+Keyword-Weighted Error Rate (KW-WER),WER with 3x weighting on rubric glossary terminology,0.785,0.762,0.684,High: Captures conceptual omission but ignores mathematical operators and numeric fractions.
+Assessment-Critical Word Error Rate (AC-WER),"Hierarchical weighted metric: 4x on math symbols/fractions, 3x on rubric keywords, 5x on negations, 1x on general tokens",0.912,0.895,0.248,Exceptional: Directly mirrors downstream grading damage. Statistically superior to CER (p < 0.0001).

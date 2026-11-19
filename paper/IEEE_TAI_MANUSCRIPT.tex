@@ -1,0 +1,32 @@
+% IEEE Transactions on Artificial Intelligence (IEEE TAI) Manuscript
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Assessment-Critical Handwriting Recognition: Measuring the Propagation of Transcription Errors into Rubric-Based Evaluation of Written Technical Assessments}
+
+\author{Arhan~Ghosarwade and Abhinav~Gumgol\thanks{A. Ghosarwade and A. Gumgol are with the Department of Computer Science and Engineering, Indian Institute of Information Technology Dharwad (IIIT Dharwad), Karnataka 580009, India (e-mail: arhanghosarwade@gmail.com).}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Automated Short Answer Grading (ASAG) and Large Language Model (LLM) evaluators have demonstrated near-human grading reliability when presented with clean digital text. However, when deployed in real-world educational institutions, their validity hinges entirely on the front-end handwriting recognition pipeline that digitizes physical examination booklets. In this work, we conduct the first systematic investigation into Assessment-Critical Handwriting Recognition, measuring how transcription corruptions propagate through downstream rubric-based evaluation in handwritten technical STEM examinations across 37 examination booklets (195 scanned pages, 407 subquestion evaluations) from IIIT Dharwad. We introduce the Assessment-Critical Word Error Rate (AC-WER), demonstrate that preprocessed PaddleOCR restores grading validity to human oracle levels (QWK = 0.9353), and formulate a conformal selective verification framework that achieves QWK = 0.988 while reducing human examiner workload by 79.2%.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Assessment-Critical OCR, Automated Short Answer Grading, Handwriting Recognition, Rubric-Based Evaluation, Conformal Prediction, Error Propagation, Large Language Models.
+\end{IEEEkeywords}
+
+\section{Introduction}
+High-stakes academic examinations in science, technology, engineering, and mathematics (STEM) remain predominantly handwritten. Deploying automated evaluation systems in physical examination environments requires an Optical Character Recognition (OCR) front-end. This paper demonstrates the metric failure gap in conventional OCR and provides a robust end-to-end framework.
+
+\section{Conclusion}
+We have established the first empirical benchmark connecting handwriting transcription fidelity with downstream rubric mark allocations, proving that assessment-critical preprocessing and uncertainty routing resolve the historic trade-off between automation and evaluation fairness.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

@@ -106,10 +106,12 @@ def preprocess_handwritten_page(bgr: np.ndarray) -> Tuple[np.ndarray, np.ndarray
     if len(coords) >= MIN_FOREGROUND_PIXELS:
         rect = cv2.minAreaRect(coords)
         raw_angle = rect[-1]
-        if raw_angle < -45.0:
-            skew_angle = -(90.0 + raw_angle)
+        w_box, h_box = rect[1]
+        # Robust OpenCV 4.5+ minAreaRect angle convention handling
+        if w_box < h_box:
+            skew_angle = float(raw_angle)
         else:
-            skew_angle = -raw_angle
+            skew_angle = -float(90.0 - raw_angle)
 
     # Rotate if significant skew exists
     deskewed_bgr = bgr.copy()

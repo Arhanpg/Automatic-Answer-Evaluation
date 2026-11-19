@@ -1,0 +1,7 @@
+fixture_name,true_rotation_angle_deg,minAreaRect_raw_angle,box_width,box_height,estimated_skew_angle_deg,angular_error_deg,validation_status
+synthetic_text_-10.0deg,-10.0,80.03,668.9,26.5,-9.97,0.032,PASS
+synthetic_text_-05.0deg,-5.0,85.08,668.9,26.4,-4.92,0.079,PASS
+synthetic_text_+00.0deg,0.0,90.0,669.0,26.0,-0.0,0.0,PASS
+synthetic_text_+05.0deg,5.0,4.86,26.4,669.5,4.86,0.135,FAIL
+synthetic_text_+10.0deg,10.0,9.88,26.6,668.9,9.88,0.119,FAIL
+synthetic_text_+90.0deg,90.0,90.0,26.0,395.0,90.0,0.0,PASS

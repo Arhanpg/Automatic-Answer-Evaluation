@@ -1,0 +1,6 @@
+recognition_modality,sample_size,macro_mean_cer,macro_std_cer,macro_mean_wer,macro_std_wer,mean_confidence,mean_latency_sec,p95_latency_sec,stat_significance_vs_raw_tesseract
+Raw_Tesseract,66,0.6671,0.2345,0.7825,0.2492,0.4862,0.8049,1.0507,N/A
+Preprocessed_Tesseract,66,0.3141,0.1142,0.4247,0.1515,0.7287,1.0856,1.3294,p < 0.001
+Raw_PaddleOCR,66,0.2129,0.0781,0.3411,0.1194,0.856,1.3557,1.6036,p < 0.001
+Preprocessed_PaddleOCR,66,0.0825,0.0309,0.1376,0.0505,0.9339,1.7103,1.9675,p < 0.001
+TrOCR_Handwriting,66,0.1093,0.0437,0.1749,0.0643,0.8911,0.2805,0.4063,p < 0.001
