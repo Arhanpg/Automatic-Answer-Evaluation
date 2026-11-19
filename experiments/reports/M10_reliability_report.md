@@ -1,30 +1,28 @@
-# Milestone M10: Uncertainty Calibration, Conformal Intervals & System Reliability Report
+# Milestone M10: Reliability and Uncertainty Report
 
-## 1. Executive Summary & Calibration Guarantees
-- **Nominal Coverage**: 90.0% ($\alpha = 0.10$)
-- **Empirical Coverage on Locked Test Partition**: **100.0%**
-- **Quantile Cutoff ($\hat{q}$)**: **0.500 marks** (with finite-sample correction)
-- **Average Prediction Interval Width**: **1.0 marks**
-- **Ensemble Variance ($s^2$)**: Mean = 0.0274, Max = 0.097
+## Conformal artifact
 
-## 2. OCR Corruption Stress Testing
-Simulated character corruption at 1%, 5%, and 10% Character Error Rate (CER):
+The saved conformal JSON contains 24 test records, nominal 90% coverage,
+1.0 mark mean interval width, and finite-sample quantile `0.5`.
 
-| Input Text Condition | Target CER | MAE (Marks) | RMSE | QWK | Within 1 Mark Acc (%) | $\\Delta$MAE from Clean |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Verified Clean Transcription** | 0.0% | 0.38 | 0.52 | 0.962 | 98.2% | +0.00 |
-| **Synthetic Corrupted 1% CER** | 1.0% | 0.0 | 0.0 | 0.0 | 85.0% | +0.0 |
-| **Synthetic Corrupted 5% CER** | 5.0% | 0.0 | 0.0 | 0.0 | 85.0% | +0.0 |
-| **Synthetic Corrupted 10% CER** | 10.0% | 0.0 | 0.0 | 0.0 | 85.0% | +0.0 |
+The artifact reports `n_calibration=0`, even though it reports
+100% test-record coverage. Therefore:
 
-## 3. Concise vs. Verbose Fairness Audit
-- **Audited Samples**: 0
-- **Mean Score Shift Due to Padding**: **0.0 marks**
-- **Maximum Shift Observed**: **0.0 marks**
-- **Verdict**: **FAIR - Rubric-grounded grading ignores boilerplate padding.**
+- It cannot support a correctly calibrated 90% conformal guarantee.
+- A valid deployment study requires a real held-out calibration partition.
+- The 1.0 mark intervals demonstrate an output format and routing rule, not
+  a proven coverage guarantee.
 
-## 4. Optical-to-Grading Propagation Analysis
-- **Verified Ground-Truth Text**: MAE = 0.38, QWK = 0.962
-- **Four-Stage Hybrid Consensus OCR**: MAE = 0.44, QWK = 0.941
-- **Raw PaddleOCR Baseline**: MAE = 2.35, QWK = 0.542
-- *Key Takeaway*: Single-pass raw PaddleOCR degrades grading accuracy by nearly 2 marks. The Four-Stage Consensus pipeline restores 97% of the lost accuracy, performing nearly indistinguishably from human-verified transcriptions.
+## OCR-to-grading propagation
+
+The four-stage OCR artifact reports CER 3.8%, WER 6.2%, and grading
+propagation MAE approximately 0.44 in the M10 report. Raw PaddleOCR is listed
+as MAE 2.35. These values should be checked by a live end-to-end run before
+being presented as validated propagation measurements.
+
+## Human review routing
+
+Low confidence and OCR disagreement can populate a review queue. The queue
+should be used before training labels are accepted. No fairness claim is valid
+without audited concise and verbose answer pairs. The saved audit reports zero
+fairness samples and must not be described as a completed fairness experiment.

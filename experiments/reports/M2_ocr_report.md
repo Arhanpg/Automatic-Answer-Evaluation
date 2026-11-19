@@ -1,19 +1,66 @@
-# Milestone M2: Four-Stage Hybrid Consensus HTR Benchmark Report
+# Milestone M2: OCR and Image Preprocessing Report
 
-## 1. Executive Summary
-The Four-Stage Hybrid Consensus pipeline was evaluated against standard baselines across the IIIT Dharwad examination corpus scripts (`s2.pdf`, `s18.pdf`, `s29.pdf`).
+## Evidence status
 
-## 2. Quantitative Engine Leaderboard
+This report distinguishes a generic benchmark artifact from independent
+engine output and live, per-script telemetry.
 
-| OCR Architecture | Character Error Rate (CER) | Word Error Rate (WER) | Math Symbol Accuracy | Exact Expression Rate | Avg Latency / Page |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **PaddleOCR (Raw Baseline)** | 46.8% | 61.2% | 32.4% | 21.0% | 2.45s |
-| **Tesseract 5** | 51.2% | 68.4% | 28.5% | 18.0% | 1.82s |
-| **EasyOCR** | 49.1% | 64.5% | 29.8% | 19.5% | 3.10s |
-| **TrOCR-Base** | 14.2% | 22.8% | 71.0% | 64.0% | 4.15s |
-| **Four-Stage Hybrid Consensus** | **3.8%** | **6.2%** | **97.5%** | **94.0%** | 4.88s |
+## Implemented preprocessing
 
-## 3. Key Forensic Observations
-1. **Red Ink Separation**: Isolating teacher red marks via dual-band HSV masking ([0, 10] U [170, 180]) prevented red examiner ink from corrupting student characters.
-2. **Page-Agnostic Cover Parsing**: Correctly detected institutional cover sheets regardless of page index (e.g. `s2.pdf` cover on Page 1, following Page 0's Question 4 work).
-3. **Mathematical Precision**: The consensus gate recovered 2D attention vectors $[1, 0]$ and $8 \times 8$ bigram tables without hallucination.
+The OCR path removes red examiner ink, suppresses grid lines, deskews, applies
+Fast Non-Local Means denoising, and applies Sauvola adaptive binarization.
+The preprocessing artifact records a 0.7924% red-ink fraction for s1/p1 and
+the following settings:
+
+- Denoising: Fast NLM, `h=10`, template window `7`, search window `21`
+- Binarization: Sauvola, window `25`, `k=0.2`
+- Test page: s1/p1
+
+The purpose of preprocessing is to preserve mathematical symbols and dots while
+removing rotation, paper texture, uneven illumination, and teacher ink.
+
+## Before-versus-after OCR table
+
+| Benchmark source | Raw PaddleOCR | Raw Tesseract | Processed consensus |
+|---|---:|---:|---:|
+| CER | 46.8% | 51.2% | 3.8% |
+| WER | 61.2% | 68.4% | 6.2% |
+| Character accuracy | 53.2% | 48.8% | 96.2% |
+| Math symbol accuracy | 32.4% | 28.5% | 97.5% |
+| Exact expression rate | 21.0% | 18.0% | 94.0% |
+
+The raw-to-consensus improvement is large in the generic artifact, but these
+baseline and consensus values are not traceable to one executable, repeated
+cross-validation experiment.
+
+## Independent engine output
+
+The independent benchmark files report:
+
+| Engine | CER | WER | Character accuracy | Word accuracy |
+|---|---:|---:|---:|---:|
+| PaddlePaddle OCR 3.x, preprocessed | 1.20% | 5.27% | 98.80% | 94.73% |
+| Tesseract 5.5, preprocessed | 6.60% | 22.14% | 93.40% | 77.86% |
+| TrOCR-ViT, deskewed RGB | 0.38% | 0.0% | 99.62% | 100.0% |
+
+These files were produced by `backend/independent_pipeline.py`. For PaddleOCR
+and Tesseract, the pipeline substitutes limited character/word-level
+variations into verified text. It does not prove real OCR engine execution.
+The VLM result is likewise scripted/calibrated from the verified transcription,
+despite the VLM benchmark name.
+
+## Live telemetry caveat
+
+`outputs/ocr_metrics/live_per_script_metrics.csv` contains s1 and s2 and
+records CER/WER of 93.37%/94.50% and 94.70%/96.03%. These values are
+not comparable with the preprocessed success tables. They should be interpreted
+as live/raw telemetry and excluded from headline improvement claims until
+live OCR execution is reproduced for the full corpus.
+
+## Red-ink and consensus behavior
+
+The consensus records separate red marks and student text, recover mathematical
+vectors and bigram expressions through a comparison gate, and preserve a
+human-review flag for discrepancies. The benchmark report's 94% exact
+expression rate is an aggregate claim requiring a complete live corpus run for
+independent verification.

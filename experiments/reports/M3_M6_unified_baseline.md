@@ -1,17 +1,20 @@
-# Milestone M3 & M6: Unified Rubric-Aware Semantic, NLI & SymPy Math Baseline Report
+# Milestones M3/M6: Semantic, NLI, and Symbolic Baseline
 
-## 1. Executive Summary
-Evaluated the unified semantic and symbolic grading engine against the empirical anchors (s2.pdf, s18.pdf, s29.pdf).
+## Implemented baseline
 
-## 2. Benchmark Script Verification
-- **s2.pdf (23BCS013)**: Human Examiner = 20.0/20. Automated Prediction = 20.0/20.
-  - Page-agnostic stitching recovered Q4 work on Page 0 and merged with booklet end.
-  - SymPy verifier validated |V|=7 (0.000408) for full 3.0/3.0 on Q4.
-  - Dual-valid override validated Layer Normalization on Q3(c) for 1.0/1.0.
-- **s29.pdf (23BDS062)**: Human Examiner = 15.0/20. Automated Prediction = 15.0/20.
-  - Contradiction detector caught Word C & D in Q3(b) (0.0/1.0 marks).
-  - Awarded 2.0/6.0 partial credit on Q2 for dot-product setup [1, 0].
-  - Validated V=8 with prior 1/5 for full 3.0/3.0 on Q4.
-- **s18.pdf (23BCS127)**: Human Examiner = 7.0/20. Automated Prediction = 7.0/20.
-  - Correctly assigned 0.0 to omitted sub-questions (Q1b, Q1c, Q3c).
-  - Awarded 1.0/3.0 on Q4 for isolated conditional probability count without full chain rule.
+The grading baseline combines rubric coverage, sentence semantics, natural
+language inference, and SymPy verification. It also routes contradicted
+answers to lower marks and checks mathematical equivalence.
+
+## Stored anchor checks
+
+The generated reports record these anchor-script checks:
+
+| Script | Human mark | Automated mark | Main verified behavior |
+|---|---:|---:|---|
+| s2 | 20/20 | 20/20 | Laplace probability and LayerNorm text |
+| s29 | 15/20 | 15/20 | Contradiction and partial-math handling |
+| s18 | 7/20 | 7/20 | Omitted subparts and partial Q4 credit |
+
+These checks demonstrate known-example behavior. They are not an independent
+locked-test calculation for the complete 24-response test set.

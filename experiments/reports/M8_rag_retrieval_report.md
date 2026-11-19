@@ -1,18 +1,17 @@
-# Milestone M8: Rubric & Graded-Example RAG Pipeline Report
+# Milestone M8: Rubric and Graded-Example RAG
 
-## 1. Executive Summary
-Evaluated four RAG configurations with strict train-split exemplar retrieval isolation.
-- **Champion Configuration**: `Condition D (Confidence-Based Hybrid Routing)`: QWK = 1.0, MAE = 0.0
-- **Data Leakage Check**: Zero held-out student IDs in candidate pool (**PASSED**).
+## Benchmark conditions
 
-## 2. RAG Ablation Benchmark Table
+The RAG artifact compares four configurations over 12 generated/benchmark
+instances with a 25-script train pool:
 
-| RAG Retrieval Configuration | QWK | MAE | RMSE | Exact Match | Pearson r |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Condition A (No Retrieval)** | 0.9732 | 0.25 | 0.5401 | 75.0% | 0.9738 |
-| **Condition B (Rubric + SymPy Tool Only)** | 0.9901 | 0.2083 | 0.3227 | 58.3% | 0.9906 |
-| **Condition C (Hybrid Top-2 Train Exemplars)** | 0.9981 | 0.0417 | 0.1443 | 91.7% | 0.9983 |
-| **Condition D (Confidence-Based Routing)** | **1.0** | **0.0** | **0.0** | **100.0%** | **1.0** |
+| Condition | MAE | RMSE | Exact match | QWK |
+|---|---:|---:|---:|---:|
+| No retrieval | 0.2500 | 0.5401 | 75.0% | 0.9732 |
+| Rubric + SymPy | 0.2083 | 0.3227 | 58.3% | 0.9901 |
+| Hybrid top-2 train examples | 0.0417 | 0.1443 | 91.7% | 0.9981 |
+| Confidence-based routing | 0.0000 | 0.0000 | 100.0% | 1.0000 |
 
-## 3. Decision Gate Verification
-Confidence-based hybrid routing (Condition D) achieved superior QWK (1.0 vs 0.9732) and reduced grading latency by routing high-confidence mathematical answers directly through the SymPy verifier.
+The train-pool isolation assertion is recorded as passed. The perfect final
+row is a generated benchmark result and should not be interpreted as universal
+grading accuracy.
