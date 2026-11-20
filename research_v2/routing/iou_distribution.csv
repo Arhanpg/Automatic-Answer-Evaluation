@@ -1,0 +1,21 @@
+system_id,system_name,iou_bin,count,percentage
+sheet_parser_baseline,Baseline Heuristic Regex Parser,"[0.0, 0.1)",117,28.75
+sheet_parser_baseline,Baseline Heuristic Regex Parser,"[0.1, 0.3)",99,24.32
+sheet_parser_baseline,Baseline Heuristic Regex Parser,"[0.3, 0.5)",33,8.11
+sheet_parser_baseline,Baseline Heuristic Regex Parser,"[0.5, 0.75)",51,12.53
+sheet_parser_baseline,Baseline Heuristic Regex Parser,"[0.75, 1.0]",107,26.29
+oracle_map_control,Oracle Reference Map (Upper Bound Control),"[0.0, 0.1)",0,0.0
+oracle_map_control,Oracle Reference Map (Upper Bound Control),"[0.1, 0.3)",0,0.0
+oracle_map_control,Oracle Reference Map (Upper Bound Control),"[0.3, 0.5)",0,0.0
+oracle_map_control,Oracle Reference Map (Upper Bound Control),"[0.5, 0.75)",0,0.0
+oracle_map_control,Oracle Reference Map (Upper Bound Control),"[0.75, 1.0]",407,100.0
+robust_header_detector,Robust Header & Visual Anchor Detector,"[0.0, 0.1)",0,0.0
+robust_header_detector,Robust Header & Visual Anchor Detector,"[0.1, 0.3)",4,0.98
+robust_header_detector,Robust Header & Visual Anchor Detector,"[0.3, 0.5)",13,3.19
+robust_header_detector,Robust Header & Visual Anchor Detector,"[0.5, 0.75)",122,29.98
+robust_header_detector,Robust Header & Visual Anchor Detector,"[0.75, 1.0]",268,65.85
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,"[0.0, 0.1)",0,0.0
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,"[0.1, 0.3)",0,0.0
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,"[0.3, 0.5)",0,0.0
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,"[0.5, 0.75)",0,0.0
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,"[0.75, 1.0]",407,100.0

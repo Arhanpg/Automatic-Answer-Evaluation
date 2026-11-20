@@ -1,0 +1,5 @@
+system_id,system_name,total_records,written_records,omitted_records,mean_iou_written,precision_iou_050,precision_iou_075,page_assignment_accuracy,subquestion_slot_accuracy,omission_detection_accuracy,continuation_completeness_rate,cross_question_contamination_rate,answer_coverage_rate,status
+sheet_parser_baseline,Baseline Heuristic Regex Parser,407,407,0,0.43,0.3882,0.2629,0.7125,0.5012,1.0,1.0,0.2383,0.1769,measured_real
+oracle_map_control,Oracle Reference Map (Upper Bound Control),407,407,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,measured_real
+robust_header_detector,Robust Header & Visual Anchor Detector,407,407,0,0.7637,0.9582,0.6585,1.0,1.0,1.0,0.9312,0.0,0.9582,measured_real
+hybrid_layout_continuation,Hybrid Layout + Continuation Resolver,407,407,0,0.7952,1.0,1.0,1.0,1.0,1.0,1.0,0.0246,1.0,measured_real

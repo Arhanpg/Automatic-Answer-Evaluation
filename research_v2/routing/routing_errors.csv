@@ -1,0 +1,426 @@
+student_id,subquestion_id,system_id,gt_page_id,pred_page_id,error_category,iou,details
+s1,1b,sheet_parser_baseline,s1_p02,s1_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s1,1c,sheet_parser_baseline,s1_p03,s1_p03,cross_question_merge,0.3528,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s1,1d,sheet_parser_baseline,s1_p03,s1_p03,cross_question_merge,0.3614,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s1,1d,robust_header_detector,s1_p03,s1_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1d
+s1,2b,sheet_parser_baseline,s1_p04,s1_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s1,2b,hybrid_layout_continuation,s1_p04,s1_p04,cross_question_merge,0.9389,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 2b
+s1,2c,sheet_parser_baseline,s1_p05,s1_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s1,3a,sheet_parser_baseline,s1_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s1,3b,sheet_parser_baseline,s1_p05,s1_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s1,3c,sheet_parser_baseline,s1_p05,s1_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s1,4,sheet_parser_baseline,s1_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s1,4,hybrid_layout_continuation,s1_p05,s1_p05,cross_question_merge,0.9275,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 4
+s2,1b,sheet_parser_baseline,s2_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s2,1c,sheet_parser_baseline,s2_p03,s2_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s2,1d,sheet_parser_baseline,s2_p03,s2_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s2,2a,sheet_parser_baseline,s2_p04,s2_p04,answer_split_or_truncated,0.4308,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s2,2b,sheet_parser_baseline,s2_p04,s2_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s2,2c,sheet_parser_baseline,s2_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s2,3a,sheet_parser_baseline,s2_p05,s2_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s2,3b,sheet_parser_baseline,s2_p05,s2_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s2,3c,sheet_parser_baseline,s2_p06,s2_p06,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s3,1a,robust_header_detector,s3_p02,s3_p02,answer_split_or_truncated,0.6564,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s3,1b,sheet_parser_baseline,s3_p02,s3_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s3,1c,sheet_parser_baseline,s3_p03,s3_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s3,1d,sheet_parser_baseline,s3_p03,s3_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s3,2a,sheet_parser_baseline,s3_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s3,2a,robust_header_detector,s3_p04,s3_p04,answer_split_or_truncated,0.6876,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s3,2b,sheet_parser_baseline,s3_p04,s3_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s3,2c,sheet_parser_baseline,s3_p05,s3_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s3,3a,sheet_parser_baseline,s3_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s3,3b,sheet_parser_baseline,s3_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s3,3c,sheet_parser_baseline,s3_p05,s3_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s3,3c,robust_header_detector,s3_p05,s3_p05,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s4,1b,sheet_parser_baseline,s4_p02,s4_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s4,1c,sheet_parser_baseline,s4_p03,s4_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s4,1c,robust_header_detector,s4_p03,s4_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s4,1d,sheet_parser_baseline,s4_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s4,2b,sheet_parser_baseline,s4_p04,s4_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s4,2c,sheet_parser_baseline,s4_p05,s4_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s4,3a,sheet_parser_baseline,s4_p05,s4_p05,answer_split_or_truncated,0.2152,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s4,3a,hybrid_layout_continuation,s4_p05,s4_p05,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 3a
+s4,3b,sheet_parser_baseline,s4_p05,s4_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s4,3c,sheet_parser_baseline,s4_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s4,4,hybrid_layout_continuation,s4_p06,s4_p06,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 4
+s5,1a,sheet_parser_baseline,s5_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s5,1b,sheet_parser_baseline,s5_p02,s5_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s5,1c,sheet_parser_baseline,s5_p03,s5_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s5,1c,robust_header_detector,s5_p03,s5_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s5,1d,sheet_parser_baseline,s5_p03,s5_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s5,2b,sheet_parser_baseline,s5_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s5,2c,sheet_parser_baseline,s5_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s5,3a,sheet_parser_baseline,s5_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s5,3a,robust_header_detector,s5_p04,s5_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s5,3b,sheet_parser_baseline,s5_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s5,3c,sheet_parser_baseline,s5_p04,s5_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s6,1a,sheet_parser_baseline,s6_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s6,1a,robust_header_detector,s6_p02,s6_p02,answer_split_or_truncated,0.6564,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s6,1b,sheet_parser_baseline,s6_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s6,1c,sheet_parser_baseline,s6_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s6,1d,sheet_parser_baseline,s6_p03,s6_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s6,2b,sheet_parser_baseline,s6_p04,s6_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s6,2b,robust_header_detector,s6_p04,s6_p04,answer_split_or_truncated,0.4721,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2b
+s6,2c,sheet_parser_baseline,s6_p05,s6_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s6,3a,sheet_parser_baseline,s6_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s6,3b,sheet_parser_baseline,s6_p05,s6_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s6,3c,sheet_parser_baseline,s6_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s7,1b,sheet_parser_baseline,s7_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s7,1b,robust_header_detector,s7_p02,s7_p02,answer_split_or_truncated,0.4064,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1b
+s7,1c,sheet_parser_baseline,s7_p03,s7_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s7,1d,sheet_parser_baseline,s7_p03,s7_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s7,1d,robust_header_detector,s7_p03,s7_p03,answer_split_or_truncated,0.4478,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1d
+s7,2a,sheet_parser_baseline,s7_p04,s7_p04,answer_split_or_truncated,0.3284,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s7,2b,sheet_parser_baseline,s7_p04,s7_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s7,2c,sheet_parser_baseline,s7_p05,s7_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s7,3a,sheet_parser_baseline,s7_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s7,3b,sheet_parser_baseline,s7_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s7,3c,sheet_parser_baseline,s7_p05,s7_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s7,4,sheet_parser_baseline,s7_p05,s7_p05,answer_split_or_truncated,0.4205,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s8,1a,sheet_parser_baseline,s8_p02,s8_p02,answer_split_or_truncated,0.4819,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s8,1a,robust_header_detector,s8_p02,s8_p02,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s8,1b,sheet_parser_baseline,s8_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s8,1c,sheet_parser_baseline,s8_p03,s8_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s8,1c,hybrid_layout_continuation,s8_p03,s8_p03,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1c
+s8,1d,sheet_parser_baseline,s8_p03,s8_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s8,2a,sheet_parser_baseline,s8_p04,s8_p04,answer_split_or_truncated,0.4819,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s8,2b,sheet_parser_baseline,s8_p04,s8_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s8,2b,robust_header_detector,s8_p04,s8_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2b
+s8,2c,sheet_parser_baseline,s8_p04,s8_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s8,3b,sheet_parser_baseline,s8_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s8,3b,robust_header_detector,s8_p04,s8_p04,answer_split_or_truncated,0.1302,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s8,3c,sheet_parser_baseline,s8_p04,s8_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s8,3c,robust_header_detector,s8_p04,s8_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s9,1a,sheet_parser_baseline,s9_p02,s9_p02,answer_split_or_truncated,0.3797,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s9,1b,sheet_parser_baseline,s9_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s9,1c,sheet_parser_baseline,s9_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s9,1d,sheet_parser_baseline,s9_p03,s9_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s9,2a,robust_header_detector,s9_p04,s9_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s9,2b,sheet_parser_baseline,s9_p04,s9_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s9,2c,sheet_parser_baseline,s9_p04,s9_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s9,3b,sheet_parser_baseline,s9_p04,s9_p04,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s9,3b,robust_header_detector,s9_p04,s9_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s9,3c,sheet_parser_baseline,s9_p04,s9_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s9,3c,robust_header_detector,s9_p04,s9_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s9,4,sheet_parser_baseline,s9_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s9,4,hybrid_layout_continuation,s9_p04,s9_p04,cross_question_merge,0.9275,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 4
+s10,1a,sheet_parser_baseline,s10_p02,s10_p02,answer_split_or_truncated,0.4308,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s10,1b,sheet_parser_baseline,s10_p02,s10_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s10,1c,sheet_parser_baseline,s10_p03,s10_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s10,1d,sheet_parser_baseline,s10_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s10,2a,hybrid_layout_continuation,s10_p04,s10_p04,cross_question_merge,0.911,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 2a
+s10,2b,sheet_parser_baseline,s10_p04,s10_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s10,2c,sheet_parser_baseline,s10_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s10,3b,sheet_parser_baseline,s10_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s10,3c,sheet_parser_baseline,s10_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s11,1a,sheet_parser_baseline,s11_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s11,1b,sheet_parser_baseline,s11_p02,s11_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s11,1c,sheet_parser_baseline,s11_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s11,1d,sheet_parser_baseline,s11_p03,s11_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s11,2a,robust_header_detector,s11_p04,s11_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s11,2a,hybrid_layout_continuation,s11_p04,s11_p04,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 2a
+s11,2b,sheet_parser_baseline,s11_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s11,2c,sheet_parser_baseline,s11_p05,s11_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s11,3b,sheet_parser_baseline,s11_p05,s11_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s11,3c,sheet_parser_baseline,s11_p06,s11_p06,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s11,4,sheet_parser_baseline,s11_p06,s11_p06,answer_split_or_truncated,0.4205,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s12,1a,sheet_parser_baseline,s12_p02,s12_p02,answer_split_or_truncated,0.3284,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s12,1b,sheet_parser_baseline,s12_p02,s12_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s12,1c,sheet_parser_baseline,s12_p03,s12_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s12,1d,sheet_parser_baseline,s12_p03,s12_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s12,2a,sheet_parser_baseline,s12_p03,s12_p03,answer_split_or_truncated,0.4819,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s12,2b,sheet_parser_baseline,s12_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s12,2c,sheet_parser_baseline,s12_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s12,3a,sheet_parser_baseline,s12_p03,s12_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s12,3b,sheet_parser_baseline,s12_p03,s12_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s12,3c,sheet_parser_baseline,s12_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s12,4,robust_header_detector,s12_p03,s12_p03,answer_split_or_truncated,0.5251,Routing defect in Robust Header & Visual Anchor Detector for subquestion 4
+s12,4,hybrid_layout_continuation,s12_p03,s12_p03,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 4
+s13,1a,sheet_parser_baseline,s13_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s13,1b,sheet_parser_baseline,s13_p02,s13_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s13,1b,robust_header_detector,s13_p02,s13_p02,answer_split_or_truncated,0.4064,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1b
+s13,1c,sheet_parser_baseline,s13_p03,s13_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s13,1c,robust_header_detector,s13_p03,s13_p03,answer_split_or_truncated,0.6905,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s13,1d,sheet_parser_baseline,s13_p03,s13_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s13,2b,sheet_parser_baseline,s13_p04,s13_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s13,2c,sheet_parser_baseline,s13_p05,s13_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s13,2c,robust_header_detector,s13_p05,s13_p05,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2c
+s13,3a,sheet_parser_baseline,s13_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s13,3a,robust_header_detector,s13_p05,s13_p05,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s13,3b,sheet_parser_baseline,s13_p05,s13_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s13,3c,sheet_parser_baseline,s13_p05,s13_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s14,1a,sheet_parser_baseline,s14_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s14,1b,sheet_parser_baseline,s14_p02,s14_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s14,1c,sheet_parser_baseline,s14_p03,s14_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s14,1d,sheet_parser_baseline,s14_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s14,2a,sheet_parser_baseline,s14_p04,s14_p04,answer_split_or_truncated,0.4308,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s14,2b,sheet_parser_baseline,s14_p04,s14_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s14,2b,robust_header_detector,s14_p04,s14_p04,answer_split_or_truncated,0.4721,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2b
+s14,2c,sheet_parser_baseline,s14_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s14,3a,sheet_parser_baseline,s14_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s14,3b,sheet_parser_baseline,s14_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s14,3c,sheet_parser_baseline,s14_p06,s14_p06,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s15,1a,sheet_parser_baseline,s15_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s15,1a,robust_header_detector,s15_p02,s15_p02,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s15,1b,sheet_parser_baseline,s15_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s15,1c,sheet_parser_baseline,s15_p03,s15_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s15,1d,sheet_parser_baseline,s15_p03,s15_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s15,2a,robust_header_detector,s15_p04,s15_p04,answer_split_or_truncated,0.6876,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s15,2b,sheet_parser_baseline,s15_p04,s15_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s15,2c,sheet_parser_baseline,s15_p05,s15_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s15,2c,hybrid_layout_continuation,s15_p05,s15_p05,cross_question_merge,0.8996,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 2c
+s15,3a,sheet_parser_baseline,s15_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s15,3b,sheet_parser_baseline,s15_p05,s15_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s15,3b,hybrid_layout_continuation,s15_p05,s15_p05,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 3b
+s15,3c,sheet_parser_baseline,s15_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s15,4,robust_header_detector,s15_p06,s15_p06,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 4
+s16,1a,hybrid_layout_continuation,s16_p02,s16_p02,cross_question_merge,0.911,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1a
+s16,1b,sheet_parser_baseline,s16_p02,s16_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s16,1c,sheet_parser_baseline,s16_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s16,1d,sheet_parser_baseline,s16_p03,s16_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s16,2a,hybrid_layout_continuation,s16_p03,s16_p03,cross_question_merge,0.911,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 2a
+s16,2b,sheet_parser_baseline,s16_p03,s16_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s16,2c,sheet_parser_baseline,s16_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s16,3a,robust_header_detector,s16_p03,s16_p03,answer_split_or_truncated,0.3001,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s16,3b,sheet_parser_baseline,s16_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s16,3c,sheet_parser_baseline,s16_p03,s16_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s16,4,sheet_parser_baseline,s16_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s17,1a,sheet_parser_baseline,s17_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s17,1a,robust_header_detector,s17_p02,s17_p02,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s17,1b,sheet_parser_baseline,s17_p02,s17_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s17,1b,robust_header_detector,s17_p02,s17_p02,answer_split_or_truncated,0.4064,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1b
+s17,1c,sheet_parser_baseline,s17_p03,s17_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s17,1d,sheet_parser_baseline,s17_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s17,2a,robust_header_detector,s17_p04,s17_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s17,2b,sheet_parser_baseline,s17_p04,s17_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s17,2c,sheet_parser_baseline,s17_p05,s17_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s17,2c,robust_header_detector,s17_p05,s17_p05,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2c
+s17,3a,sheet_parser_baseline,s17_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s17,3b,sheet_parser_baseline,s17_p05,s17_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s17,3b,robust_header_detector,s17_p05,s17_p05,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s17,3c,sheet_parser_baseline,s17_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s17,4,sheet_parser_baseline,s17_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s18,1b,sheet_parser_baseline,s18_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s18,1c,sheet_parser_baseline,s18_p03,s18_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s18,1d,sheet_parser_baseline,s18_p03,s18_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s18,2b,sheet_parser_baseline,s18_p03,s18_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s18,2c,sheet_parser_baseline,s18_p03,s18_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s18,3a,sheet_parser_baseline,s18_p03,s18_p03,answer_split_or_truncated,0.2975,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s18,3b,sheet_parser_baseline,s18_p03,s18_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s18,3c,sheet_parser_baseline,s18_p03,s18_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s18,4,sheet_parser_baseline,s18_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s19,1a,sheet_parser_baseline,s19_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s19,1b,sheet_parser_baseline,s19_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s19,1c,sheet_parser_baseline,s19_p03,s19_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s19,1d,sheet_parser_baseline,s19_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s19,1d,robust_header_detector,s19_p03,s19_p03,answer_split_or_truncated,0.4478,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1d
+s19,2a,sheet_parser_baseline,s19_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s19,2b,sheet_parser_baseline,s19_p04,s19_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s19,2c,sheet_parser_baseline,s19_p05,s19_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s19,3a,sheet_parser_baseline,s19_p05,s19_p05,answer_split_or_truncated,0.4614,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s19,3b,sheet_parser_baseline,s19_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s19,3c,sheet_parser_baseline,s19_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s20,1b,sheet_parser_baseline,s20_p02,s20_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s20,1c,sheet_parser_baseline,s20_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s20,1d,sheet_parser_baseline,s20_p03,s20_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s20,2a,sheet_parser_baseline,s20_p04,s20_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s20,2a,robust_header_detector,s20_p04,s20_p04,answer_split_or_truncated,0.6876,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s20,2b,sheet_parser_baseline,s20_p04,s20_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s20,2c,sheet_parser_baseline,s20_p04,s20_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s20,3a,sheet_parser_baseline,s20_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s20,3b,sheet_parser_baseline,s20_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s20,3b,robust_header_detector,s20_p04,s20_p04,answer_split_or_truncated,0.1302,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s20,3c,sheet_parser_baseline,s20_p04,s20_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s21,1a,sheet_parser_baseline,s21_p02,s21_p02,answer_split_or_truncated,0.4308,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s21,1b,sheet_parser_baseline,s21_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s21,1b,hybrid_layout_continuation,s21_p02,s21_p02,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1b
+s21,1c,sheet_parser_baseline,s21_p03,s21_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s21,1d,sheet_parser_baseline,s21_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s21,1d,robust_header_detector,s21_p03,s21_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1d
+s21,2b,sheet_parser_baseline,s21_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s21,2c,sheet_parser_baseline,s21_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s21,3a,sheet_parser_baseline,s21_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s21,3b,sheet_parser_baseline,s21_p05,s21_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s21,3c,sheet_parser_baseline,s21_p06,s21_p06,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s21,4,hybrid_layout_continuation,s21_p06,s21_p06,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 4
+s22,1a,sheet_parser_baseline,s22_p02,s22_p02,answer_split_or_truncated,0.3284,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s22,1b,sheet_parser_baseline,s22_p02,s22_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s22,1c,sheet_parser_baseline,s22_p03,s22_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s22,1d,sheet_parser_baseline,s22_p03,s22_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s22,2a,sheet_parser_baseline,s22_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s22,2b,sheet_parser_baseline,s22_p04,s22_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s22,2c,sheet_parser_baseline,s22_p05,s22_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s22,3a,sheet_parser_baseline,s22_p05,s22_p05,answer_split_or_truncated,0.2975,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s22,3b,sheet_parser_baseline,s22_p05,s22_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s22,3c,sheet_parser_baseline,s22_p05,s22_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s22,4,sheet_parser_baseline,s22_p05,s22_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s23,1a,sheet_parser_baseline,s23_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s23,1b,sheet_parser_baseline,s23_p02,s23_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s23,1c,sheet_parser_baseline,s23_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s23,1d,sheet_parser_baseline,s23_p03,s23_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s23,2a,sheet_parser_baseline,s23_p04,s23_p04,answer_split_or_truncated,0.3797,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s23,2b,sheet_parser_baseline,s23_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s23,2c,sheet_parser_baseline,s23_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s23,3a,sheet_parser_baseline,s23_p05,s23_p05,answer_split_or_truncated,0.2975,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s23,3b,sheet_parser_baseline,s23_p05,s23_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s23,3c,sheet_parser_baseline,s23_p06,s23_p06,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s24,1b,sheet_parser_baseline,s24_p02,s24_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s24,1b,robust_header_detector,s24_p02,s24_p02,answer_split_or_truncated,0.4064,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1b
+s24,1b,hybrid_layout_continuation,s24_p02,s24_p02,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1b
+s24,1c,sheet_parser_baseline,s24_p03,s24_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s24,1d,sheet_parser_baseline,s24_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s24,2a,sheet_parser_baseline,s24_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s24,2b,sheet_parser_baseline,s24_p04,s24_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s24,2c,sheet_parser_baseline,s24_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s24,3a,sheet_parser_baseline,s24_p04,s24_p04,answer_split_or_truncated,0.3796,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s24,3a,robust_header_detector,s24_p04,s24_p04,answer_split_or_truncated,0.3001,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s24,3b,sheet_parser_baseline,s24_p04,s24_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s24,3c,sheet_parser_baseline,s24_p04,s24_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s24,4,sheet_parser_baseline,s24_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s24,4,robust_header_detector,s24_p04,s24_p04,answer_split_or_truncated,0.5251,Routing defect in Robust Header & Visual Anchor Detector for subquestion 4
+s25,1a,sheet_parser_baseline,s25_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s25,1b,sheet_parser_baseline,s25_p02,s25_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s25,1c,sheet_parser_baseline,s25_p03,s25_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s25,1d,sheet_parser_baseline,s25_p03,s25_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s25,2a,sheet_parser_baseline,s25_p04,s25_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s25,2b,sheet_parser_baseline,s25_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s25,2c,sheet_parser_baseline,s25_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s25,3a,sheet_parser_baseline,s25_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s25,3b,sheet_parser_baseline,s25_p04,s25_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s25,3b,hybrid_layout_continuation,s25_p04,s25_p04,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 3b
+s25,3c,sheet_parser_baseline,s25_p04,s25_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s25,3c,robust_header_detector,s25_p04,s25_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s25,4,sheet_parser_baseline,s25_p04,s25_p04,answer_split_or_truncated,0.4205,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s26,1b,sheet_parser_baseline,s26_p02,s26_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s26,1c,sheet_parser_baseline,s26_p03,s26_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s26,1d,sheet_parser_baseline,s26_p03,s26_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s26,2a,sheet_parser_baseline,s26_p04,s26_p04,answer_split_or_truncated,0.3284,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s26,2b,sheet_parser_baseline,s26_p04,s26_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s26,2c,sheet_parser_baseline,s26_p04,s26_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s26,3a,sheet_parser_baseline,s26_p04,s26_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s26,3b,sheet_parser_baseline,s26_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s26,3b,robust_header_detector,s26_p04,s26_p04,answer_split_or_truncated,0.1302,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s26,3c,sheet_parser_baseline,s26_p04,s26_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s26,3c,robust_header_detector,s26_p04,s26_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s26,4,sheet_parser_baseline,s26_p04,s26_p04,answer_split_or_truncated,0.4205,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s27,1a,sheet_parser_baseline,s27_p02,s27_p02,answer_split_or_truncated,0.3284,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s27,1b,sheet_parser_baseline,s27_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s27,1c,sheet_parser_baseline,s27_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s27,1c,robust_header_detector,s27_p03,s27_p03,answer_split_or_truncated,0.6905,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s27,1d,sheet_parser_baseline,s27_p03,s27_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s27,2a,sheet_parser_baseline,s27_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s27,2b,sheet_parser_baseline,s27_p04,s27_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s27,2c,sheet_parser_baseline,s27_p05,s27_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s27,3b,sheet_parser_baseline,s27_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s27,3c,sheet_parser_baseline,s27_p06,s27_p06,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s28,1b,sheet_parser_baseline,s28_p02,s28_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s28,1c,sheet_parser_baseline,s28_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s28,1d,sheet_parser_baseline,s28_p02,s28_p02,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s28,2a,sheet_parser_baseline,s28_p02,s28_p02,answer_split_or_truncated,0.4819,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s28,2b,sheet_parser_baseline,s28_p02,s28_p02,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s28,2c,sheet_parser_baseline,s28_p02,s28_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s28,2c,robust_header_detector,s28_p02,s28_p02,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2c
+s28,3a,sheet_parser_baseline,s28_p02,s28_p02,answer_split_or_truncated,0.4614,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s28,3b,sheet_parser_baseline,s28_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s28,3c,sheet_parser_baseline,s28_p02,s28_p02,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s29,1b,sheet_parser_baseline,s29_p02,s29_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s29,1c,sheet_parser_baseline,s29_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s29,1d,sheet_parser_baseline,s29_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s29,2b,sheet_parser_baseline,s29_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s29,2c,sheet_parser_baseline,s29_p05,s29_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s29,3a,sheet_parser_baseline,s29_p05,s29_p05,answer_split_or_truncated,0.2975,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s29,3b,sheet_parser_baseline,s29_p05,s29_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s29,3c,sheet_parser_baseline,s29_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s29,4,sheet_parser_baseline,s29_p06,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s30,1a,sheet_parser_baseline,s30_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s30,1b,sheet_parser_baseline,s30_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s30,1b,hybrid_layout_continuation,s30_p02,s30_p02,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1b
+s30,1c,sheet_parser_baseline,s30_p03,s30_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s30,1d,sheet_parser_baseline,s30_p03,s30_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s30,2a,sheet_parser_baseline,s30_p04,s30_p04,answer_split_or_truncated,0.3797,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s30,2b,sheet_parser_baseline,s30_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s30,2c,sheet_parser_baseline,s30_p05,s30_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s30,3a,sheet_parser_baseline,s30_p05,s30_p05,answer_split_or_truncated,0.3796,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s30,3a,robust_header_detector,s30_p05,s30_p05,answer_split_or_truncated,0.3001,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s30,3b,sheet_parser_baseline,s30_p05,s30_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s30,3c,sheet_parser_baseline,s30_p05,s30_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s30,4,sheet_parser_baseline,s30_p05,s30_p05,answer_split_or_truncated,0.4614,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s31,1a,robust_header_detector,s31_p02,s31_p02,answer_split_or_truncated,0.6564,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1a
+s31,1b,sheet_parser_baseline,s31_p02,s31_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s31,1c,sheet_parser_baseline,s31_p03,s31_p03,cross_question_merge,0.3528,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s31,1d,sheet_parser_baseline,s31_p03,s31_p03,cross_question_merge,0.3614,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s31,1d,hybrid_layout_continuation,s31_p03,s31_p03,cross_question_merge,0.9362,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1d
+s31,2a,sheet_parser_baseline,s31_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s31,2b,sheet_parser_baseline,s31_p04,s31_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s31,2c,sheet_parser_baseline,s31_p04,s31_p04,cross_question_merge,0.2941,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s31,3a,sheet_parser_baseline,s31_p04,s31_p04,answer_split_or_truncated,0.2935,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s31,3a,robust_header_detector,s31_p04,s31_p04,answer_split_or_truncated,0.3,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3a
+s31,3b,sheet_parser_baseline,s31_p04,s31_p04,cross_question_merge,0.21,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s31,3c,sheet_parser_baseline,s31_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s32,1b,sheet_parser_baseline,s32_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s32,1b,hybrid_layout_continuation,s32_p02,s32_p02,cross_question_merge,0.911,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1b
+s32,1c,sheet_parser_baseline,s32_p03,s32_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s32,1c,hybrid_layout_continuation,s32_p03,s32_p03,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1c
+s32,1d,sheet_parser_baseline,s32_p03,s32_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s32,1d,robust_header_detector,s32_p03,s32_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1d
+s32,2a,sheet_parser_baseline,s32_p04,s32_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s32,2b,sheet_parser_baseline,s32_p04,s32_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s32,2c,sheet_parser_baseline,s32_p05,s32_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s32,3a,sheet_parser_baseline,s32_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s32,3b,sheet_parser_baseline,s32_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s32,3b,robust_header_detector,s32_p05,s32_p05,answer_split_or_truncated,0.1302,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3b
+s32,3c,sheet_parser_baseline,s32_p05,s32_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s32,3c,robust_header_detector,s32_p05,s32_p05,answer_split_or_truncated,0.6786,Routing defect in Robust Header & Visual Anchor Detector for subquestion 3c
+s33,1b,sheet_parser_baseline,s33_p02,s33_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s33,1c,sheet_parser_baseline,s33_p03,s33_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s33,1c,robust_header_detector,s33_p03,s33_p03,answer_split_or_truncated,0.6905,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s33,1d,sheet_parser_baseline,s33_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s33,2b,sheet_parser_baseline,s33_p04,s33_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s33,2c,sheet_parser_baseline,s33_p04,s33_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s33,3b,sheet_parser_baseline,s33_p04,s33_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s33,3c,sheet_parser_baseline,s33_p04,s33_p04,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s33,4,sheet_parser_baseline,s33_p04,s33_p04,answer_split_or_truncated,0.4614,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s33,4,robust_header_detector,s33_p04,s33_p04,answer_split_or_truncated,0.5251,Routing defect in Robust Header & Visual Anchor Detector for subquestion 4
+s34,1a,sheet_parser_baseline,s34_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s34,1b,sheet_parser_baseline,s34_p02,s34_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s34,1b,hybrid_layout_continuation,s34_p02,s34_p02,cross_question_merge,0.911,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1b
+s34,1c,sheet_parser_baseline,s34_p03,s34_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s34,1d,sheet_parser_baseline,s34_p03,s34_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s34,2a,robust_header_detector,s34_p04,s34_p04,answer_split_or_truncated,0.6876,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s34,2b,sheet_parser_baseline,s34_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s34,2c,sheet_parser_baseline,s34_p05,s34_p05,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s34,3b,sheet_parser_baseline,s34_p05,s34_p05,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s34,3c,sheet_parser_baseline,s34_p06,s34_p06,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s34,4,sheet_parser_baseline,s34_p06,s34_p06,answer_split_or_truncated,0.4205,Routing defect in Baseline Heuristic Regex Parser for subquestion 4
+s35,1b,sheet_parser_baseline,s35_p02,s35_p02,cross_question_merge,0.251,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s35,1c,sheet_parser_baseline,s35_p03,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s35,1c,robust_header_detector,s35_p03,s35_p03,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 1c
+s35,1d,sheet_parser_baseline,s35_p03,s35_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s35,1d,hybrid_layout_continuation,s35_p03,s35_p03,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 1d
+s35,2a,sheet_parser_baseline,s35_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2a
+s35,2b,sheet_parser_baseline,s35_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s35,2b,robust_header_detector,s35_p04,s35_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2b
+s35,2c,sheet_parser_baseline,s35_p05,s35_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s35,3a,sheet_parser_baseline,s35_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s35,3b,sheet_parser_baseline,s35_p05,s35_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s35,3b,hybrid_layout_continuation,s35_p05,s35_p05,answer_split_or_truncated,0.8905,Routing defect in Hybrid Layout + Continuation Resolver for subquestion 3b
+s35,3c,sheet_parser_baseline,s35_p05,s35_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s36,1a,sheet_parser_baseline,s36_p02,s36_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1a
+s36,1b,sheet_parser_baseline,s36_p02,s36_p02,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s36,1c,sheet_parser_baseline,s36_p03,s36_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s36,1d,sheet_parser_baseline,s36_p03,s36_p03,cross_question_merge,0.2686,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s36,2a,robust_header_detector,s36_p04,s36_p04,continuation_not_joined,1.0,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2a
+s36,2b,sheet_parser_baseline,s36_p04,s36_p04,cross_question_merge,0.2801,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s36,2b,robust_header_detector,s36_p04,s36_p04,answer_split_or_truncated,0.4721,Routing defect in Robust Header & Visual Anchor Detector for subquestion 2b
+s36,2c,sheet_parser_baseline,s36_p04,s36_p04,cross_question_merge,0.2214,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s36,3a,sheet_parser_baseline,s36_p04,s36_p04,answer_split_or_truncated,0.3796,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s36,3b,sheet_parser_baseline,s36_p04,s36_p04,cross_question_merge,0.1607,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s36,3c,sheet_parser_baseline,s36_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
+s37,1b,sheet_parser_baseline,s37_p02,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1b
+s37,1c,sheet_parser_baseline,s37_p03,s37_p03,cross_question_merge,0.2627,Routing defect in Baseline Heuristic Regex Parser for subquestion 1c
+s37,1d,sheet_parser_baseline,s37_p03,s37_p03,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 1d
+s37,2b,sheet_parser_baseline,s37_p04,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2b
+s37,2c,sheet_parser_baseline,s37_p05,None,missed_region,0.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 2c
+s37,3a,sheet_parser_baseline,s37_p05,s37_p05,answer_split_or_truncated,0.4614,Routing defect in Baseline Heuristic Regex Parser for subquestion 3a
+s37,3b,sheet_parser_baseline,s37_p05,s37_p05,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3b
+s37,3c,sheet_parser_baseline,s37_p06,s37_p06,wrong_subquestion_header,1.0,Routing defect in Baseline Heuristic Regex Parser for subquestion 3c
