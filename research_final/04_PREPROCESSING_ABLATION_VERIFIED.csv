@@ -1,0 +1,9 @@
+preprocessing_condition,sample_crops_count,mean_cer_tesseract,mean_wer_tesseract,teacher_ink_leakage_rate,latency_sec_per_crop,evidence_classification
+Raw Image (Baseline),6,0.9078,1.0148,0.0,0.346,measured_real
+Stage 1: Red-Ink Separation Only,6,0.8238,1.1055,5.348,0.714,measured_real
+Stage 2: Gridline Suppression Only,6,0.9643,0.9946,0.0,0.646,measured_real
+Stage 3: Deskew Only (OpenCV 4.5+),6,0.9078,1.0148,0.0,0.668,measured_real
+Stage 4: Controlled NLM Denoising Only,6,0.866,1.0443,0.0,1.14,measured_real
+Stage 5: Sauvola Binarization Only,6,0.838,1.1755,0.0,1.118,measured_real
+Combined: Red-Ink + Deskew,6,0.8238,1.1055,5.348,0.524,measured_real
+Full 4-Stage Preprocessing Pipeline,6,0.9323,0.9981,5.348,0.882,measured_real

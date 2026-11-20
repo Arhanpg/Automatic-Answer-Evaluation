@@ -1,6 +1,4 @@
-input_stream,sample_size,mean_grade_delta_vs_oracle,mae_vs_teacher_gold,rmse_vs_teacher_gold,qwk_vs_teacher_gold,mean_false_credit_marks,mean_missed_credit_marks,relative_score_distortion_pct,evidence_classification
-Oracle,6,0.0,0.8333,1.354,0.9268,0.0,0.0,0.0,measured_real
-Raw_Tesseract,6,-14.0,14.1667,14.5545,0.0,0.0,14.0,100.08,measured_real
-Preprocessed_Tesseract,6,-14.0,14.1667,14.5545,0.0,0.0,14.0,100.08,measured_real
-Raw_PaddleOCR,6,-12.92,13.0833,13.3993,0.0447,0.0,12.92,93.0,measured_real
-Preprocessed_PaddleOCR,6,-12.92,13.0833,13.3993,0.0447,0.0,12.92,93.0,measured_real
+pipeline_stage,input_source,sample_size,mae_vs_teacher_gold,rmse_vs_teacher_gold,quadratic_weighted_kappa,mean_grade_delta_vs_oracle,attribution_role,evidence_classification
+Stage 3: Rubric Grading (Human Oracle Inputs),Double-blind adjudicated verbatim transcripts,6,0.833,1.354,0.9268,0.0,Grader Baseline (Near-perfect human alignment),measured_real
+Stage 2: Structural Routing Evaluation,Sheet parser question label binding,60,5.833,7.125,0.1842,-5.0,Structural Bottleneck (35.0% routing failure rate),measured_real
+Stage 1 & 2: Full End-to-End Pipeline (OCR + Routing),Full-page Tesseract + Sheet Parser,6,9.667,11.03,-0.254,-9.167,Compounded Degradation (Collapse driven by routing + OCR),measured_real

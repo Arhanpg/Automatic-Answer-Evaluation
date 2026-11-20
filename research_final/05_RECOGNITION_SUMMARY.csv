@@ -1,5 +1,6 @@
-recognition_modality,sample_size,macro_mean_cer,macro_std_cer,macro_mean_wer,macro_std_wer,macro_mean_ac_wer,mean_confidence,mean_latency_sec,p95_latency_sec,evidence_classification
-Raw_Tesseract,66,0.9091,0.2875,0.9091,0.2875,0.9091,0.5174,0.5956,1.4471,measured_real
-Preprocessed_Tesseract,66,0.9516,0.3669,0.9545,0.3665,0.9029,0.4264,1.1958,1.8894,measured_real
-Raw_PaddleOCR,66,1.0764,0.46,1.0801,0.443,0.9022,0.7927,36.3391,61.7873,measured_real
-Preprocessed_PaddleOCR,66,1.0764,0.46,1.0801,0.443,0.9022,0.7927,36.8026,62.7074,measured_real
+evaluation_modality,scope,sample_size,mean_cer,mean_wer,mean_confidence,mean_latency_sec,evidence_classification
+Isolated_Crop_TrOCR_Small,Line-level crops (GPU),6,0.824,1.0369,0.685,1.58,measured_real
+Isolated_Crop_Tesseract,Bounded answer crops (CPU),6,0.9323,0.9981,0.521,0.304,measured_real
+Isolated_Crop_PaddleOCR,Bounded answer crops (CPU),6,1.0,1.0,0.642,14.279,measured_real
+Full_Page_Raw_Tesseract,Entire multi-page scans (CPU),66,0.9091,0.9091,0.5174,0.596,measured_real
+Full_Page_Prep_PaddleOCR,Entire multi-page scans (CPU),66,1.0764,1.0801,0.7927,36.803,measured_real

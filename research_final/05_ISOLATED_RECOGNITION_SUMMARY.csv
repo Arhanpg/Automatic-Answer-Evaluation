@@ -1,0 +1,4 @@
+recognition_engine,compute_device,sample_crops_evaluated,isolated_crop_cer,isolated_crop_wer,mean_latency_sec,evidence_classification
+Tesseract_v5.5.3,CPU,6,0.9323,0.9981,0.304,measured_real
+PaddleOCR_PP-OCRv6,CPU,6,1.0,1.0,14.279,measured_real
+TrOCR_Small_Handwritten,GPU (cuda:0),6,0.824,1.0369,1.58,measured_real

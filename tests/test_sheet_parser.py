@@ -24,13 +24,13 @@ def trow(text, y, page=0, x=500):
 
 class Segmenting(unittest.TestCase):
     def test_clean_labels(self):
-        r = rows(["Roll No: 23BCS045", "1a) fixed context", "1b) word order", "1c) bidirectional", "1d) hides future",
+        r = rows(["Roll No: ANON-TEST-999", "1a) fixed context", "1b) word order", "1c) bidirectional", "1d) hides future",
                   "2a) scores 1 0", "2b) softmax", "2c) 1.462 0.807", "3a) A", "3b) A B", "3c) normalises",
                   "4. P = 3/2420"])
         a, ev, fl = sp.segment_answers(EXAM, r)
         self.assertEqual(a["1a"], "fixed context"); self.assertEqual(a["3c"], "normalises")
         self.assertEqual(a["4"], "P = 3/2420"); self.assertFalse([f for f in fl if f.startswith("blank")])
-        self.assertEqual(sp.find_roll_number(r), "23BCS045")
+        self.assertEqual(sp.find_roll_number(r), "ANON-TEST-999")
 
     def test_label_styles(self):
         r = rows(["Q1 (a) x1", "1.b. x2", "1) c) x3", "(d) x4", "Ans 2: a) y1", "b) y2", "c) y3", "3 a) z1", "3(b) z2", "3.c) z3",

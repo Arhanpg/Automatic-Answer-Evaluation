@@ -52,10 +52,11 @@ def find_roll_number(rows):
 # answers
 # ---------------------------------------------------------------------------
 class _Segmenter:
-    def __init__(self, exam, rows):
+    def __init__(self, exam, rows, cover_page=None):
         self.exam = exam
         self.q_parts = {q["id"]: [p["id"] for p in q["parts"]] for q in exam["questions"]}
         self.rows = rows
+        self.cover_page = cover_page
         self.page_stats = {}
         for pg in {r["page"] for r in rows}:
             xs = sorted(r["x0"] for r in rows if r["page"] == pg)
@@ -118,9 +119,37 @@ class _Segmenter:
         self.events.append({"page": row["page"], "y": row["y0"], "yc": row["yc"], "q": q, "id": aid})
 
     def run(self):
-        has_later_pages = any(r["page"] > 0 for r in self.rows)
+        # Identify the cover page if not explicitly provided
+        cover_page = self.cover_page
+        if cover_page is None:
+            # Check if any page actively matches institutional cover anchors
+            from collections import defaultdict
+            page_text = defaultdict(list)
+            for r in self.rows:
+                page_text[r["page"]].append(r.get("text", ""))
+
+            cover_anchors = [
+                r"INDIAN INSTITUTE OF INFORMATION TECHNOLOGY",
+                r"INSTRUCTIONS TO CANDIDATES",
+                r"FOR USE OF EXAMINERS ONLY",
+                r"Marks for Sub-Divisions",
+                r"Total in Figures",
+                r"Signature of the Invigilator",
+                r"Sl\.?\s*No\.?"
+            ]
+            best_cover = None
+            max_matches = 0
+            for pg, lines in page_text.items():
+                joined = " ".join(lines)
+                m_cnt = sum(1 for a in cover_anchors if re.search(a, joined, re.I))
+                if m_cnt >= 2 and m_cnt > max_matches:
+                    max_matches = m_cnt
+                    best_cover = pg
+            cover_page = best_cover
+
         for row in self.rows:
-            if has_later_pages and row["page"] == 0:
+            # Only skip the page if it was actively confirmed as the cover page!
+            if cover_page is not None and row["page"] == cover_page:
                 continue
             text = _clean(row["text"])
             if not text:
@@ -136,9 +165,9 @@ class _Segmenter:
         return self.buf, self.events
 
 
-def segment_answers(exam, rows):
+def segment_answers(exam, rows, cover_page=None):
     """-> (answers {id: text}, events, flags)"""
-    buf, events = _Segmenter(exam, rows).run()
+    buf, events = _Segmenter(exam, rows, cover_page=cover_page).run()
     flags = []
     answers = {aid: "" for aid in es.answer_ids(exam)}
     for q in exam["questions"]:
@@ -261,12 +290,12 @@ def extract_marks(exam, teacher_rows, events):
 
 
 # ---------------------------------------------------------------------------
-def parse_student(exam, ocr):
+def parse_student(exam, ocr, cover_page=None):
     """ocr = output of ocr_engine.ocr_pages()  ->  dict(answers, marks, flags, roll_hint)"""
     rows = ocr["answer_rows"]
-    answers, events, flags = segment_answers(exam, rows)
+    answers, events, flags = segment_answers(exam, rows, cover_page=cover_page)
     marks, mflags = extract_marks(exam, ocr["teacher_rows"], events)
     flags += mflags
-    if ocr["mean_conf"] and ocr["mean_conf"] < 0.6:
+    if ocr.get("mean_conf") and ocr["mean_conf"] < 0.6:
         flags.append(f"low_ocr_confidence: {ocr['mean_conf']:.2f}")
     return {"answers": answers, "marks": marks, "flags": flags, "roll_hint": find_roll_number(rows)}

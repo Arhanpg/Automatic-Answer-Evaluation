@@ -1,0 +1,3 @@
+pipeline_stage,description,mae_vs_teacher_gold,rmse_vs_teacher_gold,quadratic_weighted_kappa,mean_mark_error_attribution,interpretation,evidence_classification
+Stage 3: Rubric Grading (Human Oracle Inputs),Grading engine evaluated on 100% verified human transcripts,0.833,1.354,0.9268,0.833,Baseline grader accuracy: achieves near-human agreement (QWK = 0.9268).,measured_real
+Stage 2 & 1: End-to-End Pipeline (Routed OCR Inputs),Grading engine evaluated on full page OCR + sheet_parser routing,9.667,11.03,-0.254,9.167,Catastrophic evaluation collapse (QWK = -0.2540) driven by 35% routing failure.,measured_real

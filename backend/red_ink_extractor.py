@@ -75,30 +75,41 @@ def extract_and_remove_red_ink(bgr: np.ndarray) -> Tuple[np.ndarray, np.ndarray,
 
     return student_clean, teacher_layer, red_pixel_fraction
 
-def preprocess_handwritten_page(bgr: np.ndarray) -> Tuple[np.ndarray, np.ndarray, float]:
+def preprocess_handwritten_page(bgr: np.ndarray, remove_red: bool = True, suppress_grid: bool = True) -> Tuple[np.ndarray, np.ndarray, float]:
     """
-    Suppresses table gridlines, estimates skew angle, applies cv2.warpAffine deskewing,
-    controlled Non-Local Means denoising, and Sauvola adaptive binarization.
+    Complete 4-stage preprocessing pipeline:
+      1. Dual-band HSV Red-Ink Extraction & Inpainting (removes examiner annotations).
+      2. Table gridline detection & suppression.
+      3. OpenCV 4.5+ angle-corrected MinAreaRect deskewing.
+      4. Controlled Non-Local Means (NLM) denoising (h=10) & Sauvola adaptive binarization (w=25, k=0.2).
     Returns:
-      deskewed_rgb: Clean deskewed RGB image (for VLM and TrOCR).
-      sauvola_bin: Clean binarized image (for line segmentation and classical OCR).
+      clean_rgb: Deskewed, red-ink-removed, denoised RGB image (for PaddleOCR, TrOCR, VLMs).
+      sauvola_bin: Clean binarized image (for Tesseract and layout line detection).
       skew_angle: Estimated deskew angle in degrees.
     """
-    gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+    # Stage 1: Dual-band HSV Red-Ink Isolation
+    working_bgr = bgr.copy()
+    red_fraction = 0.0
+    if remove_red:
+        working_bgr, _, red_fraction = extract_and_remove_red_ink(working_bgr)
+
+    gray = cv2.cvtColor(working_bgr, cv2.COLOR_BGR2GRAY)
     h, w = gray.shape
 
-    # Suppress table gridlines before estimating skew so table lines don't bias angle
+    # Stage 2: Table gridline suppression
     h_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (40, 1))
     v_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 40))
     h_lines = cv2.morphologyEx(gray, cv2.MORPH_OPEN, h_kernel)
     v_lines = cv2.morphologyEx(gray, cv2.MORPH_OPEN, v_kernel)
     grid_mask = cv2.bitwise_or(h_lines, v_lines)
 
-    # Remove detected gridlines from skew estimation
-    gray_for_skew = gray.copy()
-    gray_for_skew[grid_mask < 200] = 255
+    if suppress_grid:
+        # Inpaint gridlines to white in working image
+        working_bgr[grid_mask < 200] = [255, 255, 255]
+        gray[grid_mask < 200] = 255
 
-    # Otsu threshold inverted
+    # Stage 3: MinAreaRect deskew angle estimation
+    gray_for_skew = gray.copy()
     _, otsu_inv = cv2.threshold(gray_for_skew, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
     coords = np.column_stack(np.where(otsu_inv > 0))
 
@@ -107,20 +118,19 @@ def preprocess_handwritten_page(bgr: np.ndarray) -> Tuple[np.ndarray, np.ndarray
         rect = cv2.minAreaRect(coords)
         raw_angle = rect[-1]
         w_box, h_box = rect[1]
-        # Robust OpenCV 4.5+ minAreaRect angle convention handling
+        # Robust OpenCV 4.5+ minAreaRect angle convention
         if w_box < h_box:
             skew_angle = float(raw_angle)
         else:
             skew_angle = -float(90.0 - raw_angle)
 
-    # Rotate if significant skew exists
-    deskewed_bgr = bgr.copy()
+    deskewed_bgr = working_bgr.copy()
     if 0.1 < abs(skew_angle) <= 45.0:
         center = (w // 2, h // 2)
         rot_mat = cv2.getRotationMatrix2D(center, -skew_angle, 1.0)
-        deskewed_bgr = cv2.warpAffine(bgr, rot_mat, (w, h), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+        deskewed_bgr = cv2.warpAffine(working_bgr, rot_mat, (w, h), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
 
-    # Controlled Non-Local Means Denoising on grayscale (h=10 protects minus signs and decimals)
+    # Stage 4: Controlled Non-Local Means Denoising on grayscale (h=10 protects minus signs and decimals)
     deskewed_gray = cv2.cvtColor(deskewed_bgr, cv2.COLOR_BGR2GRAY)
     denoised_gray = cv2.fastNlMeansDenoising(deskewed_gray, None, h=10, templateWindowSize=7, searchWindowSize=21)
 
@@ -128,5 +138,76 @@ def preprocess_handwritten_page(bgr: np.ndarray) -> Tuple[np.ndarray, np.ndarray
     thresh_sauvola = threshold_sauvola(denoised_gray, window_size=25, k=0.2)
     sauvola_bin = ((denoised_gray > thresh_sauvola) * 255).astype(np.uint8)
 
-    deskewed_rgb = cv2.cvtColor(deskewed_bgr, cv2.COLOR_BGR2RGB)
-    return deskewed_rgb, sauvola_bin, skew_angle
+    # RGB version with denoising applied across channels for OCR
+    denoised_bgr = cv2.fastNlMeansDenoisingColored(deskewed_bgr, None, h=10, hColor=10, templateWindowSize=7, searchWindowSize=21)
+    clean_rgb = cv2.cvtColor(denoised_bgr, cv2.COLOR_BGR2RGB)
+
+    return clean_rgb, sauvola_bin, skew_angle
+
+def full_preprocess_pipeline(
+    bgr: np.ndarray,
+    remove_red: bool = True,
+    suppress_grid: bool = True,
+    deskew: bool = True,
+    denoise: bool = True,
+    binarize: bool = True
+) -> Dict[str, Any]:
+    """
+    Modular preprocessing executor for reproducible ablation studies.
+    Returns:
+      dict with keys: 'clean_rgb', 'bin_image', 'skew_angle', 'red_pixel_fraction'
+    """
+    working_bgr = bgr.copy()
+    red_fraction = 0.0
+    if remove_red:
+        working_bgr, _, red_fraction = extract_and_remove_red_ink(working_bgr)
+
+    gray = cv2.cvtColor(working_bgr, cv2.COLOR_BGR2GRAY)
+    h, w = gray.shape
+
+    if suppress_grid:
+        h_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (40, 1))
+        v_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 40))
+        h_lines = cv2.morphologyEx(gray, cv2.MORPH_OPEN, h_kernel)
+        v_lines = cv2.morphologyEx(gray, cv2.MORPH_OPEN, v_kernel)
+        grid_mask = cv2.bitwise_or(h_lines, v_lines)
+        working_bgr[grid_mask < 200] = [255, 255, 255]
+        gray[grid_mask < 200] = 255
+
+    skew_angle = 0.0
+    if deskew:
+        _, otsu_inv = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
+        coords = np.column_stack(np.where(otsu_inv > 0))
+        if len(coords) >= MIN_FOREGROUND_PIXELS:
+            rect = cv2.minAreaRect(coords)
+            raw_angle = rect[-1]
+            w_box, h_box = rect[1]
+            if w_box < h_box:
+                skew_angle = float(raw_angle)
+            else:
+                skew_angle = -float(90.0 - raw_angle)
+
+        if 0.1 < abs(skew_angle) <= 45.0:
+            center = (w // 2, h // 2)
+            rot_mat = cv2.getRotationMatrix2D(center, -skew_angle, 1.0)
+            working_bgr = cv2.warpAffine(working_bgr, rot_mat, (w, h), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+
+    gray = cv2.cvtColor(working_bgr, cv2.COLOR_BGR2GRAY)
+    if denoise:
+        denoised_gray = cv2.fastNlMeansDenoising(gray, None, h=10, templateWindowSize=7, searchWindowSize=21)
+    else:
+        denoised_gray = gray
+
+    if binarize:
+        thresh_sauvola = threshold_sauvola(denoised_gray, window_size=25, k=0.2)
+        bin_image = ((denoised_gray > thresh_sauvola) * 255).astype(np.uint8)
+    else:
+        _, bin_image = cv2.threshold(denoised_gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+
+    clean_rgb = cv2.cvtColor(working_bgr, cv2.COLOR_BGR2RGB)
+    return {
+        "clean_rgb": clean_rgb,
+        "bin_image": bin_image,
+        "skew_angle": skew_angle,
+        "red_pixel_fraction": red_fraction
+    }

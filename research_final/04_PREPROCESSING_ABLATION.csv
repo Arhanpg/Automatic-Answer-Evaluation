@@ -1,7 +1,9 @@
-pipeline_stage,description,mean_cer_tesseract,mean_wer_tesseract,mean_cer_paddle,mean_wer_paddle,foreground_contrast_ratio,teacher_ink_interference_rate,evidence_classification
-Raw Image (Baseline),"Original RGB scan without filtering, denoising or deskewing",0.9091,0.9091,1.0764,1.0801,2.41,0.385,measured_real
-Stage 1: Red-Ink Isolation (HSV Mask),Dual-range red HSV mask filtering examiner annotations and score circles,0.8540,0.8620,0.9850,0.9910,3.15,0.000,measured_real
-Stage 2: MinAreaRect Deskewing,Gridline suppression + contour bounding angle rotation,0.8810,0.8920,0.9980,1.0120,3.22,0.000,measured_real
-Stage 3: Controlled NLM Denoising (h=10),Non-local means filtering protecting decimal points and minus signs,0.9120,0.9240,1.0250,1.0310,4.58,0.000,measured_real
-Stage 4: Sauvola Adaptive Binarization (w=25, k=0.2),Local standard deviation thresholding optimal for degraded cursive ink,0.9410,0.9450,1.0620,1.0680,12.84,0.000,measured_real
-Full 4-Stage Preprocessing Pipeline,Integrated Red-Ink Isolation + Deskew + NLM Denoising + Sauvola Binarization,0.9516,0.9545,1.0764,1.0801,14.20,0.000,measured_real
+preprocessing_condition,sample_crops_count,mean_cer_tesseract,mean_wer_tesseract,teacher_ink_leakage_rate,latency_sec_per_crop,evidence_classification
+Raw Image (Baseline),6,0.9078,1.0148,0.0,0.346,measured_real
+Stage 1: Red-Ink Separation Only,6,0.8238,1.1055,5.348,0.714,measured_real
+Stage 2: Gridline Suppression Only,6,0.9643,0.9946,0.0,0.646,measured_real
+Stage 3: Deskew Only (OpenCV 4.5+),6,0.9078,1.0148,0.0,0.668,measured_real
+Stage 4: Controlled NLM Denoising Only,6,0.866,1.0443,0.0,1.14,measured_real
+Stage 5: Sauvola Binarization Only,6,0.838,1.1755,0.0,1.118,measured_real
+Combined: Red-Ink + Deskew,6,0.8238,1.1055,5.348,0.524,measured_real
+Full 4-Stage Preprocessing Pipeline,6,0.9323,0.9981,5.348,0.882,measured_real

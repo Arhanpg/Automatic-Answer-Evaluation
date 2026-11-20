@@ -1,0 +1,67 @@
+student_id,split,subquestion_id,source_pages,verbatim_transcript,is_omitted,word_count,maximum_marks,parent_question_id,teacher_parent_gold,evidence_classification
+s14,test,1a,p2,Limitations of traditional n-gram LM are: 1) Traditional n-gram LMs mostly fail to capture long-range dependencies. 2) N-gram LMs generally face data sparsity as enough data for larger n-gram is rare or not available.,False,34,2.0,Q1,8.0,verified_human_ground_truth
+s14,test,1b,"p2,p3",Transformers process all tokens in parallel using self-attention which does not have any inherent sequential order. Therefore positional encoding is added to token embeddings to inject word order information.,False,29,2.0,Q1,8.0,verified_human_ground_truth
+s14,test,1c,"p4,p5",Encoder-only architectures (like BERT) take an input sequence and use bidirectional self-attention to generate representations for classification and understanding. Decoder architectures (like GPT) use causal masked attention to generate new tokens autoregressively.,False,32,2.0,Q1,8.0,verified_human_ground_truth
+s14,test,1d,p4,"Masked Attention: General self-attention allows tokens to attend to all positions. To forbid models from seeing future tokens in advance (which is cheating) in autoregressive language models, we mask positions greater than current position by setting attention input to -infinity so softmax comes to 0. Used in GPT for causal next-token generation.",False,52,2.0,Q1,8.0,verified_human_ground_truth
+s14,test,2a,p3,"Given Q = [1, 0], K1 = [1, 1], K2 = [0, 1]. Dot products: Score for K1 = Q . K1 = 1*1 + 0*1 = 1. Score for K2 = Q . K2 = 1*0 + 0*1 = 0.",False,41,2.0,Q2,6.0,verified_human_ground_truth
+s14,test,2b,p3,"Softmax([1, 0]): for k1, a1 = e^1 / (e^1 + e^0) = e / (e+1) approx 0.73 (student rounded to 0.7). for k2, a2 = e^0 / (e^1 + e^0) = 1 / (e+1) approx 0.27 (student rounded to 0.3). Attention weights A = [0.7, 0.3].",False,46,2.0,Q2,6.0,verified_human_ground_truth
+s14,test,2c,p3,"Output vector = A * V = 0.7 * [2, 0] + 0.3 * [0, 3] = [1.4, 0] + [0, 0.9] = [1.4, 0.9].",False,25,2.0,Q2,6.0,verified_human_ground_truth
+s14,test,3a,p4,Greedy decoding selects Word A because it has the highest probability of all (0.4).,False,14,1.0,Q3,3.0,verified_human_ground_truth
+s14,test,3b,p4,Word A and Word B because they are the top 2 words with high probability (0.4 and 0.3) if top-k with k=2 is used.,False,24,1.0,Q3,3.0,verified_human_ground_truth
+s14,test,3c,p4,Layer normalization is applied in each transformer block because layer normalization is generally used for normalizing across features of each token to stabilize training dynamics and gradient flow across sub-layers (applied after self-attention and after feed-forward network).,False,37,1.0,Q3,3.0,verified_human_ground_truth
+s14,test,4,"p5,p6","Given corpus: 'I like NLP', 'I like AI', 'I love NLP'. Bigram model with Add-1 Laplace smoothing to find P('I like ML'). Counts: C(I)=3, C(like)=2, C(love)=1, C(NLP)=2, C(AI)=1. C(I, like)=2, C(like, ML)=0. Vocabulary V={I, like, NLP, AI, love} (|V|=5). P(like|I) = (C(I, like)+1)/(C(I)+|V|) = (2+1)/(3+5) = 3/8. P(ML|like) = (C(like, ML)+1)/(C(like)+|V|) = (0+1)/(2+5) = 1/7. P('I like ML') = P(like|I) * P(ML|like) = (3/8) * (1/7) = 3/56.",False,68,3.0,Q4,3.0,verified_human_ground_truth
+s29,test,1a,p2,Traditional n-grams have limited context window (n-1 tokens) and cannot capture long-range semantic dependencies due to exponential parameter growth.,False,19,2.0,Q1,8.0,verified_human_ground_truth
+s29,test,1b,p2,"Self-attention in transformers is permutation invariant with no inherent order. Positional encodings PE(pos, 2i)=sin(pos/10000^(2i/d_model)) are added to inject sequential position.",False,20,2.0,Q1,8.0,verified_human_ground_truth
+s29,test,1c,"p2,p3",Encoder-only models (BERT) use bidirectional attention for classification/encoding; decoder-only models (GPT) use causal masked attention for autoregressive text generation.,False,19,2.0,Q1,8.0,verified_human_ground_truth
+s29,test,1d,p3,Masked attention sets future token weights to -infinity before softmax to prevent information leakage during next-token prediction.,False,17,2.0,Q1,8.0,verified_human_ground_truth
+s29,test,2a,p4,"Attention scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0.",False,12,2.0,Q2,2.0,verified_human_ground_truth
+s29,test,2b,p4,"Softmax calculation error [0.5, 0.5] resulting from corrupted handwritten exponent notation.",False,11,2.0,Q2,2.0,verified_human_ground_truth
+s29,test,2c,p4,Output vector calculation error.,False,4,2.0,Q2,2.0,verified_human_ground_truth
+s29,test,3a,p5,Greedy decoding selects Word A (prob 0.4).,False,7,1.0,Q3,2.0,verified_human_ground_truth
+s29,test,3b,p5,Top-2 decoding selects Word C and Word D with k=2.,False,10,1.0,Q3,2.0,verified_human_ground_truth
+s29,test,3c,p5,Layer normalization is applied twice: after self-attention and after feed forward network to normalize inputs and outputs and stabilize gradients.,False,20,1.0,Q3,2.0,verified_human_ground_truth
+s29,test,4,"p6,p7",Bigram table with V=8. P(<S>) = 1/5. P(I|<S>) = 4/11. P(like|I) = 3/11. P(ML|like) = 1/10. P(</S>|ML) = 1/8. Product = 1/5 * 4/11 * 3/11 * 1/10 * 1/8 = 3/12100 approx 0.000248.,False,34,3.0,Q4,3.0,verified_human_ground_truth
+s7,test,1a,p2,Limitations of traditional n-gram model: 1. In some cases there aren't sufficient context (i.e. n values) to support the probability. Here the solution is having backoff to lower n-gram. 2. To find the probability against each word in the vocabulary is computationally expensive.,False,43,2.0,Q1,8.0,verified_human_ground_truth
+s7,test,1b,p2,"In attention layer all the permutation of words in a sentence are treated equally. But for feed forward neural network we use parallelisation so the transformer will lose positional information. As positional information is important for a sentence to make sense, positional encoding is used.",False,45,2.0,Q1,8.0,verified_human_ground_truth
+s7,test,1c,"p2,p3",Encoder-only architecture uses bidirectional self-attention to encode entire context (e.g. BERT). Decoder-only architecture uses masked self-attention to generate tokens sequentially.,False,20,2.0,Q1,8.0,verified_human_ground_truth
+s7,test,1d,p3,Masked attention is used in GPT to prevent attending to future tokens during training and generation so it cannot cheat on next token prediction.,False,24,2.0,Q1,8.0,verified_human_ground_truth
+s7,test,2a,p3,"Attention scores for Q: Q.K1 = [1, 1], Q.K2 = [0, 1]. Incomplete dot product derivation.",False,16,2.0,Q2,0.0,verified_human_ground_truth
+s7,test,2b,p3,Omitted.,True,1,2.0,Q2,0.0,verified_human_ground_truth
+s7,test,2c,p3,Omitted.,True,1,2.0,Q2,0.0,verified_human_ground_truth
+s7,test,3a,p4,Greedy decoding selects Word A (0.4) as it has highest probability.,False,11,1.0,Q3,3.0,verified_human_ground_truth
+s7,test,3b,p4,Top-2 chooses Word A and Word B with probabilities 0.4 and 0.3.,False,12,1.0,Q3,3.0,verified_human_ground_truth
+s7,test,3c,p4,Layer normalization stabilizes hidden state dynamics and prevents gradient explosion across sub-layers.,False,12,1.0,Q3,3.0,verified_human_ground_truth
+s7,test,4,p5,P(ML|like) with Add-1 smoothing. Student computed partial table count with V=5. Product incomplete.,False,13,3.0,Q4,1.0,verified_human_ground_truth
+s24,test,1a,p2,Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies.,False,21,2.0,Q1,8.0,verified_human_ground_truth
+s24,test,1b,p2,Transformers process all tokens in parallel using self-attention which is permutation-invariant and lacks inherent word order. Positional encodings are added to token embeddings to encode sequential positions.,False,27,2.0,Q1,8.0,verified_human_ground_truth
+s24,test,1c,p2,Encoder-only architectures like BERT use bidirectional attention to learn representations for classification and analysis. Decoder-only architectures like GPT use autoregressive causal attention for text generation.,False,25,2.0,Q1,8.0,verified_human_ground_truth
+s24,test,1d,"p2,p3","Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training, enforcing causal autoregressive generation in GPT-like models.",False,22,2.0,Q1,8.0,verified_human_ground_truth
+s24,test,2a,p3,"Dot-product scores: Q.K1 = [1,0].[1,1] = 1, Q.K2 = [1,0].[0,1] = 0. Scores = [1, 0].",False,16,2.0,Q2,2.0,verified_human_ground_truth
+s24,test,2b,p3,Calculation error in denominator: Softmax attempted with unnormalized weights.,False,9,2.0,Q2,2.0,verified_human_ground_truth
+s24,test,2c,p3,Context output omitted due to failure in 2b.,True,8,2.0,Q2,2.0,verified_human_ground_truth
+s24,test,3a,p3,Greedy decoding selects Word A with probability 0.4.,False,8,1.0,Q3,3.0,verified_human_ground_truth
+s24,test,3b,p3,Top-2 candidate selection with k=2 yields Word A (0.4) and Word B (0.3).,False,13,1.0,Q3,3.0,verified_human_ground_truth
+s24,test,3c,"p3,p4",Layer normalization is applied twice in each transformer block: once after multi-head attention to stabilize representations and once after the feed-forward network to facilitate stable gradient flow.,False,27,1.0,Q3,3.0,verified_human_ground_truth
+s24,test,4,p4,Partial bigram table constructed. Vocabulary identified as 7 tokens. Partial count computation.,False,12,3.0,Q4,1.0,verified_human_ground_truth
+s30,test,1a,p2,Traditional n-gram language models suffer from a fixed context window limited to n-1 words (Markov assumption) and cannot capture long-range dependencies.,False,21,2.0,Q1,8.0,verified_human_ground_truth
+s30,test,1b,p2,Transformers process all tokens in parallel using self-attention which is permutation-invariant and lacks word order. Positional encoding adds order.,False,19,2.0,Q1,8.0,verified_human_ground_truth
+s30,test,1c,"p2,p3",Encoder-only architectures use bidirectional attention for classification. Decoder architectures use autoregressive causal attention for generation.,False,15,2.0,Q1,8.0,verified_human_ground_truth
+s30,test,1d,p3,Masked attention uses an upper-triangular mask matrix to prevent attention to future tokens during training.,False,15,2.0,Q1,8.0,verified_human_ground_truth
+s30,test,2a,p3,Incorrect matrix multiplications.,False,3,2.0,Q2,0.0,verified_human_ground_truth
+s30,test,2b,p3,Omitted.,True,1,2.0,Q2,0.0,verified_human_ground_truth
+s30,test,2c,p3,Omitted.,True,1,2.0,Q2,0.0,verified_human_ground_truth
+s30,test,3a,p4,Greedy decoding selects Word A with probability 0.4.,False,8,1.0,Q3,1.0,verified_human_ground_truth
+s30,test,3b,p4,Top-k selects Word B and Word C.,False,7,1.0,Q3,1.0,verified_human_ground_truth
+s30,test,3c,p4,Incorrect explanation of normalization.,False,4,1.0,Q3,1.0,verified_human_ground_truth
+s30,test,4,p5,Unattempted or incorrect calculation without formula.,False,6,3.0,Q4,0.0,verified_human_ground_truth
+s37,test,1a,"p2,p3","The key limitation of traditional n-gram language model is: 1) It is not fit for larger or long dataset. 2) If we use similar wording then n-gram is not best. In testing dataset 'I am eating banana', the probability is zero because dataset is not trained on it i.e. P(I am eating banana) = 0. Data sparsity and zero probability.",False,60,2.0,Q1,8.0,verified_human_ground_truth
+s37,test,1b,p3,"Transformers process tokens simultaneously in parallel. Without positional encoding, the order of words is lost because self-attention treats order identically.",False,20,2.0,Q1,8.0,verified_human_ground_truth
+s37,test,1c,"p3,p4",Encoder-only architecture uses bidirectional context for understanding tasks like sentiment analysis and BERT. Decoder-only uses causal attention for text generation like GPT.,False,22,2.0,Q1,8.0,verified_human_ground_truth
+s37,test,1d,p4,Masked attention is used in GPT models to prevent attention to future tokens so the model learns autoregressive left-to-right generation.,False,20,2.0,Q1,8.0,verified_human_ground_truth
+s37,test,2a,p4,"Attention scores: Q.K1 = 1*1 + 0*1 = 1. Q.K2 = 1*0 + 0*1 = 0. Scores = [1, 0].",False,20,2.0,Q2,2.0,verified_human_ground_truth
+s37,test,2b,p5,Softmax calculation error.,False,3,2.0,Q2,2.0,verified_human_ground_truth
+s37,test,2c,p5,Omitted.,True,1,2.0,Q2,2.0,verified_human_ground_truth
+s37,test,3a,p6,Greedy decoding selects Word A with probability 0.4.,False,8,1.0,Q3,3.0,verified_human_ground_truth
+s37,test,3b,p6,Top-2 with k=2 considers Word A (0.4) and Word B (0.3).,False,11,1.0,Q3,3.0,verified_human_ground_truth
+s37,test,3c,p6,Layer normalization stabilizes activations within each block and prevents vanishing/exploding gradients during deep backpropagation.,False,14,1.0,Q3,3.0,verified_human_ground_truth
+s37,test,4,"p7,p8",Bigram with Add-1 smoothing: V=8. P(like|I) = (2+1)/(3+8) = 3/11. P(ML|like) = (0+1)/(2+8) = 1/10. Student computed (3/11)*(1/10) = 3/110.,False,20,3.0,Q4,2.0,verified_human_ground_truth
