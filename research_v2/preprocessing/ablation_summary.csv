@@ -1,0 +1,11 @@
+condition_id,condition_name,records_evaluated,written_records,macro_cer,macro_wer,math_token_f1,mean_latency_sec,mean_red_removed_fraction,status
+P0,Raw Crop (Baseline),66,61,1.1065,1.3417,0.0761,0.9376,0.0,measured_real
+P1,Red Separation Only,66,61,1.121,1.3785,0.0682,0.9665,0.00423,measured_real
+P2,Grid Suppression Only,66,61,0.9978,1.6701,0.0819,0.8754,0.0,measured_real
+P3,Deskew Only,66,61,1.1015,1.364,0.061,1.0198,0.0,measured_real
+P4,Denoising Only (NLM),66,61,1.1015,1.364,0.061,2.0853,0.0,measured_real
+P5,Sauvola Binarization Only,66,61,1.2807,2.2149,0.1211,0.6406,0.0,measured_real
+P6,Red Separation + Deskew,66,61,1.121,1.3785,0.0682,1.0445,0.00423,measured_real
+P7,Deskew + Denoise + Binarize,66,61,1.4103,2.4398,0.1179,1.8242,0.0,measured_real
+P8,Full Pipeline (All 5 Stages),66,61,1.1508,2.2145,0.0561,1.983,0.00423,measured_real
+P9,Full Pipeline Without Red Removal,66,61,1.0915,2.0948,0.0766,1.9483,0.0,measured_real

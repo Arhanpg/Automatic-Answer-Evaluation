@@ -1,0 +1,11 @@
+crop_filename,total_pixels,gt_red_examiner_pixels,gt_student_ink_pixels,examiner_ink_removal_recall,examiner_ink_residual_leakage_rate,student_ink_preservation_recall,student_ink_pixel_loss_rate,status
+s1_1a_crop.png,4227678,1289,497690,0.9938,0.0062,0.9978,0.0022,measured_real
+s1_1c_crop.png,4439320,671,459876,1.0,0.0,0.9989,0.0011,measured_real
+s2_1a_crop.png,4228989,0,1397139,1.0,0.0,1.0,0.0,measured_real
+s2_1b_crop.png,4228989,0,1978911,1.0,0.0,1.0,0.0,measured_real
+s2_2a_crop.png,4228989,933,507109,1.0,0.0,0.9974,0.0026,measured_real
+s5_1a_crop.png,4228989,0,788741,1.0,0.0,1.0,0.0,measured_real
+s5_2a_crop.png,4228989,2091,432489,1.0,0.0,0.9979,0.0021,measured_real
+s12_1a_crop.png,4228989,9794,551330,1.0,0.0,0.9944,0.0056,measured_real
+s18_1a_crop.png,4228989,1398,1787256,1.0,0.0,0.9994,0.0006,measured_real
+s21_1a_crop.png,4228989,172,1910716,0.0,1.0,1.0,0.0,measured_real

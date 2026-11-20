@@ -1,0 +1,10 @@
+contrast,condition_id,condition_name,n_paired_crops,improved_count,worsened_count,unchanged_count,mean_delta_cer,ci_95_lower,ci_95_upper,paired_t_stat,paired_t_pvalue,wilcoxon_stat,wilcoxon_pvalue,statistically_significant_005
+P1 vs P0 (Baseline),P1,Red Separation Only,61,15,15,31,0.0145,-0.0129,0.0418,1.0556,0.295361,204.0,0.557711,False
+P2 vs P0 (Baseline),P2,Grid Suppression Only,61,25,23,13,-0.1087,-0.3676,0.1502,-0.8396,0.404454,573.5,0.881774,False
+P3 vs P0 (Baseline),P3,Deskew Only,61,15,8,38,-0.005,-0.0104,0.0004,-1.8636,0.067277,84.5,0.103675,False
+P4 vs P0 (Baseline),P4,Denoising Only (NLM),61,15,8,38,-0.005,-0.0104,0.0004,-1.8636,0.067277,84.5,0.103675,False
+P5 vs P0 (Baseline),P5,Sauvola Binarization Only,61,26,22,13,0.1742,-0.0044,0.3527,1.9514,0.055679,498.5,0.358636,False
+P6 vs P0 (Baseline),P6,Red Separation + Deskew,61,15,15,31,0.0145,-0.0129,0.0418,1.0556,0.295361,204.0,0.557711,False
+P7 vs P0 (Baseline),P7,Deskew + Denoise + Binarize,61,23,24,14,0.3038,0.0259,0.5817,2.1866,0.032679,434.0,0.168921,True
+P8 vs P0 (Baseline),P8,Full Pipeline (All 5 Stages),61,29,23,9,0.0443,-0.2766,0.3652,0.2761,0.78342,638.5,0.645587,False
+P9 vs P0 (Baseline),P9,Full Pipeline Without Red Removal,61,27,21,13,-0.015,-0.3017,0.2716,-0.105,0.91674,521.0,0.491964,False
