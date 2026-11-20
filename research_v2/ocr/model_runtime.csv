@@ -1,0 +1,13 @@
+engine,condition,compute_device,total_calls,total_runtime_sec,mean_latency_sec,median_latency_sec,p90_latency_sec,p95_latency_sec,min_latency_sec,max_latency_sec
+paddleocr,preprocessed,CPU,128,1609.07,12.5709,11.2742,22.6085,24.0511,2.2459,41.0182
+paddleocr,preprocessed,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+paddleocr,raw,CPU,128,1629.35,12.7293,11.3615,22.7184,24.5698,2.2958,41.6935
+paddleocr,raw,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+tesseract,preprocessed,CPU,392,424.02,1.0817,1.0517,1.4725,1.6822,0.5797,2.6079
+tesseract,preprocessed,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+tesseract,raw,CPU,392,421.09,1.0742,1.0541,1.461,1.5533,0.5883,2.5656
+tesseract,raw,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+trocr,preprocessed,GPU (cuda:0),392,131.49,0.3354,0.2826,0.5635,0.7464,0.0792,3.2497
+trocr,preprocessed,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+trocr,raw,GPU (cuda:0),392,174.55,0.4453,0.3831,0.7301,0.8431,0.0985,4.6122
+trocr,raw,N/A,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
