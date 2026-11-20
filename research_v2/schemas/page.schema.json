@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PageManifest",
+  "type": "object",
+  "properties": {
+    "student_id": { "type": "string" },
+    "page_id": { "type": "string" },
+    "page_index": { "type": "integer", "minimum": 1 },
+    "image_relative_path": { "type": "string" },
+    "image_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "width_px": { "type": "integer", "minimum": 1 },
+    "height_px": { "type": "integer", "minimum": 1 },
+    "render_dpi": { "type": "string" },
+    "scan_quality_tags": { "type": "string" }
+  },
+  "required": [
+    "student_id",
+    "page_id",
+    "page_index",
+    "image_relative_path",
+    "image_sha256",
+    "width_px",
+    "height_px",
+    "scan_quality_tags"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AnswerRegionManifest",
+  "type": "object",
+  "properties": {
+    "region_segment_id": { "type": "string" },
+    "student_id": { "type": "string" },
+    "page_id": { "type": "string" },
+    "subquestion_id": { "type": "string" },
+    "parent_question_id": { "type": "string" },
+    "x0": { "type": "integer", "minimum": 0 },
+    "y0": { "type": "integer", "minimum": 0 },
+    "x1": { "type": "integer", "minimum": 0 },
+    "y1": { "type": "integer", "minimum": 0 },
+    "norm_x0": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "norm_y0": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "norm_x1": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "norm_y1": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "region_type": { "type": "string", "enum": ["student_answer", "printed_question", "examiner_annotation", "crossed_out", "other"] },
+    "continuation_group_id": { "type": "string" },
+    "annotation_status": { "type": "string", "enum": ["unreviewed", "reviewed_by_a", "reviewed_by_b", "adjudicated", "unresolvable"] },
+    "crop_sha256": { "type": "string" },
+    "crop_relative_path": { "type": "string" },
+    "reviewer_ids": { "type": "string" },
+    "adjudication_ref": { "type": "string" }
+  },
+  "required": [
+    "region_segment_id",
+    "student_id",
+    "page_id",
+    "subquestion_id",
+    "parent_question_id",
+    "x0",
+    "y0",
+    "x1",
+    "y1",
+    "region_type",
+    "annotation_status"
+  ]
+}

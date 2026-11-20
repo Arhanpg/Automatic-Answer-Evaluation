@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MarksManifest",
+  "type": "object",
+  "properties": {
+    "student_id": { "type": "string" },
+    "parent_question_id": { "type": "string" },
+    "subquestion_id": { "type": "string" },
+    "teacher_mark": { "type": "number", "minimum": 0.0 },
+    "maximum_mark": { "type": "number", "minimum": 0.0 },
+    "rubric_version": { "type": "string" },
+    "grader_a_mark": { "type": "string" },
+    "grader_b_mark": { "type": "string" },
+    "adjudicated_mark": { "type": "string" },
+    "criterion_level_scores": { "type": "string" },
+    "mark_source": { "type": "string" },
+    "verification_status": { "type": "string" }
+  },
+  "required": [
+    "student_id",
+    "parent_question_id",
+    "teacher_mark",
+    "maximum_mark",
+    "rubric_version",
+    "mark_source",
+    "verification_status"
+  ]
+}

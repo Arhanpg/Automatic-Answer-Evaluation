@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TranscriptManifest",
+  "type": "object",
+  "properties": {
+    "student_id": { "type": "string" },
+    "subquestion_id": { "type": "string" },
+    "continuation_group_id": { "type": "string" },
+    "answer_status": { "type": "string", "enum": ["written", "omitted", "blank", "illegible", "unresolvable", "not_applicable"] },
+    "transcript_annotator_a": { "type": "string" },
+    "transcript_annotator_b": { "type": "string" },
+    "adjudicated_transcript": { "type": "string" },
+    "transcript_provenance": { "type": "string" },
+    "adjudication_reason": { "type": "string" },
+    "contains_math": { "type": "boolean" },
+    "contains_diagram": { "type": "boolean" },
+    "contains_crossed_out_text": { "type": "boolean" },
+    "contains_overwrite": { "type": "boolean" },
+    "confidence_or_ambiguity_notes": { "type": "string" }
+  },
+  "required": [
+    "student_id",
+    "subquestion_id",
+    "answer_status",
+    "adjudicated_transcript",
+    "transcript_provenance",
+    "contains_math",
+    "contains_diagram"
+  ]
+}

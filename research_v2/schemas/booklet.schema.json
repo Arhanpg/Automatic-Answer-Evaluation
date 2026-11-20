@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BookletManifest",
+  "type": "object",
+  "properties": {
+    "student_id": { "type": "string" },
+    "source_pdf_relative_path": { "type": "string" },
+    "pdf_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "page_count": { "type": "integer", "minimum": 1 },
+    "split_or_fold_id": { "type": "string" },
+    "inclusion_status": { "type": "string", "enum": ["included", "excluded", "pending"] },
+    "exclusion_reason": { "type": "string" },
+    "consent_or_permission_status": { "type": "string" }
+  },
+  "required": [
+    "student_id",
+    "source_pdf_relative_path",
+    "pdf_sha256",
+    "page_count",
+    "split_or_fold_id",
+    "inclusion_status",
+    "consent_or_permission_status"
+  ]
+}
