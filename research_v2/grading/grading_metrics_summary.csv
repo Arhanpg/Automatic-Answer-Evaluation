@@ -1,0 +1,101 @@
+system_id,system_name,split,question_id,N,MAE,RMSE,mean_bias,exact_match_pct,within_05_pct,within_10_pct,QWK,spearman_rho,pearson_r
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,all,Q1,37,3.6595,4.0415,-3.4162,0.0,8.11,10.81,0.0214,0.0559,0.0916
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,all,Q2,37,2.6757,3.5905,2.5676,35.14,35.14,37.84,0.1636,0.2723,0.2988
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,all,Q3,37,0.7838,1.3049,0.2973,56.76,56.76,75.68,0.0169,0.0942,0.0179
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,all,Q4,37,1.5541,1.9225,1.3108,21.62,29.73,45.95,-0.0018,-0.0498,-0.0034
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,all,total,37,4.9,6.1266,0.7595,0.0,10.81,10.81,0.1417,0.1651,0.1447
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,all,Q1,37,1.4865,2.466,0.8378,45.95,45.95,64.86,0.0502,-0.0195,0.0621
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,all,Q2,37,2.9459,3.7883,2.8919,29.73,29.73,37.84,0.0867,0.2635,0.2217
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,all,Q3,37,0.7162,1.1769,0.527,54.05,59.46,75.68,-0.0288,0.0519,-0.0526
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,all,Q4,37,1.6216,1.9694,1.5946,21.62,27.03,40.54,-0.0074,-0.0641,-0.0385
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,all,total,37,6.5541,8.1036,5.8514,16.22,16.22,18.92,0.0454,0.1515,0.0984
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,all,Q1,37,6.7027,6.9981,-6.7027,2.7,2.7,2.7,0.0,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,all,Q2,37,2.7297,3.6205,2.6216,32.43,32.43,40.54,0.1458,0.2635,0.2813
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,all,Q3,37,0.7838,1.3049,0.2973,56.76,56.76,75.68,0.0169,0.0942,0.0179
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,all,Q4,37,1.4595,1.8158,1.1892,27.03,27.03,45.95,-0.0194,-0.0604,-0.0363
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,all,total,37,4.9189,6.1381,-2.5946,8.11,8.11,18.92,0.0773,0.0734,0.1016
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),all,Q1,37,1.6757,2.7138,0.4595,29.73,45.95,62.16,0.0129,-0.1668,0.0134
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),all,Q2,37,2.7297,3.6205,2.6216,32.43,32.43,40.54,0.1458,0.2635,0.2813
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),all,Q3,37,0.7838,1.3049,0.2973,56.76,56.76,75.68,0.0169,0.0942,0.0179
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),all,Q4,37,1.4595,1.8158,1.1892,27.03,27.03,45.95,-0.0194,-0.0604,-0.0363
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),all,total,37,6.2973,8.0127,4.5676,13.51,18.92,21.62,0.073,0.0734,0.1045
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,locked_test,Q1,6,5.8,5.985,-5.8,0.0,0.0,0.0,0.0,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,locked_test,Q2,6,2.3333,3.1623,1.6667,33.33,33.33,33.33,0.2857,0.2833,0.3721
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,locked_test,Q3,6,1.3333,1.9149,-0.6667,50.0,50.0,50.0,-0.2941,-0.2921,-0.406
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,locked_test,Q4,6,1.3333,1.7321,0.3333,33.33,33.33,50.0,0.1,0.1066,0.1066
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,locked_test,total,6,7.1333,8.5315,-4.4667,0.0,0.0,0.0,0.0721,-0.0157,0.1227
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,locked_test,Q1,6,1.6667,2.8868,-1.6667,66.67,66.67,66.67,0.0,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,locked_test,Q2,6,2.5,3.2404,2.1667,16.67,16.67,50.0,0.241,0.2833,0.3676
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,locked_test,Q3,6,1.0,1.2583,0.0,33.33,33.33,50.0,-0.4615,-0.4899,-0.4629
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,locked_test,Q4,6,1.0,1.5,0.8333,33.33,66.67,66.67,0.069,0.1066,0.1066
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,locked_test,total,6,5.6667,6.6081,1.3333,16.67,16.67,16.67,0.1119,-0.0157,0.1369
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,locked_test,Q1,6,8.0,8.0,-8.0,0.0,0.0,0.0,0.0,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,locked_test,Q2,6,2.1667,3.0822,1.5,33.33,33.33,50.0,0.2963,0.2833,0.3714
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,locked_test,Q3,6,1.3333,1.9149,-0.6667,50.0,50.0,50.0,-0.2941,-0.2921,-0.406
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,locked_test,Q4,6,1.3333,1.7321,0.3333,33.33,33.33,50.0,0.1,0.1066,0.1066
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,locked_test,total,6,7.8333,9.083,-6.8333,0.0,0.0,0.0,0.0487,-0.0157,0.1177
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),locked_test,Q1,6,2.5,4.062,-2.5,50.0,50.0,66.67,0.0,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),locked_test,Q2,6,2.1667,3.0822,1.5,33.33,33.33,50.0,0.2963,0.2833,0.3714
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),locked_test,Q3,6,1.3333,1.9149,-0.6667,50.0,50.0,50.0,-0.2941,-0.2921,-0.406
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),locked_test,Q4,6,1.3333,1.7321,0.3333,33.33,33.33,50.0,0.1,0.1066,0.1066
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),locked_test,total,6,7.0,8.8882,-1.3333,33.33,33.33,33.33,0.082,-0.0157,0.1236
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,development,Q1,31,3.2452,3.5443,-2.9548,0.0,9.68,12.9,0.0835,0.262,0.3736
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,development,Q2,31,2.7419,3.6676,2.7419,35.48,35.48,38.71,0.1179,0.2582,0.2753
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,development,Q3,31,0.6774,1.15,0.4839,58.06,58.06,80.65,0.1644,0.2336,0.2165
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,development,Q4,31,1.5968,1.9572,1.5,19.35,29.03,45.16,0.0073,-0.0419,0.0195
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,development,total,31,4.4677,5.5418,1.771,0.0,12.9,12.9,0.2182,0.2454,0.2653
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,development,Q1,31,1.4516,2.376,1.3226,41.94,41.94,64.52,0.164,0.1148,0.3504
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,development,Q2,31,3.0323,3.8855,3.0323,32.26,32.26,35.48,0.0378,0.2509,0.1624
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,development,Q3,31,0.6613,1.1605,0.629,58.06,64.52,80.65,0.0555,0.2371,0.1787
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,development,Q4,31,1.7419,2.0478,1.7419,19.35,19.35,35.48,0.0,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,development,total,31,6.7258,8.3623,6.7258,16.13,16.13,19.35,0.0605,0.2541,0.2563
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,development,Q1,31,6.4516,6.7871,-6.4516,3.23,3.23,3.23,0.0,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,development,Q2,31,2.8387,3.7157,2.8387,32.26,32.26,38.71,0.0919,0.2509,0.2605
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,development,Q3,31,0.6774,1.15,0.4839,58.06,58.06,80.65,0.1644,0.2336,0.2165
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,development,Q4,31,1.4839,1.8316,1.3548,25.81,25.81,45.16,-0.0177,-0.0727,-0.0493
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,development,total,31,4.3548,5.3852,-1.7742,9.68,9.68,22.58,0.1376,0.1031,0.2197
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),development,Q1,31,1.5161,2.3658,1.0323,25.81,45.16,61.29,0.1657,-0.1045,0.2406
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),development,Q2,31,2.8387,3.7157,2.8387,32.26,32.26,38.71,0.0919,0.2509,0.2605
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),development,Q3,31,0.6774,1.15,0.4839,58.06,58.06,80.65,0.1644,0.2336,0.2165
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),development,Q4,31,1.4839,1.8316,1.3548,25.81,25.81,45.16,-0.0177,-0.0727,-0.0493
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),development,total,31,6.1613,7.8319,5.7097,9.68,16.13,19.35,0.1059,0.1031,0.2271
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_mean,Q1,155,3.2467,3.5389,0.0,0.0,0.0,0.0,0.0637,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_std,Q1,155,0.1985,0.213,0.0,0.0,0.0,0.0,0.0908,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_mean,Q2,155,2.7762,3.5953,0.0,0.0,0.0,0.0,0.09,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_std,Q2,155,0.9646,0.8409,0.0,0.0,0.0,0.0,0.1344,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_mean,Q3,155,0.6857,1.0852,0.0,0.0,0.0,0.0,0.1247,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_std,Q3,155,0.3331,0.4065,0.0,0.0,0.0,0.0,0.2495,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_mean,Q4,155,1.6071,1.951,0.0,0.0,0.0,0.0,0.0057,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_std,Q4,155,0.2671,0.2877,0.0,0.0,0.0,0.0,0.0115,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_mean,total,155,4.5148,5.3482,0.0,0.0,0.0,0.0,0.1559,0.0,0.0
+lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,cv_5fold_std,total,155,1.3789,1.6315,0.0,0.0,0.0,0.0,0.2659,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_mean,Q1,155,1.4571,2.2345,0.0,0.0,0.0,0.0,0.1009,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_std,Q1,155,0.4674,0.8658,0.0,0.0,0.0,0.0,0.2744,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_mean,Q2,155,3.0476,3.8069,0.0,0.0,0.0,0.0,0.0272,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_std,Q2,155,0.9316,0.8353,0.0,0.0,0.0,0.0,0.0434,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_mean,Q3,155,0.6691,1.099,0.0,0.0,0.0,0.0,0.0589,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_std,Q3,155,0.3188,0.391,0.0,0.0,0.0,0.0,0.1178,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_mean,Q4,155,1.7429,2.0466,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_std,Q4,155,0.2476,0.1997,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_mean,total,155,6.7643,8.1861,0.0,0.0,0.0,0.0,0.0583,0.0,0.0
+semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,cv_5fold_std,total,155,1.6308,1.9434,0.0,0.0,0.0,0.0,0.1126,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_mean,Q1,155,6.4619,6.7894,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_std,Q1,155,0.5235,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_mean,Q2,155,2.8667,3.6436,0.0,0.0,0.0,0.0,0.0701,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_std,Q2,155,0.9393,0.834,0.0,0.0,0.0,0.0,0.1062,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_mean,Q3,155,0.6857,1.0852,0.0,0.0,0.0,0.0,0.1247,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_std,Q3,155,0.3331,0.4065,0.0,0.0,0.0,0.0,0.2495,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_mean,Q4,155,1.5,1.8264,0.0,0.0,0.0,0.0,-0.0297,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_std,Q4,155,0.3162,0.2628,0.0,0.0,0.0,0.0,0.0689,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_mean,total,155,4.381,5.3671,0.0,0.0,0.0,0.0,0.0872,0.0,0.0
+symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,cv_5fold_std,total,155,0.7835,0.6047,0.0,0.0,0.0,0.0,0.167,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_mean,Q1,155,1.5262,2.2222,0.0,0.0,0.0,0.0,0.0761,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_std,Q1,155,0.4688,0.8804,0.0,0.0,0.0,0.0,0.3353,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_mean,Q2,155,2.8667,3.6436,0.0,0.0,0.0,0.0,0.0701,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_std,Q2,155,0.9393,0.834,0.0,0.0,0.0,0.0,0.1062,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_mean,Q3,155,0.6857,1.0852,0.0,0.0,0.0,0.0,0.1247,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_std,Q3,155,0.3331,0.4065,0.0,0.0,0.0,0.0,0.2495,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_mean,Q4,155,1.5,1.8264,0.0,0.0,0.0,0.0,-0.0297,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_std,Q4,155,0.3162,0.2628,0.0,0.0,0.0,0.0,0.0689,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_mean,total,155,6.2214,7.5987,0.0,0.0,0.0,0.0,0.1032,0.0,0.0
+hybrid_grader,Unified Rubric Hybrid Grader (Ours),cv_5fold_std,total,155,1.6701,2.1825,0.0,0.0,0.0,0.0,0.2041,0.0,0.0

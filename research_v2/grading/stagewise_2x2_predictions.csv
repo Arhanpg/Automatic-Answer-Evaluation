@@ -1,0 +1,1296 @@
+stream_id,stream_description,transcription_source,routing_source,student_id,split,fold,question_id,maximum_mark,teacher_mark,predicted_mark,error,absolute_error,squared_error
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s1,development,2,Q1,8.0,8.0,7.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s1,development,2,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s1,development,2,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s1,development,2,Q4,3.0,3.0,2.0,-1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s1,development,2,total,20.0,20.0,18.5,-1.5,1.5,2.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s10,development,3,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s10,development,3,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s10,development,3,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s10,development,3,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s10,development,3,total,20.0,20.0,20.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s11,development,3,Q1,8.0,8.0,7.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s11,development,3,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s11,development,3,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s11,development,3,Q4,3.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s11,development,3,total,20.0,13.0,18.5,5.5,5.5,30.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s12,development,4,Q1,8.0,3.0,8.0,5.0,5.0,25.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s12,development,4,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s12,development,4,Q3,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s12,development,4,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s12,development,4,total,20.0,5.0,20.0,15.0,15.0,225.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s13,development,2,Q1,8.0,5.0,7.5,2.5,2.5,6.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s13,development,2,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s13,development,2,Q3,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s13,development,2,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s13,development,2,total,20.0,7.0,18.5,11.5,11.5,132.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s14,locked_test,-1,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s14,locked_test,-1,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s14,locked_test,-1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s14,locked_test,-1,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s14,locked_test,-1,total,20.0,20.0,20.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s15,development,2,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s15,development,2,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s15,development,2,Q3,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s15,development,2,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s15,development,2,total,20.0,10.0,20.0,10.0,10.0,100.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s16,development,5,Q1,8.0,7.0,8.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s16,development,5,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s16,development,5,Q3,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s16,development,5,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s16,development,5,total,20.0,15.0,20.0,5.0,5.0,25.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s17,development,5,Q1,8.0,8.0,7.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s17,development,5,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s17,development,5,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s17,development,5,Q4,3.0,3.0,2.0,-1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s17,development,5,total,20.0,20.0,18.5,-1.5,1.5,2.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s18,development,1,Q1,8.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s18,development,1,Q3,3.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s18,development,1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s18,development,1,total,20.0,7.0,8.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s19,development,1,Q1,8.0,8.0,7.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s19,development,1,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s19,development,1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s19,development,1,Q4,3.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s19,development,1,total,20.0,19.0,18.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s2,development,5,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s2,development,5,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s2,development,5,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s2,development,5,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s2,development,5,total,20.0,20.0,20.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s20,development,3,Q1,8.0,3.0,8.0,5.0,5.0,25.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s20,development,3,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s20,development,3,Q3,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s20,development,3,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s20,development,3,total,20.0,4.0,20.0,16.0,16.0,256.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s21,development,2,Q1,8.0,6.0,8.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s21,development,2,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s21,development,2,Q3,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s21,development,2,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s21,development,2,total,20.0,7.0,20.0,13.0,13.0,169.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s22,development,3,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s22,development,3,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s22,development,3,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s22,development,3,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s22,development,3,total,20.0,14.0,20.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s23,development,5,Q1,8.0,7.0,7.5,0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s23,development,5,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s23,development,5,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s23,development,5,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s23,development,5,total,20.0,12.0,18.5,6.5,6.5,42.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s24,locked_test,-1,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s24,locked_test,-1,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s24,locked_test,-1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s24,locked_test,-1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s24,locked_test,-1,total,20.0,14.0,20.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s25,development,1,Q1,8.0,8.0,5.5,-2.5,2.5,6.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s25,development,1,Q2,6.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s25,development,1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s25,development,1,Q4,3.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s25,development,1,total,20.0,15.0,11.5,-3.5,3.5,12.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s26,development,2,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s26,development,2,Q2,6.0,4.0,6.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s26,development,2,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s26,development,2,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s26,development,2,total,20.0,16.0,20.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s27,development,1,Q1,8.0,7.0,8.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s27,development,1,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s27,development,1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s27,development,1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s27,development,1,total,20.0,13.0,20.0,7.0,7.0,49.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s28,development,4,Q1,8.0,0.0,8.0,8.0,8.0,64.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s28,development,4,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s28,development,4,Q3,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s28,development,4,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s28,development,4,total,20.0,2.0,20.0,18.0,18.0,324.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s29,locked_test,-1,Q1,8.0,8.0,7.0,-1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s29,locked_test,-1,Q2,6.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s29,locked_test,-1,Q3,3.0,2.0,2.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s29,locked_test,-1,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s29,locked_test,-1,total,20.0,15.0,15.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s3,development,5,Q1,8.0,7.0,8.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s3,development,5,Q2,6.0,5.0,6.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s3,development,5,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s3,development,5,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s3,development,5,total,20.0,16.0,20.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s30,locked_test,-1,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s30,locked_test,-1,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s30,locked_test,-1,Q3,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s30,locked_test,-1,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s30,locked_test,-1,total,20.0,9.0,20.0,11.0,11.0,121.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s31,development,4,Q1,8.0,8.0,7.5,-0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s31,development,4,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s31,development,4,Q3,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s31,development,4,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s31,development,4,total,20.0,10.0,18.5,8.5,8.5,72.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s32,development,4,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s32,development,4,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s32,development,4,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s32,development,4,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s32,development,4,total,20.0,20.0,20.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s33,development,3,Q1,8.0,6.0,8.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s33,development,3,Q2,6.0,4.0,6.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s33,development,3,Q3,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s33,development,3,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s33,development,3,total,20.0,12.0,20.0,8.0,8.0,64.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s34,development,1,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s34,development,1,Q2,6.0,0.0,6.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s34,development,1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s34,development,1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s34,development,1,total,20.0,12.0,20.0,8.0,8.0,64.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s35,development,2,Q1,8.0,8.0,5.5,-2.5,2.5,6.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s35,development,2,Q2,6.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s35,development,2,Q3,3.0,2.0,1.0,-1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s35,development,2,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s35,development,2,total,20.0,11.0,11.5,0.5,0.5,0.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s36,development,3,Q1,8.0,6.0,8.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s36,development,3,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s36,development,3,Q3,3.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s36,development,3,Q4,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s36,development,3,total,20.0,10.0,20.0,10.0,10.0,100.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s37,locked_test,-1,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s37,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s37,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s37,locked_test,-1,total,20.0,15.0,1.0,-14.0,14.0,196.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s4,development,4,Q1,8.0,7.0,8.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s4,development,4,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s4,development,4,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s4,development,4,Q4,3.0,2.0,3.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s4,development,4,total,20.0,14.0,20.0,6.0,6.0,36.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s5,development,1,Q1,8.0,4.0,5.5,1.5,1.5,2.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s5,development,1,Q2,6.0,0.0,3.0,3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s5,development,1,Q3,3.0,0.0,1.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s5,development,1,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s5,development,1,total,20.0,5.0,11.5,6.5,6.5,42.25
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s6,development,5,Q1,8.0,4.0,8.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s6,development,5,Q2,6.0,2.0,6.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s6,development,5,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s6,development,5,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s6,development,5,total,20.0,12.0,20.0,8.0,8.0,64.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s7,locked_test,-1,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s7,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s7,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s7,locked_test,-1,total,20.0,12.0,1.0,-11.0,11.0,121.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s8,development,1,Q1,8.0,6.0,8.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s8,development,1,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s8,development,1,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s8,development,1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s8,development,1,total,20.0,16.0,20.0,4.0,4.0,16.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s9,development,4,Q1,8.0,8.0,8.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s9,development,4,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s9,development,4,Q3,3.0,3.0,3.0,0.0,0.0,0.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s9,development,4,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,s9,development,4,total,20.0,18.0,20.0,2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s1,development,2,Q1,8.0,8.0,3.0,-5.0,5.0,25.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s1,development,2,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s1,development,2,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s1,development,2,total,20.0,20.0,9.5,-10.5,10.5,110.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s10,development,3,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s10,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s10,development,3,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s10,development,3,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s11,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s11,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s11,development,3,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s12,development,4,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s12,development,4,Q3,3.0,2.0,1.5,-0.5,0.5,0.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s12,development,4,Q4,3.0,0.0,1.0,1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s12,development,4,total,20.0,5.0,4.5,-0.5,0.5,0.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s13,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s13,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s13,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s13,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s14,locked_test,-1,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s14,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s14,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s14,locked_test,-1,total,20.0,20.0,2.5,-17.5,17.5,306.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s15,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s15,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s15,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s15,development,2,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s16,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s16,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s16,development,5,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s16,development,5,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s17,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s17,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s17,development,5,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s18,development,1,Q1,8.0,2.0,1.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s18,development,1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s18,development,1,total,20.0,7.0,4.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s19,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s19,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s19,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s19,development,1,total,20.0,19.0,0.0,-19.0,19.0,361.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s2,development,5,Q1,8.0,8.0,0.5,-7.5,7.5,56.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s2,development,5,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s2,development,5,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s2,development,5,Q4,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s2,development,5,total,20.0,20.0,4.0,-16.0,16.0,256.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s20,development,3,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s20,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s20,development,3,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s20,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s20,development,3,total,20.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s21,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s21,development,2,Q3,3.0,1.0,0.5,-0.5,0.5,0.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s21,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s21,development,2,total,20.0,7.0,0.5,-6.5,6.5,42.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s22,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s22,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s22,development,3,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s23,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s23,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s23,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s24,locked_test,-1,Q1,8.0,8.0,1.5,-6.5,6.5,42.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s24,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s24,locked_test,-1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s24,locked_test,-1,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s24,locked_test,-1,total,20.0,14.0,6.5,-7.5,7.5,56.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s25,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s25,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s25,development,1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s26,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s26,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s26,development,2,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s27,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s27,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s27,development,1,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s28,development,4,Q1,8.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s28,development,4,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s28,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s28,development,4,total,20.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s29,locked_test,-1,Q1,8.0,8.0,1.5,-6.5,6.5,42.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s29,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s29,locked_test,-1,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s29,locked_test,-1,total,20.0,15.0,4.0,-11.0,11.0,121.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s3,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s3,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s3,development,5,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s3,development,5,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s30,locked_test,-1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s30,locked_test,-1,Q3,3.0,1.0,1.5,0.5,0.5,0.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s30,locked_test,-1,total,20.0,9.0,3.5,-5.5,5.5,30.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s31,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s31,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s31,development,4,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s31,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s31,development,4,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s32,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s32,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s32,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s32,development,4,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s32,development,4,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s33,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s33,development,3,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s33,development,3,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s33,development,3,total,20.0,12.0,0.5,-11.5,11.5,132.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s34,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s34,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s34,development,1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s35,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s35,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s35,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s35,development,2,total,20.0,11.0,0.0,-11.0,11.0,121.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s36,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s36,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s36,development,3,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s36,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s36,development,3,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s37,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s37,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s37,locked_test,-1,total,20.0,15.0,2.5,-12.5,12.5,156.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s4,development,4,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s4,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s4,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s4,development,4,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s4,development,4,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s5,development,1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s5,development,1,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s5,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s5,development,1,total,20.0,5.0,2.5,-2.5,2.5,6.25
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s6,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s6,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s6,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s6,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s7,locked_test,-1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s7,locked_test,-1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s7,locked_test,-1,total,20.0,12.0,3.0,-9.0,9.0,81.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s8,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s8,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s8,development,1,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s9,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s9,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,s9,development,4,total,20.0,18.0,0.0,-18.0,18.0,324.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s1,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s1,development,2,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s1,development,2,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s1,development,2,total,20.0,20.0,2.5,-17.5,17.5,306.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s10,development,3,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s10,development,3,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s10,development,3,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s10,development,3,total,20.0,20.0,0.5,-19.5,19.5,380.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s11,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s11,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s11,development,3,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s12,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s12,development,4,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s12,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s12,development,4,total,20.0,5.0,0.5,-4.5,4.5,20.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s13,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s13,development,2,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s13,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s13,development,2,total,20.0,7.0,0.5,-6.5,6.5,42.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s14,locked_test,-1,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s14,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s14,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s14,locked_test,-1,total,20.0,20.0,2.0,-18.0,18.0,324.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s15,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s15,development,2,Q3,3.0,1.0,1.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s15,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s15,development,2,total,20.0,10.0,1.0,-9.0,9.0,81.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s16,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s16,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s16,development,5,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s16,development,5,total,20.0,15.0,0.5,-14.5,14.5,210.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s17,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s17,development,5,Q3,3.0,3.0,1.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s17,development,5,total,20.0,20.0,1.5,-18.5,18.5,342.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s18,development,1,Q1,8.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s18,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s18,development,1,total,20.0,7.0,2.0,-5.0,5.0,25.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s19,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s19,development,1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s19,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s19,development,1,total,20.0,19.0,0.5,-18.5,18.5,342.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s2,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s2,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s2,development,5,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s2,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s2,development,5,total,20.0,20.0,0.5,-19.5,19.5,380.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s20,development,3,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s20,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s20,development,3,Q3,3.0,1.0,0.5,-0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s20,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s20,development,3,total,20.0,4.0,0.5,-3.5,3.5,12.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s21,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s21,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s21,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s21,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s22,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s22,development,3,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s22,development,3,total,20.0,14.0,0.5,-13.5,13.5,182.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s23,development,5,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s23,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s23,development,5,total,20.0,12.0,2.0,-10.0,10.0,100.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s24,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s24,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s24,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s24,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s24,locked_test,-1,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s25,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s25,development,1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s25,development,1,total,20.0,15.0,0.5,-14.5,14.5,210.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s26,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s26,development,2,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s26,development,2,total,20.0,16.0,0.5,-15.5,15.5,240.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s27,development,1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s27,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s27,development,1,total,20.0,13.0,0.5,-12.5,12.5,156.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s28,development,4,Q1,8.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s28,development,4,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s28,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s28,development,4,total,20.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s29,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s29,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s29,locked_test,-1,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s29,locked_test,-1,total,20.0,15.0,0.5,-14.5,14.5,210.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s3,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s3,development,5,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s3,development,5,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s3,development,5,total,20.0,16.0,1.0,-15.0,15.0,225.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s30,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s30,locked_test,-1,Q3,3.0,1.0,0.5,-0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s30,locked_test,-1,total,20.0,9.0,0.5,-8.5,8.5,72.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s31,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s31,development,4,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s31,development,4,Q3,3.0,2.0,1.5,-0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s31,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s31,development,4,total,20.0,10.0,3.5,-6.5,6.5,42.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s32,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s32,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s32,development,4,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s32,development,4,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s32,development,4,total,20.0,20.0,0.5,-19.5,19.5,380.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s33,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s33,development,3,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s33,development,3,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s33,development,3,total,20.0,12.0,0.5,-11.5,11.5,132.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s34,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s34,development,1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s34,development,1,total,20.0,12.0,0.5,-11.5,11.5,132.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s35,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s35,development,2,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s35,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s35,development,2,total,20.0,11.0,0.5,-10.5,10.5,110.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s36,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s36,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s36,development,3,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s36,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s36,development,3,total,20.0,10.0,0.5,-9.5,9.5,90.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s37,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s37,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s37,locked_test,-1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s4,development,4,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s4,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s4,development,4,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s4,development,4,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s4,development,4,total,20.0,14.0,0.5,-13.5,13.5,182.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s5,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s5,development,1,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s5,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s5,development,1,total,20.0,5.0,0.5,-4.5,4.5,20.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s6,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s6,development,5,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s6,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s6,development,5,total,20.0,12.0,0.5,-11.5,11.5,132.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s7,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s7,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s7,locked_test,-1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s8,development,1,Q3,3.0,3.0,1.5,-1.5,1.5,2.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s8,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s8,development,1,total,20.0,16.0,1.5,-14.5,14.5,210.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s9,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s9,development,4,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,s9,development,4,total,20.0,18.0,0.5,-17.5,17.5,306.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s1,development,2,Q1,8.0,8.0,0.5,-7.5,7.5,56.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s1,development,2,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s1,development,2,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s1,development,2,total,20.0,20.0,3.0,-17.0,17.0,289.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s10,development,3,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s10,development,3,Q3,3.0,3.0,1.5,-1.5,1.5,2.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s10,development,3,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s10,development,3,total,20.0,20.0,1.5,-18.5,18.5,342.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s11,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s11,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s11,development,3,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s12,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s12,development,4,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s12,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s12,development,4,total,20.0,5.0,0.5,-4.5,4.5,20.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s13,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s13,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s13,development,2,Q4,3.0,0.0,1.0,1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s13,development,2,total,20.0,7.0,1.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s14,locked_test,-1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s14,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s14,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s14,locked_test,-1,total,20.0,20.0,0.5,-19.5,19.5,380.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s15,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s15,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s15,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s15,development,2,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s16,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s16,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s16,development,5,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s16,development,5,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s17,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s17,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s17,development,5,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s18,development,1,Q1,8.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s18,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s18,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s18,development,1,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s19,development,1,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s19,development,1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s19,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s19,development,1,total,20.0,19.0,1.5,-17.5,17.5,306.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s2,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s2,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s2,development,5,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s2,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s2,development,5,total,20.0,20.0,1.0,-19.0,19.0,361.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s20,development,3,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s20,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s20,development,3,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s20,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s20,development,3,total,20.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s21,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s21,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s21,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s21,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s22,development,3,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s22,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s22,development,3,total,20.0,14.0,2.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s23,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s23,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s23,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s24,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s24,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s24,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s24,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s24,locked_test,-1,total,20.0,14.0,2.5,-11.5,11.5,132.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s25,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s25,development,1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s25,development,1,total,20.0,15.0,1.0,-14.0,14.0,196.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s26,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s26,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s26,development,2,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s27,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s27,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s27,development,1,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s28,development,4,Q1,8.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s28,development,4,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s28,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s28,development,4,total,20.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s29,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s29,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s29,locked_test,-1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s29,locked_test,-1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s3,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s3,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s3,development,5,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s3,development,5,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s30,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s30,locked_test,-1,Q3,3.0,1.0,1.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s30,locked_test,-1,total,20.0,9.0,1.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s31,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s31,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s31,development,4,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s31,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s31,development,4,total,20.0,10.0,0.5,-9.5,9.5,90.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s32,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s32,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s32,development,4,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s32,development,4,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s32,development,4,total,20.0,20.0,0.5,-19.5,19.5,380.25
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s33,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s33,development,3,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s33,development,3,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s33,development,3,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s34,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s34,development,1,Q3,3.0,3.0,2.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s34,development,1,total,20.0,12.0,2.0,-10.0,10.0,100.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s35,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s35,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s35,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s35,development,2,total,20.0,11.0,0.0,-11.0,11.0,121.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s36,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s36,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s36,development,3,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s36,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s36,development,3,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s37,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s37,locked_test,-1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s37,locked_test,-1,total,20.0,15.0,3.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s4,development,4,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s4,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s4,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s4,development,4,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s4,development,4,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s5,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s5,development,1,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s5,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s5,development,1,total,20.0,5.0,0.0,-5.0,5.0,25.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s6,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s6,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s6,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s6,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s7,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s7,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s7,locked_test,-1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s8,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s8,development,1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s8,development,1,total,20.0,16.0,1.0,-15.0,15.0,225.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s9,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s9,development,4,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,s9,development,4,total,20.0,18.0,1.0,-17.0,17.0,289.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s1,development,2,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s1,development,2,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s1,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s1,development,2,total,20.0,20.0,4.0,-16.0,16.0,256.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s10,development,3,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s10,development,3,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s10,development,3,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s10,development,3,total,20.0,20.0,6.0,-14.0,14.0,196.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s11,development,3,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s11,development,3,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s11,development,3,total,20.0,13.0,3.0,-10.0,10.0,100.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s12,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s12,development,4,Q3,3.0,2.0,1.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s12,development,4,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s12,development,4,total,20.0,5.0,4.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s13,development,2,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s13,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s13,development,2,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s13,development,2,total,20.0,7.0,4.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s14,locked_test,-1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s14,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s14,locked_test,-1,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s14,locked_test,-1,total,20.0,20.0,3.0,-17.0,17.0,289.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s15,development,2,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s15,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s15,development,2,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s15,development,2,total,20.0,10.0,5.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s16,development,5,Q1,8.0,7.0,2.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s16,development,5,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s16,development,5,Q3,3.0,2.0,1.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s16,development,5,total,20.0,15.0,5.0,-10.0,10.0,100.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s17,development,5,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s17,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s17,development,5,total,20.0,20.0,2.0,-18.0,18.0,324.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s18,development,1,Q1,8.0,2.0,1.5,-0.5,0.5,0.25
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s18,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s18,development,1,total,20.0,7.0,3.5,-3.5,3.5,12.25
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s19,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s19,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s19,development,1,Q4,3.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s19,development,1,total,20.0,19.0,2.0,-17.0,17.0,289.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s2,development,5,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s2,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s2,development,5,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s2,development,5,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s2,development,5,total,20.0,20.0,6.0,-14.0,14.0,196.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s20,development,3,Q1,8.0,3.0,2.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s20,development,3,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s20,development,3,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s20,development,3,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s20,development,3,total,20.0,4.0,7.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s21,development,2,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s21,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s21,development,2,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s21,development,2,total,20.0,7.0,5.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s22,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s22,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s22,development,3,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s23,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s23,development,5,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s23,development,5,total,20.0,12.0,2.0,-10.0,10.0,100.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s24,locked_test,-1,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s24,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s24,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s24,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s24,locked_test,-1,total,20.0,14.0,2.0,-12.0,12.0,144.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s25,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s25,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s25,development,1,total,20.0,15.0,2.0,-13.0,13.0,169.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s26,development,2,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s26,development,2,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s26,development,2,total,20.0,16.0,3.0,-13.0,13.0,169.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s27,development,1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s27,development,1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s27,development,1,total,20.0,13.0,4.0,-9.0,9.0,81.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s28,development,4,Q1,8.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s28,development,4,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s28,development,4,Q4,3.0,0.0,3.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s28,development,4,total,20.0,2.0,5.0,3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s29,locked_test,-1,Q1,8.0,8.0,1.5,-6.5,6.5,42.25
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s29,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s29,locked_test,-1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s29,locked_test,-1,total,20.0,15.0,3.5,-11.5,11.5,132.25
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s3,development,5,Q1,8.0,7.0,2.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s3,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s3,development,5,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s3,development,5,total,20.0,16.0,5.0,-11.0,11.0,121.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s30,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s30,locked_test,-1,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s30,locked_test,-1,total,20.0,9.0,0.0,-9.0,9.0,81.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s31,development,4,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s31,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s31,development,4,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s31,development,4,Q4,3.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s31,development,4,total,20.0,10.0,4.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s32,development,4,Q1,8.0,8.0,2.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s32,development,4,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s32,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s32,development,4,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s32,development,4,total,20.0,20.0,7.0,-13.0,13.0,169.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s33,development,3,Q1,8.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s33,development,3,Q2,6.0,4.0,2.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s33,development,3,Q3,3.0,2.0,1.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s33,development,3,total,20.0,12.0,5.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s34,development,1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s34,development,1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s34,development,1,total,20.0,12.0,3.0,-9.0,9.0,81.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s35,development,2,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s35,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s35,development,2,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s35,development,2,total,20.0,11.0,3.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s36,development,3,Q1,8.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s36,development,3,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s36,development,3,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s36,development,3,Q4,3.0,2.0,3.0,1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s36,development,3,total,20.0,10.0,7.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s37,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s37,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s37,locked_test,-1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s4,development,4,Q1,8.0,7.0,2.0,-5.0,5.0,25.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s4,development,4,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s4,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s4,development,4,Q4,3.0,2.0,3.0,1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s4,development,4,total,20.0,14.0,7.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s5,development,1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s5,development,1,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s5,development,1,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s5,development,1,total,20.0,5.0,4.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s6,development,5,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s6,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s6,development,5,Q4,3.0,3.0,3.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s6,development,5,total,20.0,12.0,5.0,-7.0,7.0,49.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s7,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s7,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s7,locked_test,-1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s8,development,1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s8,development,1,Q4,3.0,1.0,3.0,2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s8,development,1,total,20.0,16.0,4.0,-12.0,12.0,144.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s9,development,4,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s9,development,4,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,s9,development,4,total,20.0,18.0,3.0,-15.0,15.0,225.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s1,development,2,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s1,development,2,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s1,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s1,development,2,total,20.0,20.0,7.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s10,development,3,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s10,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s10,development,3,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s10,development,3,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s11,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s11,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s11,development,3,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s12,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s12,development,4,Q3,3.0,2.0,1.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s12,development,4,Q4,3.0,0.0,1.0,1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s12,development,4,total,20.0,5.0,2.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s13,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s13,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s13,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s13,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s14,locked_test,-1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s14,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s14,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s14,locked_test,-1,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s15,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s15,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s15,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s15,development,2,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s16,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s16,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s16,development,5,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s16,development,5,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s17,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s17,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s17,development,5,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s18,development,1,Q1,8.0,2.0,1.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s18,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s18,development,1,total,20.0,7.0,3.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s19,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s19,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s19,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s19,development,1,total,20.0,19.0,0.0,-19.0,19.0,361.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s2,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s2,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s2,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s2,development,5,Q4,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s2,development,5,total,20.0,20.0,1.0,-19.0,19.0,361.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s20,development,3,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s20,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s20,development,3,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s20,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s20,development,3,total,20.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s21,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s21,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s21,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s21,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s22,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s22,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s22,development,3,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s23,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s23,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s23,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s24,locked_test,-1,Q1,8.0,8.0,1.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s24,locked_test,-1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s24,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s24,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s24,locked_test,-1,total,20.0,14.0,1.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s25,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s25,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s25,development,1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s26,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s26,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s26,development,2,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s27,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s27,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s27,development,1,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s28,development,4,Q1,8.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s28,development,4,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s28,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s28,development,4,total,20.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s29,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s29,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s29,locked_test,-1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s29,locked_test,-1,total,20.0,15.0,2.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s3,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s3,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s3,development,5,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s3,development,5,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s30,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s30,locked_test,-1,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s30,locked_test,-1,total,20.0,9.0,0.0,-9.0,9.0,81.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s31,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s31,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s31,development,4,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s31,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s31,development,4,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s32,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s32,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s32,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s32,development,4,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s32,development,4,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s33,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s33,development,3,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s33,development,3,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s33,development,3,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s34,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s34,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s34,development,1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s35,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s35,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s35,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s35,development,2,total,20.0,11.0,0.0,-11.0,11.0,121.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s36,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s36,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s36,development,3,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s36,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s36,development,3,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s37,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s37,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s37,locked_test,-1,total,20.0,15.0,2.0,-13.0,13.0,169.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s4,development,4,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s4,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s4,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s4,development,4,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s4,development,4,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s5,development,1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s5,development,1,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s5,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s5,development,1,total,20.0,5.0,2.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s6,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s6,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s6,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s6,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s7,locked_test,-1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s7,locked_test,-1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s7,locked_test,-1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s8,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s8,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s8,development,1,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s9,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s9,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,s9,development,4,total,20.0,18.0,0.0,-18.0,18.0,324.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s1,development,2,Q1,8.0,8.0,3.0,-5.0,5.0,25.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s1,development,2,Q2,6.0,6.0,6.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s1,development,2,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s1,development,2,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s1,development,2,total,20.0,20.0,9.5,-10.5,10.5,110.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s10,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s10,development,3,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s10,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s10,development,3,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s10,development,3,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s11,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s11,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s11,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s11,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s11,development,3,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s12,development,4,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s12,development,4,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s12,development,4,Q3,3.0,2.0,1.5,-0.5,0.5,0.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s12,development,4,Q4,3.0,0.0,1.0,1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s12,development,4,total,20.0,5.0,4.5,-0.5,0.5,0.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s13,development,2,Q1,8.0,5.0,0.0,-5.0,5.0,25.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s13,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s13,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s13,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s13,development,2,total,20.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s14,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s14,locked_test,-1,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s14,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s14,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s14,locked_test,-1,total,20.0,20.0,2.5,-17.5,17.5,306.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s15,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s15,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s15,development,2,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s15,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s15,development,2,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s16,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s16,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s16,development,5,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s16,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s16,development,5,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s17,development,5,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s17,development,5,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s17,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s17,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s17,development,5,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s18,development,1,Q1,8.0,2.0,1.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s18,development,1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s18,development,1,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s18,development,1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s18,development,1,total,20.0,7.0,4.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s19,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s19,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s19,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s19,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s19,development,1,total,20.0,19.0,0.0,-19.0,19.0,361.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s2,development,5,Q1,8.0,8.0,0.5,-7.5,7.5,56.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s2,development,5,Q2,6.0,6.0,2.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s2,development,5,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s2,development,5,Q4,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s2,development,5,total,20.0,20.0,4.0,-16.0,16.0,256.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s20,development,3,Q1,8.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s20,development,3,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s20,development,3,Q3,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s20,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s20,development,3,total,20.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s21,development,2,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s21,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s21,development,2,Q3,3.0,1.0,0.5,-0.5,0.5,0.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s21,development,2,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s21,development,2,total,20.0,7.0,0.5,-6.5,6.5,42.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s22,development,3,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s22,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s22,development,3,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s22,development,3,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s22,development,3,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s23,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s23,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s23,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s23,development,5,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s23,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s24,locked_test,-1,Q1,8.0,8.0,1.5,-6.5,6.5,42.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s24,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s24,locked_test,-1,Q3,3.0,3.0,1.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s24,locked_test,-1,Q4,3.0,1.0,2.0,1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s24,locked_test,-1,total,20.0,14.0,6.5,-7.5,7.5,56.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s25,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s25,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s25,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s25,development,1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s25,development,1,total,20.0,15.0,0.0,-15.0,15.0,225.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s26,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s26,development,2,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s26,development,2,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s26,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s26,development,2,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s27,development,1,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s27,development,1,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s27,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s27,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s27,development,1,total,20.0,13.0,0.0,-13.0,13.0,169.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s28,development,4,Q1,8.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s28,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s28,development,4,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s28,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s28,development,4,total,20.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s29,locked_test,-1,Q1,8.0,8.0,1.5,-6.5,6.5,42.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s29,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s29,locked_test,-1,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s29,locked_test,-1,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s29,locked_test,-1,total,20.0,15.0,4.0,-11.0,11.0,121.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s3,development,5,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s3,development,5,Q2,6.0,5.0,0.0,-5.0,5.0,25.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s3,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s3,development,5,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s3,development,5,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s30,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s30,locked_test,-1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s30,locked_test,-1,Q3,3.0,1.0,1.5,0.5,0.5,0.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s30,locked_test,-1,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s30,locked_test,-1,total,20.0,9.0,3.5,-5.5,5.5,30.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s31,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s31,development,4,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s31,development,4,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s31,development,4,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s31,development,4,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s32,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s32,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s32,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s32,development,4,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s32,development,4,total,20.0,20.0,0.0,-20.0,20.0,400.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s33,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s33,development,3,Q2,6.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s33,development,3,Q3,3.0,2.0,0.5,-1.5,1.5,2.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s33,development,3,Q4,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s33,development,3,total,20.0,12.0,0.5,-11.5,11.5,132.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s34,development,1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s34,development,1,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s34,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s34,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s34,development,1,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s35,development,2,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s35,development,2,Q2,6.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s35,development,2,Q3,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s35,development,2,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s35,development,2,total,20.0,11.0,0.0,-11.0,11.0,121.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s36,development,3,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s36,development,3,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s36,development,3,Q3,3.0,0.0,0.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s36,development,3,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s36,development,3,total,20.0,10.0,0.0,-10.0,10.0,100.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s37,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s37,locked_test,-1,Q2,6.0,2.0,2.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s37,locked_test,-1,Q3,3.0,3.0,0.5,-2.5,2.5,6.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s37,locked_test,-1,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s37,locked_test,-1,total,20.0,15.0,2.5,-12.5,12.5,156.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s4,development,4,Q1,8.0,7.0,0.0,-7.0,7.0,49.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s4,development,4,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s4,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s4,development,4,Q4,3.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s4,development,4,total,20.0,14.0,0.0,-14.0,14.0,196.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s5,development,1,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s5,development,1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s5,development,1,Q3,3.0,0.0,0.5,0.5,0.5,0.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s5,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s5,development,1,total,20.0,5.0,2.5,-2.5,2.5,6.25
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s6,development,5,Q1,8.0,4.0,0.0,-4.0,4.0,16.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s6,development,5,Q2,6.0,2.0,0.0,-2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s6,development,5,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s6,development,5,Q4,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s6,development,5,total,20.0,12.0,0.0,-12.0,12.0,144.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s7,locked_test,-1,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s7,locked_test,-1,Q2,6.0,0.0,2.0,2.0,2.0,4.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s7,locked_test,-1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s7,locked_test,-1,Q4,3.0,1.0,1.0,0.0,0.0,0.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s7,locked_test,-1,total,20.0,12.0,3.0,-9.0,9.0,81.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s8,development,1,Q1,8.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s8,development,1,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s8,development,1,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s8,development,1,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s8,development,1,total,20.0,16.0,0.0,-16.0,16.0,256.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s9,development,4,Q1,8.0,8.0,0.0,-8.0,8.0,64.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s9,development,4,Q2,6.0,6.0,0.0,-6.0,6.0,36.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s9,development,4,Q3,3.0,3.0,0.0,-3.0,3.0,9.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s9,development,4,Q4,3.0,1.0,0.0,-1.0,1.0,1.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,s9,development,4,total,20.0,18.0,0.0,-18.0,18.0,324.0

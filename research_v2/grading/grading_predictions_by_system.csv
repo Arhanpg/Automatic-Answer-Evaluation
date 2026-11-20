@@ -1,0 +1,741 @@
+student_id,split,fold,system_id,system_name,question_id,maximum_mark,teacher_mark,predicted_mark,absolute_error,squared_error
+s1,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,4.3,3.7,13.69
+s1,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s1,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s1,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s1,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,16.3,3.7,13.69
+s1,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s1,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s1,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s1,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s1,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s1,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s1,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s1,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s1,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,2.0,1.0,1.0
+s1,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,11.0,9.0,81.0
+s1,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.5,0.5,0.25
+s1,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s1,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s1,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,2.0,1.0,1.0
+s1,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,18.5,1.5,2.25
+s10,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s10,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s10,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s10,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s10,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,15.5,4.5,20.25
+s10,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s10,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s10,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s10,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s10,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s10,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s10,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s10,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s10,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s10,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,12.0,8.0,64.0
+s10,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s10,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s10,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s10,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s10,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,20.0,0.0,0.0
+s11,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,4.3,3.7,13.69
+s11,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s11,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s11,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s11,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,13.0,16.3,3.3,10.89
+s11,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s11,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s11,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s11,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s11,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,13.0,20.0,7.0,49.0
+s11,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s11,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s11,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s11,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,2.0,0.0,0.0
+s11,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,13.0,11.0,2.0,4.0
+s11,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.5,0.5,0.25
+s11,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s11,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s11,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,2.0,0.0,0.0
+s11,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,13.0,18.5,5.5,30.25
+s12,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,3.0,3.5,0.5,0.25
+s12,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s12,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s12,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s12,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,5.0,15.5,10.5,110.25
+s12,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,3.0,8.0,5.0,25.0
+s12,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s12,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s12,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s12,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,5.0,20.0,15.0,225.0
+s12,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,3.0,0.0,3.0,9.0
+s12,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s12,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s12,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s12,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,5.0,12.0,7.0,49.0
+s12,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,3.0,8.0,5.0,25.0
+s12,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s12,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,3.0,1.0,1.0
+s12,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s12,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,5.0,20.0,15.0,225.0
+s13,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,5.0,4.3,0.7,0.49
+s13,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s13,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s13,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s13,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,7.0,16.3,9.3,86.49
+s13,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,5.0,8.0,3.0,9.0
+s13,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s13,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s13,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s13,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,7.0,20.0,13.0,169.0
+s13,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,5.0,0.0,5.0,25.0
+s13,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s13,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s13,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,2.0,2.0,4.0
+s13,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,7.0,11.0,4.0,16.0
+s13,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,5.0,7.5,2.5,6.25
+s13,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s13,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,3.0,1.0,1.0
+s13,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,2.0,2.0,4.0
+s13,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,7.0,18.5,11.5,132.25
+s14,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s14,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s14,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,15.5,4.5,20.25
+s14,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s14,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s14,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s14,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s14,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s14,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,12.0,8.0,64.0
+s14,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s14,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s14,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s14,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,20.0,0.0,0.0
+s15,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s15,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s15,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s15,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s15,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,10.0,15.5,5.5,30.25
+s15,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s15,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s15,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s15,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s15,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,10.0,20.0,10.0,100.0
+s15,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s15,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s15,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s15,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s15,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,10.0,12.0,2.0,4.0
+s15,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s15,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s15,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,1.0,3.0,2.0,4.0
+s15,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s15,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,10.0,20.0,10.0,100.0
+s16,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,7.0,3.5,3.5,12.25
+s16,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s16,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s16,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s16,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,15.0,15.5,0.5,0.25
+s16,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,7.0,8.0,1.0,1.0
+s16,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s16,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s16,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s16,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,15.0,20.0,5.0,25.0
+s16,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,7.0,0.0,7.0,49.0
+s16,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s16,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s16,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s16,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,15.0,12.0,3.0,9.0
+s16,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,7.0,8.0,1.0,1.0
+s16,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s16,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,3.0,1.0,1.0
+s16,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s16,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,15.0,20.0,5.0,25.0
+s17,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,4.3,3.7,13.69
+s17,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s17,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s17,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s17,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,16.3,3.7,13.69
+s17,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s17,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s17,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s17,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s17,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s17,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s17,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s17,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s17,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,2.0,1.0,1.0
+s17,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,11.0,9.0,81.0
+s17,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.5,0.5,0.25
+s17,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s17,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s17,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,2.0,1.0,1.0
+s17,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,18.5,1.5,2.25
+s18,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,2.0,0.8,1.2,1.44
+s18,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,2.0,0.0,0.0
+s18,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,2.0,0.0,0.0
+s18,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,0.0,1.0,1.0
+s18,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,7.0,4.8,2.2,4.84
+s18,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,2.0,4.0,2.0,4.0
+s18,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,2.0,0.0,0.0
+s18,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,2.0,0.0,0.0
+s18,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s18,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,7.0,11.0,4.0,16.0
+s18,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,2.0,0.0,2.0,4.0
+s18,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,2.0,0.0,0.0
+s18,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,2.0,0.0,0.0
+s18,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,1.0,0.0,0.0
+s18,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,7.0,5.0,2.0,4.0
+s18,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,2.0,3.0,1.0,1.0
+s18,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,2.0,0.0,0.0
+s18,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,2.0,0.0,0.0
+s18,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,1.0,0.0,0.0
+s18,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,7.0,8.0,1.0,1.0
+s19,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,4.3,3.7,13.69
+s19,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s19,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s19,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s19,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,19.0,16.3,2.7,7.29
+s19,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s19,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s19,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s19,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s19,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,19.0,20.0,1.0,1.0
+s19,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s19,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s19,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s19,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,2.0,0.0,0.0
+s19,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,19.0,11.0,8.0,64.0
+s19,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.5,0.5,0.25
+s19,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s19,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s19,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,2.0,0.0,0.0
+s19,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,19.0,18.5,0.5,0.25
+s2,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s2,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s2,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s2,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s2,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,15.5,4.5,20.25
+s2,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s2,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s2,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s2,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s2,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s2,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s2,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s2,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s2,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s2,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,12.0,8.0,64.0
+s2,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s2,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s2,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s2,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s2,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,20.0,0.0,0.0
+s20,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,3.0,3.5,0.5,0.25
+s20,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s20,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s20,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s20,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,4.0,15.5,11.5,132.25
+s20,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,3.0,8.0,5.0,25.0
+s20,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s20,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s20,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s20,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,4.0,20.0,16.0,256.0
+s20,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,3.0,0.0,3.0,9.0
+s20,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s20,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s20,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s20,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,4.0,12.0,8.0,64.0
+s20,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,3.0,8.0,5.0,25.0
+s20,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s20,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,1.0,3.0,2.0,4.0
+s20,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s20,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,4.0,20.0,16.0,256.0
+s21,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,6.0,3.5,2.5,6.25
+s21,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s21,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s21,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s21,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,7.0,15.5,8.5,72.25
+s21,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,6.0,8.0,2.0,4.0
+s21,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s21,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s21,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s21,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,7.0,20.0,13.0,169.0
+s21,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,6.0,0.0,6.0,36.0
+s21,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s21,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s21,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s21,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,7.0,12.0,5.0,25.0
+s21,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,6.0,8.0,2.0,4.0
+s21,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s21,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,1.0,3.0,2.0,4.0
+s21,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s21,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,7.0,20.0,13.0,169.0
+s22,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s22,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s22,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s22,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s22,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,14.0,15.5,1.5,2.25
+s22,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s22,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s22,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s22,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s22,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,14.0,20.0,6.0,36.0
+s22,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s22,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s22,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s22,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s22,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,14.0,12.0,2.0,4.0
+s22,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s22,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s22,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s22,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s22,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,14.0,20.0,6.0,36.0
+s23,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,7.0,4.3,2.7,7.29
+s23,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s23,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s23,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s23,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,12.0,16.3,4.3,18.49
+s23,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,7.0,8.0,1.0,1.0
+s23,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s23,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s23,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s23,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,12.0,20.0,8.0,64.0
+s23,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,7.0,0.0,7.0,49.0
+s23,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s23,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s23,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,2.0,2.0,4.0
+s23,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,12.0,11.0,1.0,1.0
+s23,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,7.0,7.5,0.5,0.25
+s23,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s23,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s23,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,2.0,2.0,4.0
+s23,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,12.0,18.5,6.5,42.25
+s24,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s24,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s24,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s24,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s24,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,14.0,15.5,1.5,2.25
+s24,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s24,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s24,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s24,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s24,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,14.0,20.0,6.0,36.0
+s24,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s24,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s24,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s24,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s24,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,14.0,12.0,2.0,4.0
+s24,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s24,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s24,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s24,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s24,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,14.0,20.0,6.0,36.0
+s25,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,2.5,5.5,30.25
+s25,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,2.0,0.0,0.0
+s25,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,1.0,2.0,4.0
+s25,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,1.5,0.5,0.25
+s25,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,15.0,7.0,8.0,64.0
+s25,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,7.0,1.0,1.0
+s25,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,5.0,3.0,9.0
+s25,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,2.5,0.5,0.25
+s25,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s25,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,15.0,17.5,2.5,6.25
+s25,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s25,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,3.0,1.0,1.0
+s25,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,1.0,2.0,4.0
+s25,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,2.0,0.0,0.0
+s25,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,15.0,6.0,9.0,81.0
+s25,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,5.5,2.5,6.25
+s25,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,3.0,1.0,1.0
+s25,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,1.0,2.0,4.0
+s25,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,2.0,0.0,0.0
+s25,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,15.0,11.5,3.5,12.25
+s26,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s26,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s26,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s26,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s26,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,16.0,15.5,0.5,0.25
+s26,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s26,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s26,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s26,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s26,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,16.0,20.0,4.0,16.0
+s26,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s26,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s26,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s26,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s26,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,16.0,12.0,4.0,16.0
+s26,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s26,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,4.0,6.0,2.0,4.0
+s26,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s26,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s26,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,16.0,20.0,4.0,16.0
+s27,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,7.0,3.5,3.5,12.25
+s27,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s27,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s27,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s27,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,13.0,15.5,2.5,6.25
+s27,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,7.0,8.0,1.0,1.0
+s27,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s27,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s27,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s27,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,13.0,20.0,7.0,49.0
+s27,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,7.0,0.0,7.0,49.0
+s27,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s27,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s27,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s27,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,13.0,12.0,1.0,1.0
+s27,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,7.0,8.0,1.0,1.0
+s27,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s27,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s27,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s27,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,13.0,20.0,7.0,49.0
+s28,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,0.0,3.5,3.5,12.25
+s28,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s28,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s28,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s28,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,2.0,15.5,13.5,182.25
+s28,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,0.0,8.0,8.0,64.0
+s28,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s28,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s28,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s28,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,2.0,20.0,18.0,324.0
+s28,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,0.0,0.0,0.0,0.0
+s28,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s28,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s28,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s28,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,2.0,12.0,10.0,100.0
+s28,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,0.0,8.0,8.0,64.0
+s28,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s28,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,0.0,3.0,3.0,9.0
+s28,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s28,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,2.0,20.0,18.0,324.0
+s29,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,2.3,5.7,32.49
+s29,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,4.0,2.0,4.0
+s29,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,2.0,0.0,0.0
+s29,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s29,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,15.0,11.3,3.7,13.69
+s29,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s29,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,5.0,3.0,9.0
+s29,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s29,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s29,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,15.0,19.0,4.0,16.0
+s29,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s29,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,3.0,1.0,1.0
+s29,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,2.0,0.0,0.0
+s29,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s29,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,15.0,8.0,7.0,49.0
+s29,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.0,1.0,1.0
+s29,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,3.0,1.0,1.0
+s29,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,2.0,0.0,0.0
+s29,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s29,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,15.0,15.0,0.0,0.0
+s3,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,7.0,3.5,3.5,12.25
+s3,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,5.0,6.0,1.0,1.0
+s3,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s3,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s3,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,16.0,15.5,0.5,0.25
+s3,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,7.0,8.0,1.0,1.0
+s3,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,5.0,6.0,1.0,1.0
+s3,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s3,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s3,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,16.0,20.0,4.0,16.0
+s3,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,7.0,0.0,7.0,49.0
+s3,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,5.0,6.0,1.0,1.0
+s3,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s3,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s3,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,16.0,12.0,4.0,16.0
+s3,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,7.0,8.0,1.0,1.0
+s3,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,5.0,6.0,1.0,1.0
+s3,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s3,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s3,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,16.0,20.0,4.0,16.0
+s30,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s30,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s30,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s30,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s30,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,9.0,15.5,6.5,42.25
+s30,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s30,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s30,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s30,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s30,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,9.0,20.0,11.0,121.0
+s30,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s30,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s30,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,1.0,3.0,2.0,4.0
+s30,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s30,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,9.0,12.0,3.0,9.0
+s30,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s30,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s30,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,1.0,3.0,2.0,4.0
+s30,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s30,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,9.0,20.0,11.0,121.0
+s31,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,4.3,3.7,13.69
+s31,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s31,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s31,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s31,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,10.0,16.3,6.3,39.69
+s31,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s31,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s31,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s31,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s31,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,10.0,20.0,10.0,100.0
+s31,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s31,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s31,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s31,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,2.0,2.0,4.0
+s31,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,10.0,11.0,1.0,1.0
+s31,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,7.5,0.5,0.25
+s31,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s31,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,3.0,1.0,1.0
+s31,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,2.0,2.0,4.0
+s31,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,10.0,18.5,8.5,72.25
+s32,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s32,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s32,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s32,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s32,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,20.0,15.5,4.5,20.25
+s32,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s32,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s32,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s32,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s32,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,20.0,20.0,0.0,0.0
+s32,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s32,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s32,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s32,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s32,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,20.0,12.0,8.0,64.0
+s32,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s32,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s32,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s32,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s32,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,20.0,20.0,0.0,0.0
+s33,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,6.0,3.5,2.5,6.25
+s33,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s33,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s33,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s33,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,12.0,15.5,3.5,12.25
+s33,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,6.0,8.0,2.0,4.0
+s33,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s33,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s33,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s33,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,12.0,20.0,8.0,64.0
+s33,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,6.0,0.0,6.0,36.0
+s33,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,4.0,6.0,2.0,4.0
+s33,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,3.0,1.0,1.0
+s33,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,0.0,3.0,3.0,9.0
+s33,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,12.0,12.0,0.0,0.0
+s33,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,6.0,8.0,2.0,4.0
+s33,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,4.0,6.0,2.0,4.0
+s33,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,3.0,1.0,1.0
+s33,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,0.0,3.0,3.0,9.0
+s33,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,12.0,20.0,8.0,64.0
+s34,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s34,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s34,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s34,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s34,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,12.0,15.5,3.5,12.25
+s34,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s34,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s34,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s34,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s34,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,12.0,20.0,8.0,64.0
+s34,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s34,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,6.0,6.0,36.0
+s34,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s34,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s34,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,12.0,12.0,0.0,0.0
+s34,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s34,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,6.0,6.0,36.0
+s34,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s34,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s34,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,12.0,20.0,8.0,64.0
+s35,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,2.5,5.5,30.25
+s35,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,2.0,2.0,4.0
+s35,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,2.0,1.0,1.0,1.0
+s35,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,1.5,0.5,0.25
+s35,development,2,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,11.0,7.0,4.0,16.0
+s35,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,7.0,1.0,1.0
+s35,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,5.0,5.0,25.0
+s35,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,2.0,2.5,0.5,0.25
+s35,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s35,development,2,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,11.0,17.5,6.5,42.25
+s35,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s35,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,3.0,3.0,9.0
+s35,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,2.0,1.0,1.0,1.0
+s35,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,2.0,1.0,1.0
+s35,development,2,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,11.0,6.0,5.0,25.0
+s35,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,5.5,2.5,6.25
+s35,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,3.0,3.0,9.0
+s35,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,2.0,1.0,1.0,1.0
+s35,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,2.0,1.0,1.0
+s35,development,2,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,11.0,11.5,0.5,0.25
+s36,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,6.0,3.5,2.5,6.25
+s36,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s36,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s36,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s36,development,3,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,10.0,15.5,5.5,30.25
+s36,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,6.0,8.0,2.0,4.0
+s36,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s36,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s36,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s36,development,3,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,10.0,20.0,10.0,100.0
+s36,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,6.0,0.0,6.0,36.0
+s36,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s36,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,0.0,3.0,3.0,9.0
+s36,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s36,development,3,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,10.0,12.0,2.0,4.0
+s36,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,6.0,8.0,2.0,4.0
+s36,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s36,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,0.0,3.0,3.0,9.0
+s36,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,3.0,1.0,1.0
+s36,development,3,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,10.0,20.0,10.0,100.0
+s37,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,0.2,7.8,60.84
+s37,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,0.0,3.0,9.0
+s37,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,15.0,0.2,14.8,219.04
+s37,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,3.0,5.0,25.0
+s37,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,1.0,1.0,1.0
+s37,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,1.5,1.5,2.25
+s37,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,1.5,0.5,0.25
+s37,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,15.0,7.0,8.0,64.0
+s37,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s37,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,0.0,3.0,9.0
+s37,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,15.0,0.0,15.0,225.0
+s37,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,1.0,7.0,49.0
+s37,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,0.0,3.0,9.0
+s37,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,0.0,2.0,4.0
+s37,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,15.0,1.0,14.0,196.0
+s4,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,7.0,3.5,3.5,12.25
+s4,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s4,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s4,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s4,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,14.0,15.5,1.5,2.25
+s4,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,7.0,8.0,1.0,1.0
+s4,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s4,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s4,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s4,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,14.0,20.0,6.0,36.0
+s4,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,7.0,0.0,7.0,49.0
+s4,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s4,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s4,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,2.0,3.0,1.0,1.0
+s4,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,14.0,12.0,2.0,4.0
+s4,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,7.0,8.0,1.0,1.0
+s4,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s4,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s4,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,2.0,3.0,1.0,1.0
+s4,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,14.0,20.0,6.0,36.0
+s5,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,4.0,2.5,1.5,2.25
+s5,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,2.0,2.0,4.0
+s5,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,0.0,1.0,1.0,1.0
+s5,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,1.5,0.5,0.25
+s5,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,5.0,7.0,2.0,4.0
+s5,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,4.0,7.0,3.0,9.0
+s5,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,5.0,5.0,25.0
+s5,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,0.0,2.5,2.5,6.25
+s5,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s5,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,5.0,17.5,12.5,156.25
+s5,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,4.0,0.0,4.0,16.0
+s5,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,3.0,3.0,9.0
+s5,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,0.0,1.0,1.0,1.0
+s5,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,2.0,1.0,1.0
+s5,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,5.0,6.0,1.0,1.0
+s5,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,4.0,5.5,1.5,2.25
+s5,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,3.0,3.0,9.0
+s5,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,0.0,1.0,1.0,1.0
+s5,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,2.0,1.0,1.0
+s5,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,5.0,11.5,6.5,42.25
+s6,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,4.0,3.5,0.5,0.25
+s6,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s6,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s6,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s6,development,5,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,12.0,15.5,3.5,12.25
+s6,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,4.0,8.0,4.0,16.0
+s6,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s6,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s6,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s6,development,5,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,12.0,20.0,8.0,64.0
+s6,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,4.0,0.0,4.0,16.0
+s6,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,2.0,6.0,4.0,16.0
+s6,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s6,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,3.0,3.0,0.0,0.0
+s6,development,5,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,12.0,12.0,0.0,0.0
+s6,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,4.0,8.0,4.0,16.0
+s6,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,2.0,6.0,4.0,16.0
+s6,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s6,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,3.0,3.0,0.0,0.0
+s6,development,5,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,12.0,20.0,8.0,64.0
+s7,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,0.2,7.8,60.84
+s7,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,0.0,0.0,0.0,0.0
+s7,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,0.0,3.0,9.0
+s7,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,0.0,1.0,1.0
+s7,locked_test,-1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,12.0,0.2,11.8,139.24
+s7,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,3.0,5.0,25.0
+s7,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,0.0,1.0,1.0,1.0
+s7,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,1.5,1.5,2.25
+s7,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,1.5,0.5,0.25
+s7,locked_test,-1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,12.0,7.0,5.0,25.0
+s7,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s7,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,0.0,0.0,0.0,0.0
+s7,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,0.0,3.0,9.0
+s7,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,0.0,1.0,1.0
+s7,locked_test,-1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,12.0,0.0,12.0,144.0
+s7,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,1.0,7.0,49.0
+s7,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,0.0,0.0,0.0,0.0
+s7,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,0.0,3.0,9.0
+s7,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,0.0,1.0,1.0
+s7,locked_test,-1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,12.0,1.0,11.0,121.0
+s8,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,6.0,3.5,2.5,6.25
+s8,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s8,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s8,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s8,development,1,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,16.0,15.5,0.5,0.25
+s8,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,6.0,8.0,2.0,4.0
+s8,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s8,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s8,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s8,development,1,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,16.0,20.0,4.0,16.0
+s8,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,6.0,0.0,6.0,36.0
+s8,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s8,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s8,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s8,development,1,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,16.0,12.0,4.0,16.0
+s8,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,6.0,8.0,2.0,4.0
+s8,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s8,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s8,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s8,development,1,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,16.0,20.0,4.0,16.0
+s9,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q1,8.0,8.0,3.5,4.5,20.25
+s9,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s9,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s9,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s9,development,4,lexical_rule_baseline,Lexical TF-IDF & Keyword Rule Baseline,total,20.0,18.0,15.5,2.5,6.25
+s9,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q1,8.0,8.0,8.0,0.0,0.0
+s9,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s9,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s9,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s9,development,4,semantic_sbert_baseline,Dense Semantic Sentence-BERT Baseline,total,20.0,18.0,20.0,2.0,4.0
+s9,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q1,8.0,8.0,0.0,8.0,64.0
+s9,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q2,6.0,6.0,6.0,0.0,0.0
+s9,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q3,3.0,3.0,3.0,0.0,0.0
+s9,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,Q4,3.0,1.0,3.0,2.0,4.0
+s9,development,4,symbolic_math_baseline,Symbolic SymPy Math Verifier Baseline,total,20.0,18.0,12.0,6.0,36.0
+s9,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q1,8.0,8.0,8.0,0.0,0.0
+s9,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q2,6.0,6.0,6.0,0.0,0.0
+s9,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q3,3.0,3.0,3.0,0.0,0.0
+s9,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),Q4,3.0,1.0,3.0,2.0,4.0
+s9,development,4,hybrid_grader,Unified Rubric Hybrid Grader (Ours),total,20.0,18.0,20.0,2.0,4.0

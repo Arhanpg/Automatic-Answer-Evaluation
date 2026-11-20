@@ -1,0 +1,8 @@
+stream_id,stream_description,transcription_source,routing_source,N_students,MAE_total,RMSE_total,QWK_total,Spearman_rho_total,Pearson_r_total,Exact_match_pct,Within_05_pct,Within_10_pct,delta_mae_from_oracle,shapley_mae,shapley_pct,wilcoxon_p_vs_oracle,paired_ttest_p_vs_oracle
+stream_a,Stream A (Oracle Upper Bound),human,oracle_map_control,37,6.2973,8.0127,0.073,0.0734,0.1045,13.51,18.92,21.62,0.0,0.0,0.0,1.0,1.0
+stream_b_paddle,Stream B (Recognition Only: PaddleOCR),paddleocr_raw,oracle_map_control,37,11.6892,12.8002,0.0105,-0.0468,0.0806,0.0,2.7,2.7,5.3919,4.1283,67.3,0.0025,0.001402
+stream_b_trocr,Stream B (Recognition Only: TrOCR),trocr_raw,oracle_map_control,37,12.2027,13.1383,0.0054,0.16,0.1269,0.0,0.0,0.0,5.9054,0.0,0.0,0.000852,0.00045
+stream_b_tesseract,Stream B (Recognition Only: Tesseract),tesseract_raw,oracle_map_control,37,12.3243,13.1868,0.0161,0.337,0.3308,0.0,0.0,0.0,6.027,0.0,0.0,0.000781,0.000352
+stream_c,Stream C (Routing Only: Baseline Regex),human,sheet_parser_baseline,37,9.5676,10.727,-0.0159,-0.1125,-0.0946,0.0,0.0,5.41,3.2703,2.0068,32.7,0.032663,0.03371
+stream_d_baseline,Stream D (End-to-End Baseline),paddleocr_raw,sheet_parser_baseline,37,12.4324,13.4003,0.0047,-0.0102,0.0645,0.0,0.0,0.0,6.1351,0.0,0.0,0.000804,0.000318
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),paddleocr_raw,hybrid_layout_continuation,37,11.6892,12.8002,0.0105,-0.0468,0.0806,0.0,2.7,2.7,5.3919,0.0,0.0,0.0025,0.001402
