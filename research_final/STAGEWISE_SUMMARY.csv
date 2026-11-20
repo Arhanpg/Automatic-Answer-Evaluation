@@ -1,0 +1,6 @@
+stage_name,metric_name,empirical_value,assessment_impact,evidence_classification
+Stage 3: Rubric Interpretation (Clean Human Oracle),Grader Parity with Teacher Gold,"MAE = 0.833 marks, QWK = 0.9268",Near-perfect human examiner agreement when transcription & routing are flawless.,measured_real
+Stage 2: Structural Routing - Header Dropouts,Question Header Drop Rate,13/60 items (21.7%),Induces catastrophic under-grading penalty (-12 to -14 marks) by zeroing out valid answers.,measured_real
+Stage 2: Structural Routing - Cross-Question Misrouting,Answer Spatial Cross-Contamination Rate,8/60 items (13.3%),"Accumulates multiple questions into early slots, causing semantic over-matching and false credit (+5 to +11 marks).",measured_real
+Stage 2: Structural Routing - Total Routing Failure,Aggregate Structural Routing Breakdown,21/60 items (35.0%),Dominates overall ASAG error; collapses overall evaluation agreement from QWK = 0.9268 to QWK = -0.2540.,measured_real
+Stage 1: Document/Text Recognition,Isolated Recognition vs Structural Routing,Macro CER = 0.909 - 1.076 on unsegmented pages,Orthographic character errors are secondary in magnitude compared to structural routing failures.,measured_real

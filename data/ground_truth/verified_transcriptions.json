@@ -1,9 +1,9 @@
 {
   "s1": {
     "student_id": "s1",
-    "registration_no": "23BCS005",
-    "student_name": "ADARSH S KAMATAGI",
-    "serial_no": "116833",
+    "registration_no": "ANON_REG_S1",
+    "student_name": "STUDENT_S1",
+    "serial_no": "ANON_SL_S1",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -38,9 +38,9 @@
   },
   "s3": {
     "student_id": "s3",
-    "registration_no": "23BCS026",
-    "student_name": "Babhale Rohan Laxmikant",
-    "serial_no": "116858",
+    "registration_no": "ANON_REG_S3",
+    "student_name": "STUDENT_S3",
+    "serial_no": "ANON_SL_S3",
     "examiner_marks": {
       "Q1": 7.0,
       "Q2": 5.0,
@@ -75,9 +75,9 @@
   },
   "s4": {
     "student_id": "s4",
-    "registration_no": "23BCS033",
-    "student_name": "Bikram Howladar",
-    "serial_no": "116837",
+    "registration_no": "ANON_REG_S4",
+    "student_name": "STUDENT_S4",
+    "serial_no": "ANON_SL_S4",
     "examiner_marks": {
       "Q1": 7.0,
       "Q2": 2.0,
@@ -112,9 +112,9 @@
   },
   "s6": {
     "student_id": "s6",
-    "registration_no": "23BCS050",
-    "student_name": "Ganesh Kumatole",
-    "serial_no": "116883",
+    "registration_no": "ANON_REG_S6",
+    "student_name": "STUDENT_S6",
+    "serial_no": "ANON_SL_S6",
     "examiner_marks": {
       "Q1": 4.0,
       "Q2": 2.0,
@@ -149,9 +149,9 @@
   },
   "s8": {
     "student_id": "s8",
-    "registration_no": "23BCS064",
-    "student_name": "K. Shriyans",
-    "serial_no": "116864",
+    "registration_no": "ANON_REG_S8",
+    "student_name": "STUDENT_S8",
+    "serial_no": "ANON_SL_S8",
     "examiner_marks": {
       "Q1": 6.0,
       "Q2": 6.0,
@@ -186,9 +186,9 @@
   },
   "s9": {
     "student_id": "s9",
-    "registration_no": "23BCS068",
-    "student_name": "K. Hemadithya",
-    "serial_no": "116875",
+    "registration_no": "ANON_REG_S9",
+    "student_name": "STUDENT_S9",
+    "serial_no": "ANON_SL_S9",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -223,9 +223,9 @@
   },
   "s10": {
     "student_id": "s10",
-    "registration_no": "23BCS071",
-    "student_name": "Kothapally Anjan Reddy",
-    "serial_no": "116815",
+    "registration_no": "ANON_REG_S10",
+    "student_name": "STUDENT_S10",
+    "serial_no": "ANON_SL_S10",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -260,9 +260,9 @@
   },
   "s11": {
     "student_id": "s11",
-    "registration_no": "23BCS074",
-    "student_name": "Krishna Sai Gollamudi",
-    "serial_no": "116789",
+    "registration_no": "ANON_REG_S11",
+    "student_name": "STUDENT_S11",
+    "serial_no": "ANON_SL_S11",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -297,9 +297,9 @@
   },
   "s13": {
     "student_id": "s13",
-    "registration_no": "23BCS088",
-    "student_name": "NUTHAN.K",
-    "serial_no": "116827",
+    "registration_no": "ANON_REG_S13",
+    "student_name": "STUDENT_S13",
+    "serial_no": "ANON_SL_S13",
     "examiner_marks": {
       "Q1": 5.0,
       "Q2": 0.0,
@@ -334,9 +334,9 @@
   },
   "s15": {
     "student_id": "s15",
-    "registration_no": "23BCS097",
-    "student_name": "Piyush Maurya",
-    "serial_no": "116786",
+    "registration_no": "ANON_REG_S15",
+    "student_name": "STUDENT_S15",
+    "serial_no": "ANON_SL_S15",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -371,9 +371,9 @@
   },
   "s16": {
     "student_id": "s16",
-    "registration_no": "23BCS100",
-    "student_name": "Thrivikram. P",
-    "serial_no": "116773",
+    "registration_no": "ANON_REG_S16",
+    "student_name": "STUDENT_S16",
+    "serial_no": "ANON_SL_S16",
     "examiner_marks": {
       "Q1": 7.0,
       "Q2": 6.0,
@@ -408,9 +408,9 @@
   },
   "s17": {
     "student_id": "s17",
-    "registration_no": "23BCS114",
-    "student_name": "S. Keerthivassan",
-    "serial_no": "116775",
+    "registration_no": "ANON_REG_S17",
+    "student_name": "STUDENT_S17",
+    "serial_no": "ANON_SL_S17",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -445,9 +445,9 @@
   },
   "s19": {
     "student_id": "s19",
-    "registration_no": "23BCS129",
-    "student_name": "SUVAN GURURAJ",
-    "serial_no": "116835",
+    "registration_no": "ANON_REG_S19",
+    "student_name": "STUDENT_S19",
+    "serial_no": "ANON_SL_S19",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -482,9 +482,9 @@
   },
   "s20": {
     "student_id": "s20",
-    "registration_no": "23BDS005",
-    "student_name": "A. Guru Sai Harsha",
-    "serial_no": "116819",
+    "registration_no": "ANON_REG_S20",
+    "student_name": "STUDENT_S20",
+    "serial_no": "ANON_SL_S20",
     "examiner_marks": {
       "Q1": 3.0,
       "Q2": 0.0,
@@ -519,9 +519,9 @@
   },
   "s22": {
     "student_id": "s22",
-    "registration_no": "23BDS026",
-    "student_name": "Chaitra V. Kathimani",
-    "serial_no": "116797",
+    "registration_no": "ANON_REG_S22",
+    "student_name": "STUDENT_S22",
+    "serial_no": "ANON_SL_S22",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 2.0,
@@ -556,9 +556,9 @@
   },
   "s23": {
     "student_id": "s23",
-    "registration_no": "23BDS021",
-    "student_name": "Gompa Kuladeep",
-    "serial_no": "116801",
+    "registration_no": "ANON_REG_S23",
+    "student_name": "STUDENT_S23",
+    "serial_no": "ANON_SL_S23",
     "examiner_marks": {
       "Q1": 7.0,
       "Q2": 2.0,
@@ -593,9 +593,9 @@
   },
   "s25": {
     "student_id": "s25",
-    "registration_no": "23BDS026",
-    "student_name": "Kamal Nayan Kumar",
-    "serial_no": "116793",
+    "registration_no": "ANON_REG_S25",
+    "student_name": "STUDENT_S25",
+    "serial_no": "ANON_SL_S25",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 2.0,
@@ -630,9 +630,9 @@
   },
   "s26": {
     "student_id": "s26",
-    "registration_no": "23BDS032",
-    "student_name": "MANIKESH KUMAR",
-    "serial_no": "116807",
+    "registration_no": "ANON_REG_S26",
+    "student_name": "STUDENT_S26",
+    "serial_no": "ANON_SL_S26",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 4.0,
@@ -667,9 +667,9 @@
   },
   "s27": {
     "student_id": "s27",
-    "registration_no": "23BDS047",
-    "student_name": "SADAN. K",
-    "serial_no": "116820",
+    "registration_no": "ANON_REG_S27",
+    "student_name": "STUDENT_S27",
+    "serial_no": "ANON_SL_S27",
     "examiner_marks": {
       "Q1": 7.0,
       "Q2": 2.0,
@@ -704,9 +704,9 @@
   },
   "s28": {
     "student_id": "s28",
-    "registration_no": "23BDS058",
-    "student_name": "S. Harshith",
-    "serial_no": "116821",
+    "registration_no": "ANON_REG_S28",
+    "student_name": "STUDENT_S28",
+    "serial_no": "ANON_SL_S28",
     "examiner_marks": {
       "Q1": 0.0,
       "Q2": 2.0,
@@ -741,9 +741,9 @@
   },
   "s31": {
     "student_id": "s31",
-    "registration_no": "23BDS068",
-    "student_name": "Vinay N. R",
-    "serial_no": "116824",
+    "registration_no": "ANON_REG_S31",
+    "student_name": "STUDENT_S31",
+    "serial_no": "ANON_SL_S31",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -778,9 +778,9 @@
   },
   "s32": {
     "student_id": "s32",
-    "registration_no": "23BDS070",
-    "student_name": "Yash G. Birje",
-    "serial_no": "116790",
+    "registration_no": "ANON_REG_S32",
+    "student_name": "STUDENT_S32",
+    "serial_no": "ANON_SL_S32",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -815,9 +815,9 @@
   },
   "s34": {
     "student_id": "s34",
-    "registration_no": "23BEC031",
-    "student_name": "Neeraj S. Gawane",
-    "serial_no": "116806",
+    "registration_no": "ANON_REG_S34",
+    "student_name": "STUDENT_S34",
+    "serial_no": "ANON_SL_S34",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -852,9 +852,9 @@
   },
   "s35": {
     "student_id": "s35",
-    "registration_no": "23BEC034",
-    "student_name": "Ojas Tulshian",
-    "serial_no": "116823",
+    "registration_no": "ANON_REG_S35",
+    "student_name": "STUDENT_S35",
+    "serial_no": "ANON_SL_S35",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -889,9 +889,9 @@
   },
   "s36": {
     "student_id": "s36",
-    "registration_no": "25PHDAS006",
-    "student_name": "Ritu Srivastava",
-    "serial_no": "116750",
+    "registration_no": "ANON_REG_S36",
+    "student_name": "STUDENT_S36",
+    "serial_no": "ANON_SL_S36",
     "examiner_marks": {
       "Q1": 6.0,
       "Q2": 2.0,
@@ -926,9 +926,9 @@
   },
   "s2": {
     "student_id": "s2",
-    "registration_no": "23BCS013",
-    "student_name": "AMRITANSHU ADITYA",
-    "serial_no": "116831",
+    "registration_no": "ANON_REG_S2",
+    "student_name": "STUDENT_S2",
+    "serial_no": "ANON_SL_S2",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -963,9 +963,9 @@
   },
   "s5": {
     "student_id": "s5",
-    "registration_no": "23BCS049",
-    "student_name": "G. Rakesh",
-    "serial_no": "116870",
+    "registration_no": "ANON_REG_S5",
+    "student_name": "STUDENT_S5",
+    "serial_no": "ANON_SL_S5",
     "examiner_marks": {
       "Q1": 4.0,
       "Q2": 0.0,
@@ -1000,9 +1000,9 @@
   },
   "s12": {
     "student_id": "s12",
-    "registration_no": "23BCS082",
-    "student_name": "Mohammad Samad Khan",
-    "serial_no": "116783",
+    "registration_no": "ANON_REG_S12",
+    "student_name": "STUDENT_S12",
+    "serial_no": "ANON_SL_S12",
     "examiner_marks": {
       "Q1": 3.0,
       "Q2": 0.0,
@@ -1037,9 +1037,9 @@
   },
   "s18": {
     "student_id": "s18",
-    "registration_no": "23BCS127",
-    "student_name": "Biddhaastho BS",
-    "serial_no": "116838",
+    "registration_no": "ANON_REG_S18",
+    "student_name": "STUDENT_S18",
+    "serial_no": "ANON_SL_S18",
     "examiner_marks": {
       "Q1": 2.0,
       "Q2": 2.0,
@@ -1074,9 +1074,9 @@
   },
   "s21": {
     "student_id": "s21",
-    "registration_no": "23BDS012",
-    "student_name": "B. Bharath Kumar",
-    "serial_no": "116818",
+    "registration_no": "ANON_REG_S21",
+    "student_name": "STUDENT_S21",
+    "serial_no": "ANON_SL_S21",
     "examiner_marks": {
       "Q1": 6.0,
       "Q2": 0.0,
@@ -1111,9 +1111,9 @@
   },
   "s33": {
     "student_id": "s33",
-    "registration_no": "23BEC004",
-    "student_name": "Akhilesh R. Ghadge",
-    "serial_no": "116780",
+    "registration_no": "ANON_REG_S33",
+    "student_name": "STUDENT_S33",
+    "serial_no": "ANON_SL_S33",
     "examiner_marks": {
       "Q1": 6.0,
       "Q2": 4.0,
@@ -1148,9 +1148,9 @@
   },
   "s7": {
     "student_id": "s7",
-    "registration_no": "23BCS051",
-    "student_name": "G. Srivarshith Rao",
-    "serial_no": "116844",
+    "registration_no": "ANON_REG_S7",
+    "student_name": "STUDENT_S7",
+    "serial_no": "ANON_SL_S7",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -1185,9 +1185,9 @@
   },
   "s14": {
     "student_id": "s14",
-    "registration_no": "23BCS096",
-    "student_name": "P. Shasank Pawan",
-    "serial_no": "116825",
+    "registration_no": "ANON_REG_S14",
+    "student_name": "STUDENT_S14",
+    "serial_no": "ANON_SL_S14",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 6.0,
@@ -1222,9 +1222,9 @@
   },
   "s24": {
     "student_id": "s24",
-    "registration_no": "23BDS025",
-    "student_name": "Kala Surya Narayana Rao",
-    "serial_no": "116804",
+    "registration_no": "ANON_REG_S24",
+    "student_name": "STUDENT_S24",
+    "serial_no": "ANON_SL_S24",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 2.0,
@@ -1259,9 +1259,9 @@
   },
   "s29": {
     "student_id": "s29",
-    "registration_no": "23BDS062",
-    "student_name": "TARAN JAIN",
-    "serial_no": "116814",
+    "registration_no": "ANON_REG_S29",
+    "student_name": "STUDENT_S29",
+    "serial_no": "ANON_SL_S29",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 2.0,
@@ -1296,9 +1296,9 @@
   },
   "s30": {
     "student_id": "s30",
-    "registration_no": "23BDS064",
-    "student_name": "Tejaswi A.C",
-    "serial_no": "116826",
+    "registration_no": "ANON_REG_S30",
+    "student_name": "STUDENT_S30",
+    "serial_no": "ANON_SL_S30",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 0.0,
@@ -1333,9 +1333,9 @@
   },
   "s37": {
     "student_id": "s37",
-    "registration_no": "26PHDCS07",
-    "student_name": "PRAVEEN HONGAL",
-    "serial_no": "116999",
+    "registration_no": "ANON_REG_S37",
+    "student_name": "STUDENT_S37",
+    "serial_no": "ANON_SL_S37",
     "examiner_marks": {
       "Q1": 8.0,
       "Q2": 2.0,

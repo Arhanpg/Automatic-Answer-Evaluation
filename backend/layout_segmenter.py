@@ -29,23 +29,23 @@ NAME_PATTERN = re.compile(r"Name\s*(?:of\s*(?:the)?\s*Student)?\s*[:\-]?\s*([A-Z
 # Known ground-truth booklet metadata anchors for verified scripts
 KNOWN_METADATA_ANCHORS = {
     "s2": {
-        "student_name": "Amritanshu Aditya",
-        "registration_no": "23BCS013",
-        "serial_no": "116831",
+        "student_name": "ANONYMIZED_STUDENT",
+        "registration_no": "ANONYMIZED_REG",
+        "serial_no": "ANONYMIZED_SL",
         "examiner_marks": {"Q1": 8.0, "Q2": 6.0, "Q3": 3.0, "Q4": 3.0, "total": 20.0},
         "cover_page_idx": 1
     },
     "s29": {
-        "student_name": "Taran Jain",
-        "registration_no": "23BDS062",
-        "serial_no": "116814",
+        "student_name": "ANONYMIZED_STUDENT",
+        "registration_no": "ANONYMIZED_REG",
+        "serial_no": "ANONYMIZED_SL",
         "examiner_marks": {"Q1": 8.0, "Q2": 2.0, "Q3": 2.0, "Q4": 3.0, "total": 15.0},
         "cover_page_idx": 0
     },
     "s18": {
-        "student_name": "Biddhaastho BS",
-        "registration_no": "23BCS127",
-        "serial_no": "116838",
+        "student_name": "ANONYMIZED_STUDENT",
+        "registration_no": "ANONYMIZED_REG",
+        "serial_no": "ANONYMIZED_SL",
         "examiner_marks": {"Q1": 2.0, "Q2": 2.0, "Q3": 2.0, "Q4": 1.0, "total": 7.0},
         "cover_page_idx": 0
     }
