@@ -1,0 +1,12 @@
+subgroup_category,subgroup_name,N_answers,pct_of_corpus,mean_cer,median_cer,std_cer,mean_wer,math_f1,number_f1,welch_ttest_p_vs_rest,mann_whitney_p_vs_rest
+Question Modality,Discrete Decoding & Selection,39,27.3,2.1314,1.0,2.7309,1.5514,0.1296,0.0809,0.501862,0.365569
+Question Modality,Mathematical Vector Attention,39,27.3,2.3794,2.0488,2.4714,1.8509,0.3288,0.2964,0.882838,0.444744
+Question Modality,Probability / Laplace Smoothing,13,9.1,5.8081,0.9597,11.5649,4.5599,0.1992,0.1725,0.290339,0.722724
+Question Modality,Prose / Conceptual NLP,52,36.4,1.8907,1.198,1.8006,1.6652,0.281,0.2115,0.147318,0.732191
+Answer Length Band,Long (> 35 words),8,5.6,0.946,0.9312,0.0767,0.9932,0.2357,0.2063,5e-05,0.054803
+Answer Length Band,Medium (15-35 words),61,42.7,1.5516,1.1628,0.9575,1.3394,0.1753,0.1221,0.013921,0.7056
+Answer Length Band,Short (< 15 words),74,51.7,3.3449,1.4097,5.7196,2.5528,0.304,0.2548,0.007509,0.207976
+Mathematical Notation,Contains Math Equations,118,82.5,2.4527,1.1563,4.4581,2.0297,0.221,0.1606,0.959266,0.375914
+Mathematical Notation,Prose Text Only,25,17.5,2.4129,1.0476,3.2136,1.5621,0.36,0.36,0.959266,0.375914
+Diagram Presence,Contains Diagram,26,18.2,1.5463,0.9782,1.5349,1.7891,0.3983,0.3072,0.039775,0.169222
+Diagram Presence,No Diagram,117,81.8,2.6456,1.1628,4.6377,1.9833,0.2113,0.1707,0.039775,0.169222
