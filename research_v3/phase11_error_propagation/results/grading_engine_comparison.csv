@@ -1,0 +1,5 @@
+engine_name,total_mae,total_rmse,exact_match_pct,within_05m_pct,within_10m_pct,qwk,spearman_rho,pearson_r
+Unified Rubric Hybrid Grader (Ours),6.2973,8.0127,13.51,18.92,21.62,0.0804,0.0734,0.1045
+Dense Semantic S-BERT Baseline,6.5541,8.1036,16.22,16.22,18.92,0.0564,0.1515,0.0984
+Symbolic SymPy Math Verifier Baseline,4.9189,6.1381,8.11,8.11,18.92,0.0839,0.0734,0.1016
+Lexical TF-IDF & Keyword Rule Baseline,4.9,6.1266,0.0,10.81,10.81,0.1521,0.1651,0.1447
