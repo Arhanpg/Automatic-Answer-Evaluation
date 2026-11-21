@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ExaminationBookletSchema",
+  "description": "Schema for physical examination booklet inventory and provenance metadata in Phase 8",
+  "type": "object",
+  "required": [
+    "student_id",
+    "source_pdf_relative_path",
+    "pdf_sha256",
+    "page_count",
+    "split_classification",
+    "inclusion_status",
+    "consent_status"
+  ],
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])$",
+      "description": "Pseudonymous student identifier (s1 through s37)"
+    },
+    "source_pdf_relative_path": {
+      "type": "string",
+      "pattern": "^All PDF's/s([1-9]|[1-2][0-9]|3[0-7])\\.pdf$",
+      "description": "Relative path to original scanned PDF booklet"
+    },
+    "pdf_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Cryptographic SHA-256 hash of original PDF document"
+    },
+    "page_count": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 12,
+      "description": "Number of physical scanned pages in booklet"
+    },
+    "split_classification": {
+      "type": "string",
+      "enum": [
+        "development_pool",
+        "previously_exposed_historical_split"
+      ],
+      "description": "Methodologically verified split category"
+    },
+    "inclusion_status": {
+      "type": "string",
+      "enum": ["included", "excluded_pending_audit", "withdrawn"],
+      "description": "Corpus inclusion state"
+    },
+    "exclusion_reason": {
+      "type": ["string", "null"],
+      "description": "Documentation for why booklet was excluded, if applicable"
+    },
+    "consent_status": {
+      "type": "string",
+      "enum": [
+        "institutional_archival_permission",
+        "private_educational_record_restricted"
+      ],
+      "description": "Institutional privacy and consent tier"
+    }
+  },
+  "additionalProperties": false
+}

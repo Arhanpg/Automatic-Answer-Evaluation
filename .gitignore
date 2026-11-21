@@ -53,3 +53,8 @@ data/db/*
 # Phase 3 visual review crops and page renders may contain private handwritten scans
 research_phase3/answer_region_images/
 research_v2/crops/
+
+# Phase 8 private crops and local annotation stores
+research_v3/crops/
+research_v3/phase8_ground_truth/annotations_store/
+audit_out.txt

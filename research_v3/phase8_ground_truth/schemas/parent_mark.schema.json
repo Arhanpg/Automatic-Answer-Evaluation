@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ParentQuestionMarkSchema",
+  "description": "Schema for officially recorded teacher marks at the parent-question composite level (Q1-Q4)",
+  "type": "object",
+  "required": [
+    "mark_id",
+    "student_id",
+    "parent_question_id",
+    "teacher_mark",
+    "maximum_mark",
+    "score_box_source_reference",
+    "reviewer_a_mark",
+    "reviewer_b_mark",
+    "adjudicated_mark",
+    "mark_verification_status"
+  ],
+  "properties": {
+    "mark_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])_Q[1-4]$"
+    },
+    "student_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])$"
+    },
+    "parent_question_id": {
+      "type": "string",
+      "enum": ["Q1", "Q2", "Q3", "Q4"]
+    },
+    "teacher_mark": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 8.0
+    },
+    "maximum_mark": {
+      "type": "number",
+      "enum": [3.0, 6.0, 8.0]
+    },
+    "score_box_source_reference": {
+      "type": "string",
+      "description": "Page index and physical score table location on cover sheet"
+    },
+    "reviewer_a_mark": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 8.0
+    },
+    "reviewer_b_mark": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 8.0
+    },
+    "adjudicated_mark": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 8.0
+    },
+    "mark_verification_status": {
+      "type": "string",
+      "enum": [
+        "verified_against_physical_score_box",
+        "adjudicated_discrepancy",
+        "unresolved"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TranscriptAnnotationSchema",
+  "description": "Schema for independent blind human transcriptions of student handwritten answers",
+  "type": "object",
+  "required": [
+    "annotation_id",
+    "student_id",
+    "subquestion_id",
+    "annotator_id",
+    "annotator_mode",
+    "answer_status",
+    "raw_transcript",
+    "contains_math",
+    "contains_diagram",
+    "contains_crossed_out_text",
+    "contains_overwrite",
+    "legibility_notes",
+    "timestamp_iso"
+  ],
+  "properties": {
+    "annotation_id": {
+      "type": "string",
+      "pattern": "^ANN_s([1-9]|[1-2][0-9]|3[0-7])_(1[a-d]|2[a-c]|3[a-c]|4)_[AB]$"
+    },
+    "student_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])$"
+    },
+    "subquestion_id": {
+      "type": "string",
+      "enum": ["1a", "1b", "1c", "1d", "2a", "2b", "2c", "3a", "3b", "3c", "4"]
+    },
+    "annotator_id": {
+      "type": "string",
+      "pattern": "^REV_[A-Z0-9_]+$"
+    },
+    "annotator_mode": {
+      "type": "string",
+      "enum": ["MODE_A_BLIND", "MODE_B_BLIND"]
+    },
+    "answer_status": {
+      "type": "string",
+      "enum": ["written", "omitted_confirmed", "illegible", "partially_legible", "unresolved"]
+    },
+    "raw_transcript": {
+      "type": "string",
+      "description": "Verbatim student handwriting transcription without normalization"
+    },
+    "contains_math": {
+      "type": "boolean"
+    },
+    "contains_diagram": {
+      "type": "boolean"
+    },
+    "contains_crossed_out_text": {
+      "type": "boolean"
+    },
+    "contains_overwrite": {
+      "type": "boolean"
+    },
+    "legibility_notes": {
+      "type": "string"
+    },
+    "timestamp_iso": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
