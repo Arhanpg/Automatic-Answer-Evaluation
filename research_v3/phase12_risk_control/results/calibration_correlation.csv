@@ -1,0 +1,5 @@
+uncertainty_estimator,spearman_rho,spearman_p,pearson_r,pearson_p
+Composite Input-Side Uncertainty (Ours),0.197,0.2424205811413068,0.2715,0.10411827755072867
+OCR Multi-Engine Disagreement Only,0.1162,0.4932788131753634,0.1201,0.47891344727164703
+Routing Ambiguity Only,0.1705,0.3130562610524085,0.2167,0.19769841098528212
+Mathematical Notation Ambiguity Only,0.0734,0.6660494916649765,0.17,0.3144213668086273
