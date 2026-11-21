@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AdjudicationSchema",
+  "description": "Schema for adjudicating disagreements between independent Annotator A and Annotator B submissions",
+  "type": "object",
+  "required": [
+    "adjudication_id",
+    "student_id",
+    "subquestion_id",
+    "adjudicator_id",
+    "annotation_a_ref",
+    "annotation_b_ref",
+    "pre_adjudication_agreement_cer",
+    "pre_adjudication_agreement_wer",
+    "disagreement_category",
+    "final_adjudicated_status",
+    "final_adjudicated_transcript",
+    "adjudication_rationale",
+    "inclusion_in_ocr_benchmark",
+    "timestamp_iso"
+  ],
+  "properties": {
+    "adjudication_id": {
+      "type": "string",
+      "pattern": "^ADJ_s([1-9]|[1-2][0-9]|3[0-7])_(1[a-d]|2[a-c]|3[a-c]|4)$"
+    },
+    "student_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])$"
+    },
+    "subquestion_id": {
+      "type": "string",
+      "enum": ["1a", "1b", "1c", "1d", "2a", "2b", "2c", "3a", "3b", "3c", "4"]
+    },
+    "adjudicator_id": {
+      "type": "string",
+      "pattern": "^ADJ_[A-Z0-9_]+$"
+    },
+    "annotation_a_ref": {
+      "type": "string"
+    },
+    "annotation_b_ref": {
+      "type": "string"
+    },
+    "pre_adjudication_agreement_cer": {
+      "type": "number",
+      "minimum": 0.0
+    },
+    "pre_adjudication_agreement_wer": {
+      "type": "number",
+      "minimum": 0.0
+    },
+    "disagreement_category": {
+      "type": "string",
+      "enum": [
+        "exact_agreement",
+        "minor_punctuation_or_casing",
+        "lexical_token_discrepancy",
+        "mathematical_symbol_discrepancy",
+        "status_discrepancy",
+        "unresolved"
+      ]
+    },
+    "final_adjudicated_status": {
+      "type": "string",
+      "enum": ["written", "omitted_confirmed", "illegible", "partially_legible", "unresolved"]
+    },
+    "final_adjudicated_transcript": {
+      "type": "string"
+    },
+    "adjudication_rationale": {
+      "type": "string"
+    },
+    "inclusion_in_ocr_benchmark": {
+      "type": "boolean"
+    },
+    "timestamp_iso": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

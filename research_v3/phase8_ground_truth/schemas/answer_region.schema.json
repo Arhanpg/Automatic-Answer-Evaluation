@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AnswerRegionSchema",
+  "description": "Schema for manually reviewed visual bounding boxes and answer crop regions",
+  "type": "object",
+  "required": [
+    "region_id",
+    "student_id",
+    "page_id",
+    "subquestion_id",
+    "parent_question_id",
+    "coordinates_pixel",
+    "coordinates_normalized",
+    "region_type",
+    "continuation_group_id",
+    "has_continuation",
+    "manual_review_status",
+    "crop_sha256",
+    "reviewer_id"
+  ],
+  "properties": {
+    "region_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])_(1[a-d]|2[a-c]|3[a-c]|4)_reg[0-9]+$"
+    },
+    "student_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])$"
+    },
+    "page_id": {
+      "type": "string",
+      "pattern": "^s([1-9]|[1-2][0-9]|3[0-7])_p[0-9]{2}$"
+    },
+    "subquestion_id": {
+      "type": "string",
+      "enum": ["1a", "1b", "1c", "1d", "2a", "2b", "2c", "3a", "3b", "3c", "4"]
+    },
+    "parent_question_id": {
+      "type": "string",
+      "enum": ["Q1", "Q2", "Q3", "Q4"]
+    },
+    "coordinates_pixel": {
+      "type": "object",
+      "required": ["x_min", "y_min", "x_max", "y_max"],
+      "properties": {
+        "x_min": { "type": "integer", "minimum": 0 },
+        "y_min": { "type": "integer", "minimum": 0 },
+        "x_max": { "type": "integer", "minimum": 1 },
+        "y_max": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "coordinates_normalized": {
+      "type": "object",
+      "required": ["norm_x_min", "norm_y_min", "norm_x_max", "norm_y_max"],
+      "properties": {
+        "norm_x_min": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "norm_y_min": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "norm_x_max": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "norm_y_max": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      },
+      "additionalProperties": false
+    },
+    "region_type": {
+      "type": "string",
+      "enum": ["student_answer", "diagram_only", "continuation_segment", "omitted_slot"]
+    },
+    "continuation_group_id": {
+      "type": "string"
+    },
+    "has_continuation": {
+      "type": "boolean"
+    },
+    "manual_review_status": {
+      "type": "string",
+      "enum": [
+        "human_verified_box",
+        "adjudicated_box",
+        "omitted_slot_confirmed",
+        "unresolved_boundary"
+      ]
+    },
+    "crop_sha256": {
+      "type": "string",
+      "pattern": "^([a-f0-9]{64}|OMITTED_BY_STUDENT)$"
+    },
+    "reviewer_id": {
+      "type": "string",
+      "pattern": "^(REV_[A-Z0-9]+|ADJ_[A-Z0-9]+|UNASSIGNED)$"
+    }
+  },
+  "additionalProperties": false
+}
