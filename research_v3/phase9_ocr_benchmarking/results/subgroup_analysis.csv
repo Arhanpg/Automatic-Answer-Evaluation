@@ -1,0 +1,7 @@
+engine,condition,math_sample_size,prose_sample_size,math_mean_cer,prose_mean_cer,cer_gap_math_minus_prose,math_mean_wer,prose_mean_wer,wer_gap_math_minus_prose,math_symbol_f1,prose_symbol_f1,math_numeric_f1,prose_numeric_f1
+tesseract,raw,142,250,3.826,1.7534,2.0726,8.6444,4.433,4.2114,0.1663,0.2098,0.1129,0.0907
+tesseract,preprocessed,142,250,1.0,1.0,0.0,1.0,1.0,0.0,0.0423,0.16,0.0563,0.588
+paddleocr,raw,142,250,1.0,1.0,0.0,1.0,1.0,0.0,0.0423,0.16,0.0563,0.588
+paddleocr,preprocessed,142,250,1.0,1.0,0.0,1.0,1.0,0.0,0.0423,0.16,0.0563,0.588
+trocr,raw,142,250,1.3352,1.0741,0.2611,2.0463,1.5868,0.4595,0.045,0.152,0.0454,0.477
+trocr,preprocessed,142,250,1.6849,1.2009,0.484,1.3907,1.1852,0.2054,0.0423,0.16,0.0563,0.588
