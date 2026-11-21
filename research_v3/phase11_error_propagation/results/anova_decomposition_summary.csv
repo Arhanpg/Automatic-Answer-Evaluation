@@ -1,0 +1,6 @@
+Source,SS,df,MS,F,p_value,partial_eta_sq
+Perceptual Recognition (OCR),7449.3243,1,7449.3243,658.0289,1.4613257611618066e-55,0.8205
+Structural Routing (Layout),351.2432,1,351.2432,31.0267,1.2117418457709154e-07,0.1773
+Recognition x Routing Interaction,286.7297,1,286.7297,25.328,1.4212281979606772e-06,0.1496
+Error (Within-Cell Residual),1630.1757,144,11.3207,,,
+Total,9717.473,147,66.1053,,,
