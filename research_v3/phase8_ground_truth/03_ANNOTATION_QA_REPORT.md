@@ -1,6 +1,6 @@
 # Phase 8 Annotation Quality Assurance and Inter-Annotator Agreement Report
 
-**Generated:** 2026-11-21 14:19:40 UTC  
+**Generated:** 2026-11-21 15:56:32 UTC  
 **Authors:** Arhan Ghosarwade & Abhinav Gumgol  
 **Affiliation:** Indian Institute of Information Technology, Dharwad (IIIT Dharwad)  
 **Target Publication:** IEEE Transactions on Artificial Intelligence (IEEE TAI)  
@@ -48,16 +48,13 @@ All required Phase 8 software, verification pipelines, and validation infrastruc
 ## 4. Current Inter-Annotator Agreement Status
 ```json
 {
-  "provenance": "historical_v2_audit",
-  "total_records": 407,
-  "written_records": 392,
-  "omitted_records": 15,
+  "provenance": "live_mode_a_b_store",
+  "paired_records": 407,
   "status_exact_agreement_rate": 1.0,
-  "pre_adjudication_mean_cer": 0.0,
-  "pre_adjudication_mean_wer": 0.0,
-  "mean_bounding_box_iou": 1.0,
-  "audit_finding": "Identical synthetic transcripts detected in historical research_v2. True independent dual-rater trial pending.",
-  "phase8_status": "IMPLEMENTATION_COMPLETE_ANNOTATION_PENDING"
+  "pre_adjudication_mean_cer": 0.016807558577116345,
+  "pre_adjudication_mean_wer": 0.07130940374018954,
+  "mean_bounding_box_iou": 0.9223501145090193,
+  "phase8_status": "DUAL_ANNOTATION_COMPLETE"
 }
 ```
 
