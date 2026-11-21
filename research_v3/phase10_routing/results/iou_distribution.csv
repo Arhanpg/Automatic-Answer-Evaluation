@@ -1,0 +1,5 @@
+system_id,"[0.0, 0.1)","[0.1, 0.3)","[0.3, 0.5)","[0.5, 0.75)","[0.75, 1.0]"
+hybrid_layout_continuation,0,0,0,0,392
+oracle_map_control,0,0,0,0,392
+robust_header_detector,0,3,7,24,358
+sheet_parser_baseline,90,7,33,31,231
