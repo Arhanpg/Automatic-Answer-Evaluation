@@ -16,6 +16,7 @@ from typing import Dict, Any, List, Tuple
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+ADJUDICATIONS_JSON = REPO_ROOT / "research_v3" / "phase8_ground_truth" / "annotations_store" / "adjudications.json"
 TRANSCRIPTS_CSV = REPO_ROOT / "research_v2" / "annotations" / "transcripts.csv"
 OCR_PRED_JSONL = REPO_ROOT / "research_v3" / "phase9_ocr_benchmarking" / "results" / "predictions.jsonl"
 ROUTING_CSV = REPO_ROOT / "research_v3" / "phase10_routing" / "results" / "routing_comparison.csv"
@@ -24,7 +25,21 @@ SUBQ_ORDER = ["1a", "1b", "1c", "1d", "2a", "2b", "2c", "3a", "3b", "3c", "4"]
 
 
 def load_all_transcripts() -> pd.DataFrame:
-    """Loads verified human ground truth transcripts."""
+    """Loads verified human ground truth transcripts from Phase 8 consensus."""
+    if ADJUDICATIONS_JSON.exists():
+        with open(ADJUDICATIONS_JSON, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        rows = []
+        for k, v in data.items():
+            status = v.get("final_adjudicated_status", "")
+            is_omitted = "omitted" in status
+            rows.append({
+                "student_id": v["student_id"],
+                "subquestion_id": v["subquestion_id"],
+                "answer_status": "omitted_by_student" if is_omitted else "student_answer",
+                "adjudicated_transcript": v.get("final_adjudicated_transcript", "")
+            })
+        return pd.DataFrame(rows)
     df = pd.read_csv(TRANSCRIPTS_CSV)
     df["adjudicated_transcript"] = df["adjudicated_transcript"].fillna("").astype(str)
     return df

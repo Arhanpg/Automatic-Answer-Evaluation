@@ -1,5 +1,5 @@
-system_id,answer_split_or_truncated,cross_question_merge,missed_region,none,wrong_subquestion_header
-hybrid_layout_continuation,0,0,0,407,0
-oracle_map_control,0,0,0,407,0
-robust_header_detector,10,0,0,397,0
-sheet_parser_baseline,8,32,90,191,86
+system_id,answer_split_or_truncated,cross_question_merge,missed_region,none,wrong_page,wrong_subquestion_header
+hybrid_layout_continuation,37,96,0,180,94,0
+oracle_map_control,0,0,0,407,0,0
+robust_header_detector,37,96,0,180,94,0
+sheet_parser_baseline,0,29,268,29,28,53

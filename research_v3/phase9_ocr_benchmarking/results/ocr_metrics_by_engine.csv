@@ -1,7 +1,7 @@
 engine,condition,total_records,written_records,omitted_records,macro_cer,macro_wer,exact_match_rate,math_f1,numeric_f1,omission_detection_accuracy,mean_latency_ms,success_rate
-paddleocr,preprocessed,407,392,15,1.0,1.0,0.0,0.1173,0.3954,1.0,21.13,0.0369
-paddleocr,raw,407,392,15,1.0,1.0,0.0,0.1173,0.3954,1.0,18.85,0.0369
-tesseract,preprocessed,407,392,15,1.0,1.0,0.0,0.1173,0.3954,1.0,284.69,1.0
-tesseract,raw,407,392,15,2.5042,5.9586,0.0,0.194,0.0987,1.0,2318.07,1.0
-trocr,preprocessed,407,392,15,1.3762,1.2597,0.0,0.1173,0.3954,1.0,972.45,1.0
-trocr,raw,407,392,15,1.1687,1.7532,0.0,0.1133,0.3206,1.0,946.65,1.0
+paddleocr,preprocessed,407,381,26,1.0,1.0,0.0,0.1417,0.4173,1.0,16.93,0.0639
+paddleocr,raw,407,381,26,1.0,1.0,0.0,0.1417,0.4173,1.0,14.27,0.0639
+tesseract,preprocessed,407,381,26,1.0,1.0,0.0,0.1417,0.4173,1.0,263.57,1.0
+tesseract,raw,407,381,26,2.2274,4.5553,0.0,0.2002,0.1293,1.0,2042.65,1.0
+trocr,preprocessed,407,381,26,1.4351,1.2904,0.0,0.1417,0.4173,1.0,1041.39,1.0
+trocr,raw,407,381,26,1.3173,1.9325,0.0,0.138,0.3547,1.0,977.66,1.0

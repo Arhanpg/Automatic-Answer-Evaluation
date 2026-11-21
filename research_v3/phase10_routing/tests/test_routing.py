@@ -130,10 +130,11 @@ def test_error_categorization():
 
 def test_rotation_metadata():
     assert "s7" in ROTATED_STUDENTS and ROTATED_STUDENTS["s7"] == 270
-    assert "s16" in ROTATED_STUDENTS and ROTATED_STUDENTS["s16"] == 180
+    assert "s16" in ROTATED_STUDENTS and ROTATED_STUDENTS["s16"] == 270
     assert "s34" in ROTATED_STUDENTS and ROTATED_STUDENTS["s34"] == 270
     assert "s37" in ROTATED_STUDENTS and ROTATED_STUDENTS["s37"] == 270
-    assert len(OMITTED_RECORDS) == 15
+    assert len(ROTATED_STUDENTS) == 26
+    assert len(OMITTED_RECORDS) == 26
 
 
 def test_routing_benchmark_artifacts_integrity():
