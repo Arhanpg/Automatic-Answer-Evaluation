@@ -1,0 +1,37 @@
+research_questions:
+  RQ1:
+    title: Paradigm Comparison on Handwritten Exam Assessment
+    question: How do lexical, semantic embedding, symbolic, classical ML, deep neural, RAG, and prompted LLM approaches compare on the same held-out student-question responses?
+    primary_metric: qwk_and_mae
+    clustering_unit: student_id
+  RQ2:
+    title: Feature Contribution & Family Ablations
+    question: Which feature families (lexical, BM25, dense semantic, symbolic math, structural length) provide measurable incremental value beyond simple baselines?
+    method: leave_one_family_out_ablation
+    significance_test: paired_permutation_test
+  RQ3:
+    title: Question-Type Conditional Performance
+    question: Does the ranking of model paradigms vary systematically across conceptual prose (Q1), matrix derivations (Q2), decoding algorithms (Q3), and statistical smoothing (Q4)?
+    hypothesis: Model ranking is conditional on question domain; no single model dominates all technical questions.
+  RQ4:
+    title: Representation & Input Quality Dependence
+    question: How does grading performance degrade when transitioning from clean human-adjudicated reference text to realistic TrOCR handwriting transcriptions?
+    input_pairs:
+      - corrected_transcript
+      - trocr_actual
+  RQ5:
+    title: Robustness Under OCR & Mathematical Perturbations
+    question: How resilient are different grading paradigms to controlled character-level CER corruptions (1%, 5%, 10%) and targeted mathematical notation shifts (sign flips, operator swaps)?
+    noise_types:
+      - character_cer_perturbation
+      - math_syntax_mutation
+  RQ6:
+    title: Computational Efficiency & Pareto Frontiers
+    question: What are the empirical trade-offs among grading quality, inference latency, peak RAM/VRAM, and model parameter footprint across local hardware?
+    hardware: NVIDIA GeForce RTX 3050 Laptop GPU (4GB VRAM) and Intel Core CPU
+  RQ7:
+    title: Local LLM Prompting & Fine-Tuning Feasibility
+    question: Does few-shot retrieval augmentation or criterion decomposition enable local 3B-7B LLMs to match classical ML on technical STEM examinations within hardware limits?
+    models:
+      - llama3.2:3b
+      - qwen2.5:7b

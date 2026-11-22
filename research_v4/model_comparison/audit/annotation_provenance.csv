@@ -1,0 +1,12 @@
+record_type,count,source_file,annotator_protocol,adjudication_procedure,privacy_status,integrity_status
+raw_scanned_pages,195,data/pages/ or local private storage,Institutional examination administration,None (raw physical booklet scans),Private local only (not in git),verified_authentic
+subquestion_slots,407,data/ground_truth/verified_transcriptions.json,Double-blind dual review (Mode A and Mode B),Arbitrated by Senior Examiner,Anonymized identifiers (s1-s37),verified_genuine
+written_answer_records,381,research_v3/phase8_ground_truth/annotations_store/answer_regions_verified.csv,Double-blind manual transcript verification,Arbitrated consensus ground truth,Anonymized identifiers (s1-s37),verified_genuine
+omitted_answer_records,26,research_v3/phase8_ground_truth/annotations_store/answer_regions_verified.csv,Visual inspection of all booklet pages,Arbitrated consensus omission,Anonymized identifiers (s1-s37),verified_genuine
+parent_question_marks,148,data/teacher_marks/s*.json,Original course instructor manual evaluation,Single reference teacher marks,Anonymized identifiers (s1-s37),verified_single_marker
+exam_rubric_criteria,11,schemas/v1/exam_schema.json,Course instructor canonical grading criteria,Frozen official evaluation rubric,Public academic syllabus,verified_canonical
+trocr_raw_predictions,407,research_v3/phase9_ocr_benchmarking/results/predictions.jsonl,Live GPU inference (TrOCR-Small),None (model hypothesis string),Anonymized identifiers (s1-s37),verified_live_inference
+trocr_prep_predictions,407,research_v3/phase9_ocr_benchmarking/results/predictions.jsonl,Live GPU inference (TrOCR-Small Preprocessed),None (model hypothesis string),Anonymized identifiers (s1-s37),verified_live_inference
+tesseract_raw_predictions,407,research_v3/phase9_ocr_benchmarking/results/predictions.jsonl,Live CPU inference (Tesseract v5.5.0),None (model hypothesis string),Anonymized identifiers (s1-s37),verified_live_inference
+tesseract_prep_predictions,407,research_v3/phase9_ocr_benchmarking/results/predictions.jsonl,Live CPU inference (Tesseract Preprocessed),None (model hypothesis string),Anonymized identifiers (s1-s37),verified_live_inference
+paddleocr_predictions,814,research_v3/phase9_ocr_benchmarking/results/predictions.jsonl,Live CPU inference (PaddleOCR PP-OCRv6),None (93.61% crash due to oneDNN array exception),Anonymized identifiers (s1-s37),verified_platform_failure

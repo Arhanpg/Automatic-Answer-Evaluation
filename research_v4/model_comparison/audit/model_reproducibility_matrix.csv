@@ -1,0 +1,27 @@
+model_id,model_family,legacy_implementation,legacy_execution_status,paper2_implementation,paper2_execution_mode,hardware_requirements,reproducibility_status
+mean_baseline,Non-Learning Baseline,None (implicit),NOT_RUN,src/model_adapters/baselines.py,LIVE_CPU,CPU,VERIFIED_LIVE
+median_baseline,Non-Learning Baseline,None (implicit),NOT_RUN,src/model_adapters/baselines.py,LIVE_CPU,CPU,VERIFIED_LIVE
+rubric_coverage_baseline,Non-Learning Baseline,None (implicit),NOT_RUN,src/model_adapters/baselines.py,LIVE_CPU,CPU,VERIFIED_LIVE
+lexical_calibrator_baseline,Non-Learning Baseline,None (implicit),NOT_RUN,src/model_adapters/baselines.py,LIVE_CPU,CPU,VERIFIED_LIVE
+deterministic_rule_grader,Deterministic Symbolic,backend/criterion_aggregator.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/baselines.py,LIVE_CPU,CPU,VERIFIED_LIVE
+ridge_regression,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+elastic_net,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+linear_regression,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+lasso_regression,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+support_vector_regression,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+random_forest,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+extra_trees,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+gradient_boosting_regressor,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+catboost_regressor,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+lightgbm_regressor,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+xgboost_regressor,Classical ML,backend/classical_ml.py,VERIFIED_EXISTING_ARTIFACT,src/model_adapters/classical.py,LIVE_CPU,CPU,VERIFIED_LIVE
+pytorch_feature_mlp,Deep Learning,src/from_scratch/mlp_numpy.py,SIMULATED_LEAKAGE,src/model_adapters/neural.py,LIVE_CUDA,NVIDIA RTX 3050,VERIFIED_LIVE
+pytorch_text_bilstm,Deep Learning,src/from_scratch/cnn_rnn_lstm_scratch.py,SIMULATED_LEAKAGE,src/model_adapters/neural.py,LIVE_CUDA,NVIDIA RTX 3050,VERIFIED_LIVE
+bm25_only_rag,RAG Retrieval,backend/rag_retriever.py,SIMULATED_LEAKAGE,src/model_adapters/rag.py,LIVE_CPU,CPU,VERIFIED_LIVE
+dense_sbert_rag,RAG Retrieval,backend/rag_retriever.py,SIMULATED_LEAKAGE,src/model_adapters/rag.py,LIVE_CPU,CPU,VERIFIED_LIVE
+hybrid_bm25_dense_rag,RAG Retrieval,backend/rag_retriever.py,SIMULATED_LEAKAGE,src/model_adapters/rag.py,LIVE_CPU,CPU,VERIFIED_LIVE
+llama3_2_3b_prompted_llm,Prompted LLM,backend/grader.py,SIMULATED_LEAKAGE,src/model_adapters/prompted_llm.py,LIVE_LOCAL_LLM,Ollama (llama3.2:3b),VERIFIED_LIVE
+qwen2_5_7b_prompted_llm,Prompted LLM,backend/grader.py,SIMULATED_LEAKAGE,src/model_adapters/prompted_llm.py,LIVE_LOCAL_LLM,Ollama (qwen2.5:7b),VERIFIED_LIVE
+qlora_peft_adapter,Fine-Tuned LLM,backend/qlora_trainer.py,HARDCODED_SIMULATION,backend/finetune.py,NOT_RUN,Linux/CUDA (bitsandbytes),UNAVAILABLE_ON_WINDOWS
+validation_tuned_stacking,Hybrid Ensemble,backend/independent_pipeline.py,SIMULATED_LEAKAGE,src/model_adapters/ensemble.py,LIVE_CPU,CPU,VERIFIED_LIVE
+pareto_optimal_ensemble,Hybrid Ensemble,None,NOT_RUN,src/model_adapters/ensemble.py,LIVE_CPU,CPU,VERIFIED_LIVE

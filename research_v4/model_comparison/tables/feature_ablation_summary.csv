@@ -1,0 +1,15 @@
+feature_family_configuration,active_features_count,ridge_mae,ridge_rmse,ridge_qwk,ridge_within_10_pct
+full,33,1.3007,1.6486,0.7572,56.08
+minus_semantic,29,1.3007,1.6486,0.7572,56.08
+minus_bm25,30,1.3007,1.6486,0.7572,56.08
+minus_lexical,20,1.3007,1.6486,0.7572,56.08
+minus_symbolic,28,1.3243,1.6986,0.7369,51.35
+structural_length_only,8,1.3243,1.6986,0.7369,51.35
+symbolic_math_only,7,1.4392,1.8297,0.6918,50.68
+lexical_plus_symbolic,20,1.4392,1.8297,0.6918,50.68
+semantic_plus_symbolic,11,1.4392,1.8297,0.6918,50.68
+minus_structural,27,1.4392,1.8297,0.6918,50.68
+bm25_tfidf_only,5,1.4426,1.8145,0.7022,51.35
+dense_semantic_only,6,1.4426,1.8145,0.7022,51.35
+lexical_plus_semantic,19,1.4426,1.8145,0.7022,51.35
+lexical_only,15,1.4426,1.8145,0.7022,51.35

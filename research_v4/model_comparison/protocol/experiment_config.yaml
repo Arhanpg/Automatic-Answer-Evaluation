@@ -1,0 +1,77 @@
+dataset:
+  name: IIIT_Dharwad_DS317_Midsem
+  total_students: 37
+  parent_questions_per_student: 4
+  total_parent_evaluations: 148
+  exam_schema_path: schemas/v1/exam_schema.json
+  verified_ground_truth_path: data/ground_truth/verified_transcriptions.json
+  teacher_marks_dir: data/teacher_marks/
+  phase9_ocr_predictions_path: research_v3/phase9_ocr_benchmarking/results/predictions.jsonl
+
+splitting:
+  method: nested_group_kfold
+  outer_folds: 5
+  inner_folds: 3
+  group_key: student_id
+  random_seed: 42
+  historical_test_ids: [s7, s14, s24, s29, s30, s37]
+
+inputs:
+  primary: trocr_actual
+  diagnostic_upper_bound: corrected_transcript
+  secondary_ocr: tesseract_actual
+
+feature_families:
+  - lexical_string
+  - bm25_term_weighting
+  - dense_semantic_sbert
+  - symbolic_math_sympy
+  - structural_surface_length
+
+classical_models:
+  - ridge_regression
+  - elastic_net
+  - linear_regression
+  - lasso_regression
+  - support_vector_regression
+  - random_forest
+  - extra_trees
+  - gradient_boosting_regressor
+  - catboost_regressor
+  - lightgbm_regressor
+  - xgboost_regressor
+
+neural_models:
+  - pytorch_feature_mlp
+  - pytorch_text_bilstm
+
+rag_retrieval:
+  top_k: 3
+  strategies:
+    - bm25_only
+    - dense_sbert_only
+    - hybrid_bm25_dense
+
+prompted_llm:
+  endpoint: http://localhost:11434
+  models:
+    - llama3.2:3b
+    - qwen2.5:7b
+  conditions:
+    - zero_shot_rubric
+    - few_shot_exemplar
+    - criterion_decomposed
+
+evaluation:
+  bootstrap_resamples: 2000
+  confidence_level: 0.95
+  multiplicity_correction: holm
+  metrics:
+    - qwk
+    - mae
+    - rmse
+    - normalized_mae
+    - within_0_5
+    - within_1_0
+    - pearson_r
+    - spearman_rho

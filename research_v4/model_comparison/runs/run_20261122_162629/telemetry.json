@@ -1,0 +1,14 @@
+{
+  "run_id": "run_20261122_162629",
+  "timestamp_iso": "2026-11-22T11:18:12.958133+00:00",
+  "total_responses": 148,
+  "total_students": 37,
+  "models_evaluated": 24,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "cuda_available": true,
+    "cpu_cores": 16,
+    "ram_gb": 16.99
+  },
+  "elapsed_seconds": 1303.71
+}
