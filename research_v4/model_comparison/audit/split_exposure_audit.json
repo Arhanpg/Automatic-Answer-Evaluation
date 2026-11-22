@@ -1,0 +1,34 @@
+{
+  "exposure_audit_date": "2026-11-22T09:30:00Z",
+  "total_student_booklets": 37,
+  "historical_split_manifest": "outputs/dataset_audit/student_split_manifest.json",
+  "historical_partitions": {
+    "historical_train": {
+      "count": 25,
+      "student_ids": [
+        "s1", "s3", "s4", "s6", "s8", "s9", "s10", "s11", "s13", "s15",
+        "s16", "s17", "s19", "s20", "s22", "s23", "s25", "s26", "s27", "s28",
+        "s31", "s32", "s34", "s35", "s36"
+      ]
+    },
+    "historical_validation": {
+      "count": 6,
+      "student_ids": ["s2", "s5", "s12", "s18", "s21", "s33"]
+    },
+    "historical_test": {
+      "count": 6,
+      "student_ids": ["s7", "s14", "s24", "s29", "s30", "s37"]
+    }
+  },
+  "exposure_analysis": {
+    "exposed_test_ids": ["s7", "s14", "s24", "s29", "s30", "s37"],
+    "prior_use_cases": [
+      "Gate 0-7 classical ML model selection in research_v2",
+      "Phase 11 factorial grading evaluations in research_v3",
+      "Phase 12 calibrated risk control selective curves in research_v3",
+      "Manual rotation forensic inspection in Phase 8"
+    ],
+    "exposure_conclusion": "The historical 6-booklet test cohort has been repeatedly exposed to hyperparameter selection, prompt design, and error analysis. It CANNOT be claimed as an untouched, pristine held-out test partition.",
+    "paper2_resolution_policy": "Adopt full 5-fold nested GroupKFold cross-validation across all 37 students (all 4 parent questions per student kept together). Report all primary metrics as internal grouped cross-validation estimates with cluster-bootstrap confidence intervals. Report the historical 6-student partition strictly as a historical exploratory split."
+  }
+}

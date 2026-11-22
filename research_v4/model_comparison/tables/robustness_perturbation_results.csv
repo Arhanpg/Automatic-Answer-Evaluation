@@ -1,0 +1,6 @@
+noise_condition,perturbation_rate,ridge_mae,ridge_qwk,within_10_pct
+CER_0.0,0.0,1.1858,0.7913,57.43
+CER_0.01,0.01,1.1858,0.7905,57.43
+CER_0.05,0.05,1.1892,0.7905,58.11
+CER_0.1,0.1,1.1959,0.7898,55.41
+math_sign_flip,math_sign_flip,1.1858,0.7913,57.43

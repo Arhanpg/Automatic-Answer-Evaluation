@@ -1,5 +1,5 @@
 system_id,system_name,total_records,written_records,omitted_records,mean_iou_written,precision_iou_050,precision_iou_075,page_assignment_accuracy,subquestion_slot_accuracy,omission_detection_accuracy,continuation_completeness_rate,cross_question_contamination_rate,boundary_bleed_rate,answer_coverage_rate,status
-hybrid_layout_continuation,hybrid_layout_continuation,407,392,15,0.9649,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,measured_real
-oracle_map_control,oracle_map_control,407,392,15,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,measured_real
-robust_header_detector,robust_header_detector,407,392,15,0.9052,0.9745,0.9133,1.0,1.0,1.0,0.9165,0.0,0.0255,0.9745,measured_real
-sheet_parser_baseline,sheet_parser_baseline,407,392,15,0.6267,0.6684,0.5893,0.7789,0.5676,1.0,0.484,0.301,0.102,0.6684,measured_real
+hybrid_layout_continuation,hybrid_layout_continuation,407,381,26,0.4911,0.4252,0.4121,0.769,1.0,1.0,1.0,0.252,0.3281,0.4252,measured_real
+oracle_map_control,oracle_map_control,407,381,26,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,measured_real
+robust_header_detector,robust_header_detector,407,381,26,0.4911,0.4252,0.4121,0.769,1.0,1.0,0.8354,0.252,0.3281,0.4252,measured_real
+sheet_parser_baseline,sheet_parser_baseline,407,381,26,0.0703,0.0157,0.0079,0.2727,0.1671,1.0,0.1671,0.2152,0.0682,0.0157,measured_real

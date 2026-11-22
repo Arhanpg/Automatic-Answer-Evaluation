@@ -20,10 +20,10 @@ stream_a,Stream A (Oracle Upper Bound),s4,Q3,3.0,3.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s4,Q4,3.0,2.0,1.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s4,total,20.0,14.0,6.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s5,Q1,5.5,4.0,1.5,8.0
-stream_a,Stream A (Oracle Upper Bound),s5,Q2,3.0,0.0,3.0,6.0
-stream_a,Stream A (Oracle Upper Bound),s5,Q3,1.0,0.0,1.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s5,Q2,0.0,0.0,0.0,6.0
+stream_a,Stream A (Oracle Upper Bound),s5,Q3,0.0,0.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s5,Q4,2.0,1.0,1.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s5,total,11.5,5.0,6.5,20.0
+stream_a,Stream A (Oracle Upper Bound),s5,total,7.5,5.0,2.5,20.0
 stream_a,Stream A (Oracle Upper Bound),s6,Q1,8.0,4.0,4.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s6,Q2,6.0,2.0,4.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s6,Q3,3.0,3.0,0.0,3.0
@@ -31,9 +31,9 @@ stream_a,Stream A (Oracle Upper Bound),s6,Q4,3.0,3.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s6,total,20.0,12.0,8.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s7,Q1,1.0,8.0,7.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s7,Q2,0.0,0.0,0.0,6.0
-stream_a,Stream A (Oracle Upper Bound),s7,Q3,0.0,3.0,3.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s7,Q3,0.5,3.0,2.5,3.0
 stream_a,Stream A (Oracle Upper Bound),s7,Q4,0.0,1.0,1.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s7,total,1.0,12.0,11.0,20.0
+stream_a,Stream A (Oracle Upper Bound),s7,total,1.5,12.0,10.5,20.0
 stream_a,Stream A (Oracle Upper Bound),s8,Q1,8.0,6.0,2.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s8,Q2,6.0,6.0,0.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s8,Q3,3.0,3.0,0.0,3.0
@@ -55,10 +55,10 @@ stream_a,Stream A (Oracle Upper Bound),s11,Q3,3.0,3.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s11,Q4,2.0,2.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s11,total,18.5,13.0,5.5,20.0
 stream_a,Stream A (Oracle Upper Bound),s12,Q1,8.0,3.0,5.0,8.0
-stream_a,Stream A (Oracle Upper Bound),s12,Q2,6.0,0.0,6.0,6.0
+stream_a,Stream A (Oracle Upper Bound),s12,Q2,0.0,0.0,0.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s12,Q3,3.0,2.0,1.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s12,Q4,3.0,0.0,3.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s12,total,20.0,5.0,15.0,20.0
+stream_a,Stream A (Oracle Upper Bound),s12,Q4,0.0,0.0,0.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s12,total,11.0,5.0,6.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s13,Q1,7.5,5.0,2.5,8.0
 stream_a,Stream A (Oracle Upper Bound),s13,Q2,6.0,0.0,6.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s13,Q3,3.0,2.0,1.0,3.0
@@ -95,10 +95,10 @@ stream_a,Stream A (Oracle Upper Bound),s19,Q3,3.0,3.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s19,Q4,2.0,2.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s19,total,18.5,19.0,0.5,20.0
 stream_a,Stream A (Oracle Upper Bound),s20,Q1,8.0,3.0,5.0,8.0
-stream_a,Stream A (Oracle Upper Bound),s20,Q2,6.0,0.0,6.0,6.0
+stream_a,Stream A (Oracle Upper Bound),s20,Q2,0.0,0.0,0.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s20,Q3,3.0,1.0,2.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s20,Q4,3.0,0.0,3.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s20,total,20.0,4.0,16.0,20.0
+stream_a,Stream A (Oracle Upper Bound),s20,Q4,0.0,0.0,0.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s20,total,11.0,4.0,7.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s21,Q1,8.0,6.0,2.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s21,Q2,6.0,0.0,6.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s21,Q3,3.0,1.0,2.0,3.0
@@ -134,11 +134,11 @@ stream_a,Stream A (Oracle Upper Bound),s27,Q2,6.0,2.0,4.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s27,Q3,3.0,3.0,0.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s27,Q4,3.0,1.0,2.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s27,total,20.0,13.0,7.0,20.0
-stream_a,Stream A (Oracle Upper Bound),s28,Q1,8.0,0.0,8.0,8.0
+stream_a,Stream A (Oracle Upper Bound),s28,Q1,0.0,0.0,0.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s28,Q2,6.0,2.0,4.0,6.0
-stream_a,Stream A (Oracle Upper Bound),s28,Q3,3.0,0.0,3.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s28,Q4,3.0,0.0,3.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s28,total,20.0,2.0,18.0,20.0
+stream_a,Stream A (Oracle Upper Bound),s28,Q3,0.0,0.0,0.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s28,Q4,0.0,0.0,0.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s28,total,6.0,2.0,4.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s29,Q1,7.0,8.0,1.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s29,Q2,3.0,2.0,1.0,6.0
 stream_a,Stream A (Oracle Upper Bound),s29,Q3,2.0,2.0,0.0,3.0
@@ -181,9 +181,9 @@ stream_a,Stream A (Oracle Upper Bound),s36,Q4,3.0,2.0,1.0,3.0
 stream_a,Stream A (Oracle Upper Bound),s36,total,20.0,10.0,10.0,20.0
 stream_a,Stream A (Oracle Upper Bound),s37,Q1,1.0,8.0,7.0,8.0
 stream_a,Stream A (Oracle Upper Bound),s37,Q2,0.0,2.0,2.0,6.0
-stream_a,Stream A (Oracle Upper Bound),s37,Q3,0.0,3.0,3.0,3.0
+stream_a,Stream A (Oracle Upper Bound),s37,Q3,0.5,3.0,2.5,3.0
 stream_a,Stream A (Oracle Upper Bound),s37,Q4,0.0,2.0,2.0,3.0
-stream_a,Stream A (Oracle Upper Bound),s37,total,1.0,15.0,14.0,20.0
+stream_a,Stream A (Oracle Upper Bound),s37,total,1.5,15.0,13.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s1,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s1,Q2,0.0,6.0,6.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s1,Q3,0.5,3.0,2.5,3.0
@@ -191,29 +191,29 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s1,Q4,0.0,3.0,3.0,3.
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s1,total,0.5,20.0,19.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,Q2,0.0,6.0,6.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,Q3,1.0,3.0,2.0,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,Q3,0.5,3.0,2.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,Q4,0.0,3.0,3.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,total,1.0,20.0,19.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s2,total,0.5,20.0,19.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,Q1,0.0,7.0,7.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,Q2,0.0,5.0,5.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,Q4,0.0,1.0,1.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,total,0.5,16.0,15.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s3,total,0.0,16.0,16.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,Q1,0.0,7.0,7.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,Q2,0.0,2.0,2.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,Q4,0.0,2.0,2.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,total,0.5,14.0,13.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s4,total,0.0,14.0,14.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,Q1,0.0,4.0,4.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,Q3,0.5,0.0,0.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,Q3,0.0,0.0,0.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,Q4,0.0,1.0,1.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,total,0.5,5.0,4.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s5,total,0.0,5.0,5.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,Q1,0.0,4.0,4.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,Q2,0.0,2.0,2.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,Q4,0.0,3.0,3.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,total,0.5,12.0,11.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s6,total,0.0,12.0,12.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s7,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s7,Q2,0.0,0.0,0.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s7,Q3,0.0,3.0,3.0,3.0
@@ -226,29 +226,29 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s8,Q4,0.0,1.0,1.0,3.
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s8,total,0.5,16.0,15.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,Q2,0.0,6.0,6.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,Q4,0.0,1.0,1.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,total,0.5,18.0,17.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s9,total,0.0,18.0,18.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,Q2,0.0,6.0,6.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,Q4,0.0,3.0,3.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,total,0.5,20.0,19.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s10,total,0.0,20.0,20.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,Q3,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,Q4,0.0,2.0,2.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,total,0.5,13.0,12.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s11,total,0.0,13.0,13.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,Q1,0.0,3.0,3.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,Q3,0.5,2.0,1.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,total,0.5,5.0,4.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s12,total,0.0,5.0,5.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,Q1,0.0,5.0,5.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,Q3,0.5,2.0,1.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,total,0.5,7.0,6.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s13,total,0.0,7.0,7.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s14,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s14,Q2,0.0,6.0,6.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s14,Q3,0.5,3.0,2.5,3.0
@@ -270,15 +270,15 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s17,Q3,0.5,3.0,2.5,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s17,Q4,0.0,3.0,3.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s17,total,0.5,20.0,19.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,Q1,0.0,2.0,2.0,8.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,Q2,2.0,2.0,0.0,6.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,Q2,0.0,2.0,2.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,Q4,0.0,1.0,1.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,total,2.0,7.0,5.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s18,total,0.0,7.0,7.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,Q2,0.0,6.0,6.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,Q3,1.0,3.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,Q4,0.0,2.0,2.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,total,0.5,19.0,18.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s19,total,1.0,19.0,18.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s20,Q1,0.0,3.0,3.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s20,Q2,0.0,0.0,0.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s20,Q3,0.5,1.0,0.5,3.0
@@ -286,19 +286,19 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s20,Q4,0.0,0.0,0.0,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s20,total,0.5,4.0,3.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,Q1,0.0,6.0,6.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,Q3,0.0,1.0,1.0,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,Q3,1.5,1.0,0.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,total,0.0,7.0,7.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s21,total,1.5,7.0,5.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s22,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s22,Q2,0.0,2.0,2.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s22,Q3,0.5,3.0,2.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s22,Q4,0.0,1.0,1.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s22,total,0.5,14.0,13.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q1,0.0,7.0,7.0,8.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q2,2.0,2.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q3,0.0,3.0,3.0,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q2,0.0,2.0,2.0,6.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q3,0.5,3.0,2.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,total,2.0,12.0,10.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s23,total,0.5,12.0,11.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s24,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s24,Q2,0.0,2.0,2.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s24,Q3,0.5,3.0,2.5,3.0
@@ -321,9 +321,9 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s27,Q4,0.0,1.0,1.0,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s27,total,0.5,13.0,12.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,Q1,0.0,0.0,0.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,Q2,0.0,2.0,2.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,Q3,0.5,0.0,0.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,Q3,0.0,0.0,0.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,total,0.5,2.0,1.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s28,total,0.0,2.0,2.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s29,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s29,Q2,0.0,2.0,2.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s29,Q3,0.5,2.0,1.5,3.0
@@ -331,24 +331,24 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s29,Q4,0.0,3.0,3.0,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s29,total,0.5,15.0,14.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,Q3,0.5,1.0,0.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,Q3,0.0,1.0,1.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,total,0.5,9.0,8.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s30,total,0.0,9.0,9.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,Q3,1.0,2.0,1.0,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,total,1.0,10.0,9.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s31,total,0.0,10.0,10.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,Q2,0.0,6.0,6.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,Q3,0.5,3.0,2.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,Q3,1.5,3.0,1.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,Q4,0.0,3.0,3.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,total,0.5,20.0,19.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s32,total,1.5,20.0,18.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,Q1,0.0,6.0,6.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,Q2,0.0,4.0,4.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,Q3,0.5,2.0,1.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,Q4,0.0,0.0,0.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,total,0.5,12.0,11.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s33,total,0.0,12.0,12.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s34,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s34,Q2,0.0,0.0,0.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s34,Q3,0.5,3.0,2.5,3.0
@@ -356,9 +356,9 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s34,Q4,0.0,1.0,1.0,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s34,total,0.5,12.0,11.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,Q2,0.0,0.0,0.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,Q3,0.5,2.0,1.5,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,Q3,0.0,2.0,2.0,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,Q4,0.0,1.0,1.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,total,0.5,11.0,10.5,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s35,total,0.0,11.0,11.0,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s36,Q1,0.0,6.0,6.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s36,Q2,0.0,2.0,2.0,6.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s36,Q3,0.5,0.0,0.5,3.0
@@ -366,9 +366,9 @@ stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s36,Q4,0.0,2.0,2.0,3
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s36,total,0.5,10.0,9.5,20.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,Q1,0.0,8.0,8.0,8.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,Q2,0.0,2.0,2.0,6.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,Q3,0.0,3.0,3.0,3.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,Q3,0.5,3.0,2.5,3.0
 stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,Q4,0.0,2.0,2.0,3.0
-stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,total,0.0,15.0,15.0,20.0
+stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),s37,total,0.5,15.0,14.5,20.0
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s1,Q1,0.0,8.0,8.0,8.0
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s1,Q2,0.0,6.0,6.0,6.0
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s1,Q3,0.0,3.0,3.0,3.0
@@ -554,191 +554,191 @@ stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s37,Q2,0.
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s37,Q3,0.0,3.0,3.0,3.0
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s37,Q4,0.0,2.0,2.0,3.0
 stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),s37,total,0.0,15.0,15.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s1,Q1,1.5,8.0,6.5,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s1,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s1,Q2,6.0,6.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s1,Q3,2.0,3.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s1,Q3,1.0,3.0,2.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s1,Q4,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s1,total,11.5,20.0,8.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s2,Q1,5.5,8.0,2.5,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s1,total,10.0,20.0,10.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s2,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s2,Q2,6.0,6.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s2,Q3,1.0,3.0,2.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s2,Q4,3.0,3.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s2,total,15.5,20.0,4.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s3,Q1,6.0,7.0,1.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s3,Q2,6.0,5.0,1.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s3,Q3,3.0,3.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s2,total,11.0,20.0,9.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s3,Q1,0.0,7.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s3,Q2,0.0,5.0,5.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s3,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s3,Q4,0.0,1.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s3,total,15.0,16.0,1.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s4,Q1,8.0,7.0,1.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s4,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s4,Q3,1.0,3.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s3,total,0.0,16.0,16.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s4,Q1,0.0,7.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s4,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s4,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s4,Q4,0.0,2.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s4,total,15.0,14.0,1.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s5,Q1,2.5,4.0,1.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s5,Q2,2.0,0.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s4,total,0.0,14.0,14.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s5,Q1,0.0,4.0,4.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s5,Q2,0.0,0.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s5,Q3,0.0,0.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s5,Q4,2.0,1.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s5,total,6.5,5.0,1.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s6,Q1,3.5,4.0,0.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s6,Q2,4.0,2.0,2.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s6,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s6,Q4,3.0,3.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s6,total,12.5,12.0,0.5,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s5,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s5,total,0.0,5.0,5.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s6,Q1,0.0,4.0,4.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s6,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s6,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s6,Q4,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s6,total,0.0,12.0,12.0,20.0
 stream_c,Stream C (Routing Only: Baseline Regex),s7,Q1,0.0,8.0,8.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s7,Q2,0.0,0.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s7,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s7,Q4,0.0,1.0,1.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s7,total,0.0,12.0,12.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s8,Q1,3.5,6.0,2.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s8,Q2,4.0,6.0,2.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s8,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s8,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s8,total,12.5,16.0,3.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s9,Q1,1.0,8.0,7.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s9,Q2,6.0,6.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s9,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s9,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s9,total,12.0,18.0,6.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s10,Q1,4.0,8.0,4.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s10,Q2,6.0,6.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s10,Q3,1.0,3.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s10,Q4,3.0,3.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s10,total,14.0,20.0,6.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s11,Q1,3.5,8.0,4.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s11,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s11,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s11,Q4,2.0,2.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s11,total,13.5,13.0,0.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s12,Q1,3.5,3.0,0.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s12,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s12,Q3,3.0,2.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s12,Q4,3.0,0.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s12,total,15.5,5.0,10.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s13,Q1,4.0,5.0,1.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s13,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s13,Q3,2.0,2.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s13,Q4,2.0,0.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s13,total,14.0,7.0,7.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s14,Q1,5.5,8.0,2.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s14,Q2,4.0,6.0,2.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s14,Q3,1.0,3.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s8,Q1,0.0,6.0,6.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s8,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s8,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s8,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s8,total,0.0,16.0,16.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s9,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s9,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s9,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s9,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s9,total,0.0,18.0,18.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s10,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s10,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s10,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s10,Q4,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s10,total,0.0,20.0,20.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s11,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s11,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s11,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s11,Q4,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s11,total,0.0,13.0,13.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s12,Q1,0.0,3.0,3.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s12,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s12,Q3,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s12,Q4,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s12,total,0.0,5.0,5.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s13,Q1,0.0,5.0,5.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s13,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s13,Q3,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s13,Q4,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s13,total,0.0,7.0,7.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s14,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s14,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s14,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s14,Q4,0.0,3.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s14,total,10.5,20.0,9.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s15,Q1,6.0,8.0,2.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s15,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s15,Q3,2.0,1.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s15,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s15,total,17.0,10.0,7.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s16,Q1,2.0,7.0,5.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s16,Q2,2.0,6.0,4.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s14,total,0.0,20.0,20.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s15,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s15,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s15,Q3,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s15,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s15,total,0.0,10.0,10.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s16,Q1,0.0,7.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s16,Q2,0.0,6.0,6.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s16,Q3,0.0,2.0,2.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s16,Q4,0.0,0.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s16,total,4.0,15.0,11.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s17,Q1,5.5,8.0,2.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s17,Q2,6.0,6.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s17,Q3,3.0,3.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s16,total,0.0,15.0,15.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s17,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s17,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s17,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s17,Q4,0.0,3.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s17,total,14.5,20.0,5.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s18,Q1,0.0,2.0,2.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s17,total,0.0,20.0,20.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s18,Q1,1.0,2.0,1.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s18,Q2,2.0,2.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s18,Q3,1.0,2.0,1.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s18,Q4,1.0,1.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s18,total,4.0,7.0,3.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s19,Q1,1.0,8.0,7.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s19,Q2,6.0,6.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s19,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s19,Q4,2.0,2.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s19,total,11.0,19.0,8.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s20,Q1,3.5,3.0,0.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s20,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s20,Q3,3.0,1.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s18,total,5.0,7.0,2.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s19,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s19,Q2,0.0,6.0,6.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s19,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s19,Q4,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s19,total,0.0,19.0,19.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s20,Q1,1.0,3.0,2.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s20,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s20,Q3,1.0,1.0,0.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s20,Q4,0.0,0.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s20,total,12.5,4.0,8.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s21,Q1,3.5,6.0,2.5,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s20,total,2.0,4.0,2.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s21,Q1,1.0,6.0,5.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s21,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s21,Q3,2.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s21,Q3,1.0,1.0,0.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s21,Q4,3.0,0.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s21,total,14.5,7.0,7.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s22,Q1,5.0,8.0,3.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s21,total,11.0,7.0,4.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s22,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s22,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s22,Q3,2.0,3.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s22,Q3,1.0,3.0,2.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s22,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s22,total,16.0,14.0,2.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s23,Q1,2.5,7.0,4.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s23,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s23,Q3,2.0,3.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s22,total,11.0,14.0,3.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s23,Q1,0.0,7.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s23,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s23,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s23,Q4,0.0,0.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s23,total,10.5,12.0,1.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s24,Q1,6.0,8.0,2.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s23,total,0.0,12.0,12.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s24,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s24,Q2,6.0,2.0,4.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s24,Q3,1.0,3.0,2.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s24,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s24,total,16.0,14.0,2.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s25,Q1,2.5,8.0,5.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s25,Q2,3.0,2.0,1.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s24,total,11.0,14.0,3.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s25,Q1,1.0,8.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s25,Q2,2.0,2.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s25,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s25,Q4,2.0,2.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s25,total,7.5,15.0,7.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s26,Q1,5.0,8.0,3.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s26,Q2,6.0,4.0,2.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s26,Q3,2.0,3.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s26,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s26,total,16.0,16.0,0.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s27,Q1,4.0,7.0,3.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s27,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s27,Q3,1.0,3.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s27,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s27,total,14.0,13.0,1.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s28,Q1,3.5,0.0,3.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s28,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s28,Q3,2.0,0.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s28,Q4,3.0,0.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s28,total,14.5,2.0,12.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s29,Q1,3.0,8.0,5.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s29,Q2,3.0,2.0,1.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s25,total,5.0,15.0,10.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s26,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s26,Q2,0.0,4.0,4.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s26,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s26,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s26,total,0.0,16.0,16.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s27,Q1,0.0,7.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s27,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s27,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s27,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s27,total,0.0,13.0,13.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s28,Q1,0.0,0.0,0.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s28,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s28,Q3,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s28,Q4,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s28,total,0.0,2.0,2.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s29,Q1,1.0,8.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s29,Q2,2.0,2.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s29,Q3,1.0,2.0,1.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s29,Q4,3.0,3.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s29,total,10.0,15.0,5.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s30,Q1,2.5,8.0,5.5,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s30,Q2,4.0,0.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s30,Q3,1.0,1.0,0.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s30,Q4,3.0,0.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s30,total,10.5,9.0,1.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s31,Q1,4.5,8.0,3.5,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s29,total,7.0,15.0,8.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s30,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s30,Q2,0.0,0.0,0.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s30,Q3,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s30,Q4,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s30,total,0.0,9.0,9.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s31,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s31,Q2,6.0,0.0,6.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s31,Q3,3.0,2.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s31,Q3,1.0,2.0,1.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s31,Q4,2.0,0.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s31,total,15.5,10.0,5.5,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s32,Q1,6.0,8.0,2.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s31,total,10.0,10.0,0.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s32,Q1,1.0,8.0,7.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s32,Q2,6.0,6.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s32,Q3,1.0,3.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s32,Q4,0.0,3.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s32,total,13.0,20.0,7.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s33,Q1,3.0,6.0,3.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s33,Q2,4.0,4.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s33,Q3,1.0,2.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s33,Q4,3.0,0.0,3.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s33,total,11.0,12.0,1.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s34,Q1,4.0,8.0,4.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s32,Q4,3.0,3.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s32,total,11.0,20.0,9.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s33,Q1,0.0,6.0,6.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s33,Q2,0.0,4.0,4.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s33,Q3,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s33,Q4,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s33,total,0.0,12.0,12.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s34,Q1,0.0,8.0,8.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s34,Q2,0.0,0.0,0.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s34,Q3,1.0,3.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s34,Q4,3.0,1.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s34,total,8.0,12.0,4.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s35,Q1,2.0,8.0,6.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s35,Q2,1.0,0.0,1.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s34,Q3,0.0,3.0,3.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s34,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s34,total,0.0,12.0,12.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s35,Q1,0.0,8.0,8.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s35,Q2,0.0,0.0,0.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s35,Q3,0.0,2.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s35,Q4,2.0,1.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s35,total,5.0,11.0,6.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s36,Q1,8.0,6.0,2.0,8.0
-stream_c,Stream C (Routing Only: Baseline Regex),s36,Q2,6.0,2.0,4.0,6.0
-stream_c,Stream C (Routing Only: Baseline Regex),s36,Q3,1.0,0.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s36,Q4,3.0,2.0,1.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s36,total,18.0,10.0,8.0,20.0
-stream_c,Stream C (Routing Only: Baseline Regex),s37,Q1,1.0,8.0,7.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s35,Q4,0.0,1.0,1.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s35,total,0.0,11.0,11.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s36,Q1,0.0,6.0,6.0,8.0
+stream_c,Stream C (Routing Only: Baseline Regex),s36,Q2,0.0,2.0,2.0,6.0
+stream_c,Stream C (Routing Only: Baseline Regex),s36,Q3,0.0,0.0,0.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s36,Q4,0.0,2.0,2.0,3.0
+stream_c,Stream C (Routing Only: Baseline Regex),s36,total,0.0,10.0,10.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s37,Q1,0.0,8.0,8.0,8.0
 stream_c,Stream C (Routing Only: Baseline Regex),s37,Q2,0.0,2.0,2.0,6.0
 stream_c,Stream C (Routing Only: Baseline Regex),s37,Q3,0.0,3.0,3.0,3.0
 stream_c,Stream C (Routing Only: Baseline Regex),s37,Q4,0.0,2.0,2.0,3.0
-stream_c,Stream C (Routing Only: Baseline Regex),s37,total,1.0,15.0,14.0,20.0
+stream_c,Stream C (Routing Only: Baseline Regex),s37,total,0.0,15.0,15.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s1,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s1,Q2,0.0,6.0,6.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s1,Q3,0.0,3.0,3.0,3.0
@@ -751,9 +751,9 @@ stream_d_baseline,Stream D (End-to-End Baseline),s2,Q4,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s2,total,0.0,20.0,20.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s3,Q1,0.0,7.0,7.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s3,Q2,0.0,5.0,5.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s3,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s3,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s3,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s3,total,0.5,16.0,15.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s3,total,0.0,16.0,16.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s4,Q1,0.0,7.0,7.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s4,Q2,0.0,2.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s4,Q3,0.0,3.0,3.0,3.0
@@ -796,14 +796,14 @@ stream_d_baseline,Stream D (End-to-End Baseline),s11,Q4,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s11,total,0.0,13.0,13.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s12,Q1,0.0,3.0,3.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s12,Q2,0.0,0.0,0.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s12,Q3,0.5,2.0,1.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s12,Q3,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s12,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s12,total,0.5,5.0,4.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s12,total,0.0,5.0,5.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s13,Q1,0.0,5.0,5.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s13,Q2,0.0,0.0,0.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s13,Q3,0.5,2.0,1.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s13,Q3,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s13,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s13,total,0.5,7.0,6.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s13,total,0.0,7.0,7.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s14,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s14,Q2,0.0,6.0,6.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s14,Q3,0.0,3.0,3.0,3.0
@@ -811,9 +811,9 @@ stream_d_baseline,Stream D (End-to-End Baseline),s14,Q4,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s14,total,0.0,20.0,20.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s15,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s15,Q2,0.0,0.0,0.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s15,Q3,0.5,1.0,0.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s15,Q3,0.0,1.0,1.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s15,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s15,total,0.5,10.0,9.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s15,total,0.0,10.0,10.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s16,Q1,0.0,7.0,7.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s16,Q2,0.0,6.0,6.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s16,Q3,0.0,2.0,2.0,3.0
@@ -821,44 +821,44 @@ stream_d_baseline,Stream D (End-to-End Baseline),s16,Q4,0.0,0.0,0.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s16,total,0.0,15.0,15.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s17,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s17,Q2,0.0,6.0,6.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s17,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s17,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s17,Q4,0.0,3.0,3.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s17,total,0.5,20.0,19.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s17,total,0.0,20.0,20.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s18,Q1,0.0,2.0,2.0,8.0
-stream_d_baseline,Stream D (End-to-End Baseline),s18,Q2,2.0,2.0,0.0,6.0
+stream_d_baseline,Stream D (End-to-End Baseline),s18,Q2,0.0,2.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s18,Q3,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s18,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s18,total,2.0,7.0,5.0,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s18,total,0.0,7.0,7.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s19,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s19,Q2,0.0,6.0,6.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s19,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s19,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s19,Q4,0.0,2.0,2.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s19,total,0.5,19.0,18.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s19,total,0.0,19.0,19.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s20,Q1,0.0,3.0,3.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s20,Q2,0.0,0.0,0.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s20,Q3,0.5,1.0,0.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s20,Q3,0.0,1.0,1.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s20,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s20,total,0.5,4.0,3.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s20,total,0.0,4.0,4.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s21,Q1,0.0,6.0,6.0,8.0
-stream_d_baseline,Stream D (End-to-End Baseline),s21,Q2,0.0,0.0,0.0,6.0
+stream_d_baseline,Stream D (End-to-End Baseline),s21,Q2,2.0,0.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s21,Q3,0.0,1.0,1.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s21,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s21,total,0.0,7.0,7.0,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s21,total,2.0,7.0,5.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s22,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s22,Q2,0.0,2.0,2.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s22,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s22,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s22,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s22,total,0.5,14.0,13.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s22,total,0.0,14.0,14.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s23,Q1,0.0,7.0,7.0,8.0
-stream_d_baseline,Stream D (End-to-End Baseline),s23,Q2,2.0,2.0,0.0,6.0
+stream_d_baseline,Stream D (End-to-End Baseline),s23,Q2,0.0,2.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s23,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s23,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s23,total,2.0,12.0,10.0,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s23,total,0.0,12.0,12.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s24,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s24,Q2,0.0,2.0,2.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s24,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s24,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s24,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s24,total,0.5,14.0,13.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s24,total,0.0,14.0,14.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s25,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s25,Q2,0.0,2.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s25,Q3,0.0,3.0,3.0,3.0
@@ -866,9 +866,9 @@ stream_d_baseline,Stream D (End-to-End Baseline),s25,Q4,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s25,total,0.0,15.0,15.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s26,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s26,Q2,0.0,4.0,4.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s26,Q3,0.5,3.0,2.5,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s26,Q3,0.0,3.0,3.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s26,Q4,0.0,1.0,1.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s26,total,0.5,16.0,15.5,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s26,total,0.0,16.0,16.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s27,Q1,0.0,7.0,7.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s27,Q2,0.0,2.0,2.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s27,Q3,0.0,3.0,3.0,3.0
@@ -890,10 +890,10 @@ stream_d_baseline,Stream D (End-to-End Baseline),s30,Q3,0.0,1.0,1.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s30,Q4,0.0,0.0,0.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s30,total,0.0,9.0,9.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s31,Q1,0.0,8.0,8.0,8.0
-stream_d_baseline,Stream D (End-to-End Baseline),s31,Q2,0.0,0.0,0.0,6.0
-stream_d_baseline,Stream D (End-to-End Baseline),s31,Q3,1.0,2.0,1.0,3.0
+stream_d_baseline,Stream D (End-to-End Baseline),s31,Q2,2.0,0.0,2.0,6.0
+stream_d_baseline,Stream D (End-to-End Baseline),s31,Q3,0.0,2.0,2.0,3.0
 stream_d_baseline,Stream D (End-to-End Baseline),s31,Q4,0.0,0.0,0.0,3.0
-stream_d_baseline,Stream D (End-to-End Baseline),s31,total,1.0,10.0,9.0,20.0
+stream_d_baseline,Stream D (End-to-End Baseline),s31,total,2.0,10.0,8.0,20.0
 stream_d_baseline,Stream D (End-to-End Baseline),s32,Q1,0.0,8.0,8.0,8.0
 stream_d_baseline,Stream D (End-to-End Baseline),s32,Q2,0.0,6.0,6.0,6.0
 stream_d_baseline,Stream D (End-to-End Baseline),s32,Q3,0.0,3.0,3.0,3.0
@@ -931,29 +931,29 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s1,Q4,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s1,total,0.5,20.0,19.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,Q2,0.0,6.0,6.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,Q3,1.0,3.0,2.0,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,Q3,0.5,3.0,2.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,Q4,0.0,3.0,3.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,total,1.0,20.0,19.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s2,total,0.5,20.0,19.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,Q1,0.0,7.0,7.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,Q2,0.0,5.0,5.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,Q4,0.0,1.0,1.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,total,0.5,16.0,15.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s3,total,0.0,16.0,16.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,Q1,0.0,7.0,7.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,Q2,0.0,2.0,2.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,Q4,0.0,2.0,2.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,total,0.5,14.0,13.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s4,total,0.0,14.0,14.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,Q1,0.0,4.0,4.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,Q3,0.5,0.0,0.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,Q3,0.0,0.0,0.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,Q4,0.0,1.0,1.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,total,0.5,5.0,4.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s5,total,0.0,5.0,5.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,Q1,0.0,4.0,4.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,Q2,0.0,2.0,2.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,Q4,0.0,3.0,3.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,total,0.5,12.0,11.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s6,total,0.0,12.0,12.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s7,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s7,Q2,0.0,0.0,0.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s7,Q3,0.0,3.0,3.0,3.0
@@ -966,29 +966,29 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s8,Q4,0.0,1.0,1.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s8,total,0.5,16.0,15.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,Q2,0.0,6.0,6.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,Q4,0.0,1.0,1.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,total,0.5,18.0,17.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s9,total,0.0,18.0,18.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,Q2,0.0,6.0,6.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,Q4,0.0,3.0,3.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,total,0.5,20.0,19.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s10,total,0.0,20.0,20.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,Q3,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,Q4,0.0,2.0,2.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,total,0.5,13.0,12.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s11,total,0.0,13.0,13.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,Q1,0.0,3.0,3.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,Q3,0.5,2.0,1.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,total,0.5,5.0,4.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s12,total,0.0,5.0,5.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,Q1,0.0,5.0,5.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,Q3,0.5,2.0,1.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,total,0.5,7.0,6.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s13,total,0.0,7.0,7.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s14,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s14,Q2,0.0,6.0,6.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s14,Q3,0.5,3.0,2.5,3.0
@@ -1010,15 +1010,15 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s17,Q3,0.5,3.0,2.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s17,Q4,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s17,total,0.5,20.0,19.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,Q1,0.0,2.0,2.0,8.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,Q2,2.0,2.0,0.0,6.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,Q2,0.0,2.0,2.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,Q4,0.0,1.0,1.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,total,2.0,7.0,5.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s18,total,0.0,7.0,7.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,Q2,0.0,6.0,6.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,Q3,1.0,3.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,Q4,0.0,2.0,2.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,total,0.5,19.0,18.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s19,total,1.0,19.0,18.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s20,Q1,0.0,3.0,3.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s20,Q2,0.0,0.0,0.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s20,Q3,0.5,1.0,0.5,3.0
@@ -1026,19 +1026,19 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s20,Q4,0.0,0.0,0.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s20,total,0.5,4.0,3.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,Q1,0.0,6.0,6.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,Q3,0.0,1.0,1.0,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,Q3,1.5,1.0,0.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,total,0.0,7.0,7.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s21,total,1.5,7.0,5.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s22,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s22,Q2,0.0,2.0,2.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s22,Q3,0.5,3.0,2.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s22,Q4,0.0,1.0,1.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s22,total,0.5,14.0,13.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q1,0.0,7.0,7.0,8.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q2,2.0,2.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q3,0.0,3.0,3.0,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q2,0.0,2.0,2.0,6.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q3,0.5,3.0,2.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,total,2.0,12.0,10.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s23,total,0.5,12.0,11.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s24,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s24,Q2,0.0,2.0,2.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s24,Q3,0.5,3.0,2.5,3.0
@@ -1061,9 +1061,9 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s27,Q4,0.0,1.0,1.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s27,total,0.5,13.0,12.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,Q1,0.0,0.0,0.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,Q2,0.0,2.0,2.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,Q3,0.5,0.0,0.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,Q3,0.0,0.0,0.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,total,0.5,2.0,1.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s28,total,0.0,2.0,2.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s29,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s29,Q2,0.0,2.0,2.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s29,Q3,0.5,2.0,1.5,3.0
@@ -1071,24 +1071,24 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s29,Q4,0.0,3.0,3.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s29,total,0.5,15.0,14.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,Q3,0.5,1.0,0.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,Q3,0.0,1.0,1.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,total,0.5,9.0,8.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s30,total,0.0,9.0,9.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,Q3,1.0,2.0,1.0,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,total,1.0,10.0,9.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s31,total,0.0,10.0,10.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,Q2,0.0,6.0,6.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,Q3,0.5,3.0,2.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,Q3,1.5,3.0,1.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,Q4,0.0,3.0,3.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,total,0.5,20.0,19.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s32,total,1.5,20.0,18.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,Q1,0.0,6.0,6.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,Q2,0.0,4.0,4.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,Q3,0.5,2.0,1.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,Q4,0.0,0.0,0.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,total,0.5,12.0,11.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s33,total,0.0,12.0,12.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s34,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s34,Q2,0.0,0.0,0.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s34,Q3,0.5,3.0,2.5,3.0
@@ -1096,9 +1096,9 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s34,Q4,0.0,1.0,1.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s34,total,0.5,12.0,11.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,Q2,0.0,0.0,0.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,Q3,0.5,2.0,1.5,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,Q3,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,Q4,0.0,1.0,1.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,total,0.5,11.0,10.5,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s35,total,0.0,11.0,11.0,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s36,Q1,0.0,6.0,6.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s36,Q2,0.0,2.0,2.0,6.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s36,Q3,0.5,0.0,0.5,3.0
@@ -1106,6 +1106,6 @@ stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s36,Q4,0.0,2.0,2.0,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s36,total,0.5,10.0,9.5,20.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,Q1,0.0,8.0,8.0,8.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,Q2,0.0,2.0,2.0,6.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,Q3,0.0,3.0,3.0,3.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,Q3,0.5,3.0,2.5,3.0
 stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,Q4,0.0,2.0,2.0,3.0
-stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,total,0.0,15.0,15.0,20.0
+stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),s37,total,0.5,15.0,14.5,20.0

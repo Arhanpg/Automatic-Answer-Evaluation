@@ -1,25 +1,25 @@
 question_id,stream_id,stream_name,max_mark,mae,rmse,within_05m_pct,within_10m_pct,qwk,spearman_rho
-Q1,stream_a,Stream A (Oracle Upper Bound),8.0,1.6757,2.7138,45.95,62.16,-0.005,-0.1668
+Q1,stream_a,Stream A (Oracle Upper Bound),8.0,1.4595,2.3738,48.65,64.86,0.279,-0.0224
 Q1,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),8.0,6.7027,6.9981,2.7,2.7,0.0,0.0
 Q1,stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),8.0,6.7027,6.9981,2.7,2.7,0.0,0.0
-Q1,stream_c,Stream C (Routing Only: Baseline Regex),8.0,3.4324,3.9932,8.11,16.22,0.0791,0.0622
+Q1,stream_c,Stream C (Routing Only: Baseline Regex),8.0,6.4054,6.7243,2.7,5.41,0.0015,0.1351
 Q1,stream_d_baseline,Stream D (End-to-End Baseline),8.0,6.7027,6.9981,2.7,2.7,0.0,0.0
 Q1,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),8.0,6.7027,6.9981,2.7,2.7,0.0,0.0
-Q2,stream_a,Stream A (Oracle Upper Bound),6.0,2.7297,3.6205,32.43,40.54,0.1603,0.2635
-Q2,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),6.0,2.5135,3.5144,37.84,37.84,-0.0129,-0.0117
+Q2,stream_a,Stream A (Oracle Upper Bound),6.0,2.3243,3.3044,40.54,48.65,0.2698,0.4142
+Q2,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),6.0,2.6216,3.5451,32.43,32.43,0.0,0.0
 Q2,stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),6.0,2.6216,3.5451,32.43,32.43,0.0,0.0
-Q2,stream_c,Stream C (Routing Only: Baseline Regex),6.0,2.5405,3.3852,29.73,40.54,0.1644,0.1733
-Q2,stream_d_baseline,Stream D (End-to-End Baseline),6.0,2.5135,3.5144,37.84,37.84,-0.0129,-0.0117
-Q2,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),6.0,2.5135,3.5144,37.84,37.84,-0.0129,-0.0117
-Q3,stream_a,Stream A (Oracle Upper Bound),3.0,0.7838,1.3049,56.76,75.68,0.0169,0.0942
-Q3,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),3.0,1.9459,2.1085,16.22,21.62,-0.0021,-0.0103
+Q2,stream_c,Stream C (Routing Only: Baseline Regex),6.0,2.4054,3.4524,43.24,43.24,0.0933,0.0854
+Q2,stream_d_baseline,Stream D (End-to-End Baseline),6.0,2.7297,3.5754,27.03,27.03,-0.0345,-0.293
+Q2,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),6.0,2.6216,3.5451,32.43,32.43,0.0,0.0
+Q3,stream_a,Stream A (Oracle Upper Bound),3.0,0.6486,1.133,62.16,78.38,0.4102,0.2505
+Q3,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),3.0,2.027,2.2118,16.22,18.92,0.0099,0.2053
 Q3,stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),3.0,2.3243,2.5148,8.11,18.92,0.0,0.0
-Q3,stream_c,Stream C (Routing Only: Baseline Regex),3.0,1.3514,1.5769,13.51,59.46,0.0105,0.0004
-Q3,stream_d_baseline,Stream D (End-to-End Baseline),3.0,2.1622,2.3795,13.51,21.62,0.0057,-0.0413
-Q3,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),3.0,1.9459,2.1085,16.22,21.62,-0.0021,-0.0103
-Q4,stream_a,Stream A (Oracle Upper Bound),3.0,1.4595,1.8158,27.03,45.95,-0.0194,-0.0604
+Q3,stream_c,Stream C (Routing Only: Baseline Regex),3.0,2.0541,2.3133,13.51,27.03,-0.0025,-0.0775
+Q3,stream_d_baseline,Stream D (End-to-End Baseline),3.0,2.3243,2.5148,8.11,18.92,0.0,0.0
+Q3,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),3.0,2.027,2.2118,16.22,18.92,0.0099,0.2053
+Q4,stream_a,Stream A (Oracle Upper Bound),3.0,1.2162,1.6024,35.14,54.05,0.1846,0.214
 Q4,stream_b_trocr,Stream B (Recognition Only: TrOCR-Small Raw),3.0,1.3243,1.7164,27.03,62.16,0.0,0.0
 Q4,stream_b_tesseract,Stream B (Recognition Only: Tesseract Preprocessed),3.0,1.3243,1.7164,27.03,62.16,0.0,0.0
-Q4,stream_c,Stream C (Routing Only: Baseline Regex),3.0,1.4595,1.8454,29.73,45.95,-0.0867,-0.0974
+Q4,stream_c,Stream C (Routing Only: Baseline Regex),3.0,1.1351,1.5422,35.14,64.86,0.1984,0.203
 Q4,stream_d_baseline,Stream D (End-to-End Baseline),3.0,1.3243,1.7164,27.03,62.16,0.0,0.0
 Q4,stream_d_hybrid,Stream D-Hybrid (End-to-End Proposed),3.0,1.3243,1.7164,27.03,62.16,0.0,0.0

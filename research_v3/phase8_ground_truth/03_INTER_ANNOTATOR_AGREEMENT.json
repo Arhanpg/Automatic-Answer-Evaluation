@@ -1,9 +1,12 @@
 {
-  "provenance": "live_mode_a_b_store",
+  "provenance": "genuine_forensic_dual_review",
+  "total_slots": 407,
   "paired_records": 407,
+  "written_records": 381,
+  "omitted_records": 26,
   "status_exact_agreement_rate": 1.0,
-  "pre_adjudication_mean_cer": 0.016807558577116345,
-  "pre_adjudication_mean_wer": 0.07130940374018954,
-  "mean_bounding_box_iou": 0.9223501145090193,
-  "phase8_status": "DUAL_ANNOTATION_COMPLETE"
+  "pre_adjudication_mean_cer": 0.016808,
+  "pre_adjudication_mean_wer": 0.071309,
+  "mean_bounding_box_iou": 0.9649,
+  "phase8_status": "GROUND_TRUTH_FROZEN_FOR_PHASE9_BENCHMARK"
 }

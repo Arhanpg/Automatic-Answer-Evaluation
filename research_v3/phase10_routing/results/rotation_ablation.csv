@@ -1,9 +1,9 @@
 system_id,scan_orientation,total_records,written_records,mean_iou,precision_iou_050,slot_accuracy,coverage_rate
-hybrid_layout_continuation,Normal_Upright,363,358,0.9644,1.0,1.0,1.0
-hybrid_layout_continuation,"Rotated_Sideways (s7,s16,s34,s37)",44,34,0.9696,1.0,1.0,1.0
-oracle_map_control,Normal_Upright,363,358,1.0,1.0,1.0,1.0
-oracle_map_control,"Rotated_Sideways (s7,s16,s34,s37)",44,34,1.0,1.0,1.0,1.0
-robust_header_detector,Normal_Upright,363,358,0.904,0.9749,1.0,0.9749
-robust_header_detector,"Rotated_Sideways (s7,s16,s34,s37)",44,34,0.9184,0.9706,1.0,0.9706
-sheet_parser_baseline,Normal_Upright,363,358,0.6787,0.7318,0.5868,0.7318
-sheet_parser_baseline,"Rotated_Sideways (s7,s16,s34,s37)",44,34,0.0793,0.0,0.4091,0.0
+hybrid_layout_continuation,Normal_Upright,121,113,0.3091,0.1504,1.0,0.1504
+hybrid_layout_continuation,"Rotated_Sideways (s7,s16,s34,s37)",286,268,0.5678,0.541,1.0,0.541
+oracle_map_control,Normal_Upright,121,113,1.0,1.0,1.0,1.0
+oracle_map_control,"Rotated_Sideways (s7,s16,s34,s37)",286,268,1.0,1.0,1.0,1.0
+robust_header_detector,Normal_Upright,121,113,0.3091,0.1504,1.0,0.1504
+robust_header_detector,"Rotated_Sideways (s7,s16,s34,s37)",286,268,0.5678,0.541,1.0,0.541
+sheet_parser_baseline,Normal_Upright,121,113,0.2371,0.0531,0.4132,0.0531
+sheet_parser_baseline,"Rotated_Sideways (s7,s16,s34,s37)",286,268,0.0,0.0,0.0629,0.0

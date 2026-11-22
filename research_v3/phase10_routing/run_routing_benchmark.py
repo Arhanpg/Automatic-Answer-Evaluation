@@ -38,7 +38,8 @@ from research_v3.phase10_routing.routing_models import (
     OMITTED_RECORDS
 )
 
-ANN_DIR = REPO_ROOT / "research_v2" / "annotations"
+REGIONS_FILE = REPO_ROOT / "research_v3" / "phase8_ground_truth" / "annotations_store" / "answer_regions.csv"
+PAGES_FILE = REPO_ROOT / "research_v2" / "annotations" / "pages.csv"
 OUT_DIR = REPO_ROOT / "research_v3" / "phase10_routing" / "results"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -49,21 +50,19 @@ def run_benchmark():
     print("=" * 80)
 
     # 1. Load data
-    regions_file = ANN_DIR / "answer_regions.csv"
-    pages_file = ANN_DIR / "pages.csv"
+    if not REGIONS_FILE.exists() or not PAGES_FILE.exists():
+        raise FileNotFoundError(f"Missing required annotations: {REGIONS_FILE} or {PAGES_FILE}")
 
-    if not regions_file.exists() or not pages_file.exists():
-        raise FileNotFoundError(f"Missing required annotations in {ANN_DIR}")
-
-    regions_df = pd.read_csv(regions_file)
-    pages_df = pd.read_csv(pages_file)
+    regions_df = pd.read_csv(REGIONS_FILE)
+    pages_df = pd.read_csv(PAGES_FILE)
 
     print(f"Loaded {len(regions_df)} subquestion records across {regions_df['student_id'].nunique()} students.")
     print(f"Loaded {len(pages_df)} scanned page records.")
 
     # Mark omissions in GT
-    regions_df["is_omitted"] = regions_df.apply(
-        lambda r: (r["student_id"], r["subquestion_id"]) in OMITTED_RECORDS, axis=1
+    regions_df["is_omitted"] = (
+        regions_df["annotation_status"].astype(str).str.startswith("omitted") |
+        regions_df.apply(lambda r: (r["student_id"], r["subquestion_id"]) in OMITTED_RECORDS, axis=1)
     )
 
     # Instantiate systems

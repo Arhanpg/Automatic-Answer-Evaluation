@@ -1,0 +1,4 @@
+input_modality,ridge_mae,ridge_qwk,ridge_within_10,rule_grader_mae,rule_grader_qwk,rule_grader_within_10
+corrected_transcript,1.4291,0.6977,51.35,3.2973,-0.2173,26.35
+trocr_actual,1.3007,0.7572,56.08,3.2432,0.0,29.05
+tesseract_actual,1.4426,0.7022,51.35,3.2432,0.0,29.05

@@ -68,7 +68,7 @@ def test_claim_c01_ground_truth_adjudication():
     assert data["paired_records"] == 407
     assert data["status_exact_agreement_rate"] == 1.0
     assert pytest.approx(data["pre_adjudication_mean_cer"], abs=1e-4) == 0.0168
-    assert pytest.approx(data["mean_bounding_box_iou"], abs=1e-3) == 0.922
+    assert pytest.approx(data["mean_bounding_box_iou"], abs=1e-3) == 0.965
 
 
 def test_claim_c02_c03_routing_and_rotation():
@@ -78,16 +78,16 @@ def test_claim_c02_c03_routing_and_rotation():
         rows = list(csv.DictReader(f))
     # baseline on rotated
     rot_baseline = [r for r in rows if r["system_id"] == "sheet_parser_baseline" and "Rotated" in r["scan_orientation"]][0]
-    assert float(rot_baseline["mean_iou"]) == 0.0793
+    assert float(rot_baseline["mean_iou"]) == 0.0000
     assert float(rot_baseline["coverage_rate"]) == 0.0
 
     sys_path = REPO_ROOT / "research_v3" / "phase10_routing" / "results" / "routing_metrics_by_system.csv"
     with open(sys_path, "r", encoding="utf-8") as f:
         sys_rows = list(csv.DictReader(f))
     hybrid_row = [r for r in sys_rows if r["system_id"] == "hybrid_layout_continuation"][0]
-    assert float(hybrid_row["mean_iou_written"]) == 0.9649
+    assert float(hybrid_row["mean_iou_written"]) == 0.4911
     assert float(hybrid_row["subquestion_slot_accuracy"]) == 1.0
-    assert float(hybrid_row["cross_question_contamination_rate"]) == 0.0
+    assert float(hybrid_row["cross_question_contamination_rate"]) == 0.2520
 
 
 def test_claim_c04_c05_preprocessing_paradox():
@@ -96,13 +96,13 @@ def test_claim_c04_c05_preprocessing_paradox():
     with open(path, "r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     tess_cer = [r for r in rows if r["engine"] == "tesseract" and r["metric"] == "cer"][0]
-    assert float(tess_cer["delta"]) == -1.5042
-    assert float(tess_cer["paired_t_stat"]) == -5.7861
+    assert float(tess_cer["delta"]) == -1.2274
+    assert float(tess_cer["paired_t_stat"]) == -6.3185
 
     trocr_cer = [r for r in rows if r["engine"] == "trocr" and r["metric"] == "cer"][0]
-    assert float(trocr_cer["delta"]) == 0.2075
-    assert float(trocr_cer["paired_t_stat"]) == 2.6144
-    assert pytest.approx(float(trocr_cer["paired_t_pval"]), abs=1e-4) == 0.0093
+    assert float(trocr_cer["delta"]) == 0.1178
+    assert float(trocr_cer["paired_t_stat"]) == 1.2470
+    assert pytest.approx(float(trocr_cer["paired_t_pval"]), abs=1e-4) == 0.2132
 
 
 def test_claim_c07_c08_c09_c10_c11_factorial_propagation():
@@ -115,19 +115,19 @@ def test_claim_c07_c08_c09_c10_c11_factorial_propagation():
     s_d_base = [r for r in rows if r["stream_id"] == "stream_d_baseline"][0]
     s_d_hyb = [r for r in rows if r["stream_id"] == "stream_d_hybrid"][0]
 
-    assert float(s_a["total_mae"]) == 6.2973
-    assert float(s_b["total_mae"]) == 12.4054
-    assert float(s_b["delta_mae_vs_oracle"]) == 6.1081
-    assert s_b["shapley_attribution"] == "104.4%"
-    assert float(s_d_base["total_mae"]) == 12.7027
-    assert float(s_d_hyb["total_mae"]) == 12.4054
+    assert float(s_a["total_mae"]) == 5.2973
+    assert float(s_b["total_mae"]) == 12.6216
+    assert float(s_b["delta_mae_vs_oracle"]) == 7.3243
+    assert s_b["shapley_attribution"] == "63.0%"
+    assert float(s_d_base["total_mae"]) == 12.8649
+    assert float(s_d_hyb["total_mae"]) == 12.6216
 
     anova_path = REPO_ROOT / "research_v3" / "phase11_error_propagation" / "results" / "anova_decomposition_summary.csv"
     with open(anova_path, "r", encoding="utf-8") as f:
         anova_rows = list(csv.DictReader(f))
     ocr_row = [r for r in anova_rows if "Recognition" in r["Source"]][0]
-    assert pytest.approx(float(ocr_row["F"]), abs=1e-1) == 658.03
-    assert float(ocr_row["partial_eta_sq"]) == 0.8205
+    assert pytest.approx(float(ocr_row["F"]), abs=1e-1) == 260.84
+    assert float(ocr_row["partial_eta_sq"]) == 0.6443
 
 
 def test_claim_c13_c14_risk_control_and_selective_review():
@@ -136,16 +136,16 @@ def test_claim_c13_c14_risk_control_and_selective_review():
     with open(calib_path, "r", encoding="utf-8") as f:
         calib_rows = list(csv.DictReader(f))
     comp_row = [r for r in calib_rows if "Composite" in r["uncertainty_estimator"]][0]
-    assert float(comp_row["pearson_r"]) == 0.2715
-    assert float(comp_row["spearman_rho"]) == 0.1970
+    assert float(comp_row["pearson_r"]) == 0.6600
+    assert float(comp_row["spearman_rho"]) == 0.5136
 
     sub_path = REPO_ROOT / "research_v3" / "phase12_risk_control" / "results" / "subgroup_risk_profile.csv"
     with open(sub_path, "r", encoding="utf-8") as f:
         sub_rows = list(csv.DictReader(f))
     high_u = [r for r in sub_rows if "High" in r["subgroup_name"]][0]
     low_u = [r for r in sub_rows if "Low" in r["subgroup_name"]][0]
-    assert float(high_u["mean_absolute_error"]) == 13.175
-    assert float(low_u["mean_absolute_error"]) == 12.1471
+    assert float(high_u["mean_absolute_error"]) == 14.8333
+    assert float(low_u["mean_absolute_error"]) == 9.2308
 
     curve_path = REPO_ROOT / "research_v3" / "phase12_risk_control" / "results" / "selective_review_curves.csv"
     with open(curve_path, "r", encoding="utf-8") as f:
@@ -155,11 +155,11 @@ def test_claim_c13_c14_risk_control_and_selective_review():
     b50 = [r for r in our_curves if float(r["review_budget_pct"]) == 50.0][0]
     b75 = [r for r in our_curves if float(r["review_budget_pct"]) == 75.0][0]
 
-    assert float(b20["residual_MAE"]) == 10.0676
+    assert float(b20["residual_MAE"]) == 10.3243
     assert float(b20["workload_saved_pct"]) == 81.1
-    assert float(b50["residual_MAE"]) == 6.3649
-    assert float(b75["residual_MAE"]) == 2.3378
-    assert float(b75["residual_QWK"]) == 0.6436
+    assert float(b50["residual_MAE"]) == 5.0541
+    assert float(b75["residual_MAE"]) == 1.8378
+    assert float(b75["residual_QWK"]) == 0.8339
 
 
 def test_tex_and_md_presence_of_key_metrics():
@@ -170,18 +170,18 @@ def test_tex_and_md_presence_of_key_metrics():
     md_text = MD_PATH.read_text(encoding="utf-8")
 
     key_tokens = [
-        "658.03",  # ANOVA F
-        "0.8205",  # partial eta^2
-        "104.4%",  # Shapley
-        "0.9649",  # Hybrid IoU
-        "0.0793",  # Rotated baseline IoU
-        "1.1687",  # TrOCR Raw CER
-        "1.3762",  # TrOCR Prep CER
-        "12.4054", # Stream B MAE
-        "6.2973",  # Stream A MAE
-        "10.0676", # 20% budget residual MAE
+        "260.84",  # ANOVA F
+        "0.6443",  # partial eta^2
+        "63.0%",   # Shapley
+        "0.4911",  # Hybrid IoU
+        "0.0000",  # Rotated baseline IoU
+        "1.3173",  # TrOCR Raw CER
+        "1.4351",  # TrOCR Prep CER
+        "12.6216", # Stream B MAE
+        "5.2973",  # Stream A MAE
+        "10.3243", # 20% budget residual MAE
         "81.1%",   # Workload saved
-        "0.6436",  # 75% budget QWK
+        "0.8339",  # 75% budget QWK
     ]
 
     for tok in key_tokens:

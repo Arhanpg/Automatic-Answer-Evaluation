@@ -91,7 +91,7 @@ def run_benchmark():
         sid = row["student_id"]
         sqid = row["subquestion_id"]
         key = f"{sid}_{sqid}"
-        is_omitted = (row["status"] == "omitted_by_student")
+        is_omitted = str(row["status"]).startswith("omitted")
 
         ref_meta = adjudications.get(key, {})
         gold_transcript = ref_meta.get("final_adjudicated_transcript", "")
